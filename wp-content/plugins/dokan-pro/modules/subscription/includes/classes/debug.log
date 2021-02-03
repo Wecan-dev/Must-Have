@@ -1,0 +1,16 @@
+[06.11.2020 06:09:24] Subscription validity check ( 2020-11-06 ): checking subscription pack validity of user #2. This users subscription pack will expire on 1970-01-01
+[06.11.2020 06:09:24] Product exist check: As the package has expired of user #2 we are checking if he has any product
+[08.11.2020 11:02:42] Subscription validity check ( 2020-11-08 ): checking subscription pack validity of user #2. This users subscription pack will expire on 1970-01-01
+[08.11.2020 11:02:42] Product exist check: As the package has expired of user #2 we are checking if he has any product
+[09.11.2020 06:07:58] Subscription validity check ( 2020-11-09 ): checking subscription pack validity of user #2. This users subscription pack will expire on 1970-01-01
+[09.11.2020 06:07:58] Product exist check: As the package has expired of user #2 we are checking if he has any product
+[20.11.2020 06:48:58] Subscription cancel check: User #2 has canceled his Subscription of order #100
+[20.11.2020 06:00:33] Subscription cancel check: User #1 has canceled his Subscription of order #113
+[20.11.2020 06:02:20] Subscription cancellation check: Admin has canceled Subscription of User #1 on order #113
+[20.11.2020 06:05:06] Subscription cancellation check: Admin has canceled Subscription of User #1 on order #113
+[20.11.2020 07:00:33] Product status check: As the package has expired of user #1, we are changing his existing product status to draft
+[20.11.2020 07:07:14] Subscription cancel check: User #2 has canceled his Subscription of order #112
+[20.11.2020 07:08:00] Subscription cancellation check: Admin has canceled Subscription of User #2 on order #112
+[20.11.2020 07:13:30] Subscription cancellation check: Admin has canceled Subscription of User #2 on order #112
+[12.12.2020 07:50:28] Subscription cancel check: User #1 has canceled his Subscription of order #122
+[12.12.2020 07:50:53] Subscription cancellation check: Admin has canceled Subscription of User #1 on order #122
