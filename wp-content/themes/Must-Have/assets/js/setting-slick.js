@@ -44,7 +44,7 @@ $('.main-bannerAbout__slider').slick({
   autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: true,
+  dots: false,
   autoplaySpeed: 3000,
   arrows: true,
   fade: true,
@@ -55,7 +55,6 @@ $('.main-bannerAbout__slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
-      dots: true
     }
   },
   {
@@ -178,7 +177,7 @@ $('.main-team__slider').slick({
   responsive: [{
     breakpoint: 1200,
     settings: {
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       infinite: true,
       dots: false
@@ -189,7 +188,7 @@ $('.main-team__slider').slick({
     settings: {
       slidesToShow: 2,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
     }
   },
   {
@@ -197,7 +196,7 @@ $('.main-team__slider').slick({
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
 
     }
   }

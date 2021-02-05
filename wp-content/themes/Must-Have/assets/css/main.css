@@ -781,8 +781,8 @@ p{
     opacity: 0.77;
 }
 .item-categoria__content:hover .item-categoria__mask{
-    opacity: 0.67;
-    background: #488258;
+    opacity: 0.5;
+    background: #0c6735e0;
     transition: .3s ease-in-out;
 }
 .item-categoria__btn{
@@ -1167,6 +1167,7 @@ p{
 .main-registro__form--content{
 	display: flex;
 	flex-direction: column;
+    width: 358px;
 }
 .main-registro__subtitle{
 	font-family: 'Montserrat';
@@ -1205,7 +1206,7 @@ p{
 }
 .main-registro__form--content input{
 	font-family: 'Montserrat' !important;
-	width: 358px !important;
+	width: 100% !important;
 	height: 43px !important;
 	border-radius: 3px !important;
 	border: solid 1px #dee2e6 !important;
@@ -1259,6 +1260,7 @@ p{
 	padding: 14px !important;
 	border: none !important;
 	margin-top: 20px;
+    width: 100%;
 }
 .create-new{
 	font-family: 'Montserrat';
@@ -1537,6 +1539,796 @@ p{
     text-align: center;
     color: #bfb298;
 }
+
+
+
+/*-- Contáctanos --*/
+
+
+.bannerStatic{
+    padding-top: 100px;
+}
+.main-bannerStatic__content{
+    height: 415px;
+    width: 100%;
+    position: relative;
+}
+.main-bannerStatic__img{
+    height: 100%;
+    width: 100%;
+}
+.main-bannerStatic__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-bannerStatic__text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+.main-contact__content{
+    display: flex;
+    padding: 110px 73px 67px;
+}
+.main-contact__title{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 17px;
+    color: #000000;
+}
+.main-contact__form, .main-contact__info{
+    width: 50%;
+}
+.main-contact__form--inputs{
+    display: flex;
+    flex-direction: column;
+}
+.main-contact__form--inputs input, .main-contact__form--inputs textarea{
+    width: 100% !important;
+    border-radius: 3px !important;
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    padding: 13px 17px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+    margin-bottom: 16px;
+}
+.main-contact__form--inputs input::placeholder, .main-contact__form--inputs textarea::placeholder{
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+}
+.main-contact__form--inputs button{
+    border-radius: 3px !important;
+    background-color: #8ae8a7 !important;
+    width: 50% !important;
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: #000000 !important;
+    border: none !important;
+    padding: 14px;
+}
+.main-contact__info{
+    padding-left: 145px;
+}
+.main-contact__text{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.main-contact__redes--item{
+    display: flex;
+    margin-bottom: 30px;
+}
+.main-contact__redes--link{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding-left: 8px;
+}
+.main-contact__redes--link a{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.main-map__content{
+    height: 440px;
+    width: 100%;
+
+}
+.main-map__content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rememberme{
+    width: auto !important;
+    height: auto !important;
+}
+.renember-form{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    display: flex;
+}
+.renember-form label{
+    display: flex;
+}
+.renember-form label input{
+    margin-right: .5rem;
+}
+.woocommerce-LostPassword.lost_password a{
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.woocommerce-form.woocommerce-form-login.login .form-row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+/*-- Category --*/
+
+
+.category{
+    padding-top: 165px;
+}
+.main-category__title{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.main-category__img{
+    position: relative;
+}
+.main-category__content{
+    padding: 0 60px;
+}
+.main-category__item{
+    display: flex;
+    align-items: center;
+}
+.main-category__item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.main-category__text, .main-category__img{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.main-category__text{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #26292b;
+    padding: 0 140px;
+}
+.main-category__img--content{
+    width: 100%;
+    height: 100%;
+}
+.main-category__img--content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-category__img .item-category__mask{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    position: absolute;
+    transition: .3s ease-in-out;
+}
+.main-category__img:hover .item-category__mask{
+    opacity: 0.5;
+    background: #0c6735e0;
+    transition: .3s ease-in-out;
+}
+.main-category{
+    padding-bottom: 57px;
+}
+
+
+
+/*-- Terminos y Condiciones --*/
+
+
+.content-termsConditions{
+    padding: 150px 92px 100px;
+
+}
+.title-termsConditions{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.32;
+    letter-spacing: 0.38px;
+    text-align: center;
+    color: #000000;
+}
+.text-termsConditions{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.45px;
+    color: #000000;
+}
+.text-termsConditions p{
+    margin-bottom: 10px;
+} 
+.text-termsConditions h3{
+    margin-top: 30px;
+    margin-bottom: 13px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #353636;
+}
+
+
+
+
+/*-- Vende Aquí --*/
+
+
+
+.vendeAqui{
+    padding-top: 100px;
+}
+.main-vendeAqui__content{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-vendeAqui__img{
+    height: 100%;
+    width: 100%;
+}
+.main-vendeAqui__img--content{
+    width: 100%;
+    height: 100%;
+}
+.main-vendeAqui__img--content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-vendeAqui__form{
+    position: absolute;
+    width: 940px;
+    height: 692px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 124px 240px 62px;
+}
+.main-vendeAqui__form--title{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.main-vendeAqui__form--content input{
+    height: 43px !important;
+}
+.main-vendeAqui__form--content input, .main-vendeAqui__form--content textarea{
+    width: 100% !important;
+    border-radius: 3px !important; 
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    padding: 14px!important;
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+    margin-bottom: 21px !important;
+    resize: none;
+}
+.main-vendeAqui__form--content input::placeholder, .main-vendeAqui__form--content textarea::placeholder{
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+}
+.main-vendeAqui__form--content button{
+    width: 100% !important;
+    padding: 14px !important;
+    border-radius: 3px !important;
+    background-color: #8ae8a7 !important;
+    border: none !important;
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: bold!important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: #000000 !important;
+}
+.vende-upcycling{
+    width: 100%;
+    margin-top: 80px;
+}
+.btn-vende-upcycling{
+    width: 100%;
+    padding: 14px;
+    border-radius: 3px;
+    border: solid 1px #8ae8a7;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.btn-vende-upcycling:hover{
+    color: #000;
+}
+.content-collapseVendeAqui{
+    background: #8ae8a7;
+    padding: 60px 250px;
+}
+.content-collapseVendeAqui__form{
+    background: #fff;
+    padding: 100px 250px;
+    border-radius: 3px;
+}
+
+
+/*-- Perfil del Vendedor --*/
+
+
+.main-navSeller{
+    padding-top: 175px;
+}
+.main-navSeller__img{
+    width: 176px;
+    height: 176px;
+    margin-right: 16px;
+}
+.main-navSeller__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.main-navSeller__content{
+    padding: 12px 152px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.main-navSeller__content::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 135px;
+    background: #8ae8a7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.main-navSeller__text{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+.main-navSeller__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+.item-navSeller__sellers{
+    display: flex;
+}
+.item-navSeller__stars{
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.91px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.item-navSeller__stars--number{
+    margin-left: 16px;
+}
+.item-navSeller__numbers{
+    display: flex;
+    align-items: center;
+}
+.main-navSeller__redes{
+    display: flex;
+    justify-content: space-between;
+}
+.item-navSeller__name{
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.91px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.item-navSeller__sellers{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    color: #000000;
+}
+.item-navSeller__sellers p{
+    margin-left: .4rem;
+}
+.item-navSeller__sellers span{
+    font-weight: bold;
+}
+.item-navSeller__numbers--items{
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.27px;
+    text-align: center;
+    color: #000000;
+    margin-left: 23px;
+    position: relative;
+}
+.item-navSeller__numbers--items:hover{
+    color: #000;
+}
+.item-navSeller__numbers--items.active{
+    font-weight: bold;
+}
+.item-navSeller__numbers--items.active::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+.item-navSeller__numbers--items span{
+    font-family: 'Montserrat';
+    font-size: 28px;
+}
+.main-navSeller__redes--follow a, .main-navSeller__redes--solic a{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #050505;
+    padding: 8px 12px;
+    border-radius: 3px;
+    background-color: #8ae8a7;
+}
+.main-navSeller__redes--solic a{
+    font-weight: normal;
+}
+.main-navSeller__redes--follow a i, .main-navSeller__redes--solic a i{
+    margin-right: 7px;
+}
+.main-listProducts{
+    margin-top: 120px;
+    padding-bottom: 60px;
+}
+.main-listProducts__content{
+    padding: 0 152px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-listProducts__item{
+    width: 260px;   
+    margin-bottom: 60px;
+}
+.main-listProducts__img{
+    width: 100%;
+    position: relative;
+}
+.main-listProducts__img img{
+    width: 100%;
+    height: 358px;
+}
+.main-listProducts__title{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 72px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.81;
+    letter-spacing: 1.08px;
+    text-align: center;
+    color: #353636;
+    margin-bottom: 38px;
+}
+.btn-wishlist{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.btn-wishlist a i{
+    color: #fff;
+    transition: .2s ease-in-out;
+    font-size: 20px;
+}
+.btn-wishlist a i:hover{
+    color: #8ae8a7;
+    transition: .2s ease-in-out;
+}
+.text-listProducts__name{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    color: #353636;
+    margin-top: 18px;
+}
+.text-listProducts__price{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    color: #353636;
+    margin: 9px 0;
+}
+.text-listProducts__btn{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.86px;
+    text-align: center;
+    color: #353636;
+    text-decoration: underline;
+}
+.text-listProducts__btn:hover{
+    color: #353636;
+}
+.main-listProducts__heart{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+
+
+/*-- 404 --*/
+
+
+.main-404{
+    padding-top: 100px;
+}
+.main-404__content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.main-404__img{
+    width: 100%;
+    height: 100%;
+}
+.main-404__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main-404__text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-404__text--1{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main-404__text--2{
+    font-family: 'Montserrat';
+    font-size: 23px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.53px;
+    color: #ffffff;
+    text-align: center;
+}
+.main-404__text--number{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 300px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8ae8a7;
+}
+.main-404__text--3{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.main-404__text--btn a{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding: 14px 100px;
+    border-radius: 3px;
+    background-color: #8ae8a7;
+}
+
+
+
+
+
+
 
 
 

@@ -102,7 +102,8 @@
 		padding-left: 0;
 	}
 	
-	.main-categoria__title, .main-bestVendido__title, .main-upcycling__title{
+	.main-categoria__title, .main-bestVendido__title, .main-upcycling__title, .main-about__title,
+	.main-team__title{
 		font-size: 45px;
 	}
 	.main-categoria__items{
@@ -201,13 +202,283 @@
 	/*-- Quienes Somos --*/
 
 
-	.main-bannerAbout{
+	.main-bannerAbout, .registro{
 		padding-top: 55px;
 	}
 	.main-bannerAbout__img img{
 		object-position: 80% 40%;
 	}
-	
+	.main-about__content.main-about__content{
+		padding: 30px;
+		flex-direction: column;
+	}
+	.main-about__img{
+		display: none;
+	}
+	.main-about__img--content{
+		width: 100%;
+	}
+	.main-about__item{
+		padding: 0;
+	}
+	.main-about__img--content::before{
+		display: none;
+	}
+	.main-about__title{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.main-razonesAbout__title{
+		font-size: 30px;
+	}
+	.main-razonesAbout__content{
+		padding: 30px;
+	}
+	.main-razonesAbout__items{
+		flex-direction: column;
+	}
+	.items-razonesAbout__content:first-child{
+		padding-top: 0;
+	}
+	.items-razonesAbout__content::before{
+		display: none;
+	}
+	.team-slider__content{
+		padding: 0 10px;
+	}
+	.main-team__slider{
+		margin: 0 20px;
+	}
+	.main-team__slider .slick-next{
+		right: 0;
+	}
+	.main-team__slider .slick-prev{
+		left: 0;
+	}
+	.main-team__content{
+		padding-bottom: 30px;
+	}
+	.main-team__text{
+		margin: 30px 0;
+	}
+	.main-about__text{
+		font-size: 18px;
+	}
+
+
+
+
+	/*-- Registro --*/
+
+
+	.main-registro__item{
+		padding: 30px;
+	}
+	.main-registro__text{
+		display: none;
+	}
+	.main-registro__form{
+		padding: 30px;
+		height: auto;
+		width: 100%;
+	}
+	.main-registro__form--content input{
+		width: 100% !important;
+	}
+	.main-registro__img--content img{
+		object-position: 40% 50%;
+	}
+	.main-login__img--content img{
+		object-position: 20% 50%;
+	}
+
+
+
+	/*-- Contáctanos --*/
+
+
+	.bannerStatic{
+		padding-top: 55px;
+	}
+	.main-bannerStatic__img img{
+		object-position: 80% 50%;
+	}
+	.main-bannerStatic__content{
+		height: 300px;
+	}
+	.main-contact__form, .main-contact__info{
+		width: 100%;
+	}
+	.main-bannerStatic__text{
+		font-size: 45px;
+	}
+	.main-contact__content{
+		flex-direction: column-reverse;
+		padding: 30px;
+	}
+	.main-contact__info{
+		padding: 0;
+		padding-bottom: 30px;
+	}
+
+
+
+	/*-- Categorías --*/
+
+
+	.category{
+		padding-top: 100px;
+	}
+	.main-category__title{
+		font-size: 45px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.main-category__content{
+		padding: 0 30px;
+	}
+	.main-category__item{
+		flex-direction: column !important;
+	}
+	.main-category__text, .main-category__img{
+		width: 100%;
+		margin-bottom: 50px;
+		height: 300px;
+	}
+	.main-category__text{
+		padding: 0;
+		margin: 0;
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+
+
+
+	/*-- Terminos y Condiciones --*/
+
+
+	.content-termsConditions{
+		padding: 50px 30px 30px;
+
+	}
+
+
+
+
+	/*-- Vende Aquí --*/
+
+
+	.vendeAqui{
+		padding-top: 55px;
+	}
+	.main-vendeAqui__form{
+		width: 90%;
+		height: auto;
+		padding: 50px 30px;
+	}
+	.vende-upcycling{
+		margin-top: 30px;
+	}
+	.content-collapseVendeAqui{
+		padding: 30px;
+	}
+	.content-collapseVendeAqui__form{
+		padding: 30px;
+	}
+
+
+
+	/*-- Perfil del Vendedor --*/
+
+
+	.main-navSeller{
+		padding-top: 55px;
+	}
+	.main-navSeller__content{
+		padding: 30px 30px 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.main-navSeller__img{
+		margin: 0;
+	}
+	.main-navSeller__items{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	.item-navSeller__numbers--items span{
+		font-size: 18px;
+	}
+	.item-navSeller__numbers--items{
+		font-size: 10px;
+		margin: 0 5px;	
+	}
+	.item-navSeller__stars{
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+	}
+	.item-navSeller__sellers{
+		display: flex;
+		justify-content: center;
+	}
+	.item-navSeller__numbers{
+		margin-top: 12px;
+	}
+	.main-navSeller__redes{
+		flex-direction: column;
+	}
+	.main-navSeller__redes--follow{
+		display: flex;
+		justify-content: space-between;
+	}
+	.main-navSeller__redes--follow a{
+		width: 48%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.main-navSeller__redes--solic a{
+		width: 100%;
+		display: flex;
+		margin-top: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+	.main-listProducts__title{
+		font-size: 45px;
+	}
+	.main-listProducts__content{
+		padding: 0 30px;
+	}
+	.main-listProducts__item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.main-listProducts{
+		margin-top: 38px;
+	}
+
+
+
+	/*-- 404 --*/
+
+
+	.main-404{
+		padding-top: 55px;
+	}
+	.main-404__img img{
+		object-position: 20% 50%;
+	}
+	.main-404__text--number{
+		font-size: 180px;
+	}
+	.main-404__text--btn a{
+		padding: 14px 80px;
+	}
+
 }
 
 
@@ -429,6 +700,168 @@
 	.header.fixed .collapse-fixed__content{
 		display: none !important;
 	}
+
+
+	/*-- Quienes Somos --*/
+
+
+	.main-razonesAbout__items{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.main-about__content{
+		flex-direction: column;
+		padding: 50px;
+	}
+	.main-about__img{
+		display: none;
+	}
+	.main-about__item{
+		padding: 0;
+	}
+	.main-about__title{
+		text-align: center;
+	}
+	.main-razonesAbout__content{
+		padding: 50px 0;
+	}
+	.items-razonesAbout__content{
+		width: 50%;
+	}
+	.items-razonesAbout__content::before{
+		display: none;
+	}
+	.main-team__slider{
+		margin: 0 30px;
+	}
+
+
+
+	/*-- Registro --*/
+
+
+
+	.main-registro__item{
+		padding: 50px;
+		flex-direction: column;
+	}
+	.main-registro__text{
+		width: 100%;
+	}
+	.main-registro__subtitle{
+		font-size: 25px;
+	}
+	.main-registro__title h1{
+		font-size: 50px;
+	}
+	.main-registro__form{
+		padding: 50px;
+		width: 100%;
+		height: auto;
+	}
+	.main-registro__form--content input{
+		width: 100% !important;
+	}
+
+
+
+	/*-- Contáctanos --*/
+
+
+	.main-contact__form, .main-contact__info{
+		width: 100%;
+	}
+	.main-contact__content{
+		flex-direction: column-reverse;
+		padding: 50px;
+	}
+	.main-contact__info{
+		padding: 0;
+		padding-bottom: 50px;
+	}
+	.main-contact__redes{
+		display: flex;
+	}
+	.main-contact__redes--item{
+		width: 33.33%;
+	}
+
+
+
+	/*-- Categorías --*/
+
+
+	.category{
+		padding-top: 100px;
+	}
+	.main-category__text{
+		padding: 0 10px;
+	}
+	.main-category__text, .main-category__img{
+		height: 350px;
+	}
+
+
+
+	/*-- Terminos y Condiciones --*/
+
+
+	.content-termsConditions{
+		padding: 80px 50px 50px;
+
+	}
+
+	
+	/*-- Vende Aquí --*/
+
+
+	.main-vendeAqui__form{
+		width: 80%;
+		padding: 100px 50px 60px;
+	}
+	.content-collapseVendeAqui{
+		padding: 50px;
+	}
+	.content-collapseVendeAqui__form{
+		padding: 50px;
+	}
+
+
+
+	/*-- Perfil del Vendedor --*/
+
+
+	.main-navSeller{
+
+		padding-top: 100px;
+	}
+	.main-navSeller__img{
+		margin: 0;
+	}
+	.main-navSeller__content{
+		padding: 12px 50px 0;
+		flex-direction: column;
+	}
+	.main-navSeller__items{
+		flex-direction: column;
+		align-items: center;
+	}
+	.item-navSeller__sellers{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 12px;
+	}
+	.item-navSeller__numbers--items{
+		margin-left: 0;
+		margin: 0 10px;
+	}
+	.main-listProducts__content{
+		padding: 0 50px;
+		justify-content: space-around;
+	}
+
+
+
 }
 
 
@@ -466,6 +899,45 @@
 	}	
 	.content-footer__menu, .content-footer__contact{
 		padding-left: 40px;
+	}
+	.main-about__content{
+		padding: 50px;
+	}
+	.main-about__item{
+		padding-left: 50px;
+	}
+	.main-registro__item{
+		padding: 50px;
+	}
+	.main-brand{
+		width: 200px;
+	}
+	.main-brand a img{
+		width: 100%;
+	}
+	.header{
+		height: 100px;
+	}
+	.navbar{
+		height: 100%;
+	}
+	.main-contact__info{
+		padding-left: 100px;
+	}
+	.main-category__text{
+		padding: 0 40px;
+	}
+	.content-collapseVendeAqui{
+		padding: 60px 100px;
+	}
+	.content-collapseVendeAqui__form{
+		padding: 50px 100px;
+	}
+	.main-navSeller__content{
+		padding: 12px 50px 0;
+	}
+	.main-listProducts__content{
+		padding: 0 70px;
 	}
 }
 
