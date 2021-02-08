@@ -13,7 +13,7 @@
                         <p>Selle Here</p>
                     </div>
                     <div class="main-vendeAqui__form--content">
-                    <?php echo do_shortcode('[dokan-customer-migration]')?>
+                    <?php echo do_shortcode('[dokan-vendor-registration]')?>
                     </div>
                     <div class="vende-upcycling">
                         <a class="btn-vende-upcycling" data-toggle="collapse" href="#collapseVendeAqui" role="button" aria-expanded="false" aria-controls="collapseVendeAqui"> ¿ Quiere vender en upcycling?</a>

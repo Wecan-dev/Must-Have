@@ -1,0 +1,144 @@
+2021-02-06T15:18:22+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:18:22+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T15:18:23+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:18:23+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T15:19:59+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:19:59+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T15:19:59+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:19:59+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T15:46:33+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:46:33+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T15:53:43+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T15:53:43+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T18:47:07+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T18:47:08+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-02-06T18:47:39+00:00 ERROR Error getting remote inbox notification data feed
+2021-02-06T18:47:39+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: Could not resolve host: woocommerce.com
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+

@@ -1,0 +1,104 @@
+2021-02-06T15:59:14+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:404
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 404
+
+2021-02-06T18:36:23+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:404
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 404
+
+2021-02-06T18:39:17+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:404
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 404
+
+2021-02-06T18:55:29+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T18:56:15+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:04:43+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:06:44+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:17:50+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:17:56+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:17:56+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:18:02+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/fnt/fnt.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 113
+
+2021-02-06T19:19:45+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 123
+
+2021-02-06T19:19:47+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 123
+
+2021-02-06T19:20:26+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:21:32+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:24:58+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:25:47+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:26:19+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+
+2021-02-06T19:28:08+00:00 CRITICAL Uncaught Error: Call to undefined function cut_text() in /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php:369
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
+

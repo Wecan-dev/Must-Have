@@ -7,69 +7,34 @@
     <div class="banner">
       <div class="main-banner">
         <div class="main-banner__content">
+        <?php $args = array( 'post_type' => 'Banner');?>   
+        <?php $loop = new WP_Query( $args ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-banner__item">
             <div class="main-banner__text">
               <div class="main-banner__subtitle">
-                <p>Nueva colección</p>
+                <p><?php the_field( 'subtitulo_banner_home' ); ?> </p>
               </div>
               <div class="main-banner__title">
-                <h1>Lo puedes tener</h1>
+                <h1> <?php the_title(); ?> </h1>
               </div>
               <div class="main-banner__info">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                <p> <?php the_content(); ?> </p>
               </div>
               <div class="boton-banner">
-                <a class="btn btn-banner"  href="#">Comprar</a>
+                <?php $boton_banner_home = get_field( 'boton_banner_home' ); ?>
+                <?php if ( $boton_banner_home ) : ?>
+                  <a class="btn btn-banner" href="<?php echo esc_url( $boton_banner_home) ; ?>"><?php echo esc_html( $boton_banner_home ); ?></a>
+                <?php endif; ?>
               </div>
             </div>
             <div class="main-banner__img">
               <div class="main-banner__img--content">
-                <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-home.png" alt="">
+                <img  src="<?php echo get_the_post_thumbnail_url(); ?>">
               </div>
             </div>
           </div>
-          <div class="main-banner__item">
-            <div class="main-banner__text">
-              <div class="main-banner__subtitle">
-                <p>Nueva colección</p>
-              </div>
-              <div class="main-banner__title">
-                <h1>Lo puedes tener</h1>
-              </div>
-              <div class="main-banner__info">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-              </div>
-              <div class="boton-banner">
-                <a class="btn btn-banner"  href="#">Comprar</a>
-              </div>
-            </div>
-            <div class="main-banner__img">
-              <div class="main-banner__img--content">
-                <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-home.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="main-banner__item">
-            <div class="main-banner__text">
-              <div class="main-banner__subtitle">
-                <p>Nueva colección</p>
-              </div>
-              <div class="main-banner__title">
-                <h1>Lo puedes tener</h1>
-              </div>
-              <div class="main-banner__info">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-              </div>
-              <div class="boton-banner">
-                <a class="btn btn-banner"  href="#">Comprar</a>
-              </div>
-            </div>
-            <div class="main-banner__img">
-              <div class="main-banner__img--content">
-                <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-home.png" alt="">
-              </div>
-            </div>
-          </div>
+          <?php endwhile; ?>
         </div>
       </div>
     </div>
@@ -372,6 +337,8 @@
 </div>
 
 <!-- Upcycling  /-->
+
+
 
 
 

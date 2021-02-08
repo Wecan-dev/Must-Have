@@ -1869,7 +1869,7 @@ p{
     padding-top: 100px;
 }
 .main-vendeAqui__content{
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     position: relative;
     display: flex;
@@ -1892,7 +1892,7 @@ p{
 .main-vendeAqui__form{
     position: absolute;
     width: 940px;
-    height: 692px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1914,9 +1914,7 @@ p{
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-.main-vendeAqui__form--content input{
-    height: 43px !important;
-}
+
 .main-vendeAqui__form--content input, .main-vendeAqui__form--content textarea{
     width: 100% !important;
     border-radius: 3px !important; 
@@ -1933,6 +1931,7 @@ p{
     color: #353636 !important;
     margin-bottom: 21px !important;
     resize: none;
+    height: 43px !important;
 }
 .main-vendeAqui__form--content input::placeholder, .main-vendeAqui__form--content textarea::placeholder{
     font-family: 'Montserrat' !important;
@@ -1993,6 +1992,23 @@ p{
     padding: 100px 250px;
     border-radius: 3px;
 }
+.main-vendeAqui__form--content h2{
+    display: none;
+}
+#tc_agree{
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    margin-right: .4rem;
+}
+.main-vendeAqui__form--content .form-row{
+    align-items: center;
+    margin: 0;
+}
+.main-vendeAqui__form--content .form-row label{
+    margin-bottom: 0;
+}
+
 
 
 /*-- Perfil del Vendedor --*/
