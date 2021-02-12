@@ -44,6 +44,17 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/slick/slick-theme.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/lightbox2/css/lightbox.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/flaticon.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/animate.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">

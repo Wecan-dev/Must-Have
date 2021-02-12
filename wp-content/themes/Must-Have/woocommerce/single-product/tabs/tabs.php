@@ -45,6 +45,9 @@ if ( ! empty( $product_tabs ) ) : ?>
 				<?php
 				if ( isset( $product_tab['callback'] ) ) {
 					call_user_func( $product_tab['callback'], $key, $product_tab );
+					?>
+
+					<?php
 				}
 				?>
 			</div>

@@ -1,90 +1,22 @@
 <?php 
 
 
-
-function theme_customize_register($wp_customize){
-    $wp_customize->add_panel('home',
-          array(
-              'title' => 'Secciones Home',
-              'priority' => 1,
-              )
-          );
-          $wp_customize->add_section('home_publicidad', array (
-            'title' => 'Home Publicidad',
-            'panel' => 'home'
-          ));
-        
-          $wp_customize->add_setting('home_publicidad_title', array(
-            'default' => ''
-          ));
-          
-          $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_title_control', array (
-            'description' => 'Título  ',
-            'section' => 'home_publicidad',
-            'settings' => 'home_publicidad_title',
-          )));
-        
-          $wp_customize->add_setting('home_publicidad_subtitle', array(
-            'default' => ''
-          ));
-          
-          $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_subtitle_control', array (
-            'description' => 'Subtítulo',
-            'section' => 'home_publicidad',
-            'settings' => 'home_publicidad_subtitle',
-          )));
-        
-          $wp_customize->add_setting('home_publicidad_image');
-          
-          $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_publicidad_image_control', array (
-            'description' => 'Imagen',
-            'section' => 'home_publicidad',
-            'settings' => 'home_publicidad_image'
-          )));
-        
-          $wp_customize->add_setting('home_publicidad_boton', array(
-            'default' => ''
-          ));
-        
-          $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_boton_control', array (
-            'label' => 'Botón',
-            'section' => 'home_publicidad',
-            'settings' => 'home_publicidad_boton',
-          ))); 
-        
-          $wp_customize->add_setting('home_publicidad_url', array(
-            'default' => ''
-          ));
-        
-          $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_url_control', array (
-            'label' => 'Url Botón',
-            'section' => 'home_publicidad',
-            'settings' => 'home_publicidad_url',
-          )));
-   /* 
-    $wp_customize->add_panel('panel2',
-          array(
-              'title' => 'Categorías',
-              'priority' => 1,
-              )
-          );
-    require_once trailingslashit( get_template_directory() ) . 'inc/categorias/customizer-categorias-banner.php';
-  
-    $wp_customize->add_panel('panel3',
-          array(
-              'title' => 'Promociones Dasher',
-              'priority' => 1,
-              )
-          );
-    require_once trailingslashit( get_template_directory() ) . 'inc/promo/customizer-promo-tienda.php';   
-  
-  } */
-  add_action('customize_register','theme_customize_register'); 
-  
-  /***************** FNT General ************/
-  
-  require_once trailingslashit( get_template_directory() ) . 'inc/fnt/fnt.php';
-
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+   add_theme_support( 'woocommerce' );
+}
+//Compatibilidad con galerías a partir de WooCommerce 3.0>
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+function yourtheme_setup() {
+add_theme_support( 'wc-product-gallery-slider' );
+}
+/**
+ * Declare WooCommerce Support
+ */
+function oblique_woocommerce_support() {
+	// add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 // Register Custom Banner Home
 function Banner() {
@@ -146,28 +78,5 @@ function Banner() {
 
 
 
-
-
-
-
-function my_theme_setup() {
-	add_theme_support( 'woocommerce' );
-}
-add_action( 'after_setup_theme', 'my_theme_setup' );
-
-add_action( 'after_setup_theme', 'yourtheme_setup' );
-
-function yourtheme_setup() {
-
-
-add_theme_support( 'wc-product-gallery-slider' );
-} 
-
-
-
-
-
-
-?>
 
 

@@ -11,7 +11,10 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 ?>
+
+
 <div class="woocommerce-variation-add-to-cart variations_button">
+	
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 	<?php
@@ -36,3 +39,4 @@ global $product;
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 </div>
+

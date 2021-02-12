@@ -22,9 +22,85 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 
+<section class="">
+    <div class="registro">
+        <div class="main-registro">
+            <div class="main-registro__content">
+                <div class="main-registro__img">
+                    <div class="main-registro__img--content">
+                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-registro.png" alt="">
+                    </div>
+                </div>
+                <div class="main-registro__item">
+                    <div class="main-registro__text">
+                        <div class="main-registro__subtitle">
+                            <p>tus favoritos</p>
+                        </div>
+                        <div class="main-registro__title">
+                            <h1>lo quieres, lo puedes tener</h1>
+                        </div>
+                        <div class="boton-registro d-none d-lg-flex">
+                        </div>
+                    </div>
+                    <div class="main-registro__form">
+                        <div class="main-registro__form--title">
+                            <p>Registro</p>
+                        </div>
+                        <div class="main-registro__form--content">
+						<form method="post" class="woocommerce-form woocommerce-form-register register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
+
+<?php do_action( 'woocommerce_register_form_start' ); ?>
+
+
+
+	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+		<label for="reg_username"><?php esc_html_e( 'Username', 'woocommerce' );  ?>&nbsp;<span class="required">*</span></label>
+		<input placeholder="Usuario" type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="reg_username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
+	</p>
+
+
+
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	<label for="reg_email"><?php esc_html_e( 'Email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+	<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
+</p>
+
+
+
+	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+		<label for="reg_password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password" />
+	</p>
+
+
+
+	<p><?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?></p>
+
+
+
+<?php do_action( 'woocommerce_register_form' ); ?>
+
+<p class="woocommerce-form-row form-row">
+	<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
+	<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
+</p>
+
+<?php do_action( 'woocommerce_register_form_end' ); ?>
+
+</form>
+                            <a href="<?php bloginfo('url'); ?>/login" class="create-new">Ya tienes una cuenta <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <div class="u-columns col2-set" id="customer_login">
 
-	<div class="u-column1 col-1">
+	<div class="u-column1 col-12">
 
 
 
@@ -62,7 +138,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 	</div>
 
-	<div class="u-column2 col-2">
+	<div class="u-column2 col-12">
 
 		<h2><?php esc_html_e( 'Register', 'woocommerce' ); ?></h2>
 

@@ -24,7 +24,7 @@
               <div class="boton-banner">
                 <?php $boton_banner_home = get_field( 'boton_banner_home' ); ?>
                 <?php if ( $boton_banner_home ) : ?>
-                  <a class="btn btn-banner" href="<?php echo esc_url( $boton_banner_home) ; ?>"><?php echo esc_html( $boton_banner_home ); ?></a>
+                  <a class="btn btn-banner" href="<?php echo esc_url( $boton_banner_home['url'] ); ?>" target="<?php echo esc_attr( $boton_banner_home['target'] ); ?>"><?php echo esc_html( $boton_banner_home['title'] ); ?></a>
                 <?php endif; ?>
               </div>
             </div>
@@ -337,9 +337,6 @@
 </div>
 
 <!-- Upcycling  /-->
-
-
-
 
 
   <?php get_footer(); ?>

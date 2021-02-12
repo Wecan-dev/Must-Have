@@ -22,3 +22,7 @@ Stack trace:
 #3 {main}
   thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/home.php en la línea 369
 
+2021-02-08T17:48:21+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 34
+
+2021-02-08T17:48:27+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 34
+

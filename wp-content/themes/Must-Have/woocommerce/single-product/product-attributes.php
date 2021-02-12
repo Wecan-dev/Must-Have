@@ -30,4 +30,6 @@ if ( ! $product_attributes ) {
 			<td class="woocommerce-product-attributes-item__value"><?php echo wp_kses_post( $product_attribute['value'] ); ?></td>
 		</tr>
 	<?php endforeach; ?>
+
+
 </table>

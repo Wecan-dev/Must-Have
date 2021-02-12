@@ -17,6 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+the_content();
+
 if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity hidden">

@@ -38,3 +38,7 @@ global $product;
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 
 </div>
+
+<div class="backStore">
+	<p>Es fácil cambiar tu producto <a href="#">AQUÍ</a> </p>
+</div>
