@@ -6,7 +6,7 @@
     'panel' => 'panel1'
   ));
 
-  $wp_customize->add_setting('home_publicidad_title', array(
+  $wp_customize->add_setting('home_contacto_title', array(
     'default' => ''
   ));
   
@@ -14,35 +14,46 @@
     'description' => 'Título  ',
     'section' => 'home_publicidad',
     'settings' => 'home_publicidad_title',
-    'type' => 'textarea'
   )));
 
-  $wp_customize->add_setting('home_publicidad_subtitle', array(
+  $wp_customize->add_setting('home_publicidad_text', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_subtitle_control', array (
-    'description' => 'Subtítulo',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_text_control', array (
+    'description' => 'Texto',
     'section' => 'home_publicidad',
-    'settings' => 'home_publicidad_subtitle',
+    'settings' => 'home_publicidad_text',
     'type' => 'textarea'
   )));
 
-  $wp_customize->add_setting('home_publicidad_image_desktop');
+  $wp_customize->add_setting('home_publicidad_btn', array(
+    'default' => ''
+  ));
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_publicidad_image_desktop_control', array (
-    'description' => 'Imagen Desktop',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_btn_control', array (
+    'description' => 'Texto de botón',
     'section' => 'home_publicidad',
-    'settings' => 'home_publicidad_image_desktop'
+    'settings' => 'home_publicidad_btn',
+  )));
+  $wp_customize->add_setting('home_publicidad_url', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_publicidad_url_control', array (
+    'description' => 'URL de botón',
+    'section' => 'home_publicidad',
+    'settings' => 'home_publicidad_url',
   )));
 
-  $wp_customize->add_setting('home_publicidad_image_responsive');
+  $wp_customize->add_setting('home_publicidad_image');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_publicidad_image_responsive_control', array (
-    'description' => 'Imagen Responsive',
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home_publicidad_image_control', array (
+    'description' => 'Imagen',
     'section' => 'home_publicidad',
-    'settings' => 'home_publicidad_image_responsive'
-  )));  
+    'settings' => 'home_publicidad_image'
+  )));
+
 
   
 ?>

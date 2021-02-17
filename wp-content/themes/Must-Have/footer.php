@@ -1,4 +1,7 @@
 
+<?php if($descripcion): ?>
+          	<p> <?php echo $descripcion; ?></p>
+		  <?php endif;?>
 
 
 <footer>
@@ -7,7 +10,7 @@
         <div class="main-footer__content">
           <div class="content-footer__text">
             <div class="subtitle-footer">
-              <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-footer.png" alt=""></a>
+              <a href="<?php bloginfo('url'); ?>/"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-footer.png" alt=""></a>
             </div>
             <div class="content-footer__text--text">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -29,20 +32,20 @@
               <p>Menú</p>
             </div>
             <div class="content-footer__menu--content">
-              <a href="#">Inicio</a>
-              <a href="#">Quienes somos</a>
-              <a href="#">Contacto</a>
-              <a href="#">Términos y condiciones</a>
+              <a href="<?php bloginfo('url'); ?>/">Inicio</a>
+              <a href="<?php bloginfo('url'); ?>/quienes-somos">Quienes somos</a>
+              <a href="<?php bloginfo('url'); ?>/contactanos">Contacto</a>
+              <a href="<?php bloginfo('url'); ?>/terminos-y-condiciones">Términos y condiciones</a>
               <div class="content-footer__menu--content d-none d-md-flex d-lg-none">
-                <a href="#">Políticas y privacidad</a>
-                <a href="#">Entregas y devoluciones</a>
+                <a href="<?php bloginfo('url'); ?>/">Políticas y privacidad</a>
+                <a href="<?php bloginfo('url'); ?>/">Entregas y devoluciones</a>
               </div>
             </div>
           </div>
           <div class="content-footer__menu d-flex d-md-none d-lg-flex">
             <div class="content-footer__menu--content">
-              <a href="#">Políticas y privacidad</a>
-              <a href="#">Entregas y devoluciones</a>
+              <a href="<?php bloginfo('url'); ?>/">Políticas y privacidad</a>
+              <a href="<?php bloginfo('url'); ?>/">Entregas y devoluciones</a>
             </div>
           </div>
           <div class="content-footer__contact">
@@ -109,6 +112,36 @@
     </div>
   </div>
   
+
+
+  <script>
+
+document.getElementById('billing_first_name').placeholder='Nombre *';
+document.getElementById('billing_last_name').placeholder='Apellido *';
+document.getElementById('billing_company').placeholder='Nombre de la empresa (opcional)';
+document.getElementById('billing_city').placeholder='Localidad / Ciudad';
+document.getElementById('billing_state').placeholder='Estado / Municipio';
+document.getElementById('billing_postcode').placeholder='Código postal';
+document.getElementById('billing_phone').placeholder='Teléfono';
+document.getElementById('billing_email').placeholder='Correo electrónico *';
+
+document.getElementById('shipping_first_name').placeholder='Nombre *';
+document.getElementById('shipping_last_name').placeholder='Apellido *';
+document.getElementById('shipping_company').placeholder='Nombre de la empresa (opcional)';
+document.getElementById('shipping_city').placeholder='Localidad / Ciudad';
+document.getElementById('shipping_state').placeholder='Estado / Municipio';
+document.getElementById('shipping_postcode').placeholder='Código postal';
+
+document.getElementById('first-name').placeholder='Nombre';
+document.getElementById('last-name').placeholder='Apellido';
+document.getElementById('reg_email').placeholder='Correo electrónico';
+document.getElementById('shop-phone').placeholder='Teléfono';
+document.getElementById('reg_password').placeholder='Contraseña';
+document.getElementById('company-name').placeholder='Nombre de la tienda';
+document.getElementById('seller-url').placeholder='URL de la tienda';
+
+
+  </script>
 
 
   

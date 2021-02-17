@@ -226,7 +226,7 @@ $('.slider-listProducts__content').slick({
     settings: {
       slidesToShow: 2,
       slidesToScroll:1 ,
-      arrows: false,
+      arrows: true,
     }
   },
   {

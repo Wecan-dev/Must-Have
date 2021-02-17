@@ -57,7 +57,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="#">Second chance</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/secund-chance">Second chance</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>
@@ -66,7 +66,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="#">Upcycling</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>
@@ -75,7 +75,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg2.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="#">productos sostenibles</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">productos sostenibles</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>
@@ -321,17 +321,17 @@
   <div class="main-upcycling">
     <div class="main-upcycling__content">
       <div class="main-upcycling__title">
-        <p>Upcycling Mood</p>
+        <p><?php echo get_theme_mod('home_publicidad_title'); ?></p>
       </div>
       <div class="main-upcycling__text">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+        <p><?php echo get_theme_mod('home_publicidad_text'); ?></p>
       </div>
       <div class="main-upcycling__btn ">
-        <a class="btn-banner" href="">conócenos</a>
+        <a class="btn-banner" href="<?php echo get_theme_mod('home_publicidad_url'); ?>"><?php echo get_theme_mod('home_publicidad_btn'); ?></a>
       </div>
     </div>
     <div class="main-upcycling__img">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/upcycling-banner.png" alt="">
+      <img src="<?php echo get_theme_mod('home_publicidad_image'); ?>" alt="">
     </div>
   </div>
 </div>

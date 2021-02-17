@@ -132,6 +132,62 @@ if ( post_password_required() ) {
                     </div>
                 </div>
             </div>
+            <div class="navSeller-comments container">
+                <div class="navSeller-comments__content">
+                    <div class="navSeller-comments__title">
+                        <p>Últimas calificaciones</p>
+                    </div>
+                    <div class="navSeller-comments__items">
+                        <div class="navSeller-comments__img">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team1.png" alt="">
+                        </div>
+                        <div class="navSeller-comments__text">
+                            <div class="navSeller-comments__name">
+                                <p>Carmen Sánchez</p>
+                            </div>
+                            <div class="navSeller-comments__stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="navSeller-comments__stars--number">
+                                    <p>[15]</p>
+                                </div>
+                            </div>
+                            <div class="navSeller-comments__commet">
+                                <p>Hermoso el bolso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSeller-comments__items">
+                        <div class="navSeller-comments__img">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team1.png" alt="">
+                        </div>
+                        <div class="navSeller-comments__text">
+                            <div class="navSeller-comments__name">
+                                <p>Carmen Sánchez</p>
+                            </div>
+                            <div class="navSeller-comments__stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="navSeller-comments__stars--number">
+                                    <p>[15]</p>
+                                </div>
+                            </div>
+                            <div class="navSeller-comments__commet">
+                                <p>Hermoso el bolso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navSeller-comments__btn">
+                    <a href="#">Ir al closet</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

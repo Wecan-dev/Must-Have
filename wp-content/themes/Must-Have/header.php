@@ -72,7 +72,7 @@
         </span>
       </button>
     <div class="main-brand">
-      <a itemprop="url" class="navbar-brand" href="">
+      <a itemprop="url" class="navbar-brand" href="<?php bloginfo('url'); ?>/">
         <img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-w.png" alt="" />
       </a>
       <div class="iconNav-respon d-flex d-lg-none">
@@ -102,9 +102,9 @@
     </div>
     <div class="navbar-collapse offcanvas-collapse">
       <div class="collapse-fixed__content d-none d-lg-flex">
-        <a href="#">Inicio</a>
+        <a href="<?php bloginfo('url'); ?>/">Inicio</a>
         <a href="#">Upcycling mood </a>
-        <a href="#">Categorías</a>
+        <a href="<?php bloginfo('url'); ?>/categorias">Categorías</a>
       </div>
       <ul class="navbar-nav ">
         <form class="form-inline my-2 my-lg-0">

@@ -1,6 +1,21 @@
 <?php 
 
 
+function theme_customize_register($wp_customize){
+
+  $wp_customize->add_panel('panel1',
+        array(
+            'title' => 'Home',
+            'priority' => 1,
+            )
+        );
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-home-publicidad.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-home-contacto.php';
+
+}
+add_action('customize_register','theme_customize_register');
+
+
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
@@ -74,7 +89,6 @@ function Banner() {
   
   }
   add_action( 'init', 'Banner', 0 );
-
 
 
 

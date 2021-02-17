@@ -22,7 +22,6 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<h2><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h2>
 
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
@@ -93,6 +92,11 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
+		
+		<tr class="order-total">
+			<th><?php esc_html_e( 'IVA', 'woocommerce' ); ?></th>
+			<td data-title="<?php esc_attr_e( 'IVA', 'woocommerce' ); ?>"><?php wc_cart_totals_taxes_total_html(); ?></td>
+		</tr>			
 
 		<tr class="order-total">
 			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
@@ -110,3 +114,9 @@ defined( 'ABSPATH' ) || exit;
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
 
 </div>
+
+<style>
+small.includes_tax {
+    display: none;
+}
+</style>
