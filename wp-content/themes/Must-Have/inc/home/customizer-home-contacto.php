@@ -15,6 +15,7 @@
     'description' => 'Texto de información',
     'section' => 'home_contacto',
     'settings' => 'home_contacto_info',
+    'type'=> 'textarea'
   )));
 
   $wp_customize->add_setting('home_contacto_youtube', array(

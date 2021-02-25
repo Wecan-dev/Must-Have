@@ -1,3 +1,8 @@
+    
+    <?php
+$variable = get_the_ID();
+?>
+
 <?php get_header(); ?>
 <?php
 /**
@@ -19,7 +24,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
+?>
+<div id="<?php the_ID(); ?>">
+<?php
 do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 
@@ -192,6 +199,5 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
 
-
+</div>
 <?php get_footer(); ?>
-

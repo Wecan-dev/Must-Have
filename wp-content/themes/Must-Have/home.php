@@ -57,7 +57,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/categoria-producto/secund-chance">Second chance</a>
+              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[26]">Second chance</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>
@@ -66,7 +66,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
+              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[28]">Upcycling</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>
@@ -75,7 +75,7 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg2.png" alt="">
             </div>
             <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">productos sostenibles</a>
+              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[27]">productos sostenibles</a>
             </div>
             <div class="item-categoria__mask"></div>
           </div>

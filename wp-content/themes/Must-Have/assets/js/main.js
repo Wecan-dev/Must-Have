@@ -1,9 +1,15 @@
+$(document).ready(function(){
+  var width = window.innerWidth;
+  var resolucion = $( window ).width();
 
-
-
-
-
-
+  if(resolucion <= 1000){
+      cargarInclude = 0;
+  }
+  else{
+    $('#collapseOne').addClass('show');
+      cargarInclude = 1;
+  }
+});
 
 let ubicationP = window.pageYOffset;
 window.onscroll = function(){
@@ -75,8 +81,12 @@ $(".navbar-buttonModal__close").on("click", function (){
 $(window).scroll(function () {
   if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
     $('#header').addClass('fixed');
+    $('.logoChange1').css('display','none');
+    $('.logoChange2').css('display','block');
   } else {
     $('#header').removeClass('fixed');
+    $('.logoChange2').css('display','none');
+    $('.logoChange1').css('display','block');
   }
 });
 

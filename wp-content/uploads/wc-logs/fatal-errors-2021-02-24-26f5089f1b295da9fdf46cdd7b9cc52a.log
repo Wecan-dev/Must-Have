@@ -1,0 +1,30 @@
+2021-02-24T15:24:03+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/header.php en la línea 174
+
+2021-02-24T15:48:59+00:00 CRITICAL Can't use function return value in write context en /var/www/html/Must-Have/wp-content/themes/Must-Have/header.php en la línea 160
+
+2021-02-24T15:56:24+00:00 CRITICAL syntax error, unexpected '{', expecting ':' en /var/www/html/Must-Have/wp-content/themes/Must-Have/header.php en la línea 164
+
+2021-02-24T17:16:00+00:00 CRITICAL Uncaught Error: Call to undefined function page() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:57
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-cat.php(22): wc_get_template()
+#2 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 57
+
+2021-02-24T17:16:08+00:00 CRITICAL Uncaught Error: Call to undefined function page_ID() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:57
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-cat.php(22): wc_get_template()
+#2 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 57
+
+2021-02-24T17:19:41+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 136
+
+2021-02-24T21:18:17+00:00 CRITICAL syntax error, unexpected '?>', expecting '(' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 110
+

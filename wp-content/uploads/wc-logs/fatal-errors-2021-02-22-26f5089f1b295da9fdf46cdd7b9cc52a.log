@@ -1,0 +1,6 @@
+2021-02-22T13:27:34+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/cotact/customizer-contact-content.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 32
+
+2021-02-22T13:27:58+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/cotact/customizer-contact-content.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 32
+
+2021-02-22T13:35:29+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/Must-Have/wp-content/themes/Must-Have/inc/cotact/customizer-contact-content.php' (include_path='.:/usr/share/php') en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 32
+

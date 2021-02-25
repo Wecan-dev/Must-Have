@@ -5,10 +5,10 @@
         <div class="main-bannerStatic">
             <div class="main-bannerStatic__content">
                 <div class="main-bannerStatic__img">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/banner-contactanos.png" alt="">
+                    <img src="<?php echo get_theme_mod('contact-banner_img1'); ?>" alt="">
                 </div>
                 <div class="main-bannerStatic__text">
-                    <p>contáctanos</p>
+                    <p><?php echo get_theme_mod('contact-banner_text'); ?></p>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="main-contact__text">
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            <?php echo get_theme_mod('home_contacto_info'); ?>
                         </p>
                     </div>
                     <div class="main-contact__redes">
@@ -48,7 +48,7 @@
                             </div>
                             <div class="main-contact__redes--link">
                                 <p>Correo electrónico</p>
-                                <a href="mailto:info@must-have.com">info@must-have.com</a>
+                                <a href="mailto:<?php echo get_theme_mod('home_contacto_email'); ?>"><?php echo get_theme_mod('home_contacto_email'); ?></a>
                             </div>
                         </div>
                         <div class="main-contact__redes--item">
@@ -57,7 +57,7 @@
                             </div>
                             <div class="main-contact__redes--link">
                                 <p>Teléfono</p>
-                                <a href="tel:57 (4) 444 00 09">57 (4) 444 00 09</a>
+                                <a href="tel:<?php echo get_theme_mod('home_contacto_phone'); ?>"><?php echo get_theme_mod('home_contacto_phone'); ?></a>
                             </div>
                         </div>
                         <div class="main-contact__redes--item">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="main-contact__redes--link">
                                 <p>Ubicación</p>
-                                <a href="#">Calle 78 #59 - 24, Medellín-Colombia</a>
+                                <a href="<?php echo get_theme_mod('home_contacto_url_direc'); ?>"><?php echo get_theme_mod('home_contacto_text_direc'); ?></a>
                             </div>
                         </div>
                     </div>

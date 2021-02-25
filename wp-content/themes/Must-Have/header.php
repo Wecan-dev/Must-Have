@@ -64,7 +64,7 @@
 </head>
 <body>
 
-<header id="header" class="header <?php if(is_home()){echo 'header-home';} ?>">
+<header id="header" class="header <?php if(is_home() ){echo 'header-home';} ?>">
   <nav class="navbar navbar-expand-lg navbar-fixed-js" id="navbar">
     <button class="navbar-buttonModal  border-0 hamburger--elastic ml-autos" data-toggle="modal" data-target="#staticBackdrop">
         <span class="hamburger-box">
@@ -73,25 +73,109 @@
       </button>
     <div class="main-brand">
       <a itemprop="url" class="navbar-brand" href="<?php bloginfo('url'); ?>/">
-        <img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-w.png" alt="" />
+        <?php if (is_home()) : ?>
+          <img id="logoHeader" class="logoChange1" src="<?php echo get_template_directory_uri();?>/assets/img/logo-w.png" alt="" />
+          <img id="logoHeader" class="logoChange2" src="<?php echo get_template_directory_uri();?>/assets/img/Logo-must.png" alt="" />
+        <?php else : ?>
+          <img id="logoHeader" src="<?php echo get_template_directory_uri();?>/assets/img/Logo-must.png" alt="" />
+        <?php endif; ?>
       </a>
       <div class="iconNav-respon d-flex d-lg-none">
         <div class="content-dropdownUser">
+        <?php if (is_user_logged_in() == NULL){ ?>
+            <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img  src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/login">Login</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/registro">Registrarse</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/vende-aqui">Vende aquí</a>
+            </div>
+          <?php }else{ ?>  
             <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Mi cuenta</a>
+              <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
             </div>
+          <?php } ?> 
           </div>
           <a class="icon-nav" href="#">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1161.png" alt="">
-          </a>
-          <a class="icon-nav" href="#">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-929.png" alt="">
-          </a>  
+            <p class="mini-cart"><?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?></p>
+          </a> 
+          <div class="content-dropdownCart">
+            <a class="icon-nav dropdown-toggle" href="#" role="button" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-929.png" alt="">
+              <p class="mini-cart"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownCart">
+              <div class="dropdown-menu__content">
+                <div class="dropdown-menu__title">
+                  <p>Tu carrito de compras</p>
+                </div>
+                <div class="dropdown-menu__item">
+                  <div class="dropdown-menu__product">
+                    <?php
+                      foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+                        $_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+                        $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+
+                        if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+                          $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
+                          ?>
+                          <div class="woocommerce-cart-form__cart-item d-flex <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+
+                            <div class="product-thumbnail" style="height:123px; width:100px; margin-right: 15px;">
+                              <?php
+                              $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+
+                              if ( ! $product_permalink ) {
+                                echo $thumbnail; // PHPCS: XSS ok.
+                              } else {
+                                printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
+                              }?>
+                            </div>
+                          <div>
+                          <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+                          <?php
+                          if ( ! $product_permalink ) {
+                            echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
+                          } else {
+                            echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
+                          }
+
+                          do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+
+                          // Meta data.
+                          echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
+                          ?>
+                          </td>
+                          <td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+                            <p>	Cantidad:  <?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity',  sprintf( '%s', $cart_item['quantity'] ) , $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> </p>
+                          </td>
+                            <p>Precio: <?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok. ?></p>
+                        </div>
+                      </div>
+                    <?php
+                    }
+                    }
+                    ?>
+                    
+                  </div>
+                  <div class="order-total ">
+                      <th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+                      <td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
+                  </div>
+                    <div class="wc-proceed-to-checkout">
+                      <a href="<?php bloginfo('url') ?>/carrito">Ir al proceso de compra</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div> 
       </div>
       <button class="navbar-toggler  border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
         type="button">
@@ -103,7 +187,7 @@
     <div class="navbar-collapse offcanvas-collapse">
       <div class="collapse-fixed__content d-none d-lg-flex">
         <a href="<?php bloginfo('url'); ?>/">Inicio</a>
-        <a href="#">Upcycling mood </a>
+        <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood </a>
         <a href="<?php bloginfo('url'); ?>/categorias">Categorías</a>
       </div>
       <ul class="navbar-nav ">
@@ -112,44 +196,130 @@
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         </form>
         <div class="content-dropdownUser d-none d-lg-flex">
-          <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownUser">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <?php if (is_user_logged_in() == NULL){ ?>
+            <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/login">Login</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/registro">Registrarse</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/vende-aqui">Vende aquí</a>
+            </div>
+          <?php }else{ ?>  
+            <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Mi cuenta</a>
+              <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
+            </div>
+          <?php } ?> 
         </div>
         <a class="icon-nav d-none d-lg-flex" href="#">
           <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1161.png" alt="">
+          <p class="mini-cart"><?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?></p>
         </a>
-        <a class="icon-nav d-none d-lg-flex" href="#">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-929.png" alt="">
-        </a>  
+        <div class="content-dropdownCart d-none d-lg-flex">
+          <?php $contadorCart = WC()->cart->get_cart_contents_count(); ?>
+            <?php if ($contadorCart == 0 ) : ?>
+              <a class="icon-nav" role="button">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-929.png" alt="">
+                <p class="mini-cart"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
+              </a>
+            <?php else : ?>
+              <a class="icon-nav dropdown-toggle d-none d-lg-flex"  href="#" role="button" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-929.png" alt="">
+                <p class="mini-cart"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
+              </a>
+            <?php endif; ?>
+          <div class="dropdown-menu" aria-labelledby="dropdownCart">
+            <div class="dropdown-menu__content">
+              <div class="dropdown-menu__title">
+                <p>Tu carrito de compras</p>
+              </div>
+              <div class="dropdown-menu__item">
+                <div class="dropdown-menu__product">
+                  <?php
+                    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+                      $_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+                      $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+
+                      if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+                        $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
+                        ?>
+                        <div class="woocommerce-cart-form__cart-item d-flex <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+
+                          <div class="product-thumbnail" style="height:123px; width:100px; margin-right: 15px;">
+                            <?php
+                            $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+
+                            if ( ! $product_permalink ) {
+                              echo $thumbnail; // PHPCS: XSS ok.
+                            } else {
+                              printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
+                            }?>
+                          </div>
+                        <div>
+                        <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+                        <?php
+                        if ( ! $product_permalink ) {
+                          echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
+                        } else {
+                          echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
+                        }
+
+                        do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+
+                        // Meta data.
+                        echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
+                        ?>
+                        </td>
+                        <td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+                          <p>	Cantidad:  <?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity',  sprintf( '%s', $cart_item['quantity'] ) , $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> </p>
+                        </td>
+                          <p>Precio: <?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok. ?></p>
+                      </div>
+                    </div>
+                  <?php
+                  }
+                  }
+                  ?>
+                  
+                </div>
+                <div class="order-total ">
+                    <th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+                    <td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
+                </div>
+                  <div class="wc-proceed-to-checkout">
+                    <a href="<?php bloginfo('url') ?>/carrito">Ir al proceso de compra</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div> 
         <div class="navCollapse-respon d-block d-lg-none">
         <div class="modalInicio">
             <div class="modalInicio-content">
-              <a href="#">Inicio</a>
-              <a href="#">Upcycling mood</a>
+              <a href="<?php bloginfo('url'); ?>">Inicio</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood</a>
               <a class="" data-toggle="collapse" href="#collapseModal" role="button" aria-expanded="false" aria-controls="collapseModal">
                 Categorías
               </a>
               <div class="collapse" id="collapseModal">
                 <div class="collapseModal-content">
-                  <a href="#">Second chance</a>
-                  <a href="#">Upcycling</a>
-                  <a href="#">Productos sosteblibe</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/second-chance">Second chance</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos sosteblibe</a>
                 </div>
               </div>
             </div>          
           </div>
           <div class="modalLogin">
             <div class="modalLogin-content">
-              <a href="#">Log in</a>
-              <a href="#">Sell here</a>
-              <a href="#">Productos</a>
-              <a href="#">Contacto</a>
+              <a href="<?php echo get_home_url() ?>/login">Log in</a>
+              <a href="<?php echo get_home_url() ?>/vende-aqui">Sell here</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos</a>
+              <a href="<?php echo get_home_url() ?>/contactanos">Contacto</a>
             </div>          
           </div>
         </div>

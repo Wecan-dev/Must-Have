@@ -13,16 +13,16 @@
               <a href="<?php bloginfo('url'); ?>/"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo-footer.png" alt=""></a>
             </div>
             <div class="content-footer__text--text">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p><?php echo get_theme_mod('home_contacto_info'); ?></p>
             </div>
             <div class="content-footer__redes--content">
-              <a target="_blank" href="#">
+              <a target="_blank" href="<?php echo get_theme_mod('home_contacto_youtube'); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/youtube.png" alt="">
               </a>
-              <a target="_blank" href="#">
+              <a target="_blank" href="<?php echo get_theme_mod('home_contacto_facebook'); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/path.png" alt="">
               </a>
-              <a target="_blank" href="#">
+              <a target="_blank" href="<?php echo get_theme_mod('home_contacto_insta'); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Icon-insta.png" alt="">
               </a>
             </div>
@@ -54,13 +54,13 @@
             </div>
             <div class="content-footer__contact--text">
               <div class="contact-footer__items">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-955.png" alt=""><a href="tel:57797599577">+57 797 599 577</a>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-955.png" alt=""><a href="tel:<?php echo get_theme_mod('home_contacto_phone'); ?>"><?php echo get_theme_mod('home_contacto_phone'); ?></a>
               </div>
               <div class="contact-footer__items">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-960.png" alt=""><a href="mailto:info@musthave.com">info@musthave.com</a>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-960.png" alt=""><a href="mailto:<?php echo get_theme_mod('home_contacto_email'); ?>"><?php echo get_theme_mod('home_contacto_email'); ?></a>
               </div>
               <div class="contact-footer__items">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1100.png" alt=""><a href="#">Calle 60 Nro 56 -124, Medellín Colombia</a>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1100.png" alt=""><a href="<?php echo get_theme_mod('home_contacto_url_direc'); ?>"><?php echo get_theme_mod('home_contacto_text_direc'); ?></a>
               </div>
             </div>
           </div>
@@ -85,26 +85,26 @@
         <div class="modal-body">
           <div class="modalInicio">
             <div class="modalInicio-content">
-              <a href="#">Inicio</a>
-              <a href="#">Upcycling mood</a>
+              <a href="<?php bloginfo('url'); ?>">Inicio</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood</a>
               <a class="" data-toggle="collapse" href="#collapseModal" role="button" aria-expanded="false" aria-controls="collapseModal">
                 Categorías
               </a>
               <div class="collapse" id="collapseModal">
                 <div class="collapseModal-content">
-                  <a href="#">Second chance</a>
-                  <a href="#">Upcycling</a>
-                  <a href="#">Productos sosteblibe</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/second-chance">Second chance</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
+                  <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos sosteblibe</a>
                 </div>
               </div>
             </div>          
           </div>
           <div class="modalLogin">
             <div class="modalLogin-content">
-              <a href="#">Log in</a>
-              <a href="#">Sell here</a>
-              <a href="#">Productos</a>
-              <a href="#">Contacto</a>
+              <a href="<?php echo get_home_url() ?>/login">Log in</a>
+              <a href="<?php echo get_home_url() ?>/vende-aqui">Sell here</a>
+              <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos</a>
+              <a href="<?php echo get_home_url() ?>/contactanos">Contacto</a>
             </div>          
           </div>
         </div>
@@ -115,6 +115,15 @@
 
 
   <script>
+
+
+document.getElementById('first-name').placeholder='Nombre';
+document.getElementById('last-name').placeholder='Apellido';
+document.getElementById('reg_email').placeholder='Correo electrónico';
+document.getElementById('shop-phone').placeholder='Teléfono';
+document.getElementById('reg_password').placeholder='Contraseña';
+document.getElementById('company-name').placeholder='Nombre de la tienda';
+document.getElementById('seller-url').placeholder='URL de la tienda';
 
 document.getElementById('billing_first_name').placeholder='Nombre *';
 document.getElementById('billing_last_name').placeholder='Apellido *';
@@ -132,13 +141,7 @@ document.getElementById('shipping_city').placeholder='Localidad / Ciudad';
 document.getElementById('shipping_state').placeholder='Estado / Municipio';
 document.getElementById('shipping_postcode').placeholder='Código postal';
 
-document.getElementById('first-name').placeholder='Nombre';
-document.getElementById('last-name').placeholder='Apellido';
-document.getElementById('reg_email').placeholder='Correo electrónico';
-document.getElementById('shop-phone').placeholder='Teléfono';
-document.getElementById('reg_password').placeholder='Contraseña';
-document.getElementById('company-name').placeholder='Nombre de la tienda';
-document.getElementById('seller-url').placeholder='URL de la tienda';
+
 
 
   </script>

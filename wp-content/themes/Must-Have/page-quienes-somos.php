@@ -1,24 +1,39 @@
 <?php get_header(); ?>
 
+<?php 
+$bannerAbout1 = get_theme_mod('about-banner_img1');
+$bannerAbout2 = get_theme_mod('about-banner_img2');
+$bannerAbout3 = get_theme_mod('about-banner_img3');
+
+?>
+
 <section>
     <div class="bannerAbout">
         <div class="main-bannerAbout">
             <div class="main-bannerAbout__slider">
-                <div class="main-bannerAbout__content">
-                    <div class="main-bannerAbout__img">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/banner-about.png" alt="">
+            <?php if($bannerAbout1): ?>
+                    <div class="main-bannerAbout__content">
+                        <div class="main-bannerAbout__img">
+                                <img src="<?php echo $bannerAbout1; ?>" alt="">  
+                        </div>
                     </div>
-                </div>
-                <div class="main-bannerAbout__content">
-                    <div class="main-bannerAbout__img">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/banner-about.png" alt="">
+                <?php endif;?>
+                <?php if($bannerAbout2): ?>
+                    <div class="main-bannerAbout__content">
+                        <div class="main-bannerAbout__img">
+                            <?php if($bannerAbout2): ?>
+                                <img src="<?php echo $bannerAbout2; ?>" alt="">
+                            <?php endif;?>
+                        </div>
                     </div>
-                </div>
-                <div class="main-bannerAbout__content">
-                    <div class="main-bannerAbout__img">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/banner-about.png" alt="">
+                <?php endif;?>
+                <?php if($bannerAbout3): ?>
+                    <div class="main-bannerAbout__content">
+                        <div class="main-bannerAbout__img">
+                                <img src="<?php echo $bannerAbout3; ?>" alt="">
+                        </div>
                     </div>
-                </div>
+                <?php endif;?>
             </div>
         </div>
     </div>
@@ -31,16 +46,16 @@
             <div class="main-about__content">
                 <div class="main-about__img">
                     <div class="main-about__img--content">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/image-quienes-somos.png" alt="">
+                        <img src="<?php echo get_theme_mod('about-content_img'); ?>" alt="">
                     </div>
                 </div>
                 <div class="main-about__item">
                     <div class="main-about__title">
-                        <p>Quienes somos</p>
+                        <p><?php echo get_theme_mod('about-content_title'); ?></p>
                     </div>
                     <div class="main-about__text">
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <?php echo get_theme_mod('about-content_text'); ?>
                         </p>
                     </div>
                 </div>
@@ -54,31 +69,31 @@
         <div class="main-razonesAbout">
             <div class="main-razonesAbout__content">
                 <div class="main-razonesAbout__title">
-                    <p>Razones para que compres con nosotros</p>
+                    <p><?php echo get_theme_mod('about-razones_title'); ?></p>
                 </div>
                 <div class="main-razonesAbout__items">
                     <div class="items-razonesAbout__content">
                         <div class="items-razonesAbout__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/truck-1.png" alt="">
+                            <img src="<?php echo get_theme_mod('about-razones_item1_img'); ?>" alt="">
                         </div>
                         <div class="items-razonesAbout__text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p><?php echo get_theme_mod('about-razones_item1_text'); ?></p>
                         </div>
                     </div>
                     <div class="items-razonesAbout__content">
                         <div class="items-razonesAbout__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/pay.png" alt="">
+                            <img src="<?php echo get_theme_mod('about-razones_item2_img'); ?>" alt="">
                         </div>
                         <div class="items-razonesAbout__text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p><?php echo get_theme_mod('about-razones_item2_text'); ?></p>
                         </div>
                     </div>
                     <div class="items-razonesAbout__content">
                         <div class="items-razonesAbout__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/phone-1.png" alt="">
+                            <img src="<?php echo get_theme_mod('about-razones_item3_img'); ?>" alt="">
                         </div>
                         <div class="items-razonesAbout__text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p><?php echo get_theme_mod('about-razones_item3_text'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -100,58 +115,23 @@
                     </div>
                 </div>
                 <div class="main-team__slider">
-                    <div class="team-slider__content">
-                        <div class="team-slider__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team1.png" alt="">
-                        </div>
-                        <div class="team-slider__text">
-                            <div class="team-slider__name">
-                                <p>Margarita Osorio</p>
+                    <?php $args = array( 'post_type' => 'Team');?>   
+                    <?php $loop = new WP_Query( $args ); ?>
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <div class="team-slider__content">
+                            <div class="team-slider__img">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                             </div>
-                            <div class="team-slider__details">
-                                <p>Diseñadora de vestuario</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-slider__content">
-                        <div class="team-slider__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team2.png" alt="">
-                        </div>
-                        <div class="team-slider__text">
-                            <div class="team-slider__name">
-                                <p>Carlos Martinez</p>
-                            </div>
-                            <div class="team-slider__details">
-                                <p>Gerente</p>
+                            <div class="team-slider__text">
+                                <div class="team-slider__name">
+                                    <p> <?php the_title(); ?></p>
+                                </div>
+                                <div class="team-slider__details">
+                                    <p><?php the_field( 'cargo_team' ); ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-slider__content">
-                        <div class="team-slider__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team3.png" alt="">
-                        </div>
-                        <div class="team-slider__text">
-                            <div class="team-slider__name">
-                                <p>María Cabrera</p>
-                            </div>
-                            <div class="team-slider__details">
-                                <p>Diseñadora</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-slider__content">
-                        <div class="team-slider__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team2.png" alt="">
-                        </div>
-                        <div class="team-slider__text">
-                            <div class="team-slider__name">
-                                <p>Carlos Martinez</p>
-                            </div>
-                            <div class="team-slider__details">
-                                <p>Gerente</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
             </div>
         </div>
