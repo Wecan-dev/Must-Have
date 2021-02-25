@@ -1337,6 +1337,7 @@
 	.main-contentArchive__products{
 		width: 100%;
 		padding: 10px 0;
+		justify-content: space-around;
 	}
 	.main-listProducts__item{
 		margin: 0 0 40px;
@@ -1369,6 +1370,9 @@
 	}
 	.dropdown-menu__item .wc-proceed-to-checkout{
 		display: flex;
+	}
+	.iconNav-respon{
+		align-items: center;
 	}
 	
 
