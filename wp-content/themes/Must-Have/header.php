@@ -187,7 +187,13 @@
     <div class="navbar-collapse offcanvas-collapse">
       <div class="collapse-fixed__content d-none d-lg-flex">
         <a href="<?php bloginfo('url'); ?>/">Inicio</a>
-        <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood </a>
+        <div class="dropdownUpcycling__content">
+          <a class="dropdown-toggle" id="dropdownUpcycling" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Upcycling mood </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownUpcycling">
+            <a class="dropdown-item" href="<?php echo get_home_url() ?>/quienes-somos">Quienes somos</a>
+            <a class="dropdown-item" href="<?php echo get_home_url() ?>/contactanos">Contáctanos</a>
+          </div>
+        </div>
         <a href="<?php bloginfo('url'); ?>/categorias">Categorías</a>
       </div>
       <ul class="navbar-nav ">
@@ -298,18 +304,25 @@
           </div>
         </div> 
         <div class="navCollapse-respon d-block d-lg-none">
-        <div class="modalInicio">
+          <div class="modalInicio">
             <div class="modalInicio-content">
               <a href="<?php bloginfo('url'); ?>">Inicio</a>
-              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood</a>
-              <a class="" data-toggle="collapse" href="#collapseModal" role="button" aria-expanded="false" aria-controls="collapseModal">
+              <a class="" data-toggle="collapse" href="#collapseModal1" role="button" aria-expanded="false" aria-controls="collapseModal">Upcycling mood</a>
+              <div class="collapse" id="collapseModal1">
+                <div class="collapseModal-content">
+                  <a href="<?php bloginfo('url'); ?>/quienes-somos">Quienes Somos</a>
+                  <a href="<?php bloginfo('url'); ?>/contactanos">Contáctanos</a>
+                </div>
+              </div>
+              <a class="" data-toggle="collapse" href="#collapseModal2" role="button" aria-expanded="false" aria-controls="collapseModal">
                 Categorías
               </a>
-              <div class="collapse" id="collapseModal">
+              <div class="collapse" id="collapseModal2">
                 <div class="collapseModal-content">
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/second-chance">Second chance</a>
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos sosteblibe</a>
+                  <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+                  foreach($wcatTerm as $wcatTer) : ?>
+                    <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
+                  <?php endforeach; ?>
                 </div>
               </div>
             </div>          

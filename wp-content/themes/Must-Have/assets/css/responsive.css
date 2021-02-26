@@ -803,6 +803,12 @@
 		display: flex;
     	align-items: center;
 	}
+	.logoChange1{
+		display: none !important;
+	}
+	.logoChange2{
+		display: block !important;
+	}
 	.iconNav-respon .content-dropdownUser{
 		margin-left: 5px;
 	}
@@ -1509,6 +1515,12 @@
 	}
 	.woocommerce-checkout-review-order .product-name.image-product img{
 		width: 380px;
+	}
+	.content-dropdownUser{
+		margin-left: 10px;
+	}
+	.icon-nav{
+		margin-left: 5px;
 	}
 }
 

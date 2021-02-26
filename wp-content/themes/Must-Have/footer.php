@@ -84,15 +84,22 @@
           <div class="modalInicio">
             <div class="modalInicio-content">
               <a href="<?php bloginfo('url'); ?>">Inicio</a>
-              <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling mood</a>
-              <a class="" data-toggle="collapse" href="#collapseModal" role="button" aria-expanded="false" aria-controls="collapseModal">
+              <a class="" data-toggle="collapse" href="#collapseModal1" role="button" aria-expanded="false" aria-controls="collapseModal">Upcycling mood</a>
+              <div class="collapse" id="collapseModal1">
+                <div class="collapseModal-content">
+                  <a href="<?php bloginfo('url'); ?>/quienes-somos">Quienes Somos</a>
+                  <a href="<?php bloginfo('url'); ?>/contactanos">Contáctanos</a>
+                </div>
+              </div>
+              <a class="" data-toggle="collapse" href="#collapseModal2" role="button" aria-expanded="false" aria-controls="collapseModal">
                 Categorías
               </a>
-              <div class="collapse" id="collapseModal">
+              <div class="collapse" id="collapseModal2">
                 <div class="collapseModal-content">
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/second-chance">Second chance</a>
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/upcycling">Upcycling</a>
-                  <a href="<?php bloginfo('url'); ?>/categoria-producto/productos-sostenibles">Productos sosteblibe</a>
+                  <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+                  foreach($wcatTerm as $wcatTer) : ?>
+                    <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
+                  <?php endforeach; ?>
                 </div>
               </div>
             </div>          

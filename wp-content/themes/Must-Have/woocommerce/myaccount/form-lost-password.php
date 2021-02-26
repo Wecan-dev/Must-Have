@@ -19,16 +19,51 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_lost_password_form' );
 ?>
-
-<form method="post" class="woocommerce-ResetPassword lost_reset_password">
+<section class="">
+    <div class="registro">
+        <div class="main-registro">
+            <div class="main-registro__content">
+                <div class="main-registro__img">
+                    <div class="main-registro__img--content main-login__img--content">
+                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-forgot-password.png" alt="">
+                    </div>
+                </div>
+                <div class="main-registro__item">
+                    <div class="main-registro__text">
+                        <div class="main-registro__subtitle">
+                            <p>tus favoritos</p>
+                        </div>
+                        <div class="main-registro__title">
+                            <h1>lo quieres, lo puedes tener</h1>
+                        </div>
+                        <div class="boton-registro d-none d-lg-flex">
+                        </div>
+                    </div>
+                    <div class="main-registro__form">
+                        <div class="main-registro__form--title">
+                            <p>Recupera tu contraseña</p>
+                        </div>
+                        <div class="main-registro__form--content">
+							<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+								<input placeholder="Correo electrónico" class="woocommerce-Input woocommerce-Input--text input-text" type="text" name="user_login" id="user_login" autocomplete="username" />
+							</p>
+                            <p class="woocommerce-form-row form-row">
+								<input type="hidden" name="wc_reset_password" value="true" />
+								<button type="submit" class="woocommerce-Button button" value="<?php esc_attr_e( 'Reset password', 'woocommerce' ); ?>"><?php esc_html_e( 'Reset password', 'woocommerce' ); ?></button>
+							</p> 
+                            <a href="<?php bloginfo('url') ?>/mi-cuenta" class="create-new">Crear una nueva cuenta <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<form method="post" class="woocommerce-ResetPassword lost_reset_password d-none">
 
 	<p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'woocommerce' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
 
-	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-		<label for="user_login"><?php esc_html_e( 'Username or email', 'woocommerce' ); ?></label>
-		<input class="woocommerce-Input woocommerce-Input--text input-text" type="text" name="user_login" id="user_login" autocomplete="username" />
-	</p>
-
+	
 	<div class="clear"></div>
 
 	<?php do_action( 'woocommerce_lostpassword_form' ); ?>
