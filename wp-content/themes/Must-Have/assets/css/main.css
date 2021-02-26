@@ -3835,6 +3835,9 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .sidebarArchive-content__item .bapf_body ul li.checked label{
     font-weight: 600;
 }
+.registro .woocommerce-notices-wrapper{
+    padding: 0;
+}
 
 
 

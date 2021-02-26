@@ -88,7 +88,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
               <a class="dropdown-item" href="<?php echo get_home_url() ?>/login">Login</a>
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/registro">Registrarse</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Registrarse</a>
               <a class="dropdown-item" href="<?php echo get_home_url() ?>/vende-aqui">Vende aquí</a>
             </div>
           <?php }else{ ?>  
@@ -202,7 +202,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
               <a class="dropdown-item" href="<?php echo get_home_url() ?>/login">Login</a>
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/registro">Registrarse</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Registrarse</a>
               <a class="dropdown-item" href="<?php echo get_home_url() ?>/vende-aqui">Vende aquí</a>
             </div>
           <?php }else{ ?>  

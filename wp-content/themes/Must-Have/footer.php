@@ -1,7 +1,5 @@
 
-<?php if($descripcion): ?>
-          	<p> <?php echo $descripcion; ?></p>
-		  <?php endif;?>
+
 
 
 <footer>
