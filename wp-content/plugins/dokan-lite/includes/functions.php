@@ -7,7 +7,7 @@
  * @return void
  */
 function dokan_admin_menu_position() {
-    return apply_filters( 'dokan_menu_position', 17 );
+    return apply_filters( 'dokan_menu_position', '55.4' );
 }
 
 /**
@@ -2274,7 +2274,7 @@ function dokan_product_search_by_sku( $where ) {
 
     $getdata = wp_unslash( $_GET );
 
-    if ( ! isset( $getdata['product_search_name'] ) || empty( $getdata['product_search_name'] ) || ! isset( $getdata['dokan_product_search_nonce'] ) || ! wp_verify_nonce( wc_clean( $getdata['dokan_product_search_nonce'] ), 'dokan_product_search' ) ) {
+    if ( empty( $getdata['product_search_name'] ) || ! isset( $getdata['dokan_product_search_nonce'] ) || ! wp_verify_nonce( sanitize_key( $getdata['dokan_product_search_nonce'] ), 'dokan_product_search' ) ) {
         return $where;
     }
 
@@ -3692,7 +3692,7 @@ if ( ! function_exists( 'dokan_get_seller_status_count' ) ) {
     function dokan_get_seller_status_count() {
         $active_users = new WP_User_Query(
             [
-                'role'       => 'seller',
+                'role__in'       => [ 'seller', 'administrator' ],
                 'meta_key'   => 'dokan_enable_selling',
                 'meta_value' => 'yes',
                 'fields'     => 'ID',
@@ -3982,7 +3982,7 @@ function dokan_format_date( $date = '', $format = false ) {
     }
 
     // if date is not timestamp, convert it to timestamp
-    if ( ! is_numeric( $date ) ) {
+    if ( ! is_numeric( $date ) && strtotime( $date ) ) {
         $date = dokan_current_datetime()->modify( $date )->getTimestamp();
     }
 

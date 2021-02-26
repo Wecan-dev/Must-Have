@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'db_must-have' );
+define( 'DB_NAME', 'db_musthave' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'adminwecan' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '123456' );
+define( 'DB_PASSWORD', '_*8gTYWqM9FHU' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -37,6 +37,19 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 define( 'FS_METHOD', 'direct' );
+
+// This enables debugging.
+define( 'WP_DEBUG', true );
+
+define('WP_MEMORY_LIMIT', '256M');
+
+define('WP_CRON_LOCK_TIMEOUT', 120);
+
+define('AUTOSAVE_INTERVAL', 300);
+
+define('WP_POST_REVISIONS', 5);
+
+define('EMPTY_TRASH_DAYS', 7);
 
 /**#@+
  * Authentication Unique Keys and Salts.

@@ -68,7 +68,7 @@ class Settings {
 
         $_post_data = wp_unslash( $_POST );
 
-        if ( ! wp_verify_nonce( sanitize_text_field( $_post_data['nonce'] ), 'dokan_admin' ) ) {
+        if ( ! isset( $_post_data['nonce'] ) || ! wp_verify_nonce( sanitize_key( $_post_data['nonce'] ), 'dokan_admin' ) ) {
             wp_send_json_error( __( 'Invalid nonce', 'dokan-lite' ) );
         }
 
@@ -96,7 +96,7 @@ class Settings {
 
             $_post_data = wp_unslash( $_POST );
 
-            if ( ! wp_verify_nonce( sanitize_text_field( $_post_data['nonce'] ), 'dokan_admin' ) ) {
+            if ( ! isset( $_post_data['nonce'] ) || ! wp_verify_nonce( sanitize_key( $_post_data['nonce'] ), 'dokan_admin' ) ) {
                 throw new DokanException( 'dokan_settings_invalid_nonce', __( 'Invalid nonce', 'dokan-lite' ), 403 );
             }
 
@@ -357,6 +357,13 @@ class Settings {
                     'type'    => 'checkbox',
                     'default' => 'off',
                 ],
+                'store_products_per_page' => [
+                    'name'    => 'store_products_per_page',
+                    'label'   => __( 'Store Products Per Page', 'dokan-lite' ),
+                    'desc'    => __( 'Set how many products to display per page on the vendor store page. It will affect only if the vendor isn\'t set this value on their vendor setting page.', 'dokan-lite' ),
+                    'type'    => 'number',
+                    'default' => '12',
+                ],
             ]
         );
 
@@ -435,7 +442,7 @@ class Settings {
                 'order_status_change'       => [
                     'name'    => 'order_status_change',
                     'label'   => __( 'Order Status Change', 'dokan-lite' ),
-                    'desc'    => __( 'Allow/Disallow vendor to update order status', 'dokan-lite' ),
+                    'desc'    => __( 'Allow vendor to update order status', 'dokan-lite' ),
                     'type'    => 'checkbox',
                     'default' => 'on',
                 ],
@@ -506,7 +513,6 @@ class Settings {
                 'reg_tc_page'   => [
                     'name'        => 'reg_tc_page',
                     'label'       => __( 'Terms and Conditions Page', 'dokan-lite' ),
-                    //'desc'        => __( 'Select a page to show Terms and Conditions', 'dokan-lite' ),
                     'type'        => 'select',
                     'placeholder' => __( 'Select page', 'dokan-lite' ),
                     'options'     => $pages_array,
