@@ -47,16 +47,16 @@ $category_id = get_queried_object_id();
 
 
 <header class="woocommerce-products-header">
-<div class="archive-tabs">
-  <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
-  foreach($wcatTerm as $wcatTer) : ?>
-  
-    <div class="archive-tabs__items <?php if ($category_id == $wcatTer->term_id) {echo 'active';} ?> ">
-      <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
-    </div>
- 
-  <?php endforeach; ?>
-</div>
+	<div class="archive-tabs">
+	<?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+	foreach($wcatTerm as $wcatTer) : ?>
+	
+		<div class="archive-tabs__items <?php if ($category_id == $wcatTer->term_id) {echo 'active';} ?> ">
+		<a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
+		</div>
+	
+	<?php endforeach; ?>
+	</div>
 </header>
 
 
@@ -75,7 +75,7 @@ $category_id = get_queried_object_id();
 						<p></p>
 					</div>
 					<div class="sidebarArchive-content__content">
-						<?php echo do_shortcode('[br_filter_single filter_id=140]'); ?>
+						<?php echo do_shortcode('[br_filter_single filter_id=149]'); ?>
 					</div>
 				</div>
 				<div class="sidebarArchive-content__item">

@@ -604,7 +604,7 @@ p{
 .logoChange2{
     display: none;
 }
-.collapse-fixed__content a{
+.collapse-fixed__content > a{
     width: max-content;
     font-size: 14px;
     font-weight: 500;
@@ -618,10 +618,10 @@ p{
     margin-left: 22.5px;
     position: relative;
 }
-.collapse-fixed__content a:first-child{
+.collapse-fixed__content > a:first-child{
     margin-left: 57px;
 }
-.collapse-fixed__content a:hover{
+.collapse-fixed__content > a:hover{
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: bold;
@@ -633,7 +633,47 @@ p{
     color: #26292b;
     transition: .2s ease-in-out;
 }
-.collapse-fixed__content a:hover::before{
+.collapse-fixed__content > a:hover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border: solid 3px #8ae8a7;
+    bottom: -7px;
+    transition: .2s ease-in-out;
+}
+.dropdownUpcycling__content{
+    position: relative;
+    display: flex;
+}
+.dropdownUpcycling__content > a{
+    width: max-content;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #26292b !important;
+    transition: .2s ease-in-out;
+    margin-left: 22.5px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdownUpcycling__content > a:hover{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #26292b;
+    transition: .2s ease-in-out;
+}
+.dropdownUpcycling__content > a:hover::before{
     position: absolute;
     content: '';
     width: 100%;
@@ -1092,6 +1132,12 @@ p{
     text-align: center;
     color: #000000;
 }
+.main-bestVendido__img img{
+    width: 318px;
+    height: 417px;
+    object-fit: cover;
+}
+
 
 
 /*-- Upcycling --*/
@@ -1410,7 +1456,7 @@ p{
     display: none !important;
 }
 #\31 3 > div{
-    padding: 150px 0 100px;
+    padding: 0;
 }
 .main-registro__form--content form{
     margin: 0 !important;
@@ -1435,6 +1481,12 @@ p{
 }
 #\31 4 > div.woocommerce-notices-wrapper{
     padding: 0;
+}
+#\31 3 > div > div.title-termsConditions{
+    display: none;
+}
+#\31 3 > div > div.text-termsConditions > div > div{
+    display: none;
 }
 
 
@@ -1474,6 +1526,8 @@ p{
 .main-bannerAbout__slider .slick-next:before{
     opacity: 1;
     color: #353636;
+    content: "\f105";
+    font-family: 'FontAwesome';
 }
 .main-about__content{
     display: flex;
@@ -1599,6 +1653,8 @@ p{
 .main-team__slider .slick-prev::before{
     color: #353636;
     font-size: 30px;
+    content: "\f104";
+    font-family: 'FontAwesome';
 }
 .main-team__slider .slick-next{
     width: 32px;
@@ -1616,6 +1672,8 @@ p{
 .main-team__slider .slick-next::before{
     color: #353636;
     font-size: 30px;
+    content: "\f105";
+    font-family: 'FontAwesome';
 }
 .team-slider__img img{
     width: 100%;

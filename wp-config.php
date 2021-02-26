@@ -44,7 +44,7 @@ define( 'DB_COLLATE', '' );
 define( 'FS_METHOD', 'direct' );
 
 // This enables debugging.
-define( 'WP_DEBUG', true );
+//define( 'WP_DEBUG', true );
 
 define('WP_MEMORY_LIMIT', '256M');
 

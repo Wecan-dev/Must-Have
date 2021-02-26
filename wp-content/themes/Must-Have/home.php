@@ -45,6 +45,7 @@
 <!-- Categorías -->
 
 <section>
+
   <div class="categoria">
     <div class="main-categoria">
       <div class="main-categoria__content">
@@ -52,33 +53,18 @@
           <p>categorías</p>
         </div>
         <div class="main-categoria__items">
-          <div class="item-categoria__content">
-            <div class="item-categoria__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
+        <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+          foreach($wcatTerm as $wcatTer) : ?>
+            <div class="item-categoria__content">
+              <div class="item-categoria__img">
+                <img src="<?php echo termmeta_value_img('imagen_etiqueta_home', $wcatTer->term_id);?>" alt="">
+              </div>
+              <div class="item-categoria__btn">
+              <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
+              </div>
+              <div class="item-categoria__mask"></div>
             </div>
-            <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[26]">Second chance</a>
-            </div>
-            <div class="item-categoria__mask"></div>
-          </div>
-          <div class="item-categoria__content">
-            <div class="item-categoria__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg1.png" alt="">
-            </div>
-            <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[28]">Upcycling</a>
-            </div>
-            <div class="item-categoria__mask"></div>
-          </div>
-          <div class="item-categoria__content">
-            <div class="item-categoria__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/image-ctg2.png" alt="">
-            </div>
-            <div class="item-categoria__btn">
-              <a href="<?php bloginfo('url'); ?>/tienda/?filters=product_tag[27]">productos sostenibles</a>
-            </div>
-            <div class="item-categoria__mask"></div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
@@ -90,6 +76,7 @@
 
 <!-- Lo Más Vendido -->
 
+
 <section>
   <div class="bestVendido">
     <div class="main-bestVendido">
@@ -97,216 +84,104 @@
         <p>lo más vendido</p>
       </div>
       <div class="main-bestVendido__slider d-none d-lg-block">
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-            </div>
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
+      <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+          foreach($wcatTerm as $wcatTer) : ?>
+      <!--<?php   $args = array(
+				'post_type' => 'product',
+				'paged' => $paged,
+				'posts_per_page' => 12,     
+				'meta_key' => 'total_sales',
+				'orderby' => 'meta_value_num', 
+				/*'meta_query' => array(
+					array(
+						'key' => 'total_sales',
+						'value' => 0,
+						'compare' => '>'
+					)
+				),*/
+				'post_status' => 'publish',
+
+			);	?>	
+        <?php $loop = new WP_Query( $args ); ?>-->
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>	
+          <div class="main-bestVendido__content">
+            <div class="main-bestVendido__item">
+              <div class="main-bestVendido__img">
+                <img src="<?php the_post_thumbnail_url('full');?>" alt="">
               </div>
-              <div class="main-bestVendido__card--category">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-            </div>
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
+              <div class="main-bestVendido__card">
+                <div class="main-bestVendido__card--content">
+                  <div class="main-bestVendido__card--img">
+                    <img src="<?php the_post_thumbnail_url('full');?>" alt="">
+                  </div>
+                  <div class="main-bestVendido__card--name">
+                    <p><?php the_title() ?></p>
+                  </div>
+                  <div class="main-bestVendido__card--price">
+                    <p><?php echo $product->get_price_html(); ?></p>
+                  </div>
+                  <div class="main-bestVendido__card--btn">
+                    <a href="<?php the_permalink(); ?>">comprar</a>
+                  </div>
                 </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
+                <div class="main-bestVendido__card--category">
+                  <p><?php echo $wcatTer->name ?></p>
                 </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category">
-                <p>Fashion</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-            </div>
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-            </div>
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php endwhile; ?>
+        <?php endforeach; ?>
       </div>
       <div class="main-bestVendido__slider--res d-block d-lg-none">
-      <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
+      <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+          foreach($wcatTerm as $wcatTer) : ?>
+      <!--<?php   $args = array(
+				'post_type' => 'product',
+				'paged' => $paged,
+				'posts_per_page' => 12,     
+				'meta_key' => 'total_sales',
+				'orderby' => 'meta_value_num', 
+				/*'meta_query' => array(
+					array(
+						'key' => 'total_sales',
+						'value' => 0,
+						'compare' => '>'
+					)
+				),*/
+				'post_status' => 'publish',
+
+			);	?>	
+        <?php $loop = new WP_Query( $args ); ?>-->
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>	
+          <div class="main-bestVendido__content">
+            <div class="main-bestVendido__item">
+              <div class="main-bestVendido__card">
+                <div class="main-bestVendido__card--content">
+                  <div class="main-bestVendido__card--img">
+                    <img src="<?php the_post_thumbnail_url('full');?>" alt="">
+                  </div>
+                  <div class="main-bestVendido__card--name">
+                    <p><?php the_title() ?></p>
+                  </div>
+                  <div class="main-bestVendido__card--category d-block d-lg-none">
+                    <p><?php echo $wcatTer->name ?></p>
+                  </div>
+                  <div class="main-bestVendido__card--price">
+                    <p><?php echo $product->get_price_html(); ?></p>
+                  </div>
+                  <div class="main-bestVendido__card--btn">
+                    <a href="<?php the_permalink(); ?>">comprar</a>
+                  </div>
                 </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
+                <div class="main-bestVendido__card--category d-none d-lg-block">
+                  <p><?php echo $wcatTer->name ?></p>
                 </div>
-                <div class="main-bestVendido__card--category d-block d-lg-none">
-                  <p>Fashion</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category d-none d-lg-block">
-                <p>Fashion</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--category d-block d-lg-none">
-                  <p>Fashion</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category d-none d-lg-block">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--category d-block d-lg-none">
-                  <p>Fashion</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category d-none d-lg-block">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-bestVendido__content">
-          <div class="main-bestVendido__item">
-            <div class="main-bestVendido__card">
-              <div class="main-bestVendido__card--content">
-                <div class="main-bestVendido__card--img">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/slider-vendido1.png" alt="">
-                </div>
-                <div class="main-bestVendido__card--name">
-                  <p>Chaqueta estampada</p>
-                </div>
-                <div class="main-bestVendido__card--category d-block d-lg-none">
-                  <p>Fashion</p>
-                </div>
-                <div class="main-bestVendido__card--price">
-                  <p>$300.000</p>
-                </div>
-                <div class="main-bestVendido__card--btn">
-                  <a href="">comprar</a>
-                </div>
-              </div>
-              <div class="main-bestVendido__card--category d-none d-lg-block">
-                <p>Fashion</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php endwhile; ?>
+        <?php endforeach; ?>
       </div>
     </div>
   </div>
