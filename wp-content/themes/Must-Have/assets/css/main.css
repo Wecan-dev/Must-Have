@@ -3740,7 +3740,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     background-color: #6e6e6e;
 }
 .yith-wcwl-add-button a{
-    font-size: 1px;
+    font-size: 0px;
     color: transparent;
 }
 .yith-wcwl-add-button a i.fa-heart-o:before{
@@ -3762,11 +3762,75 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .sidebarArchive{
     width: 270px;
 }
+.main-contentArchive__items{
+    display: flex;
+    width: 80%;
+    padding: 0 50px 0 80px;
+    flex-direction: column;
+}
+.main-contentArchive__datos{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+.main-contentArchive__datos--btn a{
+    padding: 6px;
+    border-radius: 2px;
+}
+.main-contentArchive__datos--btn a.active{
+    background-color: #8ae8a7;
+}
 .main-contentArchive__products{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    padding: 0 50px 0 80px;
+}
+.main-listProducts__item.productList{
+    margin: 10px;
+    width: 47%;
+    display: flex;
+    border: 1px solid #e2e2e2;
+    height: 150px;
+    transition: .3s ease-in-out;
+}
+.main-listProducts__item.productList .main-listProducts__img{
+    width: 40%;
+}
+.main-listProducts__item.productList .main-listProducts__text{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-listProducts__item.productList .yith-wcwl-add-to-wishlist{
+    position: relative;
+}
+.main-listProducts__item.productList .main-listProducts__text a{
+    text-align: start;
+}
+.main-listProducts__item.productList .main-listProducts__img a{
+    height: 100%;
+}
+.main-listProducts__item.productList .main-listProducts__img img{
+    height: 100%; 
+}
+.main-listProducts__item.productList .btn-wishlist{
+    right: initial;
+    left: 10px;
+}
+.main-listProducts__item.productList:hover .main-listProducts__img > a::before{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    background: #6e6e6e82;
+    z-index: 1;
+}
+.main-listProducts__item.productList .btn-wishlist a i{
+    margin: 0 !important
 }
 .archive-tabs__items .bapf_sfilter.bapf_ckbox input[type=checkbox]{
     display: none;
@@ -3779,6 +3843,19 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 }
 .archive-tabs__items .bapf_head{
     display: none;
+}
+.title-marcas_archive{
+    font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding-top: 200px;
+    text-transform: uppercase;
 }
 .sidebarArchive-content__btn{
     display: flex;

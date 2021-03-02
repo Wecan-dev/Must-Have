@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) || exit;
 $variable = get_the_ID();
 get_header( 'shop' );
 $category_id = get_queried_object_id();
+$varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -29,6 +30,17 @@ $category_id = get_queried_object_id();
 ?>
 <div class="main-content__archive" id="<?php the_ID(); ?>">
 
+
+
+
+
+<?php if($category_id == 27 and $variable == 42) :?>
+
+<div class="title-marcas_archive">
+	<p>Marcas</p>
+</div>
+
+<?php else : ?>
 
 <section>
     <div class="bannerStatic">
@@ -45,6 +57,7 @@ $category_id = get_queried_object_id();
     </div>
 </section>
 
+<?php endif; ?>
 
 <header class="woocommerce-products-header">
 	<div class="archive-tabs">
@@ -54,6 +67,8 @@ $category_id = get_queried_object_id();
 		<div class="archive-tabs__items <?php if ($category_id == $wcatTer->term_id) {echo 'active';} ?> ">
 		<a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
 		</div>
+
+		
 	
 	<?php endforeach; ?>
 	</div>
@@ -61,80 +76,110 @@ $category_id = get_queried_object_id();
 
 
 
-<div class="main-contentArchive">
-	<div class="sidebarArchive" id="accordionExample">
-		<div class="sidebarArchive-content" >
-			<div id="headingOne">
-				<button class="sidebarArchive-content__btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					Filtros
-				</button>
+
+
+
+<?php if($category_id == 27 and $variable == 42) :?>
+
+
+	<div class="main-contentArchive__items main-contentArchive__items2">
+		<div class="main-contentArchive__datos">
+			<?php echo woocommerce_result_count();  ?>
+			<div class="main-contentArchive__datos--btn">
+				<a id="vistaList" href="#!"><img src="<?php echo get_template_directory_uri();?>/assets/img/list.png" alt=""></a>
+				<a id="vistaCuadra" class="active" href="#!"><img src="<?php echo get_template_directory_uri();?>/assets/img/menu.png" alt=""></a>
 			</div>
-			<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-				<div class="sidebarArchive-content__item">
-					<div class="sidebarArchive-content__title">
-						<p></p>
-					</div>
-					<div class="sidebarArchive-content__content">
-						<?php echo do_shortcode('[br_filter_single filter_id=149]'); ?>
-					</div>
+		</div>
+		<div class="main-contentArchive__products">
+			<?php echo $varibleMarca ?>
+		</div>
+	</div>
+
+<?php else : ?>
+
+	<div class="main-contentArchive">
+		<div class="sidebarArchive" id="accordionExample">
+			<div class="sidebarArchive-content" >
+				<div id="headingOne">
+					<button class="sidebarArchive-content__btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Filtros
+					</button>
 				</div>
-				<div class="sidebarArchive-content__item">
-					<div class="sidebarArchive-content__title">
-						<p></p>
+				<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+					<div class="sidebarArchive-content__item">
+						<div class="sidebarArchive-content__title">
+							<p></p>
+						</div>
+						<div class="sidebarArchive-content__content">
+							<?php echo do_shortcode('[br_filter_single filter_id=149]'); ?>
+						</div>
 					</div>
-					<div class="sidebarArchive-content__content">
-						<?php echo do_shortcode('[br_filter_single filter_id=137]'); ?>
+					<div class="sidebarArchive-content__item">
+						<div class="sidebarArchive-content__title">
+							<p></p>
+						</div>
+						<div class="sidebarArchive-content__content">
+							<?php echo do_shortcode('[br_filter_single filter_id=137]'); ?>
+						</div>
 					</div>
-				</div>
-				<div class="sidebarArchive-content__item">
-					<div class="sidebarArchive-content__title">
-						<p></p>
+					<div class="sidebarArchive-content__item">
+						<div class="sidebarArchive-content__title">
+							<p></p>
+						</div>
+						<div class="sidebarArchive-content__content">
+							<?php echo do_shortcode('[br_filter_single filter_id=136]'); ?>
+						</div>
 					</div>
-					<div class="sidebarArchive-content__content">
-						<?php echo do_shortcode('[br_filter_single filter_id=136]'); ?>
-					</div>
-				</div>
-				<div class="sidebarArchive-content__item">
-					<div class="sidebarArchive-content__title">
-						<p></p>
-					</div>
-					<div class="sidebarArchive-content__content">
-						<?php echo do_shortcode('[br_filter_single filter_id=135]'); ?>
+					<div class="sidebarArchive-content__item">
+						<div class="sidebarArchive-content__title">
+							<p></p>
+						</div>
+						<div class="sidebarArchive-content__content">
+							<?php echo do_shortcode('[br_filter_single filter_id=135]'); ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="main-contentArchive__items">
+			<div class="main-contentArchive__datos">
+				<?php echo woocommerce_result_count();  ?>
+				<div class="main-contentArchive__datos--btn">
+					<a id="vistaList" href="#!"><img src="<?php echo get_template_directory_uri();?>/assets/img/list.png" alt=""></a>
+					<a id="vistaCuadra" class="active" href="#!"><img src="<?php echo get_template_directory_uri();?>/assets/img/menu.png" alt=""></a>
+				</div>
+			</div>
+			<div class="main-contentArchive__products">
+				<?php while ( have_posts() ) : the_post(); global $product;?>	
+				<div class="main-listProducts__item ">  
+						<div class="main-listProducts__img">
+							<a href="<?php the_permalink(); ?>" class="main-listProducts__img--content">
+								<img src="<?php the_post_thumbnail_url('full');?>" alt="">
+							</a>
+							<div class="btn-wishlist">
+								<a href="#"><?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></a>
+							</div>
+						</div> 
+						<div class="main-listProducts__text">
+							<div class="text-listProducts__name">
+								<p><?php the_title() ?></p>
+							</div>
+							<div class="text-listProducts__price">
+								<p><?php echo $product->get_price_html(); ?></p>
+							</div>
+							<a href="<?php the_permalink(); ?>" class="text-listProducts__btn">Comprar</a>
+						</div>
+						<!--<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>" class="block2-btn-addwishlist hov-pointer trans-0-4">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+							<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+						</a> -->
+					</div>
+				<?php endwhile; ?>
+				</div>
+		</div>
 	</div>
-	<div class="main-contentArchive__products">
 
-				
-			<?php while ( have_posts() ) : the_post(); global $product;?>	
-			<div class="main-listProducts__item">  
-                    <div class="main-listProducts__img">
-                        <a href="<?php the_permalink(); ?>" class="main-listProducts__img--content">
-                            <img src="<?php the_post_thumbnail_url('full');?>" alt="">
-                        </a>
-                        <div class="btn-wishlist">
-                            <a href="#"><?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></a>
-                        </div>
-                    </div> 
-                    <div class="main-listProducts__text">
-                        <div class="text-listProducts__name">
-                            <p><?php the_title() ?></p>
-                        </div>
-                        <div class="text-listProducts__price">
-                            <p><?php echo $product->get_price_html(); ?></p>
-                        </div>
-                        <a href="<?php the_permalink(); ?>" class="text-listProducts__btn">Comprar</a>
-                    </div>
-					<!--<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>" class="block2-btn-addwishlist hov-pointer trans-0-4">
-						<i class="fa fa-heart" aria-hidden="true"></i>
-						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-					</a> -->
-                </div>
-			<?php endwhile; ?>
-	</div>
-</div>
+<?php endif; ?>
 
 </div> 
 

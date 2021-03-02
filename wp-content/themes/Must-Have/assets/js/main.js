@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   var width = window.innerWidth;
   var resolucion = $( window ).width();
@@ -61,6 +63,18 @@ $(".hamburger").on("click", function () {
     }
   }
 });
+
+$("#vistaList").on("click", function () {
+    $(this).addClass("active");
+    $('.main-listProducts__item').addClass('productList');
+    $('#vistaCuadra').removeClass('active');
+});
+$("#vistaCuadra").on("click", function () {
+  $(this).addClass("active");
+  $('.main-listProducts__item').removeClass('productList');
+  $('#vistaList').removeClass('active');
+});
+
 
 
 $(".navbar-buttonModal").on("click", function (){ 

@@ -25,7 +25,7 @@ global $product;
  * @hooked woocommerce_output_all_notices - 10
  */
 do_action( 'woocommerce_before_single_product' );
-
+get_header( 'shop' );
 if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
@@ -74,10 +74,121 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
 		?>
-
-
 	</div>
 </div>
+<?php
+/**
+ * The Template for displaying all single posts.
+ *
+ * @package dokan
+ * @package dokan - 2014 1.0
+ */
+
+
+$store_user   = dokan()->vendor->get( get_query_var( 'author' ) );
+$store_info   = $store_user->get_shop_info();
+$map_location = $store_user->get_location();
+$layout       = get_theme_mod( 'store_layout', 'left' );
+
+
+
+?>
+   
+
+
+
+<?php global $product;
+$store_user   = dokan()->vendor->get( get_query_var( 'author' ) );
+$author     = get_user_by( 'id', $product->post->post_author );
+$store_info = dokan_get_store_info( $author->ID );
+
+?>
+
+<div class="dokan-profile-frame-wrapper">
+    <div class="profile-frame<?php echo esc_attr( $no_banner_class ); ?>">
+
+        <div class="profile-info-box profile-layout-<?php echo esc_attr( $profile_layout ); ?>">
+            <div class="profile-info-summery-wrapper dokan-clearfix">
+                <div class="profile-info-summery">
+                    <div class="profile-info-head">
+                        <div class="profile-img <?php echo esc_attr( $profile_img_class ); ?>">
+                            <?php echo get_avatar( get_the_author_email(), $author_id ); ?>
+                        </div>                
+                            <h1 class="store-name"><?php echo esc_html( $store_info['store_name'] ); ?></h1>
+                    </div>
+
+                    <div class="profile-info">
+        
+                        <ul class="dokan-store-info">
+                            
+                            
+
+                            <li class="dokan-store-rating">
+                            <?php 
+                            $estrella = dokan_get_readable_seller_rating( $author->ID )
+                            ?>
+                                <i class="fa fa-star"></i>
+                                <?php echo wp_kses_post( dokan_get_readable_seller_rating( $author->ID ) ); ?>
+                               <?php if( $width == 50) {echo '<i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>';}?>
+
+                            </li>
+                            <script>
+                                
+                            </script>
+                            <?php if ( $show_store_open_close == 'on' && $dokan_store_time_enabled == 'yes') : ?>
+                                <li class="dokan-store-open-close">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <?php if ( dokan_is_store_open( $store_user->get_id() ) ) {
+                                        echo esc_attr( $store_open_notice );
+                                    } else {
+                                        echo esc_attr( $store_closed_notice );
+                                    } ?>
+                                </li>
+                            <?php endif ?>
+
+                            <?php do_action( 'dokan_store_header_info_fields',  $author->ID ); ?>
+                        </ul>
+
+                        <?php if ( $social_fields ) { ?>
+                            <div class="store-social-wrapper">
+                                <ul class="store-social">
+                                    <?php foreach( $social_fields as $key => $field ) { ?>
+                                        <?php if ( !empty( $social_info[ $key ] ) ) { ?>
+                                            <li>
+                                                <a href="<?php echo esc_url( $social_info[ $key ] ); ?>" target="_blank"><i class="fa fa-<?php echo esc_attr( $field['icon'] ); ?>"></i></a>
+                                            </li>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </ul>
+                            </div>
+                        <?php } ?>
+
+                    </div> <!-- .profile-info -->
+                </div><!-- .profile-info-summery -->
+            </div><!-- .profile-info-summery-wrapper -->
+        </div> <!-- .profile-info-box -->
+    </div> <!-- .profile-frame -->
+
+    <?php if ( $store_tabs ) { ?>
+        <div class="dokan-store-tabs<?php echo esc_attr( $no_banner_class_tabs ); ?>">
+            <ul class="dokan-list-inline">
+                <?php foreach( $store_tabs as $key => $tab ) { ?>
+                    <?php if ( $tab['url'] ): ?>
+                        <li><a href="<?php echo esc_url( $tab['url'] ); ?>"><?php echo esc_html( $tab['title'] ); ?></a></li>
+                    <?php endif; ?>
+                <?php } ?>
+                <?php do_action( 'dokan_after_store_tabs', $store_user->get_id() ); ?>
+            </ul>
+        </div>
+    <?php } ?>
+</div>
+        <span class="details">
+            <?php printf( '<a href="%s">%s</a>', dokan_get_store_url( $author->ID ), $store_info['store_name'] ); ?>
+        </span>
+<?php 
+     echo get_avatar( get_the_author_email(), $author_id );
+     
+?>
 
 
 <section>
@@ -304,4 +415,3 @@ if ( post_password_required() ) {
 
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
-

@@ -725,13 +725,19 @@ class Vendor {
                         </span>
                     </span>
                     <span class="text">' . $review_text . '</span>';
+                    
         }
 
         if ( ! $display ) {
             return $html;
         }
-
+        return $width;
         echo esc_html( $html );
+        ?>
+<script type="text/javascript">
+console.log( $width );
+</script>
+        <?php
     }
 
     /**

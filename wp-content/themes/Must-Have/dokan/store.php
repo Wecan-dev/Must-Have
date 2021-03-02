@@ -20,7 +20,7 @@ if ( function_exists( 'yoast_breadcrumb' ) ) {
 }
 ?>
     <?php do_action( 'woocommerce_before_main_content' ); ?>
-
+<?php var_dump($store_user) ?>
     <div class="dokan-store-wrap layout-<?php echo esc_attr( $layout ); ?>">
 
         <?php if ( 'left' === $layout ) { ?>

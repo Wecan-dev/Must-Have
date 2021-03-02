@@ -1,0 +1,262 @@
+2021-02-28T14:53:20+00:00 CRITICAL syntax error, unexpected '&&' (T_BOOLEAN_AND) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 65
+
+2021-02-28T14:58:42+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Term::term_id() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:65
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#2 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 65
+
+2021-02-28T14:58:52+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Term::term_id() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:65
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#2 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 65
+
+2021-02-28T14:59:16+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Term::term_id() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:65
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#2 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#4 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#5 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 65
+
+2021-02-28T15:10:49+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 170
+
+2021-02-28T15:48:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function termmeta_value_img(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php on line 84 and exactly 2 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:188
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php(84): termmeta_value_img()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 188
+
+2021-02-28T15:48:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function termmeta_value_img(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php on line 84 and exactly 2 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:188
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php(84): termmeta_value_img()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 188
+
+2021-02-28T15:49:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function termmeta_value_img(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php on line 84 and exactly 2 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:188
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php(84): termmeta_value_img()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 188
+
+2021-02-28T15:49:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function termmeta_value_img(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php on line 84 and exactly 2 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:188
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php(84): termmeta_value_img()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/taxonomy-product-tag.php(22): wc_get_template()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 188
+
+2021-02-28T20:02:18+00:00 CRITICAL Cannot redeclare my_handle_custom_query_var() (previously declared in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:93) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 93
+
+2021-02-28T20:03:26+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 103
+
+2021-02-28T20:32:24+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3599
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(87): wc_get_formatted_cart_item_data()
+#1 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#3 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#4 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#5 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#6 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#7 {main}
+  thrown en /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php en la línea 3599
+
+2021-02-28T20:32:56+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php:3599
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(87): wc_get_formatted_cart_item_data()
+#1 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#3 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#4 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#5 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#6 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#7 {main}
+  thrown en /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php en la línea 3599
+
+2021-02-28T20:34:13+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:85
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 85
+
+2021-02-28T20:34:42+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:82
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 82
+
+2021-02-28T20:35:05+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:80
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 80
+
+2021-02-28T20:35:20+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:80
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 80
+
+2021-02-28T20:35:40+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:80
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 80
+
+2021-02-28T20:36:06+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:80
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 80
+
+2021-02-28T20:57:08+00:00 CRITICAL Uncaught Error: Call to a member function get_avatar() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:82
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 82
+
+2021-02-28T20:59:05+00:00 CRITICAL Uncaught Error: Call to a member function get_avatar() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:79
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 79
+
+2021-02-28T21:00:14+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:78
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 78
+
+2021-02-28T21:12:32+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:78
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 78
+
+2021-02-28T21:13:00+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:78
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 78
+
+2021-02-28T21:13:27+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:83
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 83
+
+2021-02-28T21:26:47+00:00 CRITICAL Cannot declare class Dokan_Follow_Store_Vendor_Dashboard, because the name is already in use en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 86
+
+2021-02-28T21:51:13+00:00 CRITICAL Uncaught Error: Call to undefined function get_vendor() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:85
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 85
+
+2021-02-28T21:59:01+00:00 CRITICAL Uncaught Error: Call to a member function get_avatar() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:85
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 85
+
