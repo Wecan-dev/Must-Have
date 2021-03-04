@@ -19,7 +19,6 @@ defined( 'ABSPATH' ) || exit;
 $variable = get_the_ID();
 get_header( 'shop' );
 $category_id = get_queried_object_id();
-$varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -111,7 +110,7 @@ $varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-							<?php echo do_shortcode('[br_filter_single filter_id=149]'); ?>
+							
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -119,7 +118,7 @@ $varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-							<?php echo do_shortcode('[br_filter_single filter_id=137]'); ?>
+						
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -127,7 +126,7 @@ $varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-							<?php echo do_shortcode('[br_filter_single filter_id=136]'); ?>
+					
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -135,7 +134,7 @@ $varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-							<?php echo do_shortcode('[br_filter_single filter_id=135]'); ?>
+						
 						</div>
 					</div>
 				</div>
@@ -151,7 +150,7 @@ $varibleMarca = do_shortcode('[br_filter_single filter_id=150]');
 			</div>
 			<div class="main-contentArchive__products">
 				<?php while ( have_posts() ) : the_post(); global $product;?>	
-				<div class="main-listProducts__item ">  
+					<div class="main-listProducts__item ">  
 						<div class="main-listProducts__img">
 							<a href="<?php the_permalink(); ?>" class="main-listProducts__img--content">
 								<img src="<?php the_post_thumbnail_url('full');?>" alt="">

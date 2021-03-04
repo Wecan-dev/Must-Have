@@ -40,5 +40,5 @@ global $product;
 </div>
 
 <div class="backStore">
-	<p>Es fácil cambiar tu producto <a href="#">AQUÍ</a> </p>
+	<p>Es fácil cambiar tu producto <a href="<?php bloginfo('url') ?>/tienda">AQUÍ</a> </p>
 </div>

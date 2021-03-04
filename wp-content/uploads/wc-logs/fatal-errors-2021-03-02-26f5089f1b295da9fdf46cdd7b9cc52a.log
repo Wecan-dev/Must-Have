@@ -1,0 +1,247 @@
+2021-03-02T18:54:18+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 278
+
+2021-03-02T18:54:40+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 278
+
+2021-03-02T18:54:48+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 278
+
+2021-03-02T18:55:26+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 278
+
+2021-03-02T18:58:27+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 644
+
+2021-03-02T19:18:57+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:19:17+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:23:27+00:00 CRITICAL Uncaught Error: Object of class WP_User could not be converted to string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:107
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 107
+
+2021-03-02T19:23:40+00:00 CRITICAL syntax error, unexpected ';', expecting ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 107
+
+2021-03-02T19:33:02+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:111
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 111
+
+2021-03-02T19:35:49+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:36:05+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:36:41+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:36:47+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T19:37:01+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:105
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 105
+
+2021-03-02T19:37:20+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:105
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 105
+
+2021-03-02T19:37:33+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:105
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 105
+
+2021-03-02T19:37:50+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:105
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 105
+
+2021-03-02T19:38:00+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:105
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 105
+
+2021-03-02T19:49:45+00:00 CRITICAL Uncaught Error: Object of class WP_User could not be converted to string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 109
+
+2021-03-02T19:50:02+00:00 CRITICAL Uncaught Error: Object of class WP_User could not be converted to string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:109
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 109
+
+2021-03-02T19:51:12+00:00 CRITICAL Uncaught Error: Object of class WP_User could not be converted to string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 108
+
+2021-03-02T19:55:19+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 108
+
+2021-03-02T20:01:45+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:106
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 106
+
+2021-03-02T21:25:27+00:00 CRITICAL Uncaught Error: Call to a member function get_formatted_order_total() on string in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:107
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 107
+
+2021-03-02T21:40:46+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::post_author() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:125
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 125
+
+2021-03-02T21:42:33+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:120
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 120
+
+2021-03-02T21:51:15+00:00 CRITICAL syntax error, unexpected ';', expecting ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 126
+
+2021-03-02T21:51:46+00:00 CRITICAL Uncaught Error: Call to a member function get_quantity() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:126
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part()
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 126
+

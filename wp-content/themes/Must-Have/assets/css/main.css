@@ -2726,6 +2726,10 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     border: none;
     box-shadow: none;
 }
+.singleProducto--content .variations #variation_pa_color span.phoen_tooltip{
+    width: auto !important;
+    height: auto !important;
+}
 .variations .value .variation_button.selected span.phoen_swatches{
     box-shadow: 0 0 1px 2px rgb(160 209 175 / 86%) !important;
 }
@@ -2831,6 +2835,18 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     line-height: normal;
     letter-spacing: normal;
     color: #000000;
+}
+.text-singleProduct{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 7px;
+    margin-top: 18px;
 }
 .backStore a{
     color: #000000;
@@ -3058,8 +3074,39 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .singleProducto-navSeller .main-navSeller{
     padding-top: 80px;
 }
-
-
+#reviews_summary{
+    display: none;
+}
+#comments h2{
+    display: none;
+}
+#reply-title{
+    display: none;
+}
+#comment{
+    color: #000;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    height: 100px;
+}
+#comment::placeholder{
+    color: #000;
+}
+.form-submit .submit{
+    padding: 13px 142px;
+    border-radius: 3px;
+    background-color: #8ae8a7;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    color: #000000;
+    border: none;
+}
 
 
 

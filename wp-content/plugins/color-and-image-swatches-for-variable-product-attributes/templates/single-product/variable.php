@@ -321,7 +321,9 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 			
 		</div>
 		
-
+		<div class="text-singleProduct">
+			<?php the_content()?>
+		</div>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 		<div class="single_variation_wrap" style="display:none;">
