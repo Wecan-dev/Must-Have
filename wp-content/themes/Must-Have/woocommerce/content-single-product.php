@@ -259,52 +259,8 @@ $selected    = isset( $_REQUEST["replytocom"] ) ? "selected" : '';
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="navSeller-comments__items">
-                        <div class="navSeller-comments__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team1.png" alt="">
-                        </div>
-                        <div class="navSeller-comments__text">
-                            <div class="navSeller-comments__name">
-                                <p>Carmen Sánchez</p>
-                            </div>
-                            <div class="navSeller-comments__stars">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <div class="navSeller-comments__stars--number">
-                                    <p>[15]</p>
-                                </div>
-                            </div>
-                            <div class="navSeller-comments__commet">
-                                <p>Hermoso el bolso</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navSeller-comments__items">
-                        <div class="navSeller-comments__img">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-team1.png" alt="">
-                        </div>
-                        <div class="navSeller-comments__text">
-                            <div class="navSeller-comments__name">
-                                <p>Carmen Sánchez</p>
-                            </div>
-                            <div class="navSeller-comments__stars">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <div class="navSeller-comments__stars--number">
-                                    <p>[15]</p>
-                                </div>
-                            </div>
-                            <div class="navSeller-comments__commet">
-                                <p>Hermoso el bolso</p>
-                            </div>
-                        </div>
-                    </div>
+                    
+             
                 </div>
                 <div class="navSeller-comments__btn">
                     <a  href="<?php echo dokan_get_store_url( $seller_id ) ?>">Ir al closet</a>

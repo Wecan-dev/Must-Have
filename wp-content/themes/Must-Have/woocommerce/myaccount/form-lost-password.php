@@ -25,7 +25,7 @@ do_action( 'woocommerce_before_lost_password_form' );
             <div class="main-registro__content">
                 <div class="main-registro__img">
                     <div class="main-registro__img--content main-login__img--content">
-                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/banner-forgot-password.png" alt="">
+                        <img  src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/11.recupera-contrasena-scaled.jpg">
                     </div>
                 </div>
                 <div class="main-registro__item">
@@ -34,7 +34,7 @@ do_action( 'woocommerce_before_lost_password_form' );
                             <p>tus favoritos</p>
                         </div>
                         <div class="main-registro__title">
-                            <h1>lo quieres, lo puedes tener</h1>
+                            <h1> Reimaginando el mundo</h1>
                         </div>
                         <div class="boton-registro d-none d-lg-flex">
                         </div>

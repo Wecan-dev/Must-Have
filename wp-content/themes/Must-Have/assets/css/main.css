@@ -281,6 +281,12 @@
 
 
 
+.main-content__global{
+	overflow: hidden;
+    background-color: white;
+    max-width: 1600px;
+    margin: auto;
+}
 
 body{
 	font-family: 'Poppins';
@@ -334,6 +340,9 @@ p{
 .icon-user:hover{
 	transition: .3s ease-in-out;
 	background: #c6f4d4;
+}
+.navbar{
+	max-width: 1600px;
 }
 .navbar-nav a{
 	display: flex;
@@ -831,6 +840,7 @@ p{
 	top: 37%;
 	width: 60%;
 	padding-left: 112.5px;
+	z-index: 2;
 }
 .main-banner__title h1{
 	font-family: 'Bodoni SvtyTwo ITC TT';
@@ -886,13 +896,28 @@ p{
     text-transform: uppercase;
     border-radius: 0;
 }
+.btn-banner:hover{
+	background-color: #fff;
+	color: #000;
+}
 .main-banner__img--content{
 	height: 100vh;
+	position:relative;
 }
 .main-banner__img--content img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+.main-banner__img--content::before{
+	position:absolute;
+	content: '';
+	background:#0000001f;
+	z-index:1;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
 }
 .slick-dotted.slick-slider{
     margin-left: 0 !important;
@@ -1154,6 +1179,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+	z-index: 9999;
 }
 .main-upcycling__title{
     font-family: 'BodoniSvtyTwoITCTT';
@@ -1771,6 +1797,23 @@ p{
     width: 100%;
     position: relative;
 }
+..main-upcycling__img, .main-bannerAbout__img, .main-registro_img--content, .main-login_img--content{
+	position:relative;
+}
+.singleProducto-navSeller .main-navSeller__content::before{
+	z-index:0;
+}
+.main-bannerStatic__content:after, .main-upcycling__img:after, .main-bannerAbout__img:after, .main-registro_img--content:after, .main-login_img--content:after{
+	content:'';
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgba(0,0,0,0.1);
+	position:absolute;
+	
+}
+
 .main-bannerStatic__img{
     height: 100%;
     width: 100%;
@@ -2244,6 +2287,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     padding-top: 175px;
 }
 .main-navSeller__img{
+	position:relative;
     width: 176px;
     height: 176px;
     margin-right: 16px;
@@ -2274,6 +2318,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     display: flex;
     flex-direction: column;
     width: 85%;
+	position:relative;
 }
 .main-navSeller__items{
     display: flex;
@@ -4281,4 +4326,100 @@ button:focus{
   }
 
 
-  
+/* comments */
+.comment_container{
+	    display: flex;
+    align-items: center;
+}
+.comment_container img{
+	height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.commentlist{
+	list-style: none;
+}
+.commentlist li{
+	margin-bottom: 1rem;
+}
+.comment-form{
+	    padding: 0 4rem 0 0;
+}
+.comment-form-rating{
+	display: flex;
+	flex-direction: column;
+}
+.comment-form-comment{
+	margin-top: 1rem;
+}
+#rating{
+	height:2rem;
+}
+.wpd-bubble-wrapper{
+	display: none !important;
+}
+.stars span a:nth-child(1){
+	margin-right: 1rem;
+}
+.stars span a{
+	position:relative;
+	color: transparent;
+	    margin-right: .5rem;
+}
+.stars span a:after{
+	content: "\f005";
+	position: absolute;
+	top:0;
+	left:0;
+	right:0
+		bottom:0;
+	font-family: 'FontAwesome';
+	color: #000;
+}
+.star-1.active:after{
+	color: yellow;
+}
+.star-2.active:after{
+	color: yellow;
+}
+.star-3.active:after{
+	color: yellow;
+}
+.star-4.active:after{
+	color: yellow;
+}
+.star-5.active:after{
+	color: yellow;
+}
+.meta time{
+	display: none;
+}
+.comment-text .description p {
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    color: #000000;
+}
+.meta strong {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.91px;
+    color: #000000;
+}
+.form-submit #submit{
+	margin-top: 1rem;
+}
+.star-rating{
+	display:none;
+}
+.item-navSeller__content .text a{
+	font-weight: 600;
+	color: #000 !important;
+}

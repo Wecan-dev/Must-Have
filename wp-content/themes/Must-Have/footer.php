@@ -1,7 +1,5 @@
 
 
-
-
 <footer>
     <div class="footer">
       <div class="main-footer">
@@ -35,8 +33,8 @@
               <a href="<?php bloginfo('url'); ?>/contactanos">Contacto</a>
               <a href="<?php bloginfo('url'); ?>/terminos-y-condiciones">Términos y condiciones</a>
               <div class="content-footer__menu--content d-none d-md-flex d-lg-none">
-                <a href="<?php bloginfo('url'); ?>/">Políticas y privacidad</a>
-                <a href="<?php bloginfo('url'); ?>/">Entregas y devoluciones</a>
+                <a href="<?php bloginfo('url'); ?>/politica-privacidad">Políticas y privacidad</a>
+                <a href="<?php bloginfo('url'); ?>/entregas-y-devoluciones">Entregas y devoluciones</a>
               </div>
             </div>
           </div>
@@ -161,6 +159,8 @@ document.getElementById('shipping_postcode').placeholder='Código postal';
   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
 
   <?php wp_footer(); ?>
+
+</div>
   </body>
   </html>
 

@@ -46,7 +46,7 @@ $category_id = get_queried_object_id();
         <div class="main-bannerStatic">
             <div class="main-bannerStatic__content">
                 <div class="main-bannerStatic__img">
-                    <img src="<?php echo get_theme_mod('contact-banner_img1'); ?>" alt="">
+                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/Foto-producto-final-scaled.jpg" alt="">
                 </div>
                 <div class="main-bannerStatic__text">
                     <p>Productos</p>
@@ -90,7 +90,7 @@ $category_id = get_queried_object_id();
 			</div>
 		</div>
 		<div class="main-contentArchive__products">
-			<?php echo $varibleMarca ?>
+			<?php echo do_shortcode('[br_filter_single filter_id=188]') ?>
 		</div>
 	</div>
 
@@ -110,7 +110,7 @@ $category_id = get_queried_object_id();
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-							
+							<?php echo do_shortcode('[br_filter_single filter_id=140]') ?>
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -118,7 +118,7 @@ $category_id = get_queried_object_id();
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-						
+							<?php echo do_shortcode('[br_filter_single filter_id=137]') ?>
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -126,7 +126,7 @@ $category_id = get_queried_object_id();
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-					
+							<?php echo do_shortcode('[br_filter_single filter_id=136]') ?>
 						</div>
 					</div>
 					<div class="sidebarArchive-content__item">
@@ -134,7 +134,7 @@ $category_id = get_queried_object_id();
 							<p></p>
 						</div>
 						<div class="sidebarArchive-content__content">
-						
+							<?php echo do_shortcode('[br_filter_single filter_id=135]') ?>
 						</div>
 					</div>
 				</div>

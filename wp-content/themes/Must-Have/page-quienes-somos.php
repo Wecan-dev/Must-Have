@@ -111,7 +111,7 @@ $bannerAbout3 = get_theme_mod('about-banner_img3');
                         <p>acerca de</p>
                     </div>
                     <div class="main-team__title">
-                        <p>Nuestro team</p>
+                        <p>Nuestro equipo</p>
                     </div>
                 </div>
                 <div class="main-team__slider">

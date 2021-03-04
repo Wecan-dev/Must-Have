@@ -63,7 +63,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-
+<div class="main-content__global">
 <header id="header" class="header <?php if(is_home() ){echo 'header-home';} ?>">
   <nav class="navbar navbar-expand-lg navbar-fixed-js" id="navbar">
     <button class="navbar-buttonModal  border-0 hamburger--elastic ml-autos" data-toggle="modal" data-target="#staticBackdrop">
@@ -96,7 +96,9 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Mi cuenta</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<a class="dropdown-item" href="<?php echo get_home_url() ?>/wishlist">Favoritos</a>
+				<a class="dropdown-item" href="<?php echo get_home_url() ?>#">Orden</a>
               <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
             </div>
           <?php } ?> 
@@ -216,7 +218,9 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta">Mi cuenta</a>
+              <a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<a class="dropdown-item" href="<?php echo get_home_url() ?>/wishlist">Favoritos</a>
+				<a class="dropdown-item" href="<?php echo get_home_url() ?>#">Orden</a>
               <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
             </div>
           <?php } ?> 
