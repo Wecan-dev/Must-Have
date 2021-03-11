@@ -14,7 +14,20 @@
                     $store_info        = dokan_get_store_info( $seller->ID );
                     $store_address     = dokan_get_seller_short_address( $seller->ID );
                     $store_banner_url  = $store_banner_id ? wp_get_attachment_image_src( $store_banner_id, $image_size ) : DOKAN_PLUGIN_ASSEST . '/images/default-store-banner.png';
-                    ?>
+					global $wpdb;
+					
+					$followers = $wpdb->get_results(
+    $wpdb->prepare(
+          "select follower_id, vendor_id, followed_at"
+        . " from {$wpdb->prefix}dokan_follow_store_followers"
+        . " where vendor_id = %d"
+        . "     and unfollowed_at is null",
+         $seller->ID
+    ),
+    OBJECT_K
+);
+                	    
+				?>
 
                     <li class="dokan-single-seller woocommerce coloum-<?php echo esc_attr( $per_row ); ?> <?php echo ( ! $store_banner_id ) ? 'no-banner-img' : ''; ?>">
                         <div class="store-wrapper">

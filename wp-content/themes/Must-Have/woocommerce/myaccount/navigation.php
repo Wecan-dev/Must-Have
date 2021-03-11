@@ -18,18 +18,27 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
 do_action( 'woocommerce_before_account_navigation' );
 ?>
+<div class="myAccout-navigation__content">
+	
 
-<nav class="woocommerce-MyAccount-navigation">
-	<ul>
-		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
-			</li>
-		<?php endforeach; ?>
-	</ul>
-</nav>
+	<?php
+	$user = wp_get_current_user();
 
+	if ( $user ) :
+		?>
+		<img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+	<?php endif; ?>
+	
+	<nav class="woocommerce-MyAccount-navigation">
+		<ul>
+			<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
+				<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
+					<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+	</nav>
+</div>
 <?php do_action( 'woocommerce_after_account_navigation' ); ?>

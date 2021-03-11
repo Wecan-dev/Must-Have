@@ -203,3 +203,17 @@ if ( ! is_ajax() ) {
 }
 ?>
 
+<script>
+
+document.getElementById('billing_first_name').placeholder='Nombre *';
+document.getElementById('billing_last_name').placeholder='Apellido *';
+document.getElementById('billing_company').placeholder='Nombre de la empresa (opcional)';
+document.getElementById('billing_city').placeholder='Localidad / Ciudad';
+document.getElementById('billing_state').placeholder='Estado / Municipio';
+document.getElementById('billing_postcode').placeholder='Código postal';
+document.getElementById('billing_phone').placeholder='Teléfono';
+document.getElementById('billing_email').placeholder='Correo electrónico *';
+</script>
+
+
+

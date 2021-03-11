@@ -1,0 +1,41 @@
+2021-03-11T16:56:24+00:00 CRITICAL Uncaught Error: Call to a member function get_review_count() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:137
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 137
+
+2021-03-11T16:57:16+00:00 CRITICAL Uncaught Error: Call to a member function get_review_count() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:138
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 138
+
+2021-03-11T16:57:38+00:00 CRITICAL Uncaught Error: Call to a member function get_review_count() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:138
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 138
+
+2021-03-11T17:00:54+00:00 CRITICAL syntax error, unexpected '<', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 139
+
+2021-03-11T17:02:35+00:00 CRITICAL syntax error, unexpected '<', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 139
+
+2021-03-11T18:06:01+00:00 CRITICAL syntax error, unexpected 'do' (T_DO) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/navigation.php en la línea 24
+
+2021-03-11T18:06:07+00:00 CRITICAL syntax error, unexpected 'do' (T_DO) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/navigation.php en la línea 24
+

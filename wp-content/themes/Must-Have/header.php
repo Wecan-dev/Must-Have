@@ -103,7 +103,7 @@
             </div>
           <?php } ?> 
           </div>
-          <a class="icon-nav" href="#">
+          <a class="icon-nav" href="<?php echo get_home_url() ?>/wishlist">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1161.png" alt="">
             <p class="mini-cart"><?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?></p>
           </a> 
@@ -200,8 +200,7 @@
       </div>
       <ul class="navbar-nav ">
         <form class="form-inline my-2 my-lg-0">
-          <button class=" my-2 my-sm-0" type="submit"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png" alt=""></button>
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <?php echo do_shortcode('[wcas-search-form]'); ?>
         </form>
         <div class="content-dropdownUser d-none d-lg-flex">
           <?php if (is_user_logged_in() == NULL){ ?>
@@ -225,7 +224,7 @@
             </div>
           <?php } ?> 
         </div>
-        <a class="icon-nav d-none d-lg-flex" href="#">
+        <a class="icon-nav d-none d-lg-flex" href="<?php echo get_home_url() ?>/wishlist">
           <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-1161.png" alt="">
           <p class="mini-cart"><?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?></p>
         </a>

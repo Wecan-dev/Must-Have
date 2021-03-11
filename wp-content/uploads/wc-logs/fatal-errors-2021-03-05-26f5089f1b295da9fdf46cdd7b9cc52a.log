@@ -1,0 +1,82 @@
+2021-03-05T15:43:23+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php:167
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/archive-product.php en la línea 167
+
+2021-03-05T15:58:01+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists-loop.php:17
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/functions.php(878): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists.php(78): dokan_get_template_part('store-lists-loo...', false, Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/functions.php(878): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/Shortcodes/Stores.php(84): dokan_get_template_part('store-lists', false, Array)
+#4 /var/www/html/Must-Have/wp-includes/shortcodes.php(343): WeDevs\Dokan\Shortcodes\Stores->render_shortcode('', '', 'dokan-stores')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /var/www/html/Must-Have/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(dokan\\...', 'do_shortcode_ta...', '[dokan-stores]\n')
+#7 /var/www/html/Must-Have/wp-in en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists-loop.php en la línea 17
+
+2021-03-05T15:59:41+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists-loop.php:17
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/functions.php(878): include()
+#1 /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists.php(78): dokan_get_template_part('store-lists-loo...', false, Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/functions.php(878): include('/var/www/html/M...')
+#3 /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/Shortcodes/Stores.php(84): dokan_get_template_part('store-lists', false, Array)
+#4 /var/www/html/Must-Have/wp-includes/shortcodes.php(343): WeDevs\Dokan\Shortcodes\Stores->render_shortcode('', '', 'dokan-stores')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /var/www/html/Must-Have/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(dokan\\...', 'do_shortcode_ta...', '[dokan-stores]\n')
+#7 /var/www/html/Must-Have/wp-in en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store-lists-loop.php en la línea 17
+
+2021-03-05T16:28:30+00:00 CRITICAL syntax error, unexpected 'get_header' (T_STRING) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 32
+
+2021-03-05T17:19:30+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 116
+
+2021-03-05T17:28:08+00:00 CRITICAL syntax error, unexpected '$unicos' (T_VARIABLE) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 120
+
+2021-03-05T17:52:47+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T17:53:32+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-05T18:05:48+00:00 CRITICAL Uncaught Error: Call to undefined function vardump() in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:118
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T18:16:20+00:00 CRITICAL Cannot redeclare contarValoresArray() (previously declared in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:119) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-05T18:55:36+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T18:56:15+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T19:00:33+00:00 CRITICAL Uncaught Error: Call to undefined function contarValoresArray() in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:118
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T19:00:55+00:00 CRITICAL Uncaught Error: Call to undefined function contarValoresArray() in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:118
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-05T19:02:00+00:00 CRITICAL syntax error, unexpected '$sellers' (T_VARIABLE) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 103
+
+2021-03-05T19:51:32+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 106
+
+2021-03-05T21:10:14+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 322
+
+2021-03-05T21:41:50+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 319
+
+2021-03-05T21:42:09+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 319
+
+2021-03-05T21:42:14+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php en la línea 319
+

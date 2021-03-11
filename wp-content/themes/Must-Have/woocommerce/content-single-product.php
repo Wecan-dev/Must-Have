@@ -100,8 +100,7 @@ $layout       = get_theme_mod( 'store_layout', 'left' );
 
 
 ?>
-   
-
+ 
 
 
 <?php global $product; global $wpdb;
@@ -136,6 +135,7 @@ if (!comments_open($product_id)) {
 }
 global $YWAR_AdvancedReview;
 $reviews_count = count( $YWAR_AdvancedReview->get_product_reviews_by_rating( $product_id ) );
+
 ?>
 
 <section>
@@ -152,7 +152,7 @@ $reviews_count = count( $YWAR_AdvancedReview->get_product_reviews_by_rating( $pr
                                 <p><?php echo esc_html( $store_info['store_name'] ); ?></p>
                             </div>
                             <div class="item-navSeller__stars">
-                                <?php echo wp_kses_post( dokan_get_readable_seller_rating( $author->ID ) ); ?>
+                                <?php echo wp_kses_post( dokan_get_readable_seller_rating( $author->ID ) ); echo esc_html( $review_count ); ?>
                             </div>
                             <div class="item-navSeller__sellers">
                                 <span><?php echo esc_attr( $order_count->{'wc-completed'} ); ?></span><p>ventas</p>
@@ -312,5 +312,13 @@ $selected    = isset( $_REQUEST["replytocom"] ) ? "selected" : '';
 </section>
 
 
+  <?php
+$user = wp_get_current_user();
+if ( in_array( 'seller', (array) $user->roles ) ) {
+    //The user has the "author" role
+    echo do_shortcode('[favorite_button post_id="" site_id=""]');
+}
 
+echo do_shortcode('[favorite_count post_id=""]');
+?>
 <?php do_action( 'woocommerce_after_single_product' ); ?>

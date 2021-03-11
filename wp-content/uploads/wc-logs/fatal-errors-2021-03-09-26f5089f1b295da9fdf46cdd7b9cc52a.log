@@ -1,0 +1,85 @@
+2021-03-09T14:20:41+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 116
+
+2021-03-09T14:38:46+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 125
+
+2021-03-09T14:39:03+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 125
+
+2021-03-09T14:49:27+00:00 CRITICAL Uncaught Error: Function name must be a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:116
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 116
+
+2021-03-09T14:49:48+00:00 CRITICAL Uncaught Error: Function name must be a string in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php:116
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#2 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#3 {main}
+  thrown en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 116
+
+2021-03-09T14:50:14+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 116
+
+2021-03-09T15:00:38+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T15:00:40+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T15:00:55+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T15:20:03+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 117
+
+2021-03-09T15:20:49+00:00 CRITICAL syntax error, unexpected 'unset' (T_UNSET) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 117
+
+2021-03-09T15:23:46+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 34
+
+2021-03-09T15:40:42+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 182
+
+2021-03-09T15:41:17+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 187
+
+2021-03-09T15:41:21+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 187
+
+2021-03-09T15:41:54+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 179
+
+2021-03-09T15:42:07+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 179
+
+2021-03-09T15:42:23+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 179
+
+2021-03-09T15:43:24+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 179
+
+2021-03-09T15:43:31+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 178
+
+2021-03-09T15:46:27+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-09T15:46:50+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 118
+
+2021-03-09T16:29:04+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WeDevs\Dokan\Vendor\Manager::get(), 0 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php on line 107 and exactly 1 expected in /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/Vendor/Manager.php:125
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php(107): WeDevs\Dokan\Vendor\Manager->get()
+#1 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#3 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#4 {main}
+  thrown en /var/www/html/Must-Have/wp-content/plugins/dokan-lite/includes/Vendor/Manager.php en la línea 125
+
+2021-03-09T16:38:57+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T16:39:33+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T16:39:41+00:00 CRITICAL syntax error, unexpected '}' en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 119
+
+2021-03-09T19:15:43+00:00 CRITICAL Object of class WeDevs\Dokan\Vendor\Vendor could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 145
+
+2021-03-09T19:16:29+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 145
+
+2021-03-09T19:16:34+00:00 CRITICAL Object of class stdClass could not be converted to string en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 145
+
+2021-03-09T19:34:05+00:00 CRITICAL syntax error, unexpected '<', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 185
+
+2021-03-09T19:34:30+00:00 CRITICAL syntax error, unexpected '<', expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 185
+
+2021-03-09T19:35:34+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 139
+
+2021-03-09T19:36:19+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file en /var/www/html/Must-Have/wp-content/themes/Must-Have/dokan/store.php en la línea 140
+

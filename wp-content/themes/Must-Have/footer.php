@@ -1,5 +1,3 @@
-
-
 <footer>
     <div class="footer">
       <div class="main-footer">
@@ -50,7 +48,7 @@
             </div>
             <div class="content-footer__contact--text">
               <div class="contact-footer__items">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-955.png" alt=""><a href="tel:<?php echo get_theme_mod('home_contacto_phone'); ?>"><?php echo get_theme_mod('home_contacto_phone'); ?></a>
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-955.png" alt=""><a href="tel:<?php echo get_theme_mod('home_contacto_phone'); ?>">+<?php echo get_theme_mod('home_contacto_phone'); ?></a>
               </div>
               <div class="contact-footer__items">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/fill-960.png" alt=""><a href="mailto:<?php echo get_theme_mod('home_contacto_email'); ?>"><?php echo get_theme_mod('home_contacto_email'); ?></a>
@@ -128,14 +126,6 @@ document.getElementById('reg_password').placeholder='Contraseña';
 document.getElementById('company-name').placeholder='Nombre de la tienda';
 document.getElementById('seller-url').placeholder='URL de la tienda';
 
-document.getElementById('billing_first_name').placeholder='Nombre *';
-document.getElementById('billing_last_name').placeholder='Apellido *';
-document.getElementById('billing_company').placeholder='Nombre de la empresa (opcional)';
-document.getElementById('billing_city').placeholder='Localidad / Ciudad';
-document.getElementById('billing_state').placeholder='Estado / Municipio';
-document.getElementById('billing_postcode').placeholder='Código postal';
-document.getElementById('billing_phone').placeholder='Teléfono';
-document.getElementById('billing_email').placeholder='Correo electrónico *';
 
 document.getElementById('shipping_first_name').placeholder='Nombre *';
 document.getElementById('shipping_last_name').placeholder='Apellido *';

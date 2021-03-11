@@ -21,16 +21,34 @@ defined( 'ABSPATH' ) || exit;
  * My Account navigation.
  *
  * @since 2.6.0
- */
-do_action( 'woocommerce_account_navigation' ); ?>
+ */?>
+<section>
+    <div class="bannerStatic">
+        <div class="main-bannerStatic">
+            <div class="main-bannerStatic__content">
+                <div class="main-bannerStatic__img">
+                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                </div>
+                <div class="main-bannerStatic__text">
+                    <p>MI CUENTA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="woocommerce-MyAccount-content">
-	<?php
-		/**
-		 * My Account content.
-		 *
-		 * @since 2.6.0
-		 */
-		do_action( 'woocommerce_account_content' );
-	?>
+<div class="main-MyAccount ">
+	
+	<?php do_action( 'woocommerce_account_navigation' );?>
+	<div class="woocommerce-MyAccount-content">
+		<?php
+			/**
+			 * My Account content.
+			 *
+			 * @since 2.6.0
+			 */
+			do_action( 'woocommerce_account_content' );
+		?>
+	</div>
+
 </div>

@@ -424,24 +424,35 @@ p{
 .dropdown-item:last-child:hover{
 	border-radius: 0 0 5px 5px;
 }
-.navbar-nav form{
+.navbar-nav form input{
 	border-radius: 6px;
-  	border: solid 2px #000000;
+  	border: solid 2px #000000 !important;
+	width:175px;
 }
-.header.header-home .navbar-nav form{
-	border: solid 2px #ffffff;
+.header.header-home .navbar-nav form input{
+	border: solid 2px #ffffff !important;
 }
-.header.header-home.fixed .navbar-nav form{
-	border: solid 2px #000000;
+.header.header-home.fixed .navbar-nav form input{
+	border: solid 2px #000000 !important;
 }
 .navbar-nav form input{
-	background: transparent;
+	background: transparent !important;
 	border: none;
-	width: 140px !important;
+	width: 175px !important;
 	padding: 0;
-	font-size: 14px;
+	font-size: 14px !important;
 	color: rgb(0, 0, 0) !important;
-	height: auto;
+	height: 33px !important;
+	border: solid 2px #000000 !important;
+}
+.dgwt-wcas-search-wrapp{
+	min-width: 0 !important;
+}
+.header.header-home .dgwt-wcas-sf-wrapp svg path{
+	fill: #fff !important;
+}
+.header.header-home.fixed .dgwt-wcas-sf-wrapp svg path{
+	fill: #000 !important;
 }
 .navbar-nav form input::placeholder{
 	font-size: 14px;
@@ -810,6 +821,7 @@ p{
 
 .main-banner__content .slick-prev:before, .main-banner__content .slick-next:before{
 	font-size: 70px;
+	opacity: 1;
 }
 .main-banner__content .slick-prev:before{
     content: "\f104";
@@ -881,7 +893,7 @@ p{
     padding-left: 1.5rem;
 }
 .btn-banner{
-    padding: 15px 44px 15px 43px;
+    padding: 15px 44px;
     border: solid 1px #ffffff;
     background-color: rgba(255, 255, 255, 0.26);
     font-family: 'Montserrat';
@@ -901,12 +913,12 @@ p{
 	color: #000;
 }
 .main-banner__img--content{
-	height: 100vh;
+	height: 800px;
 	position:relative;
 }
 .main-banner__img--content img{
 	width: 100%;
-	height: 100%;
+	height: 100% !important;
 	object-fit: cover;
 }
 .main-banner__img--content::before{
@@ -1010,7 +1022,7 @@ p{
 }
 .item-categoria__img img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 
@@ -1039,6 +1051,7 @@ p{
 }
 .main-bestVendido__slider .slick-list.draggable{
     padding: 0 370px  !important;
+	height: 528px;
 }
 .main-bestVendido__slider .slick-prev{
     left: 270px;
@@ -1087,7 +1100,7 @@ p{
 }
 .main-bestVendido__card--img img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 .main-bestVendido__content.slick-active .main-bestVendido__card{
@@ -1159,7 +1172,7 @@ p{
 }
 .main-bestVendido__img img{
     width: 318px;
-    height: 417px;
+    height: 417px !important;
     object-fit: cover;
 }
 
@@ -1191,6 +1204,7 @@ p{
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+	text-transform: uppercase;
 }
 .main-upcycling__text{
     font-family: 'Montserrat';
@@ -1223,6 +1237,7 @@ p{
 	display: grid;
 	grid-template-columns: 40% 15% 15% 30%;
 	padding: 55px 70px;
+	background: #f7f7f7;
 }
 .content-footer__text--text{
 	font-family: 'Montserrat';
@@ -1511,7 +1526,7 @@ p{
 #\31 3 > div > div.title-termsConditions{
     display: none;
 }
-#\31 3 > div > div.text-termsConditions > div > div{
+#\31 3 > div > div.text-termsConditions > div .woocommerce-notices-wrapper{
     display: none;
 }
 
@@ -1567,13 +1582,15 @@ p{
 }
 .main-about__img--content img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
+	position: relative;
+	z-index: 1
 }
 .main-about__img--content::before{
     position: absolute;
     content: url('../img/image-quienes-somos-bg.png');
-    z-index: -1;
+    z-index: 0;
     left: 0;
     top: 0;
 }
@@ -1790,7 +1807,7 @@ p{
 
 
 .bannerStatic{
-    padding-top: 100px;
+    padding-top: 115px;
 }
 .main-bannerStatic__content{
     height: 415px;
@@ -1820,7 +1837,7 @@ p{
 }
 .main-bannerStatic__img img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 .main-bannerStatic__text{
@@ -2052,7 +2069,7 @@ p{
 }
 .main-category__img--content img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 .main-category__img .item-category__mask{
@@ -2147,13 +2164,13 @@ p{
 }
 .main-vendeAqui__img--content img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 .main-vendeAqui__form{
     position: absolute;
     width: 940px;
-    height: 900px;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2161,6 +2178,7 @@ p{
     border-radius: 2px;
     background-color: #ffffff;
     padding: 124px 240px 62px;
+	margin-top: 40px;
 }
 .main-vendeAqui__form--title{
     font-family: 'Bodoni SvtyTwo ITC TT';
@@ -2228,7 +2246,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 }
 .vende-upcycling{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .btn-vende-upcycling{
     width: 100%;
@@ -2274,7 +2292,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 }
 .main-vendeAqui__form--content .form-row label{
     margin-bottom: 0;
-    display: none;
+    display: none !important;
 }
 
 
@@ -2312,7 +2330,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     background: #8ae8a7;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
 .main-navSeller__text{
     display: flex;
@@ -4065,6 +4083,249 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .registro .woocommerce-notices-wrapper{
     padding: 0;
 }
+.navSeller .main-navSeller__redes--follow ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.navSeller .main-navSeller__redes--follow a{
+	display:none;
+}
+.navSeller .main-navSeller__redes--follow ul li{
+	margin-right:24px !important;
+	float: left !important;
+}
+.navSeller .main-navSeller__redes--follow ul li button{
+	font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #050505 !important;
+    padding: 8px 12px !important;
+    border-radius: 3px !important;
+    background-color: #8ae8a7 !important;
+	margin :0 !important;
+}
+#dokan-secondary{
+	display:none;
+}
+.dokan-profile-frame-wrapper{
+	display:none;
+}
+.seller-items .star-rating{
+	display:none !important;
+}
+.dokan-single-store .store-coupon-wrap{
+	display: none;
+}
+.seller-items .main-listProducts__img{
+	height: 357px;
+}
+.seller-items .main-listProducts__img a{
+	height:100%;
+}
+.seller-items ul{
+	display: flex;
+	padding: 0 150px !important;
+}
+.seller-items .main-listProducts__item{
+	margin: 16px;
+}
+.seller-items .main-listProducts__title{
+	margin-top: 108px;
+}
+
+
+
+/*-- Wishlist --*/
+
+#\36 8{
+	padding: 200px 100px 0;
+}
+#yith-wcwl-form > div.wishlist-title-container{
+	text-align: center;
+}
+#yith-wcwl-form > div.wishlist-title-container > div > h2{
+	font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.woocommerce a.remove{
+	display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 20px !important;
+    width: 20px !important;
+    font-weight: 100 !important;
+    font-size: 2rem !important;
+    background-color: rgb(138, 232, 167) !important;
+    color: #000 !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+	background-color: rgb(138, 232, 167) !important;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 3px;
+}
+#yith-wcwl-form > table > thead > tr > th.product-price{
+	text-align: center;
+}
+
+
+
+/*-- My Account --*/
+
+
+
+.content-myAccount{
+	margin-top: 100px;
+	position:relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:1000px;
+}
+.content-myAccount__img{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+    top: 0;
+}
+.content-myAccount__img img{
+	width: 100%;
+	height: 100% !important;
+	object-fit: cover;
+}
+.woocommerce-EditAccountForm.edit-account{
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	width: 940px;
+	padding: 65px 240px;
+	display: flex;
+    flex-direction: column;
+	border-radius: 5px;
+}
+.woocommerce-EditAccountForm.edit-account .form-row{
+	width: 100% !important;
+}
+.woocommerce-EditAccountForm.edit-account .form-row > span{
+	width: 100%;
+}
+.woocommerce-EditAccountForm.edit-account .form-row label{
+	display: none !important;
+}
+.woocommerce-EditAccountForm.edit-account .form-row input{
+    font-family: 'Montserrat' !important;
+    width: 100% !important;
+    height: 43px !important;
+    border-radius: 3px !important;
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    margin-bottom: 19px !important;
+    padding: 14px 12px;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !importan
+}
+.woocommerce-EditAccountForm.edit-account .form-row input::placeholder{
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !importan
+}
+.woocommerce-EditAccountForm.edit-account .form-row input#account_display_name{
+	margin-bottom: 10px !important;
+}
+.woocommerce-EditAccountForm.edit-account fieldset legend{
+	display: none;
+}
+.woocommerce-EditAccountForm.edit-account button{
+	padding: 14px !important;
+	border-radius: 3px !important;
+	background-color: #8ae8a7 !important;
+	font-family: 'Montserrat';
+	font-size: 12px !important;
+	font-weight: bold !important;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal !important;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000 !important;
+	width: 100%;
+}
+.regresar-myAccount{
+	position: absolute;
+	left: 52px;
+	top: 65px;
+}
+.regresar-myAccount a{
+	padding: 14px 20px;
+	border-radius: 3px;
+	border: solid 1px #8ae8a7;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+.regresar-myAccount__migas{
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	display: flex;
+	margin-top: 30px;
+}
+.regresar-myAccount__migas p{
+	color: #bac3b9;
+	margin-right: 0.2rem;
+}
+.main-MyAccount{
+	display:flex;
+	padding: 50px 100px;
+}
+
+
+
+
 
 
 
