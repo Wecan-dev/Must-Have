@@ -1282,7 +1282,8 @@ p{
 }
 .content-footer__menu--content a:hover{
 	transition:.2s ease-in-out;
-	color: #c6f4d4;
+	color: #000;
+	font-weight: 600;
 }
 .contact-footer__items{
 	margin-bottom: 24px;
@@ -1302,7 +1303,8 @@ p{
 }
 .contact-footer__items a:hover{
 	transition:.2s ease-in-out;
-	color: #c6f4d4;
+	color: #000;
+	font-weight: 600;
 }
 .content-footer__redes--content a{
 	margin-right: 23px;
@@ -1860,6 +1862,10 @@ p{
     top: 0;
     left: 0;
     text-transform: uppercase;
+	flex-direction: column;
+}
+.main-bannerStatic__text span{
+	font-size: 50px;
 }
 .main-contact__content{
     display: flex;
@@ -2492,7 +2498,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 }
 .main-listProducts__img img{
     width: 100%;
-    height: 358px;
+    height: 358px !important;
     object-fit: cover;
     position: relative;
 }
@@ -4302,7 +4308,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 	color: #000000;
 }
 .regresar-myAccount__migas{
-	font-family: Montserrat;
+	font-family: 'Montserrat';
 	font-size: 10px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -4321,6 +4327,445 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .main-MyAccount{
 	display:flex;
 	padding: 50px 100px;
+}
+.myAccout-navigation__content{
+	width: 180px;
+	margin-right: 60px;
+}
+.myAccout-navigation__content img, .myAccount-orders__content img{
+	width: 180px;
+	height: 180px !important;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.myAccout-navigation__content ul{
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.woocommerce-MyAccount-navigation-link{
+	margin-bottom: 10px;
+}
+.woocommerce-MyAccount-navigation-link a{
+	font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #26292b;
+    margin-left: 8px;
+    transition: .2s ease-in-out;
+
+}
+.woocommerce-MyAccount-navigation-link a:hover{
+	color: #000;
+	font-weight: 600;
+}
+.woocommerce-MyAccount-navigation-link.is-active a{
+	color: #000;
+	font-weight: 600;
+}
+.woocommerce-MyAccount-content{
+	width: 100%;
+}
+.myAccout-tabs__content{
+	width: 80%;
+	padding-top: 40px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads,
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--rma-requests,
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--following{
+	display: none;
+}
+.myAccount-orders__content{
+	position: relative;
+	text-align: center;
+	margin-right: 50px;
+}
+.myAccount-orders__content .regresar-myAccount{
+	position: static;
+	text-align:center;
+	margin-top: 45px;
+}
+.myAccount-orders__content .regresar-myAccount__migas{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+}
+.woocommerce .myAccout-tabs__content .woocommerce-orders-table{
+	border-radius: 2px !important;
+	border: solid 1px #8ae8a7 !important;
+	padding: 0 100px;
+}
+.woocommerce .myAccout-tabs__content .woocommerce-orders-table th{
+	padding: 16px 12px 10px;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 500 !important;
+	font-stretch: normal ;
+	font-style: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.woocommerce .myAccout-tabs__content .woocommerce-orders-table td{
+	border-top: solid 1px #8ae8a7 !important;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.woocommerce .myAccout-tabs__content .woocommerce-orders-table td a{
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.woocommerce .myAccout-tabs__content .woocommerce-orders-table td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions a{
+	padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #8ae8a7 !important;
+	font-weight: bold;
+}
+.u-columns.woocommerce-Addresses.col2-set.addresses{
+	display: flex;
+}
+.address-myAccount__content{
+	width: 80%;
+}
+.address-myAccount__content > p{
+	font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #26292b;
+    padding-bottom: 24px;
+}
+.address-myAccount__content address{
+	line-height: 1.6;
+	font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #26292b;
+}
+.address-myAccount__content header a{
+	font-weight: 500;
+}
+.myAccout-navigation__content .updated{
+	display: none;
+}
+.myAccout-navigation__content #wpua-edit-1{
+	margin-bottom: 15px;
+}
+.myAccout-navigation__content #wpua-edit-1 h3{
+	display: none;
+}
+.myAccout-navigation__content #wpua-edit-1 .wpua-edit-container{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.myAccout-navigation__content #wpua-thumbnail-existing{
+	display: none;
+}
+#wpua-preview img, #wpua-thumbnail img, #wpua-preview-existing img, #wpua-thumbnail-existing img{
+	max-height: 180px !important;
+}
+.myAccout-navigation__content #wpua-edit-1 #wpua-images-existing p span{
+	display: none;
+}
+.myAccout-navigation__content #wpua-edit-1 .wpua-edit-container p, .myAccout-navigation__content #wpua-edit-1 p.submit{
+	text-align: center;
+	margin-right: 0 !important;
+	margin-bottom: 5px;
+}
+.myAccout-navigation__content #wpua-edit-1 .wpua-edit-container p button, .myAccout-navigation__content #wpua-edit-1 p.submit input{
+	font-size: 10.5px !important;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #26292b;
+    text-align: center;
+    transition: .2s ease-in-out;
+	background: transparent;
+	padding: 0;
+}
+.myAccout-navigation__content #wpua-edit-1 .wpua-edit-container p button:hover, .myAccout-navigation__content #wpua-edit-1 p.submit input:hover{
+	color: #000;
+	font-weight: 600;
+}
+.myAccout-navigation__content #wpua-edit-1 p.submit input:focus{
+	outline: none;
+}
+.content-viewOrder{
+	margin-top: 115px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	height: 1000px;
+}
+.content-viewOrder__content{
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	width: 940px;
+	padding: 65px 80px;
+	border-radius: 2px;
+}
+.content-viewOrder__content > p{
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	background-color: #8ae8a7;
+	padding: 8px 20px;
+	width: max-content;
+	margin-top: 62px;
+	margin-bottom: 28px;
+}
+.content-viewOrder__content .regresar-myAccount{
+	left: 80px;
+	top: 80px;
+}
+.content-viewOrder__title{
+	font-family: 'Bodoni SvtyTwo ITC TT';
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.15;
+	letter-spacing: 0.3px;
+	text-align: center;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+}
+.content-viewOrder__content > p span{
+	font-family: 'Poppins';
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: #000000;
+}
+.content-viewOrder__img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content-viewOrder__img img{
+	width: 100%;
+	height: 100% !important;
+	object-fit: cover;
+}
+.product-viewOrder{
+	display: flex;
+}
+.product-viewOrder .item-thumbnail{
+	height: 100px;
+	width: 90px;
+}
+.product-viewOrder .item-thumbnail img{
+	width: 100%;
+	height: 100% !important;
+	object-fit: cover;
+}
+.product-viewOrder__text{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	margin-left: 15px;
+}
+.product-viewOrder__text p{
+	margin-bottom: 0;
+}
+.product-viewOrder__text a{
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.product-viewOrder__text .item-thumbnail{
+	display: none;
+}
+.product-viewOrder__text p br{
+	display: none;
+}
+.content-viewOrder__content .woocommerce-order-details__title{
+	font-family: 'Poppins';
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.order-details__total{
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	margin-bottom:0;
+	margin-top: 20px;
+}
+.order-details__total span{
+	font-weight: 500;
+}
+.order-details__total:last-child{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.content-viewOrder__content .woocommerce-customer-details{
+	display: none;
+}
+.factura{
+	display: flex;
+}
+.factura-direccion{
+	width: 300px;
+}
+.factura-direccion > p{
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.info_factura{
+	border-radius: 2px;
+	border: solid 1px #000000;
+	background-color: #ffffff;
+	padding: 18px 30px;
+	margin-right: 45px;
+}
+.info_factura a{
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.content-viewOrder__content .detail-orden > p{
+	margin-bottom: 20px;
+}
+.content-viewOrder__content .total-orden{
+	display: flex; 
+	justify-content: space-between;
+	padding: 12px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 50px;
+}
+.content-viewOrder__content .total-orden p{
+	margin: 0;
+}
+.edit-address__form{
+	position: relative;
+	z-index:1;
+	background: #fff;
+	padding: 50px 100px;
+    border-radius: 2px;
+	width: 600px;
+}
+.edit-address__form .woocommerce-address-fields__field-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.edit-address__form .woocommerce-address-fields__field-wrapper .form-row{
+	width: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+.edit-address__form .woocommerce-address-fields__field-wrapper .form-row input{
+	font-family: 'Montserrat' !important;
+    width: 100% !important;
+    height: 43px !important;
+    border-radius: 3px !important;
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    margin-bottom: 19px !important;
+    padding: 14px 12px;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+}
+.edit-address__form .woocommerce-address-fields__field-wrapper .form-row input::placeholder{
+	font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #353636 !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+	padding-left: 0 !important;
+}
+.edit-address__form .woocommerce-address-fields__field-wrapper .form-row label{
+	display: none !important;
+}
+.edit-address__form .woocommerce-address-fields > p button{
+	width: 100% !important;
+    padding: 14px !important;
+    border-radius: 3px !important;
+    background-color: #8ae8a7 !important;
+    border: none !important;
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: bold!important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: #000000 !important;
+}
+.content-myAccount-form{
+	height: 1100px;
 }
 
 
@@ -4620,13 +5065,10 @@ button:focus{
 .wpd-bubble-wrapper{
 	display: none !important;
 }
-.stars span a:nth-child(1){
-	margin-right: 1rem;
-}
+
 .stars span a{
 	position:relative;
-	color: transparent;
-	    margin-right: .5rem;
+	color: #000;
 }
 .stars span a:after{
 	content: "\f005";
@@ -4677,10 +5119,35 @@ button:focus{
 .form-submit #submit{
 	margin-top: 1rem;
 }
+.commentlist{
+	padding: 0 !important;
+}
+.star-rating::before{
+	color: #000 !important;
+}
 .star-rating{
-	display:none;
+	color: transparent;
+	float: left !important;
+}
+.commentlist .star-rating span{
+	padding-top: 0 !important;
+}
+.woocommerce .star-rating span::before{
+	color: #000;
 }
 .item-navSeller__content .text a{
 	font-weight: 600;
 	color: #000 !important;
+}
+#commentform .stars{
+	width: max-content;
+}
+.meta .verified{
+	font-size: 10px;
+}
+#wpd-bubble-wrapper{
+	display: none !important;
+}
+.item-navSeller__stars .text{
+	display: none;
 }

@@ -42,6 +42,42 @@ $oldcol = 1;
 $col    = 1;
 ?>
 
+
+<section>
+    <div class="bannerStatic">
+        <div class="main-bannerStatic">
+            <div class="main-bannerStatic__content">
+                <div class="main-bannerStatic__img">
+                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                </div>
+                <div class="main-bannerStatic__text">
+                    <p>MI perfil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="main-MyAccount ">
+	
+<div class="myAccount-orders__content">
+	<?php
+	$user = wp_get_current_user();
+
+	if ( $user ) :
+		?>
+		<img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+	<?php endif; ?>	
+	<div class="regresar-myAccount">
+			<a href="<?php bloginfo('url'); ?>/mi-cuenta">Regresar</a>
+			<div class="regresar-myAccount__migas">
+				<p>Inicio / </p>
+				<span>Mis direcciones</span>
+			</div>
+	</div>
+</div>
+<div class="address-myAccount__content">
 <p>
 	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', esc_html__( 'The following addresses will be used on the checkout page by default.', 'woocommerce' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 </p>
@@ -57,7 +93,7 @@ $col    = 1;
 		$oldcol  = $oldcol * -1;
 	?>
 
-	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address">
+	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-6 woocommerce-Address">
 		<header class="woocommerce-Address-title title">
 			<h3><?php echo esc_html( $address_title ); ?></h3>
 			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php echo $address ? esc_html__( 'Edit', 'woocommerce' ) : esc_html__( 'Add', 'woocommerce' ); ?></a>
@@ -75,3 +111,7 @@ $col    = 1;
 	</div>
 	<?php
 endif;
+?>
+	</div>
+	
+</div>

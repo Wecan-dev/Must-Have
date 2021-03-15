@@ -117,7 +117,10 @@
 
   <script>
 
+	  
+$("#wpua-remove-existing").text('Save');
 
+	  
 document.getElementById('first-name').placeholder='Nombre';
 document.getElementById('last-name').placeholder='Apellido';
 document.getElementById('reg_email').placeholder='Correo electrónico';

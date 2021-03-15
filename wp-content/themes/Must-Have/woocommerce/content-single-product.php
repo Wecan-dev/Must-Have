@@ -152,7 +152,7 @@ $reviews_count = count( $YWAR_AdvancedReview->get_product_reviews_by_rating( $pr
                                 <p><?php echo esc_html( $store_info['store_name'] ); ?></p>
                             </div>
                             <div class="item-navSeller__stars">
-                                <?php echo wp_kses_post( dokan_get_readable_seller_rating( $author->ID ) ); echo esc_html( $review_count ); ?>
+                                <?php echo wp_kses_post( dokan_get_readable_seller_rating( $author->ID ) );?>
                             </div>
                             <div class="item-navSeller__sellers">
                                 <span><?php echo esc_attr( $order_count->{'wc-completed'} ); ?></span><p>ventas</p>

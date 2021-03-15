@@ -761,8 +761,107 @@
 		display: flex;
 	}
 
-
-
+	
+	/*-- My Account --*/
+	
+	
+	.main-MyAccount{
+		padding: 30px;
+		flex-direction: column;
+	}
+	.myAccout-navigation__content{
+		width: 100%;
+		margin:0;
+	}
+	.myAccout-navigation__content #wpua-edit-1 .wpua-edit-container{
+		align-items:  center;
+	}
+	.woocommerce .myAccout-tabs__content .woocommerce-orders-table{
+		padding: 0 20px;
+	}
+	.main-bannerStatic__text span{
+		font-size: 35px;
+	}
+	.myAccout-tabs__content{
+		width: 100%;
+	}
+	.myAccount-orders__content{
+		margin: 0;
+	}
+	.address-myAccount__content{
+		width: 100%;
+	}
+	.address-myAccount__content > p{
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+	.u-columns.woocommerce-Addresses.col2-set.addresses{
+		flex-direction: column;
+	}
+	.u-columns.woocommerce-Addresses.col2-set.addresses .u-column1.col-6.woocommerce-Address{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.woocommerce-EditAccountForm.edit-account{
+		width: 80%;
+		padding: 120px 30px 30px;
+	}
+	.woocommerce-EditAccountForm.edit-account .regresar-myAccount{
+		top: 30px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		left: 0;
+		justify-content: center;
+		align-items: center;
+	}
+	.woocommerce-EditAccountForm.edit-account .regresar-myAccount__migas{
+		margin-top: 10px;
+	}
+	.content-viewOrder{
+		margin-top: 58px;
+		height: 1200px;
+	}
+	.content-viewOrder__content{
+		width: 90%;
+		padding: 140px 20px 20px;
+	}
+	.content-viewOrder__content .regresar-myAccount{
+		left: 0;
+		top: 50px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.content-viewOrder__content .regresar-myAccount__migas{
+		margin-top: 10px;
+	}
+	.content-viewOrder__content > p{
+		margin: 20px 0;
+		width: 100%;
+	}
+	.content-viewOrder__content .total-orden{
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	.factura{
+		flex-direction:column;	
+	}
+	.factura-direccion{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.info_factura{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		margin: 0;
+	}
+	.info_factura > p{
+		margin-bottom: 0;
+	}
 
 }
 
@@ -1382,8 +1481,41 @@
 	}
 	
 
-
-
+	
+	/*-- My Account --*/
+	
+	
+	.main-MyAccount{
+		padding: 50px;
+	}
+	#\31 3 > div > div.text-termsConditions > div > div > div.main-MyAccount > div:nth-child(2){
+		width: 70%;
+	}
+	.woocommerce .myAccout-tabs__content .woocommerce-orders-table{
+		padding: 0 50px;
+	}
+	.woocommerce .myAccout-tabs__content .woocommerce-orders-table td:first-child{
+		border-top: 0 !important;
+	}
+	.woocommerce-EditAccountForm.edit-account{
+		padding: 140px 50px 50px;
+		width: 85%;
+	}
+	.content-viewOrder__content{
+		width: 85%;
+		padding: 50px;
+	}
+	.factura{
+		justify-content:space-between;
+	}
+	.factura-direccion{
+		width: 250px;
+	}
+	.info_factura{
+		margin:0;
+	}
+	
+	
 
 }
 
@@ -1521,6 +1653,12 @@
 	}
 	.icon-nav{
 		margin-left: 5px;
+	}
+	#\31 3 > div > div.text-termsConditions > div > div > div.main-MyAccount > div:nth-child(2){
+		width: 70%;
+	}
+	.woocommerce .myAccout-tabs__content .woocommerce-orders-table{
+		padding: 0 35px;
 	}
 }
 

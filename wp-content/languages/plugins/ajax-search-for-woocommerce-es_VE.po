@@ -1,0 +1,1146 @@
+# Translation of Plugins - Ajax Search for WooCommerce - Stable (latest release) in Spanish (Venezuela)
+# This file is distributed under the same license as the Plugins - Ajax Search for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-04 03:09:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es_VE\n"
+"Project-Id-Version: Plugins - Ajax Search for WooCommerce - Stable (latest release)\n"
+
+#: includes/Admin/Troubleshooting.php:509
+msgid "Server environment"
+msgstr "Entorno del servidor"
+
+#: includes/Admin/SettingsAPI.php:614
+msgid "Add new rule"
+msgstr "Añadir nueva regla"
+
+#: includes/Admin/SettingsAPI.php:610
+msgid "No rules"
+msgstr "Sin reglas"
+
+#: includes/Settings.php:547
+msgid "Exclude from search all products that match conditions"
+msgstr "Excluir de la búsqueda a todos los productos que coincidan con las condiciones"
+
+#: includes/Settings.php:545
+msgid "Filters"
+msgstr "Filtros"
+
+#: includes/Settings.php:539
+msgid "Exclude products"
+msgstr "Excluir productos"
+
+#: includes/Helpers.php:951
+msgid "Sold by:"
+msgstr "Vendido por:"
+
+#: includes/Helpers.php:948
+msgid "Vendors"
+msgstr "Vendedores"
+
+#: includes/Helpers.php:941
+msgid "Vendor"
+msgstr "Vendedor"
+
+#: includes/Admin/Troubleshooting.php:430
+msgid "Incompatible \"Searching by Text\" extension in WOOF - WooCommerce Products Filter"
+msgstr "Extensión «Búsqueda por texto» incompatible en WOOF - WooCommerce Products Filter"
+
+#: includes/Admin/Troubleshooting.php:396
+msgid "Extensions should looks like the picture below:"
+msgstr "Las extensiones deben verse como la siguiente imagen:"
+
+#: includes/Admin/Troubleshooting.php:395
+msgid "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">Products Filter (tab)</a> -> Extensions (tab)</code>, uncheck <code>Searching by Text</code> extension and save changes."
+msgstr "Ir a <code>WooCommerce -> Ajustes -> <a href=\"%s\" target=\"_blank\">Filtro de productos (pestaña)</a> -> Extensiones (pestaña)</code>, desmarcar la extensión <code>Buscando por texto</code> y guardar cambios."
+
+#: includes/Admin/Troubleshooting.php:393
+msgid "Incompatible \"Searching by Text\" extension from WOOF - WooCommerce Products Filter plugin is active"
+msgstr "Extensión \"Buscando por texto\" incompatible desde WOOF - WooCommerce Products Filter"
+
+#: includes/EmbeddingViaMenu.php:86
+msgid "Search icon color"
+msgstr "Color del icono de buscar"
+
+#: includes/Admin/Troubleshooting.php:435
+msgid "Loopback request"
+msgstr "Solicitud de bucle de retorno"
+
+#: includes/Admin/Troubleshooting.php:422
+msgid "Incompatible plugins"
+msgstr "Los plugins no son compatibles"
+
+#: includes/Admin/Troubleshooting.php:418
+msgid "PHP extensions"
+msgstr "Extensiones de PHP"
+
+#: includes/Admin/Troubleshooting.php:350
+msgid "Your settings should looks like the picture below:"
+msgstr "Tus ajustes deberían verse como en la siguiente imagen:"
+
+#: includes/Admin/Troubleshooting.php:345
+msgid "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">Products (tab)</a></code> and check option <code>%s</code> and uncheck option <code>%s</code>."
+msgstr "Ve a <code>WooCommerce -> Ajustes -> <a href=\"%s\" target=\"_blank\">Productos (pestaña)</a></code> y marca la opción <code>%s</code> y desmarca la opción <code>%s</code>."
+
+#: includes/Admin/Troubleshooting.php:343
+#: includes/Admin/Troubleshooting.php:394
+msgid "Solution"
+msgstr "Solución"
+
+#: includes/Admin/Troubleshooting.php:342
+#: includes/Admin/Troubleshooting.php:426
+msgid "Incorrect \"Add to cart\" behaviour in WooCommerce settings"
+msgstr "Comportamiento incorrecto en «Añadir al carrito» en los ajustes de WooCommerce"
+
+#: includes/Admin/Troubleshooting.php:340
+msgid "Enable AJAX add to cart buttons on archives"
+msgstr "Activar los botones ajax de añadir al carrito en los archivos"
+
+#: includes/Admin/Troubleshooting.php:339
+msgid "Redirect to the cart page after successful addition"
+msgstr "Redirigir a la página del carrito tras añadir productos correctamente"
+
+#: includes/Admin/Troubleshooting.php:315
+msgid "Install the latest version of WordPress for our plugin to work as best it can!"
+msgstr "¡Instala la última versión de WordPress para que nuestro plugin trabaje lo mejor posible!"
+
+#: includes/Admin/Troubleshooting.php:312
+msgid "Great! Our plugin works great with this version of WordPress."
+msgstr "¡Grandioso! Nuestro plugin funciona muy bien con esta versión de WordPress."
+
+#: includes/Admin/Troubleshooting.php:303
+#: includes/Admin/Troubleshooting.php:414
+msgid "WordPress version"
+msgstr "Versión de WordPress"
+
+#: includes/Admin/Troubleshooting.php:273
+msgid "One or more required PHP extensions are missing on your server"
+msgstr "Falta una o más extensiones PHP necesarias que faltan en tu servidor"
+
+#: includes/Admin/Troubleshooting.php:258
+msgid "If yes, add you server IP to whitelist IPs. That’s all."
+msgstr "En caso afirmativo, agrega la IP del servidor a las IP de la lista de permitidos. Eso es todo."
+
+#: includes/Admin/Troubleshooting.php:257
+msgid "Is your website publicly available only for whitelisted IPs?"
+msgstr "¿Tu web está disponible públicamente solo para IP incluidas en la lista de permitidos?"
+
+#: includes/Admin/Troubleshooting.php:254
+msgid "If yes, you have to add to your <code>wp-config.php</code> file following constants. Remember to replace <code>your-username</code> and <code>your-password</code> with your values."
+msgstr "En caso afirmativo, tienes que añadir a tu archivo <code>wp-config.php</code> siguiendo las constantes. Recuerda reemplazar <code>your-username</code> y <code>your-password</code> por tus valores."
+
+#: includes/Admin/Troubleshooting.php:253
+msgid "Do you have a Basic Auth?"
+msgstr "¿Tienes una autorización básica?"
+
+#: includes/Admin/Troubleshooting.php:252
+msgid "Solutions:"
+msgstr "Soluciones:"
+
+#: includes/Admin/Troubleshooting.php:250
+msgid "This issue may affect the search results page and e.g. display all products every time"
+msgstr "Este problema puede afectar a la página de resultados de búsqueda y, por ejemplo, mostrar todos los productos a la vez"
+
+#: includes/Admin/Troubleshooting.php:248
+msgid "Your site could not complete a loopback request"
+msgstr "Tu sitio no pudo completar una solicitud de bucle de retorno"
+
+#: includes/Admin/Troubleshooting.php:216
+msgid "Your site can perform loopback requests"
+msgstr "Tu sitio puede realizar solicitudes de bucle de retorno"
+
+#: includes/Admin/Troubleshooting.php:184
+msgid "You are using one or more incompatible plugins"
+msgstr "Estás usando uno o más plugins incompatibles"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:72
+msgid "Warning!"
+msgstr "¡Advertencia!"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:67
+msgid "Go to <code>Appearance -> <a target=\"_blank\" href=\"%s\">Customize</a> -> Header -> Search</code> and enable <code>Predictive Search</code>"
+msgstr "Ve a <code>Apariencia -> <a target=\"_blank\" href=\"%s\">Personalizar</a> -> Cabecera -> Búsqueda</code> y activa <code>Búsqueda predictiva</code>"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:66
+msgid "To replace the search bar you have to enable \"Predictive Search\" option in the Shopkeeper settings."
+msgstr "Para reemplazar la barra de búsqueda, debes activar la opción «Búsqueda predictiva» en los ajustes de Shopkeeper"
+
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:57
+msgid "Replace all %s search bars with the Ajax Search for WooCommerce.<br><span style=\"color: red;\">Note: We currently only support the header type: \"Header 10\".</span>"
+msgstr "Reemplaza todas %s todas las barras de búsqueda por «Ajax Search for WooCommerce».<br><span style=\"color: red;\">Nota: Actualmente solo admitimos el tipo de cabecera: «Header 10».</span>"
+
+#: partials/themes/salient.php:21
+msgid "Hit enter to search or ESC to close"
+msgstr "Pulsa «enter» para buscar o «ESC» para cerrar"
+
+#: partials/admin/troubleshooting.php:22
+msgid "Check status again"
+msgstr "Comprobar el estado de nuevo"
+
+#: partials/admin/troubleshooting.php:18
+msgid "Great! We have not detected any problems that could affect the correct functioning of our plugin."
+msgstr "¡Grandioso! No hemos detectado ningún problema que pudiera afectar el correcto funcionamiento de nuestro plugin."
+
+#: partials/admin/troubleshooting.php:11
+msgid "Processing asynchronous tests..."
+msgstr "Procesando pruebas asincrónicas ..."
+
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:75
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:57
+#: includes/Integrations/Themes/Divi/Divi.php:75
+#: includes/Integrations/Themes/Restoration/Restoration.php:59
+#: includes/Integrations/Themes/Savoy/Savoy.php:57
+#: includes/Integrations/Themes/Shopical/Shopical.php:57
+#: includes/Integrations/Themes/Bridge/Bridge.php:57
+#: includes/Integrations/Themes/The7/The7.php:60
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:57
+#: includes/Integrations/Themes/Avada/Avada.php:60
+#: includes/Integrations/Themes/Enfold/Enfold.php:64
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:59
+#: includes/Integrations/Themes/Sober/Sober.php:57
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:57
+#: includes/Abstracts/ThemeIntegration.php:63
+msgid "Replace all %s search bars with the Ajax Search for WooCommerce."
+msgstr "Reemplaza todas las barras de búsqueda de %s por la barra de búsqueda ajax para WooCommerce."
+
+#: includes/Settings.php:228
+msgid "px"
+msgstr "px"
+
+#: includes/Settings.php:227
+msgid "Mobile breakpoint"
+msgstr "Punto de ruptura para móviles"
+
+#: includes/Settings.php:220
+msgid "The search will open in overlay on mobile"
+msgstr "La búsqueda se abrirá en superposición en el móvil"
+
+#: includes/Settings.php:219
+msgid "Overlay on mobile"
+msgstr "Superposición en el móvil"
+
+#: includes/Settings.php:201
+msgid "Layout (beta)"
+msgstr "Plantilla (beta)"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:93
+msgid "Replace the TheGem default search"
+msgstr "Reemplazar la búsqueda por defecto en TheGem"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:79
+msgid "TheGem Theme"
+msgstr "Tema TheGem"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:72
+msgid "Replace a search bar in TheGem "
+msgstr "Reemplazar la barra de búsqueda en TheGem"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:46
+msgid "Impreza Theme"
+msgstr "Tema Impreza"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:39
+msgid "Replace Impreza search bar"
+msgstr "Reemplazar la barra de búsqueda de Impreza"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:35
+msgid "Here is <a href=\"%s\" target=\"_blank\">article</a> about how to do it using Impreza child-theme."
+msgstr "Aquí está <a href=\"%s\" target=\"_blank\">el árticulo</a> acerca de como usar el tema hijo de Impreza"
+
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:61
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:43
+#: includes/Integrations/Themes/Divi/Divi.php:61
+#: includes/Integrations/Themes/Restoration/Restoration.php:45
+#: includes/Integrations/Themes/Savoy/Savoy.php:43
+#: includes/Integrations/Themes/Shopical/Shopical.php:43
+#: includes/Integrations/Themes/Bridge/Bridge.php:43
+#: includes/Integrations/Themes/The7/The7.php:46
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:43
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:43
+#: includes/Integrations/Themes/Avada/Avada.php:46
+#: includes/Integrations/Themes/Enfold/Enfold.php:50
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:45
+#: includes/Integrations/Themes/Sober/Sober.php:43
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:43
+#: includes/Abstracts/ThemeIntegration.php:49
+msgid "%s Theme"
+msgstr "Tema %s"
+
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:54
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:36
+#: includes/Integrations/Themes/Divi/Divi.php:54
+#: includes/Integrations/Themes/Restoration/Restoration.php:38
+#: includes/Integrations/Themes/Savoy/Savoy.php:36
+#: includes/Integrations/Themes/Shopical/Shopical.php:36
+#: includes/Integrations/Themes/Bridge/Bridge.php:36
+#: includes/Integrations/Themes/The7/The7.php:39
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:36
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:36
+#: includes/Integrations/Themes/Avada/Avada.php:39
+#: includes/Integrations/Themes/Enfold/Enfold.php:43
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:38
+#: includes/Integrations/Themes/Sober/Sober.php:36
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:36
+#: includes/Abstracts/ThemeIntegration.php:42
+msgid "Replace %s search bar"
+msgstr "Replazar la barra de búsqueda de %s"
+
+#: widget.php:43 includes/Settings.php:207 includes/EmbeddingViaMenu.php:74
+msgid "Layout"
+msgstr "Plantilla"
+
+#: widget.php:41 includes/Settings.php:212 includes/EmbeddingViaMenu.php:189
+msgid "Icon on mobile, search bar on desktop"
+msgstr "Ícono en el móvil, barra de búsqueda en el escritorio"
+
+#: widget.php:40 includes/Settings.php:211 includes/Settings.php:242
+#: includes/EmbeddingViaMenu.php:188
+msgid "Search icon"
+msgstr "Icono de búsqueda"
+
+#: widget.php:39 includes/Settings.php:210 includes/EmbeddingViaMenu.php:187
+msgid "Search bar only"
+msgstr "Solo la barra de búsqueda"
+
+#: widget.php:38 includes/EmbeddingViaMenu.php:186
+msgid "Default"
+msgstr "Por defecto"
+
+#: includes/Admin/RegenerateImages.php:173
+msgid "Regeneration of images started. The process will continue in the background."
+msgstr "Se inició la regeneración de imágenes. El proceso continuará en segundo plano."
+
+#: includes/Admin/RegenerateImages.php:95
+msgid "<b>AJAX Search for WooCommerce</b>: It is recommended to generate a special small image size for existing products to ensure a better user experience. This is a one-time action. <br /><br />You can do it by clicking %s or use external plugin e.g. %s."
+msgstr "<b>AJAX Search for WooCommerce</b>: Se recomienda generar un tamaño de imagen pequeño especial para los productos existentes para garantizar una mejor experiencia de usuario. Esta es una acción se realiza solo una vez. <br /><br />Puedes hacerlo haciendo clic %s o usa un plugin externo como por ejemplo, %s."
+
+#: includes/Admin/RegenerateImages.php:93
+msgid "Regenerate WooCommerce images"
+msgstr "Regenerar imágenes de WooCommerce"
+
+#: partials/admin/search-preview.php:203
+msgid "Add to cart"
+msgstr "Añadir al carrito"
+
+#: partials/admin/how-to-use.php:22
+msgid "Are there any difficulties? <b>We will do it for you!</b> We offer free of charge search bar implementation for Pro users. <a target=\"_blank\" href=\"%s\">Become one now!</a>"
+msgstr "¿Hay alguna dificultad? <b>¡Lo haremos por ti!</b> Ofrecemos implementación gratuita de la barra de búsqueda para usuarios Pro. <a target=\"_blank\" href=\"%s\">¡Conviértete en uno ahora!</a>"
+
+#: partials/admin/how-to-use.php:17
+msgid "Using a shortcode - %s"
+msgstr "Usando un shortcode - %s"
+
+#: partials/admin/features.php:30
+msgid "Individual customization of the search bar (simple CSS improvements)"
+msgstr "Personalización individual de la barra de búsqueda (mejoras simples de CSS)"
+
+#: partials/admin/features.php:28
+msgid "Search for posts and pages"
+msgstr "Buscar por entradas y páginas"
+
+#: partials/admin/features.php:27
+msgid "Search in brands (WooCommerce Brands or YITH WooCommerce Brands)"
+msgstr "Buscar en marcas (WooCommerce Brands o YITH WooCommerce Brands)"
+
+#: partials/admin/features.php:26
+msgid "Search by variation product SKU"
+msgstr "Buscar por variación del producto SKU"
+
+#: partials/admin/features.php:20
+msgid "Professional and fast <b>help with embedding</b> or <b>replacing</b> the search bar in your theme"
+msgstr "Profesional y rápido <b>ayuda para incrustar</b> o <b>reemplazar</b> la barra de búsqueda en tu tema"
+
+#: partials/admin/features.php:19
+msgid "<b>New Ultra-Fast Search Engine</b> – works very fast even with 100,000+ products "
+msgstr "<b>Nuevo motor de búsqueda ultrarrápido</b>: funciona muy rápido incluso con más de 100.000 productos "
+
+#: partials/admin/features.php:16
+msgid "Update now and boosts your sales. You will receive <b>14-day satisfaction guarantee</b>.  A return on investment will come very quickly."
+msgstr "Actualiza ahora y aumenta tus ventas. Recibirás <b>garantía de satisfacción de 14 días</b>. Un retorno de la inversión vendrá muy rápidamente."
+
+#: includes/Helpers.php:954
+msgid "continue reading"
+msgstr "seguir leyendo"
+
+#: includes/Settings.php:534
+msgid "Synonyms should be separated by a comma. Each new synonyms group in the new line. You can use a phrase instead of a single word. <br /> <br />Sample list:<br /> <br /><span class=\"dgwt-wcas-synonyms-sample\">sofa, couch, davenport, divan, settee<br />big, grand, great, large, outsize</span>"
+msgstr "Los sinónimos deben estar separados por una coma. Cada nuevo grupo de sinónimos en una nueva línea. Puedes usar una frase en lugar de una sola palabra.<br /><br />Lista de muestra:<br /><br /><span class=\"dgwt-wcas-synonyms-sample\">sofá, sillón, davenport, diván, canapé<br />grande, enorme, inmenso, vasto, descomunal</span>"
+
+#: includes/Settings.php:532
+msgid "Synonyms feature allows your users to find more relevant results. If your products have alternative names and users often misspelling them, consider adding synonyms."
+msgstr "La función de sinónimos permite a tus usuarios encontrar resultados más relevantes. Si tus productos tienen nombres alternativos y los usuarios a menudo los escriben mal, plantéate añadir sinónimos."
+
+#: partials/admin/features.php:29 includes/Settings.php:526
+#: includes/Settings.php:532
+msgid "Synonyms"
+msgstr "Sinónimos"
+
+#: partials/admin/features.php:25 includes/Settings.php:500
+msgid "Search in tags"
+msgstr "Búsqueda en etiquetas"
+
+#. Description of the plugin
+msgid "The most popular WooCommerce product search. Gives your users a well-designed advanced AJAX search bar with live search suggestions."
+msgstr "El buscador de productos mas popular para WooCommerce. Ofrece a sus usuarios una barra de búsqueda avanzada en ajax bien diseñada con sugerencias de búsqueda en vivo."
+
+#: includes/EmbeddingViaMenu.php:178
+msgid "AJAX search bar will be displayed here."
+msgstr "La barra de búsqueda ajax se mostrará aquí."
+
+#: includes/EmbeddingViaMenu.php:166 includes/EmbeddingViaMenu.php:167
+msgid "Add to menu"
+msgstr "Añadir al menú"
+
+#: includes/EmbeddingViaMenu.php:150
+msgid "Add AJAX search bar as a menu item."
+msgstr "Añadir la barra de búsqueda ajax como un elemento del menú."
+
+#: includes/Settings.php:596
+msgid "What time to rebuild the index?"
+msgstr "¿Tiempo para reconstruir el índice?"
+
+#: includes/Settings.php:590
+msgid "Weekly"
+msgstr "Semanalmente"
+
+#: includes/Settings.php:589
+msgid "Daily"
+msgstr "Diariamente"
+
+#: includes/Settings.php:585
+msgid "Interval"
+msgstr "Intervalo"
+
+#: includes/Settings.php:577
+msgid "I most cases you don't need to use the scheduler because The search index is updating when you edit products. If you use import tools or custom code to refresh prices or bulk add/edit products, the indexing scheduler will be helpful."
+msgstr "En la mayoría de los casos, no es necesario utilizar el programador porque el índice de búsqueda se actualiza cuando edites productos. Si usas herramientas de importación o código personalizado para actualizar precios o añadir/editar productos en lote, el programador de indexación será útil."
+
+#: includes/Settings.php:577
+msgid "Enable Scheduler"
+msgstr "Activar el programador"
+
+#: includes/Settings.php:571
+msgid "Scheduling Indexing"
+msgstr "Programación de indexación"
+
+#: includes/Settings.php:147
+msgid "How to add?"
+msgstr "¿Cómo añadir?"
+
+#: widget.php:27 includes/EmbeddingViaMenu.php:55
+#: includes/EmbeddingViaMenu.php:156
+msgid "AJAX Search bar"
+msgstr "Barra de búsqueda AJAX"
+
+#: partials/admin/how-to-use.php:16
+msgid "Menu Screen"
+msgstr "Pantalla de menú"
+
+#: partials/admin/how-to-use.php:16
+msgid "As a menu item - go to %s and add menu item \"AJAX Search bar\". Done!"
+msgstr "Como elemento de menú - ve a %s y añade el elemento de menú «barra de búsqueda ajax». ¡Listo!"
+
+#: includes/Settings.php:605
+msgid "Returns suggestions based on likely relevance even though a search keyword may not exactly match. E.g if you type \"ipho<b>m</b>e\" you get the same results as for \"iphone\""
+msgstr "Devuelve sugerencias basadas en la relevancia probable, aunque una palabra clave de búsqueda puede no coincidir exactamente, por ejemplo, si escribes «ipho<b>m</b>e» obtendrás los mismos resultados que para «iphone»"
+
+#: includes/Settings.php:604
+msgid "Increases sales conversions"
+msgstr "Aumenta las conversiones de ventas"
+
+#: partials/admin/features.php:24 includes/Settings.php:493
+msgid "Search in categories"
+msgstr "Buscar en categorías"
+
+#: includes/Settings.php:418
+msgid "Suggestions colors"
+msgstr "Sugerencias de colores"
+
+#: includes/Settings.php:411
+msgid "Show Details panel"
+msgstr "Mostrar el panel de detalles"
+
+#: includes/Settings.php:405
+msgid "Details panel"
+msgstr "Panel de detalles"
+
+#: includes/Settings.php:398
+msgid "Show pages"
+msgstr "Mostrar las páginas"
+
+#: includes/Settings.php:391
+msgid "Show posts"
+msgstr "Mostrar las entradas"
+
+#: includes/Settings.php:384
+msgid "Show tags"
+msgstr "Mostrar las etiquetas"
+
+#: includes/Settings.php:377
+msgid "Show categories"
+msgstr "Mostrar las categorías"
+
+#: includes/Settings.php:371
+msgid "Non-Products in autocomplete"
+msgstr "Ningún producto para autocompletar"
+
+#: includes/Settings.php:365
+msgid "More results label"
+msgstr "Más etiquetas de resultados"
+
+#: includes/Settings.php:328
+msgctxt "admin"
+msgid "No results label"
+msgstr "Etiqueta de «Sin resultados»"
+
+#: includes/Settings.php:320
+msgid "Group results"
+msgstr "Resultados grupales"
+
+#: includes/Settings.php:312
+msgid "Limit"
+msgstr "Límite"
+
+#: includes/Settings.php:188
+msgid "Submit label"
+msgstr "Etiqueta de «Enviar»"
+
+#: includes/Settings.php:166
+msgid "Min characters to show autocomplete"
+msgstr "Caracteres mínimos para mostrar el autocompletado"
+
+#: includes/Settings.php:141
+msgid "How to add search bar in your theme?"
+msgstr "¿Cómo añadir la barra de búsqueda en tu tema?"
+
+#: includes/Settings.php:114
+msgid "Indexer"
+msgstr "Indexador"
+
+#: includes/Settings.php:107
+msgid "Search config"
+msgstr "Ajustes de búsqueda"
+
+#: includes/Settings.php:95
+msgid "Starting"
+msgstr "Iniciando"
+
+#: includes/Helpers.php:952
+msgid "Featured"
+msgstr "Destacado"
+
+#: includes/Helpers.php:950
+msgid "Sale"
+msgstr "Oferta"
+
+#: includes/Integrations/Themes/Storefront/Storefront.php:37
+msgid "Replace Storefront search bar"
+msgstr "Reemplazar la barra de búsqueda de Storefront"
+
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:82
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:64
+#: includes/Integrations/Themes/Divi/Divi.php:82
+#: includes/Integrations/Themes/Restoration/Restoration.php:66
+#: includes/Integrations/Themes/Storefront/Storefront.php:65
+#: includes/Integrations/Themes/Savoy/Savoy.php:64
+#: includes/Integrations/Themes/TheGem/TheGem.php:100
+#: includes/Integrations/Themes/TheGem/TheGem.php:108
+#: includes/Integrations/Themes/Shopical/Shopical.php:64
+#: includes/Integrations/Themes/Bridge/Bridge.php:64
+#: includes/Integrations/Themes/The7/The7.php:67
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:64
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:64
+#: includes/Integrations/Themes/Avada/Avada.php:67
+#: includes/Integrations/Themes/Enfold/Enfold.php:71
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:81
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:64
+#: includes/Integrations/Themes/Sober/Sober.php:64
+#: includes/Integrations/Themes/Impreza/Impreza.php:60
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:64
+#: includes/Abstracts/ThemeIntegration.php:70
+msgid "Alternative ways to embed a search bar"
+msgstr "Formas alternativas de incrustar una barra de búsqueda"
+
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:57
+msgid "Replace all Flatsome search bars with the Ajax Search for WooCommerce."
+msgstr "Reemplaza todas las barras de búsqueda de Flatsome con Ajax Search for WooCommerce."
+
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:74
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:56
+#: includes/Integrations/Themes/Divi/Divi.php:74
+#: includes/Integrations/Themes/Restoration/Restoration.php:58
+#: includes/Integrations/Themes/Storefront/Storefront.php:57
+#: includes/Integrations/Themes/Savoy/Savoy.php:56
+#: includes/Integrations/Themes/TheGem/TheGem.php:92
+#: includes/Integrations/Themes/Shopical/Shopical.php:56
+#: includes/Integrations/Themes/Bridge/Bridge.php:56
+#: includes/Integrations/Themes/The7/The7.php:59
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:56
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:56
+#: includes/Integrations/Themes/Avada/Avada.php:59
+#: includes/Integrations/Themes/Enfold/Enfold.php:63
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:58
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:56
+#: includes/Integrations/Themes/Sober/Sober.php:56
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:56
+#: includes/Abstracts/ThemeIntegration.php:62
+msgid "Replace"
+msgstr "Reemplazar"
+
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:36
+msgid "Replace Flatsome search bar"
+msgstr "Reemplazar la barra de búsqueda Flatsome"
+
+#: includes/Integrations/Brands.php:207
+msgid "Show brands"
+msgstr "Mostrar marcas"
+
+#: partials/admin/embedding-in-theme.php:20
+msgid "We support this theme and you can easily replace all default search bars."
+msgstr "Somos compatibles con este tema y puedes reemplazar fácilmente todas las barras de búsqueda por decfecto."
+
+#: partials/admin/embedding-in-theme.php:19
+msgid "You use <b>%s</b> theme%s. Fantastic!"
+msgstr "Estás usando el tema <b>%s</b>%s. ¡Fantástico!"
+
+#: partials/admin/embedding-in-theme.php:16
+msgid "child theme of <b>%s</b>"
+msgstr "Thema hijo de <b>%s</b>"
+
+#: partials/admin/search-preview.php:178
+msgid "Sample product name"
+msgstr "Nombre del producto de ejemplo"
+
+#: partials/admin/search-preview.php:144 partials/admin/search-preview.php:189
+msgid "Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Quisque gravida lacus nec diam porttitor pharetra. Nulla facilisi. Proin pharetra imperdiet neque, non varius."
+msgstr "Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Quisque gravida lacus nec diam porttitor pharetra. Nulla facilisi. Proin pharetra imperdiet neque, non varius."
+
+#: includes/Helpers.php:949
+msgid "SKU"
+msgstr "SKU"
+
+#: partials/admin/search-preview.php:142
+msgid "Sample product <strong>name</strong>"
+msgstr "<strong>Nombre</strong> del producto de muestra"
+
+#: includes/Helpers.php:944 includes/Settings.php:334
+msgid "Products"
+msgstr "Productos"
+
+#: partials/admin/search-preview.php:126
+msgid "Sample page <strong>name</strong>"
+msgstr "<strong>Nombre</strong> de la página de muestra"
+
+#: includes/Helpers.php:940
+msgid "Page"
+msgstr "Página"
+
+#: includes/Helpers.php:947
+msgid "Pages"
+msgstr "Páginas"
+
+#: partials/admin/search-preview.php:113
+msgid "Sample post <strong>name</strong>"
+msgstr "<strong>Nombre</strong> de la entrada de muestra "
+
+#: includes/Helpers.php:939
+msgid "Post"
+msgstr "Entrada"
+
+#: includes/Helpers.php:946
+msgid "Posts"
+msgstr "Entradas"
+
+#: partials/admin/search-preview.php:100
+msgid "Sample tag <strong>name</strong>"
+msgstr "<strong>Nombre</strong> de la etiqueta de muestra"
+
+#: includes/Helpers.php:943
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: partials/admin/search-preview.php:87
+msgid "Sample category <strong>name</strong>"
+msgstr "<strong>Nombre</strong> de la categoría de muestra"
+
+#: includes/Helpers.php:942
+msgid "Categories"
+msgstr "Categorías"
+
+#: partials/admin/search-preview.php:74
+msgid "Sample brand <strong>name</strong>"
+msgstr "<strong>Nombre</strong> de la marca de muestra"
+
+#: includes/Helpers.php:945
+msgid "Brands"
+msgstr "Marcas"
+
+#: partials/admin/search-preview.php:24 includes/Settings.php:103
+msgid "Autocomplete"
+msgstr "Autocompletar"
+
+#: partials/admin/search-preview.php:23 includes/Settings.php:99
+#: includes/EmbeddingViaMenu.php:247
+msgid "Search bar"
+msgstr "Barra de búsqueda"
+
+#: partials/admin/search-preview.php:22
+msgid "Preview"
+msgstr "vista previa"
+
+#: includes/Helpers.php:956 includes/Helpers.php:957 includes/Settings.php:367
+msgid "See all products..."
+msgstr "Ver todos los productos..."
+
+#: partials/admin/settings.php:32 partials/admin/settings.php:33
+msgid "Show advanced settings"
+msgstr "Ver ajustes generales"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://ajaxsearch.pro?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc"
+msgstr "https://ajaxsearch.pro?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc"
+
+#: partials/admin/how-to-use.php:19
+msgid "By PHP - %s"
+msgstr "Por PHP - %s"
+
+#: partials/admin/how-to-use.php:18
+msgid "As a widget - go to %s and choose \"AJAX Search bar\""
+msgstr "Como widget - ve a %s y elije «Barra de búsqueda ajax»"
+
+#: partials/admin/how-to-use.php:14
+msgid "There are four easy ways to display the search bar in your theme"
+msgstr "Son cuatro las maneras fáciles de mostrar la barra de búsqueda en tu tema"
+
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:43
+msgid "Flatsome Theme"
+msgstr "Tema Flatsome"
+
+#: includes/Integrations/Brands.php:179 includes/Integrations/Brands.php:202
+msgid "based on the plugin %s"
+msgstr "basado en el plugin %s"
+
+#: includes/Integrations/Brands.php:184
+msgid "Search in brands"
+msgstr "Buscar en marcas"
+
+#: partials/admin/features.php:22 includes/Settings.php:507
+msgid "Search in custom fields"
+msgstr "Buscar en campos personalizados"
+
+#: includes/Settings.php:461
+msgid "Products search scope"
+msgstr "Extensión de búsqueda de productos"
+
+#: partials/admin/features.php:31 includes/Admin/Promo/Upgrade.php:63
+msgid "See a comparison of all free and premium features!"
+msgstr "¡Ver una comparación de todas las características gratuitas y premium!"
+
+#: includes/Admin/SettingsAPI.php:706
+msgid "Showcase"
+msgstr "Exhibir"
+
+#: includes/Helpers.php:938
+msgid "Brand"
+msgstr "Marca"
+
+#: includes/Settings.php:481
+msgid "Searching in variable products SKU is available only in <a target=\"_blank\" href=\"%s\">the pro version</a>."
+msgstr "La búsqueda en el SKU de productos variables solo está disponible en  <a target=\"_blank\" href=\"%s\">la versión Pro</a>."
+
+#: partials/admin/indexer-header-demo.php:16
+msgid "Show details"
+msgstr "Mostrar detalles"
+
+#: partials/admin/indexer-header-demo.php:11
+msgid "The search index does not exist yet. Build it now."
+msgstr "El índice de búsqueda no existe aún. Constrúyelo ahora."
+
+#: partials/admin/features.php:33
+msgid "Upgrade Now!"
+msgstr "¡Pásate a Pro ahora!"
+
+#: partials/admin/features.php:31
+msgid "And more..."
+msgstr "Y más..."
+
+#: partials/admin/features.php:14
+msgid "If users can’t find the product they’re searching for, they can’t buy it. Help your customers to find the right products even <span>10x faster</span>."
+msgstr "Si los usuarios no encuentran el producto que están buscando, no podrán comprarlo. Ayuda a tus clientes a encontrar los productos correctos, incluso <span>10 veces más rápido</span>."
+
+#: partials/admin/settings.php:25
+msgid "AJAX Search for WooCommerce (PRO) Settings"
+msgstr "Ajustes de AJAX Search for WooCommerce (PRO)"
+
+#: includes/Settings.php:627
+msgid "Index status"
+msgstr "Estado del índice"
+
+#: includes/Settings.php:620
+msgid "Hard"
+msgstr "Fuerte"
+
+#: includes/Settings.php:619
+msgid "Normal"
+msgstr "Normal"
+
+#: includes/Settings.php:618
+msgid "Soft"
+msgstr "Suave"
+
+#: includes/Settings.php:617
+msgid "-- Disabled"
+msgstr "-- Desactivado"
+
+#: includes/Settings.php:612
+msgid "Fuzzy matching"
+msgstr "Coincidencia confusa"
+
+#: includes/Settings.php:565
+msgid "Speed up search!"
+msgstr "¡Acelerar la búsqueda!"
+
+#: includes/Settings.php:520
+msgid "Fuzziness"
+msgstr "Difuminado"
+
+#: includes/Settings.php:559
+msgid "Pro features"
+msgstr "Características Pro"
+
+#: partials/admin/features.php:23 includes/Settings.php:486
+msgid "Search in attributes"
+msgstr "Buscar en atributos"
+
+#: includes/Settings.php:481
+msgid "Searching also in variable products SKU"
+msgstr "Buscando también en el SKU de productos"
+
+#: includes/Settings.php:479
+msgid "Search in SKU"
+msgstr "Buscar en el SKU"
+
+#: includes/Settings.php:473
+msgid "Search in short description"
+msgstr "Buscar en la descripción corta"
+
+#: includes/Settings.php:467
+msgid "Search in description"
+msgstr "Buscar en la descripción"
+
+#: includes/Settings.php:119
+msgid "by simple tricks"
+msgstr "con simples trucos"
+
+#: includes/Settings.php:119
+msgid "Increase sales"
+msgstr "Aumenta las ventas"
+
+#: includes/Admin/Troubleshooting.php:193
+#: includes/Admin/Troubleshooting.php:197
+msgid "You use the %s plugin. The Ajax Search for WooCommerce does not support this plugin."
+msgstr "Usa el plugin %s. «Ajax Search for WooCommerce» no es compatible con este plugin."
+
+#: includes/Admin/Troubleshooting.php:281
+#: includes/Admin/Troubleshooting.php:284
+msgid "Required PHP extension: %s"
+msgstr "Se requiere la extensión PHP: %s"
+
+#: includes/Admin/Promo/Upgrade.php:67
+msgid "Upgrade Now"
+msgstr "Actualizar ahora"
+
+#: includes/Admin/Promo/Upgrade.php:66
+msgid "Free updates and email support included."
+msgstr "Actualizaciones gratuitas y soporte por correo electrónico incluido."
+
+#: includes/Admin/Promo/Upgrade.php:65
+msgid "You can upgrade without leaving the admin panel by clicking below."
+msgstr "Puedes actualizar sin salir del escritorio haciendo clic a continuación."
+
+#: includes/Admin/Promo/Upgrade.php:58
+msgid "Update now and increase your sales. You will receive 14-day satisfaction guarantee.  A return on investment will come very quickly."
+msgstr "Actualiza ahora y aumenta tus ventas. Si después de 14 días no estás satisfecho, te devolveremos tu dinero. Verás que rápidamente tu inversión repercute en tus resultados."
+
+#: includes/Admin/Promo/Upgrade.php:54
+msgid "Ajax Search for WooCommerce PRO - Upgrade Now"
+msgstr "Ajax Search for WooCommerce PRO - Actualiza ahora"
+
+#: includes/Admin/Promo/Upgrade.php:63
+msgid "and more..."
+msgstr "y más..."
+
+#: includes/Admin/Promo/Upgrade.php:52
+msgid "Individual tips and support by Damian Góra - the author of the plugin"
+msgstr "Sugerencias y soporte personalizado de Damian Góra, autor del plugin"
+
+#: includes/Admin/Promo/Upgrade.php:51
+msgid "Individual customization of the search form (simple CSS improvements)"
+msgstr "Personalización individual del formulario de búsqueda (mejoras simples de CSS)"
+
+#: includes/Admin/Promo/Upgrade.php:50
+msgid "Search in attributes and variation products SKUs (option)"
+msgstr "Busca en los atributos y en los SKU de variaciones de producto"
+
+#: partials/admin/features.php:21 includes/Admin/Promo/Upgrade.php:49
+msgid "Fuzzy search"
+msgstr "Búsqueda confusa"
+
+#: includes/Admin/Promo/Upgrade.php:48
+msgid "New modern search engine based on bm25 ranking algorithm"
+msgstr "Nuevo y moderno motor de búsqueda basado en el algoritmo de ranking bm25"
+
+#: includes/Admin/Promo/Upgrade.php:47
+msgid "Speed up search! (even 10x faster) - users love it!"
+msgstr "¡Mejora la velocidad! (incluso 10 veces más rápido! - ¡A los usuarios les encantará!"
+
+#: includes/Admin/SettingsAPI.php:704
+msgid "Contact"
+msgstr "Contacto"
+
+#: includes/Helpers.php:953
+msgctxt "in categories fe. in Books > Crime stories"
+msgid "in"
+msgstr "en"
+
+#: includes/Integrations/Themes/Storefront/Storefront.php:58
+msgid "Replace the Storefront default product search to the Ajax Search for WooCommerce form."
+msgstr "Reemplace la búsqueda de productos predeterminada de Storefront por el formulario de búsqueda ajax para WooCommerce."
+
+#: includes/Integrations/Themes/Storefront/Storefront.php:44
+msgid "Storefront Theme"
+msgstr "Tema Storefront"
+
+#: partials/admin/settings.php:27
+msgid "AJAX Search for WooCommerce Settings"
+msgstr "Ajustes de «AJAX Search for WooCommerce»"
+
+#: partials/admin/indexer-header-demo.php:15
+msgid "Build index"
+msgstr "Construir índice"
+
+#: includes/Settings.php:174
+msgid "To set 100% width leave blank"
+msgstr "Para establecer un ancho del 100% deja en blanco"
+
+#: includes/Settings.php:171
+msgid "Max form width"
+msgstr "Ancho máximo del formulario"
+
+#: includes/Settings.php:236
+msgid "Colors"
+msgstr "Colores"
+
+#: includes/Helpers.php:496 includes/Helpers.php:499
+msgid "Pro"
+msgstr "Pro"
+
+#: includes/Admin/Troubleshooting.php:43 includes/Admin/Troubleshooting.php:62
+msgid "Troubleshooting"
+msgstr "Diagnosticar"
+
+#: ajax-search-for-woocommerce.php:198
+msgid "Remind me again in week."
+msgstr "Recuérdame en una semana."
+
+#: ajax-search-for-woocommerce.php:193
+msgid "If you do not upgrade the php version, the next plugin release will not work!"
+msgstr "Si no actualizas tu versión de PHP, la próxima versión del plugin no funcionará!"
+
+#: ajax-search-for-woocommerce.php:191
+msgid "If you cannot upgrade your PHP version yourself, you can send an email to your host."
+msgstr "Si no puedes actualizar tu versión de PHP por tu cuenta, puedes contactar a tu proveedor de alojamiento."
+
+#: ajax-search-for-woocommerce.php:189
+msgid " You have to update your PHP version to least 5.5 (recommended 7.2 or greater)."
+msgstr " Tendrás que actualizar tu versión de PHP al menos a la 5.5 (recomendamos usar 7.2 o mayor)."
+
+#: ajax-search-for-woocommerce.php:188
+msgid "<b>AJAX Search for WooCommerce</b>:<br /> Your PHP version <b><i>%s</i></b> will not longer supported in the next plugin releases."
+msgstr "<b>AJAX Search for WooCommerce</b>:<br /> Tu versión de PHP <b><i>%s</i></b> dejará de ser soportata en las próximas versiones del plugin."
+
+#. Plugin Name of the plugin
+msgid "AJAX Search for WooCommerce"
+msgstr "AJAX Search para WooCommerce"
+
+#: includes/Admin/AdminMenu.php:27
+msgid "AJAX search bar"
+msgstr "Barra de búsqueda AJAX"
+
+#: includes/Admin/Promo/FeedbackNotice.php:88
+msgid "No thanks"
+msgstr "No, gracias"
+
+#: includes/Admin/Promo/FeedbackNotice.php:84
+msgid "Review %s"
+msgstr "Valoración %s"
+
+#: includes/Admin/Promo/FeedbackNotice.php:78
+msgid "I have spent countless hours developing it, and it would mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s"
+msgstr "He perdido la cuenta del tiempo que he invertido en desarrollarlo, y significaría mucho para mí si %sapoyaras este plugin con una pequeña reseña en WordPress.org.%s"
+
+#: includes/Admin/Promo/FeedbackNotice.php:73
+msgid "Hey %s, it's Damian Góra from %s. You have used this free plugin for some time now, and I hope you like it!"
+msgstr "Hola %s, soy Damian Góra de %s. Has usando este plugin gratuito desde hace tiempo ya, y espero que estés satisfecho con él!"
+
+#: ajax-search-for-woocommerce.php:218
+msgid "<b>AJAX Search for WooCommerce</b> is enabled but not effective. It requires %s in order to work."
+msgstr "<b>AJAX Search for WooCommerce</b> está habilitado pero no funcional. Require %s para funcionar."
+
+#: ajax-search-for-woocommerce.php:157
+msgid "<b>AJAX Search for WooCommerce</b>: You need PHP version at least 5.3 to run this plugin. You are currently using PHP version "
+msgstr "<b>AJAX Search for WooCommerce</b>: Necesitas al menos la versión 5.3 de PHP para correr este plugin. Actualmente usas la versión de PHP "
+
+#: includes/Helpers.php:955 includes/Settings.php:330
+msgid "No results"
+msgstr "No hay resultados"
+
+#: includes/Settings.php:359
+msgid "Show SKU"
+msgstr "Mostrar SKU"
+
+#: includes/Settings.php:514
+msgid "Exclude 'out of stock' products"
+msgstr "Excluir productos sin inventario"
+
+#. Author of the plugin
+msgid "Damian Góra"
+msgstr "Damian Góra"
+
+#: widget.php:32
+msgid "Title"
+msgstr "Título"
+
+#: widget.php:25
+msgid "AJAX (live) search form for WooCommerce"
+msgstr "Ajax (en vivo) formulario de búsqueda para WooCommerce"
+
+#: partials/search-form.php:30 partials/admin/search-preview.php:34
+msgid "Products search"
+msgstr "Búsqueda de productos"
+
+#: includes/Helpers.php:937
+msgid "Tag"
+msgstr "Etiqueta"
+
+#: includes/Helpers.php:936
+msgid "Category"
+msgstr "Categoría"
+
+#: partials/admin/how-to-use.php:18
+msgid "Widgets Screen"
+msgstr "Pantalla de widgets"
+
+#: includes/Settings.php:297
+msgid "Upload preloader image"
+msgstr "Subir imagen de precargador"
+
+#: includes/Settings.php:290
+msgid "Show preloader"
+msgstr "Mostrar precargador"
+
+#: includes/Settings.php:284
+msgid "Preloader"
+msgstr "Precargador"
+
+#: includes/Settings.php:452
+msgid "Border color"
+msgstr "Color del borde"
+
+#: includes/Settings.php:445
+msgid "Highlight color"
+msgstr "Color destacado"
+
+#: includes/Settings.php:438
+msgid "Text color"
+msgstr "Color de texto"
+
+#: includes/Settings.php:431
+msgid "Suggestion selected"
+msgstr "Sugerencia seleccionada"
+
+#: includes/Settings.php:424
+msgid "Suggestion background"
+msgstr "Fondo de las sugerencias"
+
+#: includes/Settings.php:277
+msgid "Search submit text"
+msgstr "Texto del botón de búsqueda"
+
+#: includes/Settings.php:270
+msgid "Search submit background"
+msgstr "Fondo del botón de envío"
+
+#: includes/Settings.php:263
+msgid "Search input border"
+msgstr "Borde del botón de búsqueda"
+
+#: includes/Settings.php:256
+msgid "Search input text"
+msgstr "Texto del botón de búsqueda"
+
+#: includes/Settings.php:249
+msgid "Search input background"
+msgstr "Fondo del botón de búsqueda"
+
+#: includes/Settings.php:352
+msgid "Show product description"
+msgstr "Mostrar descripción del producto"
+
+#: includes/Settings.php:346
+msgid "Show price"
+msgstr "Mostrar precio"
+
+#: includes/Settings.php:340
+msgid "Show product image"
+msgstr "Mostrar imagen de producto"
+
+#: includes/Settings.php:411
+msgid "The Details panel is an additional container for extended information. The details are changed dynamically when a user mouse over one of the suggestions."
+msgstr "El panel de detalles es un contenedor adicional para información extendida. Los detalles se cambian dinámicamente cuando un usuario pasa el ratón sobre una de las sugerencias."
+
+#: includes/Helpers.php:958 includes/Settings.php:197
+msgid "Search for products..."
+msgstr "Buscar productos ..."
+
+#: includes/Settings.php:195
+msgid "Search input placeholder"
+msgstr "Marcador de posición del formulario de búsqueda"
+
+#: partials/themes/ekommart.php:21 includes/Settings.php:191
+msgid "Search"
+msgstr "Buscar"
+
+#: includes/Settings.php:188
+msgid "To display the magnifier icon leave this field empty."
+msgstr "Deja éste campo vacío, para mostrar el ícono de la lupa."
+
+#: includes/Settings.php:180
+msgid "Show submit button"
+msgstr "Mostrar botón de envío"
+
+#: includes/Settings.php:162
+msgid "Minimum characters"
+msgstr "Caracteres mínimos"
+
+#: includes/Settings.php:315
+msgid "Maximum number of suggestions"
+msgstr "Número máximo de sugerencias"
+
+#: includes/Settings.php:156 includes/Settings.php:306
+msgid "Basic"
+msgstr "Básico"
+
+#: includes/Admin/SettingsAPI.php:505
+msgid "Choose File"
+msgstr "Elegir archivo"
+
+#: includes/Admin/AdminMenu.php:26
+msgid "Ajax Search for WooCommerce"
+msgstr "Ajax Search for WooCommerce"

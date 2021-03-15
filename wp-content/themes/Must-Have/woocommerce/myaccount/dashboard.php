@@ -21,12 +21,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+ 
+
+
 $allowed_html = array(
 	'a' => array(
 		'href' => array(),
 	),
 );
 ?>
+
+
+<section>
+    <div class="bannerStatic">
+        <div class="main-bannerStatic">
+            <div class="main-bannerStatic__content">
+                <div class="main-bannerStatic__img">
+                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                </div>
+                <div class="main-bannerStatic__text">
+                    <p>MI perfil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="main-MyAccount ">
+	
+<?php do_action( 'woocommerce_account_navigation' ); ?>
+<div>
+	
 
 <p>
 	<?php
@@ -79,3 +104,9 @@ $allowed_html = array(
 	do_action( 'woocommerce_after_my_account' );
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+	?>
+</div>
+	
+</div>
+
+

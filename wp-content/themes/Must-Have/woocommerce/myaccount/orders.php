@@ -20,7 +20,42 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
+<section>
+    <div class="bannerStatic">
+        <div class="main-bannerStatic">
+            <div class="main-bannerStatic__content">
+                <div class="main-bannerStatic__img">
+                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                </div>
+                <div class="main-bannerStatic__text">
+                    <p>MI CUENTA</p>
+					<span>Historias de ordenes</span>	
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<div class="main-MyAccount ">
+	
+<div class="myAccount-orders__content">
+	<?php
+	$user = wp_get_current_user();
+
+	if ( $user ) :
+		?>
+		<img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+	<?php endif; ?>	
+	<div class="regresar-myAccount">
+			<a href="<?php bloginfo('url'); ?>/mi-cuenta">Regresar</a>
+			<div class="regresar-myAccount__migas">
+				<p>Inicio / </p>
+				<span>Historias de ordenes</span>
+			</div>
+	</div>
+</div>
+	
+<div class="myAccout-tabs__content">
 <?php if ( $has_orders ) : ?>
 
 	<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
@@ -103,3 +138,6 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 <?php endif; ?>
 
 <?php do_action( 'woocommerce_after_account_orders', $has_orders ); ?>
+</div>
+	
+</div>

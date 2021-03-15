@@ -1,0 +1,615 @@
+2021-03-12T18:22:33+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php:47
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2601): wc_get_template('order/order-det...', Array)
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_order_details_table(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php(61): do_action('woocommerce_vie...', 207)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/s en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php en la línea 47
+
+2021-03-12T18:22:35+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php:47
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2601): wc_get_template('order/order-det...', Array)
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_order_details_table(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php(61): do_action('woocommerce_vie...', 207)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/s en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php en la línea 47
+
+2021-03-12T18:32:16+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:32:21+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:32:53+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:32:56+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:03+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:09+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:31+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:33+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:50+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:33:55+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:34:08+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:34:11+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:36:17+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:36:19+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:52
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 52
+
+2021-03-12T18:41:04+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:55
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/w en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 55
+
+2021-03-12T18:41:06+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:55
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon...' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 55
+
+2021-03-12T18:47:55+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T18:47:57+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon.. en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T18:48:38+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_order_itemmeta() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:118
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/htm en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 118
+
+2021-03-12T18:48:39+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_order_itemmeta() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:118
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/pa en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 118
+
+2021-03-12T18:49:17+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:115
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 115
+
+2021-03-12T18:49:19+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:115
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 115
+
+2021-03-12T18:49:45+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:115
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 115
+
+2021-03-12T18:49:47+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:115
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 115
+
+2021-03-12T18:52:36+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:52:38+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:53:24+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:53:27+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:54:27+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_order_itemmeta() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:116
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/htm en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 116
+
+2021-03-12T18:54:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_order_itemmeta() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:116
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/pa en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 116
+
+2021-03-12T18:54:57+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:54:59+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:57:19+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:57:21+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:57:47+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:57:49+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:58:10+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Have/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T18:58:12+00:00 CRITICAL Uncaught Error: Call to undefined function meta_value_img() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:113
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon... en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 113
+
+2021-03-12T19:05:47+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/M en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:05:48+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:05:53+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/M en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:05:56+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:09:37+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/M en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:09:40+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:112
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 112
+
+2021-03-12T19:14:31+00:00 CRITICAL Uncaught Error: Call to a member function get_product() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-H en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T19:14:33+00:00 CRITICAL Uncaught Error: Call to a member function get_product() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fo en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T19:17:37+00:00 CRITICAL Uncaught Error: Call to a member function get_product() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-H en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T19:17:39+00:00 CRITICAL Uncaught Error: Call to a member function get_product() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:108
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fo en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 108
+
+2021-03-12T19:31:31+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:107
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207')
+#7 /var/www/html/Must-Hav en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 107
+
+2021-03-12T19:31:33+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:107
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocommerce_acc...', '207/path/to/fon. en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 107
+
+2021-03-12T19:52:35+00:00 CRITICAL syntax error, unexpected ',' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T19:52:37+00:00 CRITICAL syntax error, unexpected ',' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T19:52:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function display_product_image_in_order_item(), 2 passed in /var/www/html/Must-Have/wp-includes/class-wp-hook.php on line 287 and exactly 3 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:206
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): display_product_image_in_order_item(Object(WC_Order_Item_Product), true)
+#1 /var/www/html/Must-Have/wp-includes/plugin.php(206): WP_Hook->apply_filters(Object(WC_Order_Item_Product), Array)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php(33): apply_filters('woocommerce_ord...', Object(WC_Order_Item_Product), true)
+#3 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php(63): wc_get_template('order/order-det...', Array)
+#5 /var/www/html/Must-Have/wp-content/plugins/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 206
+
+2021-03-12T19:52:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function display_product_image_in_order_item(), 2 passed in /var/www/html/Must-Have/wp-includes/class-wp-hook.php on line 287 and exactly 3 expected in /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php:206
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): display_product_image_in_order_item(Object(WC_Order_Item_Product), true)
+#1 /var/www/html/Must-Have/wp-includes/plugin.php(206): WP_Hook->apply_filters(Object(WC_Order_Item_Product), Array)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php(33): apply_filters('woocommerce_ord...', Object(WC_Order_Item_Product), true)
+#3 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php(63): wc_get_template('order/order-det...', Array)
+#5 /var/www/html/Must-Have/wp-content/plugins/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/functions.php en la línea 206
+
+2021-03-12T19:53:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php on line 33 and exactly 2 expected in /var/www/html/Must-Have/wp-includes/plugin.php:181
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php(33): apply_filters('woocommerce_ord...')
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php(63): wc_get_template('order/order-det...', Array)
+#3 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2601): wc_get_template('order/order-det...', Array)
+#5 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocom en /var/www/html/Must-Have/wp-includes/plugin.php en la línea 181
+
+2021-03-12T19:53:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php on line 33 and exactly 2 expected in /var/www/html/Must-Have/wp-includes/plugin.php:181
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php(33): apply_filters('woocommerce_ord...')
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details.php(63): wc_get_template('order/order-det...', Array)
+#3 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2601): wc_get_template('order/order-det...', Array)
+#5 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocom en /var/www/html/Must-Have/wp-includes/plugin.php en la línea 181
+
+2021-03-12T19:54:19+00:00 CRITICAL syntax error, unexpected ':', expecting ',' or ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T19:54:21+00:00 CRITICAL syntax error, unexpected ':', expecting ',' or ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T19:54:37+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T19:54:38+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/order/order-details-item.php en la línea 33
+
+2021-03-12T21:23:11+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_shipping_address() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:88
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do_action('woocom en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 88
+
+2021-03-12T21:23:16+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_shipping_address() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php:88
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(151): wc_get_template('myaccount/view-...', Array)
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3141): WC_Shortcode_My_Account::view_order(207)
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_account_view_order('207/path/to/fon...')
+#4 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3076): do en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/myaccount/view-order.php en la línea 88
+

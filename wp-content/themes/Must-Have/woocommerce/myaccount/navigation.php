@@ -23,13 +23,7 @@ do_action( 'woocommerce_before_account_navigation' );
 <div class="myAccout-navigation__content">
 	
 
-	<?php
-	$user = wp_get_current_user();
-
-	if ( $user ) :
-		?>
-		<img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
-	<?php endif; ?>
+	<?php echo do_shortcode('[avatar_upload]'); ?>
 	
 	<nav class="woocommerce-MyAccount-navigation">
 		<ul>
@@ -42,3 +36,4 @@ do_action( 'woocommerce_before_account_navigation' );
 	</nav>
 </div>
 <?php do_action( 'woocommerce_after_account_navigation' ); ?>
+
