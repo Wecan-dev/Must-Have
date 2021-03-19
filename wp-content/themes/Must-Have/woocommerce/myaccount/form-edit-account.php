@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_edit_account_form' ); ?>
 <div class="content-myAccount">
 	<div class="content-myAccount__img">
-		<img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/image-6.png" >
+		<img src="<?php echo get_template_directory_uri();?>/assets/img/12. MY INFORMATION.jpg" >
 	</div>
 	<form class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
 		<div class="regresar-myAccount">

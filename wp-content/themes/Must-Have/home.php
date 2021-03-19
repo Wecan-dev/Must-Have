@@ -53,11 +53,15 @@
           <p>categorías</p>
         </div>
         <div class="main-categoria__items">
-        <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+        <?php $wcatTerm = get_terms('product_cat', array('hide_empty' => 0)); 
           foreach($wcatTerm as $wcatTer) : ?>
+			<?php
+            $thumb_id = get_woocommerce_term_meta( $wcatTer->term_id, 'thumbnail_id', true );
+            $term_img = wp_get_attachment_url(  $thumb_id );
+            ?>
             <div class="item-categoria__content">
               <div class="item-categoria__img">
-                <img src="<?php echo termmeta_value_img('imagen_etiqueta_home', $wcatTer->term_id);?>" alt="">
+                <img src="<?php echo $term_img;?>" alt="">
               </div>
               <div class="item-categoria__btn">
               <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>

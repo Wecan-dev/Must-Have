@@ -92,7 +92,7 @@
               </a>
               <div class="collapse" id="collapseModal2">
                 <div class="collapseModal-content">
-                  <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+                  <?php $wcatTerm = get_terms('product_cat', array('hide_empty' => 0)); 
                   foreach($wcatTerm as $wcatTer) : ?>
                     <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
                   <?php endforeach; ?>

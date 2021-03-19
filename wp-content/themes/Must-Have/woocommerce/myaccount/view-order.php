@@ -26,7 +26,7 @@ $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."woocommerce_o
 ?>
 <div class="content-viewOrder">
 	<div class="content-viewOrder__img">
-		<img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/image-6.png" >
+		<img src="<?php echo get_template_directory_uri();?>/assets/img/15. DETALLES DE LA ORDEN.jpg" >
 	</div>
 	<div class="content-viewOrder__content">
 		<div class="regresar-myAccount">

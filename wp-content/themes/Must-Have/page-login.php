@@ -1,11 +1,22 @@
 <?php get_header(); ?>
+<?php if (is_user_logged_in() != NULL): ?>
+	
+
+	<?php  $user = wp_get_current_user(); ?>
+	<?php if ( in_array( 'seller', (array) $user->roles ) ): ?>
+	<?php	header('Location: http://159.89.229.55/Must-Have/dashboard'); ?>
+	<?php else : ?> 
+	<?php	header('Location: http://159.89.229.55/Must-Have/mi-cuenta'); ?>
+	<?php endif; ?>
+
+<?php endif; ?>
 <section class="">
     <div class="registro">
         <div class="main-registro">
             <div class="main-registro__content">
                 <div class="main-registro__img">
                     <div class="main-registro__img--content main-login__img--content">
-                        <img  src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/Login-final-scaled.jpg" alt="">
+                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/Login final.jpg" alt="">
                     </div>
                 </div>
                 <div class="main-registro__item">

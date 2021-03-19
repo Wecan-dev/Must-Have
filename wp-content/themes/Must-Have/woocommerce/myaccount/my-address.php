@@ -48,7 +48,7 @@ $col    = 1;
         <div class="main-bannerStatic">
             <div class="main-bannerStatic__content">
                 <div class="main-bannerStatic__img">
-                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/mi_perfil-01.jpeg" alt="">
                 </div>
                 <div class="main-bannerStatic__text">
                     <p>MI perfil</p>

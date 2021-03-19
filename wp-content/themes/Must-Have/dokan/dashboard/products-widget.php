@@ -15,9 +15,7 @@
     <div class="widget-title">
         <i class="fa fa-briefcase" aria-hidden="true"></i> <?php esc_html_e( 'Products', 'dokan-lite' ); ?>
 
-        <span class="pull-right">
-            <a href="<?php echo esc_url( dokan_get_navigation_url( 'new-product' ) ); ?>"><?php esc_html_e( '+ Add new product', 'dokan-lite' ); ?></a>
-        </span>
+        
     </div>
 
     <ul class="list-unstyled list-count">
@@ -42,4 +40,7 @@
             </a>
         </li>
     </ul>
+	<span class="">
+            <a href="<?php echo esc_url( dokan_get_navigation_url( 'new-product' ) ); ?>"><?php esc_html_e( '+ Add new product', 'dokan-lite' ); ?></a>
+        </span>
 </div> <!-- .products -->

@@ -37,7 +37,7 @@ $allowed_html = array(
         <div class="main-bannerStatic">
             <div class="main-bannerStatic__content">
                 <div class="main-bannerStatic__img">
-                    <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/02/banner-about.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/mi_perfil-01.jpeg" alt="">
                 </div>
                 <div class="main-bannerStatic__text">
                     <p>MI perfil</p>
@@ -105,6 +105,12 @@ $allowed_html = array(
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
 	?>
+	<?php  $user = wp_get_current_user(); ?>
+	<?php  if ( in_array( 'customer', (array) $user->roles ) ): ?>
+		<div class="navSeller-comments__btn" >
+			<a  href="<?php bloginfo('url') ?>/migrar-cuenta">Conviértete en vendedor</a>	
+		</div>
+	<?php endif; ?>
 </div>
 	
 </div>

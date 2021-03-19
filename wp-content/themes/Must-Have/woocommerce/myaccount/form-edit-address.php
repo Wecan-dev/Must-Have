@@ -26,7 +26,7 @@ do_action( 'woocommerce_before_edit_account_address_form' ); ?>
 <?php else : ?>
 <div class="content-myAccount content-myAccount-form">
 	<div class="content-myAccount__img">
-		<img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/image-6.png" >
+		<img src="<?php echo get_template_directory_uri();?>/assets/img/12. MY INFORMATION.jpg" >
 	</div>
 		<form class="edit-address__form" method="post">
 

@@ -32,8 +32,7 @@ $category_id = get_queried_object_id();
 
 
 
-
-<?php if($category_id == 27 and $variable == 42) :?>
+<?php if($category_id == 15 and $variable == 42) :?>
 
 <div class="title-marcas_archive">
 	<p>Marcas</p>
@@ -60,9 +59,10 @@ $category_id = get_queried_object_id();
 
 <header class="woocommerce-products-header">
 	<div class="archive-tabs">
-	<?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+	<?php $wcatTerm = get_terms('product_cat', array('hide_empty' => 0)); 
 	foreach($wcatTerm as $wcatTer) : ?>
 	
+
 		<div class="archive-tabs__items <?php if ($category_id == $wcatTer->term_id) {echo 'active';} ?> ">
 		<a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
 		</div>
@@ -78,7 +78,7 @@ $category_id = get_queried_object_id();
 
 
 
-<?php if($category_id == 27 and $variable == 42) :?>
+<?php if($category_id == 15 and $variable == 42) :?>
 
 
 	<div class="main-contentArchive__items main-contentArchive__items2">

@@ -2,9 +2,9 @@
 
 Contributors: yithemes
 Tags: reviews, comment, rating, woocommerce, yith
-Requires at least: 5.3
-Tested up to: 5.6
-Stable tag: 1.5.2
+Requires at least: 5.4
+Tested up to: 5.7
+Stable tag: 1.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://docs.yithemes.com/yith-woocommerce-advanced-reviews/
@@ -84,6 +84,11 @@ You can customize some visual attribute from the plugin option. For better integ
 
 == Changelog ==
 
+= Version 1.5.3 - Released on 12 March 2021 =
+
+* New: Support for WooCommerce 5.1
+* New: Support for WordPress 5.7
+* Update: YITH Plugin Framework
 
 = Version 1.5.2 - Released on 17 February 2021 =
 

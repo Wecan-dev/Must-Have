@@ -4,7 +4,7 @@
     <div class="main-404">
         <div class="main-404__content">
             <div class="main-404__img">
-                <img src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/16.404-scaled.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/16.404.jpg" alt="">
             </div>
             <div class="main-404__text">
                 <div class="main-404__text--1">

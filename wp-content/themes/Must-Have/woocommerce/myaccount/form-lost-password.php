@@ -25,7 +25,7 @@ do_action( 'woocommerce_before_lost_password_form' );
             <div class="main-registro__content">
                 <div class="main-registro__img">
                     <div class="main-registro__img--content main-login__img--content">
-                        <img  src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/11.recupera-contrasena-scaled.jpg">
+                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/11.recupera contraseña.jpg">
                     </div>
                 </div>
                 <div class="main-registro__item">

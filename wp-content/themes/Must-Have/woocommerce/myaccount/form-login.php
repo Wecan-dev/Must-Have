@@ -28,7 +28,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
             <div class="main-registro__content">
                 <div class="main-registro__img">
                     <div class="main-registro__img--content">
-                        <img  src="http://159.89.229.55/Must-Have/wp-content/uploads/2021/03/10.REGISTRO-scaled.jpg" alt="">
+                        <img  src="<?php echo get_template_directory_uri();?>/assets/img/10.REGISTRO.jpg" alt="">
                     </div>
                 </div>
                 <div class="main-registro__item">
@@ -188,5 +188,11 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 </div>
 
+<script>
+
+document.getElementById('reg_email').placeholder='Correo electrónico';
+document.getElementById('reg_password').placeholder='Contraseña';
+	
+</script>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>

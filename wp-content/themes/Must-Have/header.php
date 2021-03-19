@@ -83,6 +83,7 @@
       <div class="iconNav-respon d-flex d-lg-none">
         <div class="content-dropdownUser">
         <?php if (is_user_logged_in() == NULL){ ?>
+			<?php  $user = wp_get_current_user(); ?>
             <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img  src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
@@ -96,7 +97,11 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<?php if ( in_array( 'seller', (array) $user->roles ) ): ?>
+              		<a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta/edit-account/">Mi información</a>
+				<?php else : ?> 
+					<a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<?php endif; ?>
 				<a class="dropdown-item" href="<?php echo get_home_url() ?>/wishlist">Favoritos</a>
 				<a class="dropdown-item" href="<?php echo get_home_url() ?>#">Orden</a>
               <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
@@ -204,6 +209,7 @@
         </form>
         <div class="content-dropdownUser d-none d-lg-flex">
           <?php if (is_user_logged_in() == NULL){ ?>
+			
             <a class="icon-user dropdown-toggle" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
@@ -217,9 +223,18 @@
               <img src="<?php echo get_template_directory_uri();?>/assets/img/shape.png" alt="">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<?php  $user = wp_get_current_user();  ?>
+              <?php if ( in_array( 'customer', (array) $user->roles ) ): ?>
+              		<a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta/edit-account/">Mi información</a>
+				<?php else : ?> 
+					<a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard">Mi información</a>
+				<?php endif; ?>
 				<a class="dropdown-item" href="<?php echo get_home_url() ?>/wishlist">Favoritos</a>
-				<a class="dropdown-item" href="<?php echo get_home_url() ?>#">Orden</a>
+				<?php if ( in_array( 'customer', (array) $user->roles ) ): ?>
+					<a class="dropdown-item" href="<?php echo get_home_url() ?>/mi-cuenta/orders/">Orden</a>
+				<?php else : ?>
+					<a class="dropdown-item" href="<?php echo get_home_url() ?>/dashboard/orders/">Orden</a>
+				<?php endif; ?>
               <a class="dropdown-item" href="<?php echo wp_logout_url( home_url()); ?>">Cerrar Sesión</a>
             </div>
           <?php } ?> 
@@ -322,7 +337,7 @@
               </a>
               <div class="collapse" id="collapseModal2">
                 <div class="collapseModal-content">
-                  <?php $wcatTerm = get_terms('product_tag', array('hide_empty' => 0)); 
+                  <?php $wcatTerm = get_terms('product_cat', array('hide_empty' => 0)); 
                   foreach($wcatTerm as $wcatTer) : ?>
                     <a href="<?php echo get_term_link( $wcatTer->slug, $wcatTer->taxonomy );?>"><?php echo $wcatTer->name ?></a>
                   <?php endforeach; ?>

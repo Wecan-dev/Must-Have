@@ -105,3 +105,4 @@ $(window).scroll(function () {
 });
 
 $('.woocommerce-noreviews').text('Aún no hay comentarios');
+$(".form-row input[name='dokan_migration']").val('Conviértete en un vendedor');
