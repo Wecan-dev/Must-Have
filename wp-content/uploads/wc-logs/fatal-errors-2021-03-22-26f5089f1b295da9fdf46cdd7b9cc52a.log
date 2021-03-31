@@ -1,0 +1,12 @@
+2021-03-22T15:41:25+00:00 CRITICAL syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 128
+
+2021-03-22T15:42:01+00:00 CRITICAL syntax error, unexpected ',', expecting ']' in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 128
+
+2021-03-22T15:42:23+00:00 CRITICAL syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 128
+
+2021-03-22T15:42:35+00:00 CRITICAL syntax error, unexpected ',', expecting ']' in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 128
+
+2021-03-22T15:43:46+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 130
+
+2021-03-22T15:44:04+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/checkout/thankyou.php on line 130
+

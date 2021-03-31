@@ -316,6 +316,9 @@
 	.renember-form{
 		flex-direction: column;
 	}
+	#\31 3 > div > div.text-termsConditions > div .woocommerce-notices-wrapper{
+		padding-top: 60px;
+	}
 
 
 
@@ -979,6 +982,20 @@
 	.dokan-form-group input[type='submit'].dokan-btn, .dokan-form-group a.dokan-btn, .dokan-form-group .dokan-btn{
 		padding: 14px !important;
 	}
+	
+	/*-- Thank you --*/
+		
+	.thankyou-content{
+		width: 100%;
+		padding: 30px;
+	}
+	.thankyou-content__info--content{
+		flex-direction: column;
+	}
+	.thankyou-content__info--item{
+		width: 100%;
+	}
+	
 	
 	
 }
@@ -1720,6 +1737,14 @@
 		width: 45%;
 	}
 	
+	
+	/*-- Thank you --*/
+		
+	.thankyou-content{
+		width: 80%;
+		padding: 50px;
+	}
+	
 
 }
 
@@ -1892,6 +1917,9 @@
 	}
 	.dokan-product-listing .dokan-product-listing-area .row-actions{
 		width: 150px;
+	}
+	#\31 3 > div > div.text-termsConditions > div .woocommerce-notices-wrapper{
+		padding-top: 100px;
 	}
 }
 

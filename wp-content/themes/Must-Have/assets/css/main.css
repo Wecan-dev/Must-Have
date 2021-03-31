@@ -1192,7 +1192,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-	z-index: 9999;
+	z-index: 2;
 }
 .main-upcycling__title{
     font-family: 'BodoniSvtyTwoITCTT';
@@ -1531,8 +1531,15 @@ p{
 #\31 3 > div > div.title-termsConditions{
     display: none;
 }
+#\31 3 > div > div.text-termsConditions > div{
+	position: relative;
+}
 #\31 3 > div > div.text-termsConditions > div .woocommerce-notices-wrapper{
-    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+	padding-top: 110px;
 }
 
 
@@ -1892,6 +1899,9 @@ p{
     display: flex;
     flex-direction: column;
 }
+.main-contact__form--inputs label{
+	display: none !important;
+}
 .main-contact__form--inputs input, .main-contact__form--inputs textarea{
     width: 100% !important;
     border-radius: 3px !important;
@@ -1906,6 +1916,7 @@ p{
     letter-spacing: normal !important;
     color: #353636 !important;
     margin-bottom: 16px;
+	resize: none;
 }
 .main-contact__form--inputs input::placeholder, .main-contact__form--inputs textarea::placeholder{
     font-size: 12px !important;
@@ -1974,7 +1985,10 @@ p{
 .main-map__content{
     height: 440px;
     width: 100%;
-
+}
+.main-map__content iframe{
+	width: 100% !important;
+	height 100% !important;
 }
 .main-map__content img{
     width: 100%;
@@ -2086,7 +2100,7 @@ p{
     height: 100%;
     top: 0;
     left: 0;
-    background: transparent;
+    background: #00000024;
     position: absolute;
     transition: .3s ease-in-out;
 }
@@ -2367,6 +2381,17 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     color: #000000;
     margin-bottom: 12px;
 }
+.item-navSeller__stars > span{
+	margin-left: 16px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.91px;
+	color: #000000;
+}
 .item-navSeller__stars--number{
     margin-left: 16px;
 }
@@ -2438,15 +2463,16 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .main-navSeller__redes--follow a, .main-navSeller__redes--solic a{
     font-family: 'Montserrat';
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bold !important;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #050505;
+    color: #050505 !important;
     padding: 8px 12px;
     border-radius: 3px;
     background-color: #8ae8a7;
+	cursor: pointer;
 }
 .main-navSeller__redes--solic a{
     font-weight: normal;
@@ -2575,7 +2601,76 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     justify-content: center;
     margin-top: 14px;
 }
-
+#serviceModal .close{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	opacity: 1;
+	font-size: 2.5rem;
+    font-weight: 400;
+}
+#serviceModal .modal-body{
+	position: relative;
+	padding: 50px;
+}
+#serviceModal .modal-body input{
+	font-family: 'Montserrat' !important;
+    width: 100% !important;
+    height: 43px !important;
+    border-radius: 3px !important;
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    margin-bottom: 19px !important;
+    padding: 14px 12px;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+}
+#serviceModal .modal-body input::placeholder, #serviceModal .modal-body placeholder::placeholder{
+	font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+}
+#serviceModal .modal-body textarea{
+	font-family: 'Montserrat' !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 3px !important;
+    border: solid 1px #dee2e6 !important;
+    background-color: #fdfdfd !important;
+    margin-bottom: 19px !important;
+    padding: 14px 12px;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+	resize: none;
+}
+#serviceModal .modal-body button.frm_button_submit{
+	width: 100% !important;
+    padding: 14px !important;
+    border-radius: 3px !important;
+    background-color: #8ae8a7 !important;
+    border: none !important;
+    font-family: 'Montserrat' !important;
+    font-size: 12px !important;
+    font-weight: bold!important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: #000000 !important;
+}
 
 
 /*-- 404 --*/
@@ -2804,6 +2899,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 }
 .variations .value .variation_button.selected span.phoen_swatches{
     box-shadow: 0 0 1px 2px rgb(160 209 175 / 86%) !important;
+	border: 2px solid #000 !important;
 }
 .singleProducto--content .variations #variation_pa_talla{
     display: flex;
@@ -3343,6 +3439,9 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     display: flex;
     justify-content: space-between;
 }
+.woocommerce .cart_totals table.shop_table tr.woocommerce-shipping-totals.shipping{
+	display: none;
+}
 .woocommerce .cart_totals table.shop_table tr td{
     border-bottom: solid 1px rgba(151, 151, 151, 0.2) !important;
     border-top: none !important;
@@ -3823,6 +3922,10 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 #_customize-input-home_contacto_info_control{
     display: none !important;
 }
+.commentlist .comment-text{
+	display: flex;
+	flex-direction: column;
+}
 
 
 
@@ -4288,7 +4391,7 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
     font-stretch: normal !important;
     font-style: normal !important;
     line-height: normal !important;
-    letter-spacing: normal !importan
+    letter-spacing: normal !important;
 }
 .woocommerce-EditAccountForm.edit-account .form-row input#account_display_name{
 	margin-bottom: 10px !important;
@@ -4976,6 +5079,116 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .dokan-form-group input[type='submit'].dokan-btn, .dokan-form-group a.dokan-btn, .dokan-form-group .dokan-btn{
 	padding: 10px 14px !important;
 }
+.thankyou-content{
+	padding: 150px 0 75px 50px;
+    width: 50%;
+}
+.thankyou-content__title{
+	font-family: 'Bodoni SvtyTwo ITC TT';
+	font-size: 25px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.32;
+	letter-spacing: 0.38px;
+	color: #000000;
+	margin-bottom: 45px;
+}
+.thankyou-content__order{
+	font-family: 'Montserrat';
+	font-size: 15px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #8ae8a7;
+}
+.thankyou-content__confirm{
+	padding: 21px 11px;
+	border-radius: 3px;
+	border: solid 1px #e3e3e3;
+	font-family: 'Montserrat';
+	font-size: 10px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	margin-bottom: 22px;
+}
+.thankyou-content__confirm p{
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.thankyou-content__info{
+	padding: 22px 16px 46px;
+	border-radius: 3px;
+	border: solid 1px #e3e3e3;
+	margin-bottom: 44px;
+}
+.thankyou-content__info p{
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.thankyou-content__info--content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.thankyou-content__info--item{
+	width: 50%;
+	margin-bottom: 20px;
+}
+.thankyou-content__info--item p{
+	margin-bottom: 6px;
+}
+.thankyou-content__info--item span{
+	font-family: 'Montserrat';
+	font-size: 10px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.thankyou-content .woocommerce-order-details{
+	display: none;
+}
+.thankyou-content .woocommerce-customer-details{
+	display: none;
+}
+.thankyou-content__btn{
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+.thankyou-content__btn a{
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
 
 
 
@@ -5274,31 +5487,34 @@ button:focus{
 
 .stars span a{
 	position:relative;
-	color: #000;
+	color: transparent;
+	width: 25px;
+	display: flex
 }
 .stars span a:after{
 	content: "\f005";
 	position: absolute;
 	top:0;
 	left:0;
-	right:0
-		bottom:0;
+	right:0;
+	bottom:0;
 	font-family: 'FontAwesome';
 	color: #000;
+	font-size: 20px;
 }
-.star-1.active:after{
+.star-1.active:after, .star-1.colors:after{
 	color: yellow;
 }
-.star-2.active:after{
+.star-2.active:after, .star-2.colors:after{
 	color: yellow;
 }
-.star-3.active:after{
+.star-3.active:after, .star-3.colors:after{
 	color: yellow;
 }
-.star-4.active:after{
+.star-4.active:after, .star-4.colors:after{
 	color: yellow;
 }
-.star-5.active:after{
+.star-5.active:after, .star-5.colors:after{
 	color: yellow;
 }
 .meta time{
@@ -5334,6 +5550,7 @@ button:focus{
 .star-rating{
 	color: #000;
 	float: left !important;
+	letter-spacing: normal;
 }
 .commentlist .star-rating span{
 	padding-top: 0 !important;
@@ -5347,6 +5564,12 @@ button:focus{
 }
 #commentform .stars{
 	width: max-content;
+}
+#commentform .stars span{
+	display: flex;
+}
+#commentform > p.comment-form-rating > p:nth-child(2){
+	display: none;
 }
 .meta .verified{
 	font-size: 10px;

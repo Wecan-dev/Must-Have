@@ -72,10 +72,10 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_upsell_display - 15
 		 * @hooked woocommerce_output_related_products - 20
 		 */
-		do_action( 'woocommerce_after_single_product_summary' );
+		
 		?>
         
-        
+      
 
 
 
@@ -138,7 +138,10 @@ $reviews_count = count( $YWAR_AdvancedReview->get_product_reviews_by_rating( $pr
 $rating_count = $product->get_rating_count();
 $review_count = $product->get_review_count();
 $average      = $product->get_average_rating();
+$rating     = $YWAR_AdvancedReview->get_meta_value_rating( $review->ID );
+$algorit = ( $average / 5 ) * 100;
 ?>
+
 
 
 
@@ -156,7 +159,46 @@ $average      = $product->get_average_rating();
                                 <p><?php echo esc_html( $store_info['store_name'] ); ?></p>
                             </div>
                             <div class="item-navSeller__stars">
-                                <?php echo wc_get_rating_html( $average, $rating_count ); // WPCS: XSS ok. ?>
+                                 <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( __( 'Rated %d out of 5', 'yith-woocommerce-advanced-reviews' ), $average ) ?>">
+					<span style="width:<?php echo $algorit ?>%"><strong
+							itemprop="ratingValue"><?php 
+		if($algorit == 0) { echo 	
+			'<i class="fa fa-star-o" aria-hidden="true"></i> 
+			 <i class="fa fa-star-o" aria-hidden="true"></i> 
+			 <i class="fa fa-star-o" aria-hidden="true"></i> 
+			 <i class="fa fa-star-o" aria-hidden="true"></i> 
+			 <i class="fa fa-star-o" aria-hidden="true"></i>';} 
+	   if($algorit == 20){ echo 
+		   '<i class="fa fa-star" aria-hidden="true"></i> 
+		   	<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i>';}
+		if($algorit == 40){ echo 
+		   '<i class="fa fa-star" aria-hidden="true"></i> 
+		   	<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i>';}
+		if($algorit == 60){ echo 
+		   '<i class="fa fa-star" aria-hidden="true"></i> 
+		   	<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i> 
+			<i class="fa fa-star-o" aria-hidden="true"></i>';}
+		if($algorit == 80){ echo 
+		   '<i class="fa fa-star" aria-hidden="true"></i>
+		   <i class="fa fa-star" aria-hidden="true"></i>
+		   <i class="fa fa-star" aria-hidden="true"></i>
+		   <i class="fa fa-star" aria-hidden="true"></i>
+		   <i class="fa fa-star-o" aria-hidden="true"></i>';}
+		if($algorit == 100){ echo 
+		   '<i class="fa fa-star" aria-hidden="true"></i> 
+		   	<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star" aria-hidden="true"></i> 
+			<i class="fa fa-star" aria-hidden="true"></i>';}?></strong> </span>
+				</div>
 								<span> (<?php echo $reviews_count; ?>)</span>
                             </div>
                             <div class="item-navSeller__sellers">
@@ -192,77 +234,105 @@ $average      = $product->get_average_rating();
                         <p>Últimas calificaciones</p>
                     </div>
                     <div class="contentReview-product">
-                        <div class="contentReview-product__comments">
-                            <?php if ( $reviews_count ) : ?>
-                                <?php do_action( 'yith_advanced_reviews_before_review_list', $product ); ?>
+                       
+                        <div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		
 
-                                <ol class="commentlist">
-                                    <?php $YWAR_AdvancedReview->reviews_list( $product_id ); ?>
-                                </ol>
-                            <?php else : ?>
+			<ol class="commentlist">
+				<?php $YWAR_AdvancedReview->reviews_list( $product->id ); ?>
+			</ol>
 
-                                <p class="woocommerce-noreviews"><?php _e( 'There are no reviews yet.', 'yith-woocommerce-advanced-reviews' ); ?></p>
+			<?php
+			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+				echo '<nav class="woocommerce-pagination">';
+				paginate_comments_links(
+					apply_filters(
+						'woocommerce_comment_pagination_args',
+						array(
+							'prev_text' => '&larr;',
+							'next_text' => '&rarr;',
+							'type'      => 'list',
+						)
+					)
+				);
+				echo '</nav>';
+			endif;
+			?>
+		
+		
+	</div>
 
-                            <?php endif; ?>
-                        </div>
-                        <div class="contentReview-product__inputs">
-                            <?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product_id ) ) : ?>
-                                <div id="review_form_wrapper">
-                                    <div id="review_form">
-                                        <?php
+	<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
+		<div id="review_form_wrapper">
+			<div id="review_form">
+				<?php
+				$commenter    = wp_get_current_commenter();
+				$comment_form = array(
+					/* translators: %s is product title */
+					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
+					/* translators: %s is product title */
+					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
+					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
+					'title_reply_after'   => '</span>',
+					'comment_notes_after' => '',
+					'label_submit'        => esc_html__( 'Submit', 'woocommerce' ),
+					'logged_in_as'        => '',
+					'comment_field'       => '',
+				);
 
-$current_content = $comment_form['comment_field'];
-			
-//  In case of a page refresh following a reply request, don't add additional fields
-$hide_rating = isset( $_REQUEST["replytocom"] ) ? "hide-rating" : '';
-$selected    = isset( $_REQUEST["replytocom"] ) ? "selected" : '';
+				$name_email_required = (bool) get_option( 'require_name_email', 1 );
+				$fields              = array(
+					'author' => array(
+						'label'    => __( 'Name', 'woocommerce' ),
+						'type'     => 'text',
+						'value'    => $commenter['comment_author'],
+						'required' => $name_email_required,
+					),
+					'email'  => array(
+						'label'    => __( 'Email', 'woocommerce' ),
+						'type'     => 'email',
+						'value'    => $commenter['comment_author_email'],
+						'required' => $name_email_required,
+					),
+				);
 
+				$comment_form['fields'] = array();
 
-    $comment_form['comment_field'] = '<p class="' . $hide_rating . ' comment-form-rating">
-    <label for="rating">' . __( 'hoal Rate', 'yith-woocommerce-advanced-reviews' ) . '</label>
-    <select name="rating" id="rating">
-                <option value="">' . __( 'Rate&hellip;', 'yith-woocommerce-advanced-reviews' ) . '</option>
-                <option value="5">' . __( 'Perfect', 'yith-woocommerce-advanced-reviews' ) . '</option>
-                <option value="4">' . __( 'Good', 'yith-woocommerce-advanced-reviews' ) . '</option>
-                <option value="3">' . __( 'Average', 'yith-woocommerce-advanced-reviews' ) . '</option>
-                <option value="2">' . __( 'Not that bad', 'yith-woocommerce-advanced-reviews' ) . '</option>
-                <option value="1" ' . $selected . '>' . __( 'Very Poor', 'yith-woocommerce-advanced-reviews' ) . '</option>';
-    
-    $comment_form['comment_field'] .= '</select></p>' . $current_content;
+				foreach ( $fields as $key => $field ) {
+					$field_html  = '<p class="comment-form-' . esc_attr( $key ) . '">';
+					$field_html .= '<label for="' . esc_attr( $key ) . '">' . esc_html( $field['label'] );
 
+					if ( $field['required'] ) {
+						$field_html .= '&nbsp;<span class="required">*</span>';
+					}
 
-                                        $commenter = wp_get_current_commenter();
+					$field_html .= '</label><input id="' . esc_attr( $key ) . '" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
 
-                                        $comment_form = array(
-                                            'title_reply'          => $reviews_count ? __( 'Add a review', 'yith-woocommerce-advanced-reviews' ) : __( 'Be the first to review', 'yith-woocommerce-advanced-reviews' ) . ' &ldquo;' . get_the_title() . '&rdquo;',
-                                            'title_reply_to'       => __( 'Write a reply to %s', 'yith-woocommerce-advanced-reviews' ),
-                                            'comment_notes_before' => '',
-                                            'comment_notes_after'  => '',
-                                            'fields'               => array(
-                                                'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'yith-woocommerce-advanced-reviews' ) . ' <span class="required">*</span></label> ' .
-                                                            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" /></p>',
-                                                'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'yith-woocommerce-advanced-reviews' ) . ' <span class="required">*</span></label> ' .
-                                                            '<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>',
-                                            ),
-                                            'label_submit'         => __( 'Enviar', 'yith-woocommerce-advanced-reviews' ),
-                                            'logged_in_as'         => '',
-                                            'comment_field'        => ''
-                                        );
+					$comment_form['fields'][ $key ] = $field_html;
+				}
 
-                                        $comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Tu comentario', 'yith-woocommerce-advanced-reviews' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
+				$account_page_url = wc_get_page_permalink( 'myaccount' );
+				if ( $account_page_url ) {
+					/* translators: %s opening and closing link tags respectively */
+					$comment_form['must_log_in'] = '<p class="must-log-in">' . sprintf( esc_html__( 'You must be %1$slogged in%2$s to post a review.', 'woocommerce' ), '<a href="' . esc_url( $account_page_url ) . '">', '</a>' ) . '</p>';
+				}
 
-                                        $comment_form['comment_field'] .= '<input type="hidden" name="action" value="submit-form" />';
-                                        comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
-                                        ?>
-                                    </div>
-                                </div>
+				
 
-                            <?php else : ?>
+				$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Your review', 'woocommerce' ) . '&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p>';
 
-                                <p class="woocommerce-verification-required"><?php _e( 'Only logged in customers who have purchased this product may write a review.', 'yith-woocommerce-advanced-reviews' ); ?></p>
+				comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
+				?>
+			</div>
+		</div>
+	<?php else : ?>
+		<p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'woocommerce' ); ?></p>
+	<?php endif; ?>
 
-                            <?php endif; ?>
-                        </div>
+	<div class="clear"></div>
+</div>
+						
                     </div>
                     
              
@@ -316,5 +386,6 @@ $selected    = isset( $_REQUEST["replytocom"] ) ? "selected" : '';
     </div>
 </section>
 
+<?php do_action( 'woocommerce_after_single_product_summary' ); ?>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

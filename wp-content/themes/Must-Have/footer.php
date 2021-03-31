@@ -11,7 +11,7 @@
             </div>
             <div class="content-footer__redes--content">
               <a target="_blank" href="<?php echo get_theme_mod('home_contacto_youtube'); ?>">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/youtube.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/tiktok.png" alt="">
               </a>
               <a target="_blank" href="<?php echo get_theme_mod('home_contacto_facebook'); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/path.png" alt="">
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="pie-footer">
-        <p> Copyright © 2021 <a href="#">Branch</a></p>
+        <p> Copyright © 2021 <a href="https://branch.com.co/">Branch</a></p>
     </div>
   </div>
 </footer>
@@ -118,7 +118,6 @@
   <script>
 
 	  
-$("#wpua-remove-existing").text('Save');
 
 	  
 document.getElementById('first-name').placeholder='Nombre';

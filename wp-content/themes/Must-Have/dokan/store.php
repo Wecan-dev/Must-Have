@@ -102,7 +102,7 @@ if ( function_exists( 'yoast_breadcrumb' ) ) {
                             <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Seguir</a>
                         </div>
                         <div class="main-navSeller__redes--solic">
-                            <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Solicitud de servicio</a>
+                            <a  data-toggle="modal" data-target="#serviceModal"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Solicitud de servicio</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,19 @@ if ( function_exists( 'yoast_breadcrumb' ) ) {
         </div>
     </div>
 </section>
-
+<div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+ 
+      <div class="modal-body">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3, 'title' => false, 'description' => false ) ); ?>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="dokan-store-wrap layout-<?php echo esc_attr( $layout ); ?>">
 

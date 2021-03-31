@@ -16,9 +16,11 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+$shipping = $order->get_order_item_totals()['shipping'];
 ?>
 
 <div class="woocommerce-order">
+	
 
 	<?php
 	if ( $order ) :
@@ -38,10 +40,52 @@ defined( 'ABSPATH' ) || exit;
 			</p>
 
 		<?php else : ?>
+<div class="thankyou-content">
+		<div class="thankyou-content__title">
+			<p>Confirmación de compra</p>
+		</div>
+		<div class="thankyou-content__order">
+			<p> Order #<?php echo $order->get_order_number();  ?></p>
+		</div>
+		<div class="thankyou-content__confirm">
+			<p>Tu orden está confirmada</p>
+			<span>Recibirá un correo electrónico de confirmación con su número de pedido en breve</span>
+		</div>
+		<div class="thankyou-content__info">
+			<p>Información del cliente</p>
+			<div class="thankyou-content__info--content">
+				<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
+				<div class="thankyou-content__info--item">
+					<p>Informcaión de contacto</p>
+					<span><?php echo $order->get_billing_email(); ?></span>
+				</div>
+				<?php endif; ?>
+				<?php if ( $order->get_payment_method_title() ) : ?>
+				<div class="thankyou-content__info--item">
+					<p>Informcaión de pago</p>
+					<span><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></span>
+				</div>
+				<?php endif; ?>
+				<div class="thankyou-content__info--item">
+					<p>Dirección de envio</p>
+					<span><?php echo $order->get_formatted_shipping_address(); ?></span>
+				</div>
+				<div class="thankyou-content__info--item">
+					<p>Dirección de facturación</p>
+					<span><?php echo $order->get_formatted_billing_address(); ?></span>
+				</div>
+				<div class="thankyou-content__info--item">
+					<p>Método de envio</p>
+					<span><?php echo $shipping['value'] ?></span>
+				</div>
+			</div>
+		</div>
+		<div class="thankyou-content__btn">
+			<p>Necesitas ayuda? <a href="<?php bloginfo('url') ?>/contactanos">Contacto</a></p>
+		</div>
+			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received d-none"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-
-			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details d-none">
 
 				<li class="woocommerce-order-overview__order order">
 					<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
@@ -84,5 +128,5 @@ defined( 'ABSPATH' ) || exit;
 		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
 	<?php endif; ?>
-
+	</div>
 </div>

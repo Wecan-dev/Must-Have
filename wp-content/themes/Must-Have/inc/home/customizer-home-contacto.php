@@ -23,7 +23,7 @@
   ));
   
   $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_contacto_youtube_control', array (
-    'description' => 'Link de Youtube',
+    'description' => 'Link de Tik Tok',
     'section' => 'home_contacto',
     'settings' => 'home_contacto_youtube',
   )));

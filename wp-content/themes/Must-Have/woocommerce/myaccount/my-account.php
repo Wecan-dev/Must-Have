@@ -37,3 +37,15 @@ defined( 'ABSPATH' ) || exit;
 			do_action( 'woocommerce_account_content' );
 		?>
 	</div>
+
+
+<script>
+
+document.getElementById('shipping_first_name').placeholder='Nombre';
+document.getElementById('shipping_last_name').placeholder='Apellidos';
+document.getElementById('shipping_company').placeholder='Nombre de la empresa (opcional)';
+document.getElementById('shipping_city').placeholder='Localidad / Ciudad';
+document.getElementById('shipping_state').placeholder='Estado / Municipio';
+document.getElementById('shipping_postcode').placeholder='Código postal (opcional)';
+
+</script>

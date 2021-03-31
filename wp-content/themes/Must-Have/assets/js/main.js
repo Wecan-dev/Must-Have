@@ -1,3 +1,10 @@
+ $(".star-1").hover(function(){
+         $(this).addClass("act");
+     }, function(){
+         $(this).removeClass("act");
+     });
+
+
 
 
 $(document).ready(function(){

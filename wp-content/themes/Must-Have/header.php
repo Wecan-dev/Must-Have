@@ -58,7 +58,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/flaticon.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/animate.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.png">
   <?php wp_head(); ?>
 </head>

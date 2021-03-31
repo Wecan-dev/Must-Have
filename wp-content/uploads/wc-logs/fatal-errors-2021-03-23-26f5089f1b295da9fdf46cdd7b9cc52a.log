@@ -1,0 +1,75 @@
+2021-03-23T15:33:16+00:00 CRITICAL Uncaught Error: Call to a member function get_product_reviews_by_rating() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:137
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 137
+
+2021-03-23T16:14:44+00:00 CRITICAL Uncaught Error: Call to a member function reviews_list() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:79
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 79
+
+2021-03-23T17:49:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function YITH_WooCommerce_Advanced_Reviews::reviews_list(), 0 passed in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 146 and at least 1 expected in /var/www/html/Must-Have/wp-content/plugins/yith-woocommerce-advanced-reviews/class.yith-woocommerce-advanced-reviews.php:864
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(146): YITH_WooCommerce_Advanced_Reviews->reviews_list()
+#1 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#2 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#3 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#5 /var/www/html/Must- in /var/www/html/Must-Have/wp-content/plugins/yith-woocommerce-advanced-reviews/class.yith-woocommerce-advanced-reviews.php on line 864
+
+2021-03-23T18:47:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_reviews() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:143
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 143
+
+2021-03-23T18:48:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_reviews() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:143
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 143
+
+2021-03-23T18:49:24+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_reviews() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:143
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 143
+
+2021-03-23T18:50:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_reviews() in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php:143
+Stack trace:
+#0 /var/www/html/Must-Have/wp-includes/template.php(732): require()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/M...', false)
+#2 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Must-Have/wp-includes/template-loader.php(106): include('/var/www/html/M...')
+#4 /var/www/html/Must-Have/wp-blog-header.php(19): require_once('/var/www/html/M...')
+#5 /var/www/html/Must-Have/index.php(17): require('/var/www/html/M...')
+#6 {main}
+  thrown in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php on line 143
+

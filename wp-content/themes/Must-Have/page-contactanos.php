@@ -26,11 +26,7 @@
                         <p>Dejanos un mensaje</p>
                     </div>
                     <div class="main-contact__form--inputs">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" placeholder="Correo Electrónico">
-                        <input type="text" placeholder="Teléfono">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios"></textarea>
-                        <button>Enviar</button>
+                        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 5, 'title' => false, 'description' => false ) ); ?>
                     </div>
                 </div>
                 <div class="main-contact__info">
@@ -81,7 +77,7 @@
 <section>
     <div class="main-map">
         <div class="main-map__content">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/image-map.png" alt="">
+            <?php echo get_theme_mod('contact-content_text'); ?>
         </div>
     </div>
 </section>

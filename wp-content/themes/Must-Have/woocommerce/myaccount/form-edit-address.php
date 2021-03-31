@@ -60,12 +60,16 @@ do_action( 'woocommerce_before_edit_account_address_form' ); ?>
 
 
 <script>
+document.getElementById('billing_first_name').placeholder='Nombre';
+document.getElementById('billing_last_name').placeholder='Apellidos';
+document.getElementById('billing_company').placeholder='Nombre de la empresa (opcional)';
+document.getElementById('billing_city').placeholder='Localidad / Ciudad';
+document.getElementById('billing_state').placeholder='Estado / Municipio';
+document.getElementById('billing_postcode').placeholder='Código postal (opcional)';
+document.getElementById('billing_phone').placeholder='Teléfono';
+document.getElementById('billing_email').placeholder='Correo Electrónico';
 
-document.getElementById('shipping_first_name').placeholder='Nombre';
-document.getElementById('shipping_last_name').placeholder='Apellidos';
-document.getElementById('shipping_company').placeholder='Nombre de la empresa (opcional)';
-document.getElementById('shipping_city').placeholder='Localidad / Ciudad';
-document.getElementById('shipping_state').placeholder='Estado / Municipio';
-document.getElementById('shipping_postcode').placeholder='Código postal (opcional)';
+	
+
 	
 </script>
