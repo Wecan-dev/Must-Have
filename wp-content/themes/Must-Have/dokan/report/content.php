@@ -7,7 +7,7 @@
  * @package dokan
  */
 ?>
-<div class="dokan-report-wrap">
+<div class="dokan-report-wrap informes-wrap">
     <ul class="dokan_tabs">
     <?php
     foreach ( $charts['charts'] as $key => $value ) {
@@ -24,7 +24,7 @@
     <?php if ( isset( $charts['charts'][$current] ) ) { ?>
         <?php if ( isset( $charts['charts'][$current]['permission'] ) && ! current_user_can( $charts['charts'][$current]['permission'] ) ): ?>
             <?php
-                dokan_get_template_part('global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'You have no permission to view this report', 'dokan' ) ) );
+                dokan_get_template_part('global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'No tienes permiso para ver este informe.', 'dokan' ) ) );
             ?>
         <?php else: ?>
             <div id="dokan_tabs_container">

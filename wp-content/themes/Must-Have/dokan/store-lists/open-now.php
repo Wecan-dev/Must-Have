@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="open-now item">
     <label for="open-now">
-        <?php esc_html_e( 'Open Now', 'dokan' ); ?>:
+        <?php esc_html_e( 'Abierto ahora', 'dokan' ); ?>:
     </label>
     <input type="checkbox" class="dokan-toogle-checkbox" id="open-now" name="open_now">
 </div>

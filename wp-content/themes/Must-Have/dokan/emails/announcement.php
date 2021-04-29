@@ -20,7 +20,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 </p>
 <hr>
 <p>
-    <?php echo sprintf( __( 'You can check this announcement in dashboard by clicking <a href="%s">here<a/>', 'dokan' ), $data['announcement_url'] ) ?> .
+    <?php echo sprintf( __( 'Puede consultar este anuncio en el panel haciendo clic  <a href="%s">aquí<a/>', 'dokan' ), $data['announcement_url'] ) ?> .
 </p>
 <?php
 do_action( 'woocommerce_email_footer', $email );

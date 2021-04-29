@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="ratings item">
     <label for="ratings">
-        <?php esc_html_e( 'Open Now:', 'dokan' ); ?>
+        <?php esc_html_e( 'Abierto ahora:', 'dokan' ); ?>
     </label>
     <input id="ratings" type="checkbox" name="ratings">
 </div>

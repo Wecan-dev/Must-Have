@@ -27,7 +27,7 @@ if ( 'mapbox' === $source ) {
     $access_token = dokan_get_option( 'mapbox_access_token', 'dokan_appearance', null );
 
     if ( ! $access_token ) {
-        esc_html_e( 'Mapbox Access Token not found', 'dokan-lite' );
+        esc_html_e( 'Token de acceso de Mapbox no encontrado', 'dokan-lite' );
         return;
     }
 

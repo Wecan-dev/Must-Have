@@ -1308,6 +1308,7 @@ p{
 }
 .content-footer__redes--content a{
 	margin-right: 23px;
+	color: #26292b;
 }
 .content-footer__contact{
     padding-left: 75px;
@@ -1629,6 +1630,7 @@ p{
     line-height: 1.6;
     letter-spacing: normal;
     color: #353636;
+	text-align: justify;
 }
 .main-razonesAbout__content{
     background: #c6f4d4;
@@ -1838,7 +1840,7 @@ p{
 	bottom:0;
 	left:0;
 	right:0;
-	background-color: rgba(0,0,0,0.1);
+	background-color: #00000033;
 	position:absolute;
 	
 }
@@ -1851,6 +1853,7 @@ p{
     width: 100%;
     height: 100% !important;
     object-fit: cover;
+	object-position: 50% 75%;
 }
 .main-bannerStatic__text{
     position: absolute;
@@ -1956,6 +1959,7 @@ p{
     letter-spacing: 0.2px;
     color: #000000;
     margin-bottom: 35px;
+	text-align: justify;
 }
 .main-contact__redes--item{
     display: flex;
@@ -2077,7 +2081,7 @@ p{
 }
 .main-category__text{
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2805,6 +2809,11 @@ input[type='submit'].dokan-btn, a.dokan-btn, .dokan-btn{
 .singleProducto--content{
     padding: 0 70px;
     display: flex;
+	position: relative;
+}
+.singleProducto--content > span.onsale{
+	position: absolute;
+	right: 10%;
 }
 .singleProducto--content ol{
     padding: 0;
@@ -5579,4 +5588,130 @@ button:focus{
 }
 .item-navSeller__stars .text{
 	display: none;
+}
+.dokan-become-seller .form-row.form-group.form-row-wide label[for="tc_agree"]{
+	display: block !important;
+}
+.dokan-become-seller .form-row.form-group.form-row-wide #seller-url{
+	margin-bottom: 0 !important;
+}
+.dokan-become-seller .form-row.form-group.form-row-wide small{
+	margin-bottom: 21px;
+}
+.dokan-become-seller textarea{	
+    height: 43px !important;
+}
+.content-half-part.downloadable-checkbox{
+	display: none;
+}
+.content-half-part.virtual-checkbox{
+	display: none;
+}
+.content-half-part.regular-price .vendor-earning.simple-product{
+	display: none;
+}
+.register.dokan-vendor-register .form-row.form-group.form-row-wide label[for="tc_agree"]{
+	display: block !important;
+}
+#field_namestore{
+	pointer-events: none;
+}
+.comment-form-author, .comment-form-email{
+	    display: flex;
+    flex-direction: column;
+}
+.dokan-new-product-area .featured-image {
+    width: 25%;
+    display: none;
+}
+.dokan-new-product-area .dokan-product-meta {
+    width: 100%;
+}
+
+.up-sells.upsells.products{
+	    padding: 2rem 8rem;
+}
+
+.up-sells.upsells.products h2{
+	   font-family: 'Bodoni SvtyTwo ITC TT';
+    font-size: 72px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.81;
+    letter-spacing: 1.08px;
+    text-align: center;
+    color: #353636;
+    margin-bottom: 38px;
+}
+h2.woocommerce-loop-product__title{
+	    font-family: 'Montserrat' !important;
+    font-size: 14px !important;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    color: #353636;
+    margin-top: 18px;
+	text-align:left !important;
+}
+.products.columns-4{
+	list-style: none;
+}
+
+.woocommerce .cart-collaterals .cross-sells, .woocommerce-page .cart-collaterals .cross-sells {
+    width: 100% !important;
+    float: left;
+}
+.cross-sells h2{
+	    font-family: 'Montserrat' !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal !important;
+    letter-spacing: normal;
+    color: #010101;
+
+}
+.woocommerce-product-gallery__wrapper{
+	position: relative;
+}
+.woocommerce-product-gallery__wrapper .onsale{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	border-radius: 3px;
+    background-color: #8ae8a7;
+	color: #050505;
+	padding: 5px 12px;
+	z-index: 2;
+}
+.contentCart .woocommerce-cart-form .coupon label{
+	display: none;
+}
+.contentCart .woocommerce-cart-form .coupon input{
+	padding: 12px !important;
+    border: solid 1px #dee2e6 !important;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 500;
+}
+.contentCart .woocommerce-cart-form .coupon button{
+	padding: 12px;
+    border-radius: 3px;
+    background-color: #8ae8a7;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.dokan-dashboard-content.dokan-withdraw-content article #tab-container .dokan_tabs{
+	display:none;
 }

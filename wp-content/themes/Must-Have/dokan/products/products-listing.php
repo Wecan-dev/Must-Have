@@ -43,7 +43,7 @@ do_action( 'dokan_dashboard_wrap_start' );
                             <?php if ( current_user_can( 'dokan_add_product' ) ) { ?>
                                 <a href="<?php echo esc_url( dokan_get_navigation_url( 'new-product' ) ); ?>" class="dokan-btn dokan-btn-theme <?php echo ( 'on' == dokan_get_option( 'disable_product_popup', 'dokan_selling', 'off' ) ) ? '' : 'dokan-add-new-product'; ?>">
                                     <i class="fa fa-briefcase">&nbsp;</i>
-                                    <?php esc_html_e( 'Add new product', 'dokan-lite' ); ?>
+                                    <?php esc_html_e( 'Agregar nuevo producto', 'dokan-lite' ); ?>
                                 </a>
                             <?php } ?>
 
@@ -64,7 +64,7 @@ do_action( 'dokan_dashboard_wrap_start' );
 
                     <form id="product-filter" method="POST" class="dokan-form-inline">
                         <div class="dokan-form-group">
-                            <label for="bulk-product-action-selector" class="screen-reader-text"><?php esc_html_e( 'Select bulk action', 'dokan-lite' ); ?></label>
+                            <label for="bulk-product-action-selector" class="screen-reader-text"><?php esc_html_e( 'Seleccionar acción masiva', 'dokan-lite' ); ?></label>
 
                             <select name="status" id="bulk-product-action-selector" class="dokan-form-control chosen">
                                 <?php foreach ( $bulk_statuses as $key => $bulk_status ) { ?>
@@ -75,7 +75,7 @@ do_action( 'dokan_dashboard_wrap_start' );
 
                         <div class="dokan-form-group">
                             <?php wp_nonce_field( 'bulk_product_status_change', 'security' ); ?>
-                            <input type="submit" name="bulk_product_status_change" id="bulk-product-action" class="dokan-btn" value="<?php esc_attr_e( 'Apply', 'dokan-lite' ); ?>">
+                            <input type="submit" name="bulk_product_status_change" id="bulk-product-action" class="dokan-btn" value="<?php esc_attr_e( 'Aplicar', 'dokan-lite' ); ?>">
                         </div>
                         <table class="dokan-table dokan-table-striped product-listing-table dokan-inline-editable-table" id="dokan-product-list-table">
                             <thead>

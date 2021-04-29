@@ -356,4 +356,5 @@
       </ul>
     </div>
   </nav>
+	<script>document.querySelector('.dgwt-wcas-search-input').placeholder='Buscar';	  </script>
 </header>

@@ -11,7 +11,7 @@
 
 if ( count( $comments ) == 0 ) {
     ?>
-        <tr><td colspan="5"><?php _e( 'No Results Found', 'dokan' ); ?></td></tr>
+        <tr><td colspan="5"><?php _e( 'No se han encontrado resultados', 'dokan' ); ?></td></tr>
     <?php
 } else {
 

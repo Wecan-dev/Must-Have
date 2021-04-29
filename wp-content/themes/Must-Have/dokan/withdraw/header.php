@@ -8,5 +8,5 @@
  */
 ?>
 <header class="dokan-dashboard-header">
-    <h1 class="entry-title"><?php esc_html_e( 'Withdraw', 'dokan-lite' ); ?></h1>
+    <h1 class="entry-title"><?php esc_html_e( 'Retirar', 'dokan-lite' ); ?></h1>
 </header><!-- .entry-header -->

@@ -1,4 +1,0 @@
-2021-03-15T16:37:19+00:00 CRITICAL syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/page-login.php en la línea 13
-
-2021-03-15T16:37:43+00:00 CRITICAL syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) en /var/www/html/Must-Have/wp-content/themes/Must-Have/page-login.php en la línea 13
-

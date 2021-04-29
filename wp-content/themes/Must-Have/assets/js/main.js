@@ -111,5 +111,57 @@ $(window).scroll(function () {
   }
 });
 
+var NameShop = $('.item-navSeller__name p').text();
+
+$('#field_namestore').val(NameShop);
 $('.woocommerce-noreviews').text('Aún no hay comentarios');
+$('.dokan-dashboard-menu .coupons a').html('<i class="fa fa-gift"></i> Cupones');
+$('.dokan-dashboard-menu .reports a').html('<i class="fa fa-line-chart"></i> Informes');
+$('.dokan-dashboard-menu .reviews a').html('<i class="fa fa-comments-o"></i> Reseñas');
+$('.dokan-dashboard-menu .return-request a').html('<i class="fa fa-undo"></i> Solicitud de Devolución');
+$('.dokan-dashboard-menu .staffs a').html('<i class="fa fa-users"></i> Personal');
+$('.dokan-dashboard-menu .followers a').html('<i class="fa fa-heart"></i> Seguidores');
+$('.dokan-dashboard-menu .analytics a').html('<i class="fa fa-area-chart"></i> Analítica');
+$('.dokan-dashboard-menu .tools a').html('<i class="fa fa-wrench"></i> Herramientas');
+$('.dokan-dashboard-menu .shipping a').html('<i class="fa fa-truck"></i> Envíos');
+$('.dokan-dashboard-menu .social a').html('<i class="fa fa-share-alt-square"></i> Perfil social');
+$('.dokan-dashboard-menu .seo a').html('<i class="fa fa-globe"></i> SEO de la tienda');
 $(".form-row input[name='dokan_migration']").val('Conviértete en un vendedor');
+$(".product-listing-top .dokan-add-product-link a:nth-child(2)").html('Importar');
+$(".product-listing-top .dokan-add-product-link a:nth-child(3)").html('Exportar');
+$(".dokan-report-wrap.informes-wrap ul li:nth-child(1) a").html('Descripción general');
+$(".dokan-report-wrap.informes-wrap ul li:nth-child(2) a").html('Ventas por día');
+$(".dokan-report-wrap.informes-wrap ul li:nth-child(3) a").html('Más vendidos');
+$(".dokan-report-wrap.informes-wrap ul li:nth-child(4) a").html('Ganancias superiores');
+$(".dokan-report-wrap.informes-wrap ul li:nth-child(5) a").html('Declaración');
+$(".dokan-reports-main.report-right.dokan-right .postbox h3 span").text('Ventas de este mes');
+$(".dokan-rma-request-area table thead tr th:nth-child(1)").text('Detalles');
+$(".dokan-rma-request-area table thead tr th:nth-child(2)").text('Productos');
+$(".dokan-rma-request-area table thead tr th:nth-child(3)").text('Tipo');
+$(".dokan-rma-request-area table thead tr th:nth-child(4)").text('Estado');
+$(".dokan-rma-request-area table thead tr th:nth-child(5)").text('Última actualización');
+$(".dokan-dashboard-content.dokan-staffs-content header span h1 span a").html('<i class="fa fa-user"></i> Añadir nuevo personal');
+$(".dokan-table.dokan-table-striped.vendor-staff-table thead tr th:nth-child(1)").text('Nombre');
+$(".dokan-table.dokan-table-striped.vendor-staff-table thead tr th:nth-child(2)").text('Correo');
+$(".dokan-table.dokan-table-striped.vendor-staff-table thead tr th:nth-child(3)").text('Teléfono');
+$(".dokan-table.dokan-table-striped.vendor-staff-table thead tr th:nth-child(4)").text('Fecha de registro');
+$(".dokan-dashboard-content h3").text('Seguidores de la tienda');
+$(".dokan-table.dokan-table-striped.product-listing-table.dokan-inline-editable-table thead tr th:nth-child(1)").text('Nombre');
+$(".dokan-table.dokan-table-striped.product-listing-table.dokan-inline-editable-table thead tr th:nth-child(2)").text('Seguido desde');
+$(".dokan-dashboard-content.dokan-withdraw-content article header.dokan-dashboard-header h1").text('Herramientas');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #import header:nth-child(1) h1").text('Importar XML');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #import header:nth-child(2) h1").text('Importar CSV');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #import > p").text('Haga clic en el botón Examinar y elija un archivo XML que desee importar.');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #import > a").text('Importar CSV');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export header:nth-child(1) h1").text('Exportar XML');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export header:nth-child(2) h1").text('Exportar CSV');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export > a").text('Exportar CSV');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export > p").text('Elija su tipo de producto y haga clic en el botón exportar para exportar todos los datos en formato XML');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export > form p:nth-child(1) label").text('Todos');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export > form p:nth-child(2) label").text('Productos');
+$(".dokan-dashboard-content.dokan-withdraw-content article #tab-container .tabs_container #export > form p:nth-child(3) label").text('Variaciones');
+$("#store-form dokan-form-group:nth-child(12) label").text('Bibliografía');
+
+
+
+

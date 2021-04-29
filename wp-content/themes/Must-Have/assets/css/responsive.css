@@ -683,6 +683,9 @@
 	.woocommerce .cart_totals table.shop_table tr td{
 		padding: 16px !important;
 	}
+	.contentCart .woocommerce-cart-form .coupon{
+		flex-direction: column;
+	}
 	
 
 

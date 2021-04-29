@@ -43,7 +43,7 @@
                                 <div class="store-data-container">
                                     <div class="featured-favourite">
                                         <?php if ( $is_store_featured ) : ?>
-                                            <div class="featured-label"><?php esc_html_e( 'Featured', 'dokan-lite' ); ?></div>
+                                            <div class="featured-label"><?php esc_html_e( 'Presentado', 'dokan-lite' ); ?></div>
                                         <?php endif ?>
 
                                         <?php do_action( 'dokan_seller_listing_after_featured', $seller, $store_info ); ?>
@@ -53,10 +53,10 @@
                                         <h2><a href="<?php echo esc_attr( $store_url ); ?>"><?php echo esc_html( $store_name ); ?></a></h2>
 
                                         <?php if ( !empty( $store_rating['count'] ) ): ?>
-                                            <div class="dokan-seller-rating" title="<?php echo sprintf( esc_attr__( 'Rated %s out of 5', 'dokan-lite' ), esc_attr( $store_rating['rating'] ) ) ?>">
+                                            <div class="dokan-seller-rating" title="<?php echo sprintf( esc_attr__( 'Calificado %s de 5', 'dokan-lite' ), esc_attr( $store_rating['rating'] ) ) ?>">
                                                 <?php echo wp_kses_post( dokan_generate_ratings( $store_rating['rating'], 5 ) ); ?>
                                                 <p class="rating">
-                                                    <?php echo esc_html( sprintf( __( '%s out of 5', 'dokan-lite' ), $store_rating['rating'] ) ); ?>
+                                                    <?php echo esc_html( sprintf( __( '%s de 5', 'dokan-lite' ), $store_rating['rating'] ) ); ?>
                                                 </p>
                                             </div>
                                         <?php endif ?>
@@ -90,7 +90,7 @@
                                     alt="<?php echo esc_attr( $vendor->get_shop_name() ) ?>"
                                     size="150">
                                 </div>
-                                <a href="<?php echo esc_url( $store_url ); ?>" title="<?php esc_attr_e( 'Visit Store', 'dokan-lite' );?>">
+                                <a href="<?php echo esc_url( $store_url ); ?>" title="<?php esc_attr_e( 'Visitar Tienda', 'dokan-lite' );?>">
                                     <span class="dashicons dashicons-arrow-right-alt2 dokan-btn-theme dokan-btn-round"></span>
                                 </a>
                                 <?php do_action( 'dokan_seller_listing_footer_content', $seller, $store_info ); ?>
@@ -114,8 +114,8 @@
                     'total'     => $num_of_pages,
                     'base'      => $pagination_base,
                     'type'      => 'array',
-                    'prev_text' => __( '&larr; Previous', 'dokan-lite' ),
-                    'next_text' => __( 'Next &rarr;', 'dokan-lite' ),
+                    'prev_text' => __( '&larr; Previo', 'dokan-lite' ),
+                    'next_text' => __( 'Siguiente &rarr;', 'dokan-lite' ),
                 );
 
                 if ( ! empty( $search_query ) ) {
@@ -141,7 +141,7 @@
             ?>
 
         <?php else:  ?>
-            <p class="dokan-error"><?php esc_html_e( 'No vendor found!', 'dokan-lite' ); ?></p>
+            <p class="dokan-error"><?php esc_html_e( 'No se encontró ningún proveedor!', 'dokan-lite' ); ?></p>
         <?php endif; ?>
     </div>
 </div>

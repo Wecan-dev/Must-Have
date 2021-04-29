@@ -17,7 +17,7 @@
                     <div class="main-category__item">   
                         <div class="main-category__text">
                             <p>
-                            <?php echo $wcatTer->description ?>
+								<?php echo termmeta_value('descripcion_category', $wcatTer->term_id);?>
                             </p>
                         </div>
                         <div class="main-category__img">

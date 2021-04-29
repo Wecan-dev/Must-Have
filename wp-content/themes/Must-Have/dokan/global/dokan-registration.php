@@ -26,35 +26,35 @@ $role_style = ( $role == 'customer' ) ? ' style="display:none"' : '';
 <form method="post" action="" class="dokan-social-form" novalidate>
     <div class="form-row-wide">
         <p class="form-row form-group">
-            <label for="first-name"><?php _e( 'First Name', 'dokan' ); ?> <span class="required">*</span></label>
+            <label for="first-name"><?php _e( 'Nombre', 'dokan' ); ?> <span class="required">*</span></label>
             <input type="text" class="input-text form-control" name="fname" id="first-name" value="<?php if ( !empty( $user_data->first_name ) ) echo esc_attr( $user_data->first_name ); ?>" required="required" />
         </p>
 
         <p class="form-row form-group">
-            <label for="last-name"><?php _e( 'Last Name', 'dokan' ); ?></label>
+            <label for="last-name"><?php _e( 'Apellido', 'dokan' ); ?></label>
             <input type="text" class="input-text form-control" name="lname" id="last-name" value="<?php if ( !empty( $user_data->last_name ) ) echo esc_attr( $user_data->last_name ); ?>" />
         </p>
     </div>
     <div class="show_if_seller"<?php echo $role_style; ?>>
         <p class="form-row form-group form-row-wide">
-            <label for="company-name"><?php _e( 'Shop Name', 'dokan' ); ?> <span class="required">*</span></label>
+            <label for="company-name"><?php _e( 'Nombre de la tienda', 'dokan' ); ?> <span class="required">*</span></label>
             <input type="text" class="input-text form-control" name="shopname" id="company-name" value="<?php echo esc_attr( $user_data->user_login ) ?>" required="required" />
         </p>
 
         <p class="form-row form-group form-row-wide">
-            <label for="seller-url" class="pull-left"><?php _e( 'Shop URL', 'dokan' ); ?> <span class="required">*</span></label>
+            <label for="seller-url" class="pull-left"><?php _e( 'URL de la tienda', 'dokan' ); ?> <span class="required">*</span></label>
             <strong id="url-alart-mgs" class="pull-right"></strong>
             <input type="text" class="input-text form-control" name="shopurl" id="seller-url" value="<?php echo esc_attr( $user_data->user_login ); ?>" required="required" />
             <small><?php echo home_url() . '/' . dokan_get_option( 'custom_store_url', 'dokan_general', 'store' ); ?>/<strong id="url-alart"></strong></small>
         </p>
         
         <p class="form-row form-group form-row-wide">
-            <label for="seller-address"><?php _e( 'Address', 'dokan' ); ?><span class="required">*</span></label>
+            <label for="seller-address"><?php _e( 'Dirección', 'dokan' ); ?><span class="required">*</span></label>
             <textarea type="text" id="seller-address" name="address" class="form-control input" required="required"></textarea>
         </p>
 
         <p class="form-row form-group form-row-wide">
-            <label for="shop-phone"><?php _e( 'Phone Number', 'dokan' ); ?><span class="required">*</span></label>
+            <label for="shop-phone"><?php _e( 'Número de teléfono', 'dokan' ); ?><span class="required">*</span></label>
             <input type="text" class="input-text form-control" name="phone" id="shop-phone" value="" required="required" />
         </p>
         <?php
@@ -67,7 +67,7 @@ $role_style = ( $role == 'customer' ) ? ' style="display:none"' : '';
                 ?>
                 <p class="form-row form-group form-row-wide">
                     <input class="tc_check_box" type="checkbox" id="tc_agree" name="tc_agree" required="required">
-                    <label style="display: inline" for="tc_agree"><?php echo sprintf( __( 'I have read and agree to the <a target="_blank" href="%s">Terms &amp; Conditions</a>.', 'dokan' ), $toc_page_url ); ?></label>
+                    <label style="display: inline" for="tc_agree"><?php echo sprintf( __( 'He leído y estoy de acuerdo con <a target="_blank" href="%s">Terminos &amp; Condiciones</a>.', 'dokan' ), $toc_page_url ); ?></label>
                 </p>    
             <?php } ?>
         <?php } ?>
@@ -80,19 +80,19 @@ $role_style = ( $role == 'customer' ) ? ' style="display:none"' : '';
     <p class="form-row form-group user-role">
         <label class="radio">
             <input type="radio" name="role" value="customer"<?php checked( $role, 'customer' ); ?>>
-            <?php _e( 'I am a customer', 'dokan' ); ?>
+            <?php _e( 'Soy un cliente', 'dokan' ); ?>
         </label>
 
         <label class="radio">
             <input type="radio" name="role" value="seller"<?php checked( $role, 'seller' ); ?>>
-            <?php _e( 'I am a vendor', 'dokan' ); ?>
+            <?php _e( 'Soy vendedor', 'dokan' ); ?>
         </label>
         <?php do_action( 'dokan_registration_form_role', $role ); ?>
     </p>
     <p class="form-row">
         <?php wp_nonce_field( 'account_migration', 'dokan_nonce' ); ?>
         <input type="hidden" name="user_id" value="<?php echo $user_id ?>">
-        <input type="submit" class="dokan-btn dokan-btn-default" id="social-submit" name="dokan_social" value="<?php _e( 'Update', 'dokan' ); ?>" />
+        <input type="submit" class="dokan-btn dokan-btn-default" id="social-submit" name="dokan_social" value="<?php _e( 'Actualizar', 'dokan' ); ?>" />
     </p>
 </form>
 

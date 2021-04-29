@@ -41,5 +41,5 @@ $img_kses = apply_filters( 'dokan_product_image_attributes', array(
         <?php endwhile; ?>
     </ul>
 <?php else: ?>
-    <p><?php esc_html_e( 'No products found', 'dokan-lite' ); ?></p>
+    <p><?php esc_html_e( 'No se encontraron productos', 'dokan-lite' ); ?></p>
 <?php endif; ?>

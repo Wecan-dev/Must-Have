@@ -20,7 +20,7 @@
     </div>
 
     <div class="dokan-announcement-link">
-        <a href="<?php echo dokan_get_navigation_url( 'announcement' ) ?>" class="dokan-btn dokan-btn-theme"><?php _e( 'Back to all Notice', 'dokan' ); ?></a>
+        <a href="<?php echo dokan_get_navigation_url( 'announcement' ) ?>" class="dokan-btn dokan-btn-theme"><?php _e( 'Volver a todos los avisos', 'dokan' ); ?></a>
     </div>
 
 </article>

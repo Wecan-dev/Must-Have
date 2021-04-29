@@ -1,5 +1,5 @@
 <div class="dokan-form-group">
-    <label class="dokan-w3 dokan-control-label" for="dokan_store_categories"><?php echo esc_html( $label ); ?></label>
+    <label class="dokan-w3 dokan-control-label" for="dokan_store_categories"><?php echo esc_html( 'Categoría de la tienda' ); ?></label>
 
     <div class="dokan-w5 dokan-text-left">
         <select

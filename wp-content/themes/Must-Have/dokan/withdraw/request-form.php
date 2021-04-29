@@ -11,7 +11,7 @@
 <form class="dokan-form-horizontal withdraw" role="form" method="post">
     <div class="dokan-form-group">
         <label for="withdraw-amount" class="dokan-w3 dokan-control-label">
-            <?php esc_html_e( 'Withdraw Amount', 'dokan-lite' ); ?>
+            <?php esc_html_e( 'Retirar monto', 'dokan-lite' ); ?>
         </label>
 
         <div class="dokan-w5 dokan-text-left">
@@ -24,7 +24,7 @@
 
     <div class="dokan-form-group">
         <label for="withdraw-method" class="dokan-w3 dokan-control-label">
-            <?php esc_html_e( 'Payment Method', 'dokan-lite' ); ?>
+            <?php esc_html_e( 'Método de pago', 'dokan-lite' ); ?>
         </label>
 
         <div class="dokan-w5 dokan-text-left">
@@ -39,13 +39,13 @@
     <div class="dokan-form-group">
         <div class="dokan-w3 ajax_prev" style="margin-left:19%; width: 200px;">
             <?php wp_nonce_field( 'dokan_withdraw', 'dokan_withdraw_nonce' ); ?>
-            <input type="submit" class="dokan-btn dokan-btn-theme" value="<?php esc_attr_e( 'Submit Request', 'dokan-lite' ); ?>">
+            <input type="submit" class="dokan-btn dokan-btn-theme" value="<?php esc_attr_e( 'Enviar peticion', 'dokan-lite' ); ?>">
             <input type="hidden" name="dokan_handle_withdraw_request" value="approval">
         </div>
     </div>
 </form>
 <?php else : ?>
     <div class="dokan-alert dokan-alert-warning">
-        <strong><?php echo sprintf( '%s <a href="%s">%s</a>', esc_attr__( 'No withdraw method is available. Please update your payment method to withdraw funds.', 'dokan-lite' ), esc_url( dokan_get_navigation_url( 'settings/payment' ) ), esc_attr__( 'Payment Settings Setup', 'dokan-lite' ) ) ?></strong>
+        <strong><?php echo sprintf( '%s <a href="%s">%s</a>', esc_attr__( 'No hay ningún método de retiro disponible. Actualice su método de pago para retirar fondos.', 'dokan-lite' ), esc_url( dokan_get_navigation_url( 'settings/payment' ) ), esc_attr__( 'Configuración de configuración de pago', 'dokan-lite' ) ) ?></strong>
     </div>
 <?php endif; ?>

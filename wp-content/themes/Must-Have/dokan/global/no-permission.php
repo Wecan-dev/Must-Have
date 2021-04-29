@@ -50,7 +50,7 @@
                      *
                      *  @since 2.4
                      */
-                    dokan_get_template_part( 'global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'You have no permission to view this page', 'dokan-lite' ) ) );
+                    dokan_get_template_part( 'global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'No tienes permiso para ver esta página.', 'dokan-lite' ) ) );
                 ?>
 
             </article><!-- .dashboard-content-area -->

@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<td class="thumb"></td>
 
 	<td class="name">
-		<input type="text" placeholder="<?php esc_attr_e( 'Fee Name', 'dokan-lite' ); ?>" name="order_item_name[<?php echo esc_attr( absint( $item_id ) ); ?>]" value="<?php if ( isset( $item['name'] ) ) echo esc_attr( $item['name'] ); ?>" />
+		<input type="text" placeholder="<?php esc_attr_e( 'Nombre de la tarifa', 'dokan-lite' ); ?>" name="order_item_name[<?php echo esc_attr( absint( $item_id ) ); ?>]" value="<?php if ( isset( $item['name'] ) ) echo esc_attr( $item['name'] ); ?>" />
 		<input type="hidden" class="order_item_id" name="order_item_id[]" value="<?php echo esc_attr( $item_id ); ?>" />
 	</td>
 

@@ -18,7 +18,7 @@ if ( wc_tax_enabled() ) {
     $order_taxes         = $order->get_taxes();
     $tax_classes         = WC_Tax::get_tax_classes();
     $classes_options     = array();
-    $classes_options[''] = __( 'Standard', 'dokan' );
+    $classes_options[''] = __( 'Estándar', 'dokan' );
 
     if ( $tax_classes ) {
         foreach ( $tax_classes as $class ) {
@@ -55,16 +55,16 @@ if ( wc_tax_enabled() ) {
 
                 <?php do_action( 'woocommerce_admin_order_item_headers' ); ?>
 
-                <th class="item_cost sortable" data-sort="float"><?php _e( 'Cost', 'dokan' ); ?></th>
-                <th class="quantity sortable" data-sort="int"><?php _e( 'Qty', 'dokan' ); ?></th>
+                <th class="item_cost sortable" data-sort="float"><?php _e( 'Costo', 'dokan' ); ?></th>
+                <th class="quantity sortable" data-sort="int"><?php _e( 'Cant', 'dokan' ); ?></th>
                 <th class="line_cost sortable" data-sort="float"><?php _e( 'Total', 'dokan' ); ?></th>
 
                 <?php
                     if ( empty( $legacy_order ) && ! empty( $order_taxes ) ) :
                         foreach ( $order_taxes as $tax_id => $tax_item ) :
                             $tax_class      = wc_get_tax_class_by_tax_id( $tax_item['rate_id'] );
-                            $tax_class_name = isset( $classes_options[ $tax_class ] ) ? $classes_options[ $tax_class ] : __( 'Tax', 'dokan' );
-                            $column_label   = ! empty( $tax_item['label'] ) ? $tax_item['label'] : __( 'Tax', 'dokan' );
+                            $tax_class_name = isset( $classes_options[ $tax_class ] ) ? $classes_options[ $tax_class ] : __( 'Impuesto', 'dokan' );
+                            $column_label   = ! empty( $tax_item['label'] ) ? $tax_item['label'] : __( 'Impuesto', 'dokan' );
                             ?>
                                 <th class="line_tax tips" data-tip="<?php
                                         echo esc_attr( $tax_item['name'] . ' (' . $tax_class_name . ')' );
@@ -156,7 +156,7 @@ if ( wc_tax_enabled() ) {
             ?>
             <div class="wc-used-coupons">
                 <ul class="wc_coupon_list"><?php
-                    echo '<li><strong>' . __( 'Coupon(s) Used', 'dokan' ) . '</strong></li>';
+                    echo '<li><strong>' . __( 'Cupón (es) utilizado (s)', 'dokan' ) . '</strong></li>';
                     foreach ( $coupons as $item_id => $item ) {
                         $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM {$wpdb->posts} WHERE post_title = %s AND post_type = 'shop_coupon' AND post_status = 'publish' LIMIT 1;", $item['name'] ) );
 
@@ -171,7 +171,7 @@ if ( wc_tax_enabled() ) {
     ?>
     <table class="wc-order-totals">
         <tr>
-            <td><?php _e( 'Discount', 'dokan' ); ?> <span class="tips" data-tip="<?php _e( 'This is the total discount. Discounts are defined per line item.', 'dokan' ); ?>">[?]</span>:</td>
+            <td><?php _e( 'Decuento', 'dokan' ); ?> <span class="tips" data-tip="<?php _e( 'Este es el descuento total. Los descuentos se definen por artículo de línea.', 'dokan' ); ?>">[?]</span>:</td>
             <td class="total">
                 <?php echo wc_price( $order->get_total_discount(), array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ); ?>
             </td>
@@ -181,7 +181,7 @@ if ( wc_tax_enabled() ) {
         <?php do_action( 'woocommerce_admin_order_totals_after_discount', dokan_get_prop( $order, 'id' ) ); ?>
 
         <tr>
-            <td><?php _e( 'Shipping', 'dokan' ); ?> <span class="tips" data-tip="<?php _e( 'This is the shipping and handling total costs for the order.', 'dokan' ); ?>">[?]</span>:</td>
+            <td><?php _e( 'Envio', 'dokan' ); ?> <span class="tips" data-tip="<?php _e( 'Estos son los costos totales de envío y manejo del pedido.', 'dokan' ); ?>">[?]</span>:</td>
             <td class="total"><?php echo wc_price( $order->get_total_shipping(), array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ); ?></td>
             <td width="1%"></td>
         </tr>
@@ -201,7 +201,7 @@ if ( wc_tax_enabled() ) {
         <?php do_action( 'woocommerce_admin_order_totals_after_tax', dokan_get_prop( $order, 'id' ) ); ?>
 
         <tr>
-            <td><?php _e( 'Order Total', 'dokan' ); ?>:</td>
+            <td><?php _e( 'Total del pedido', 'dokan' ); ?>:</td>
             <td class="total">
                 <div class="view"><?php echo $order->get_formatted_order_total(); ?></div>
                 <div class="edit" style="display: none;">
@@ -215,7 +215,7 @@ if ( wc_tax_enabled() ) {
         <?php do_action( 'woocommerce_admin_order_totals_after_total', dokan_get_prop( $order, 'id' ) ); ?>
 
         <tr>
-            <td class="refunded-total"><?php _e( 'Refunded', 'dokan' ); ?>:</td>
+            <td class="refunded-total"><?php _e( 'Reintegrado', 'dokan' ); ?>:</td>
             <td class="total refunded-total">-<?php echo wc_price( $order->get_total_refunded(), array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ); ?></td>
             <td width="1%"></td>
         </tr>
@@ -237,7 +237,7 @@ if ( wc_tax_enabled() ) {
         <p class="add-items">
 
             <?php if ( ( $order->get_total() - $order->get_total_refunded() ) > 0 ) : ?>
-                <button type="button" class="dokan-btn dokan-btn-default refund-items"><?php _e( 'Request Refund', 'dokan' ); ?></button>
+                <button type="button" class="dokan-btn dokan-btn-default refund-items"><?php _e( 'Solicitud de reembolso', 'dokan' ); ?></button>
             <?php endif; ?>
         </p>
         <div class="clear"></div>
@@ -249,28 +249,28 @@ if ( wc_tax_enabled() ) {
 
                 <?php if ( 'yes' === get_option( 'woocommerce_manage_stock' ) ) : ?>
                     <tr>
-                        <td><?php _e( 'Restock refunded items', 'dokan' ); ?>:</td>
+                        <td><?php _e( 'Reabastecer artículos reembolsados', 'dokan' ); ?>:</td>
                         <td class="total"><input type="checkbox" id="restock_refunded_items" name="restock_refunded_items" <?php checked( apply_filters( 'dokan_restock_refunded_items', true ) ); ?> /></td>
                     </tr>
                 <?php endif; ?>
 
                 <tr>
-                    <td><?php _e( 'Amount already refunded', 'dokan' ); ?>:</td>
+                    <td><?php _e( 'Monto ya reembolsado', 'dokan' ); ?>:</td>
                     <td class="total">-<?php echo wc_price( $order->get_total_refunded(), array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ); ?></td>
                 </tr>
                 <tr>
-                    <td><?php _e( 'Total available to refund', 'dokan' ); ?>:</td>
+                    <td><?php _e( 'Total disponible para reembolso', 'dokan' ); ?>:</td>
                     <td class="total"><?php echo wc_price( $order->get_total() - $order->get_total_refunded(), array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ); ?></td>
                 </tr>
                 <tr>
-                    <td><label for="refund_amount"><?php _e( 'Refund amount', 'dokan' ); ?>:</label></td>
+                    <td><label for="refund_amount"><?php _e( 'Cantidad devuelta', 'dokan' ); ?>:</label></td>
                     <td class="total">
                         <input type="text" class="text" id="refund_amount" name="refund_amount" class="wc_input_price" disabled="disabled" />
                         <div class="clear"></div>
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="refund_reason"><?php _e( 'Reason for refund (optional)', 'dokan' ); ?>:</label></td>
+                    <td><label for="refund_reason"><?php _e( 'Motivo del reembolso (opcional)', 'dokan' ); ?>:</label></td>
                     <td class="total">
                         <input type="text" class="text" id="refund_reason" name="refund_reason" />
                         <div class="clear"></div>
@@ -282,8 +282,8 @@ if ( wc_tax_enabled() ) {
                 <?php
                 $refund_amount = '<span class="wc-order-refund-amount">' . wc_price( 0, array( 'currency' => dokan_replace_func( 'get_order_currency', 'get_currency', $order ) ) ) . '</span>'; ?>
 
-                <button type="button" class="dokan-btn dokan-btn-default do-manual-refund tips" data-tip="<?php esc_attr_e( 'You will need to manually issue a refund through your payment gateway after using this.', 'dokan' ); ?>"><?php printf( _x( 'Submit Refund Request %s', 'Submit Refund Request $amount', 'dokan' ), $refund_amount ); ?></button>
-                <button type="button" class="dokan-btn dokan-btn-default cancel-action"><?php _e( 'Cancel', 'dokan' ); ?></button>
+                <button type="button" class="dokan-btn dokan-btn-default do-manual-refund tips" data-tip="<?php esc_attr_e( 'Deberá emitir un reembolso manualmente a través de su pasarela de pago después de usar esto.', 'dokan' ); ?>"><?php printf( _x( 'Enviar solicitud de reembolso %s', 'Enviar solicitud de reembolso $monto', 'dokan' ), $refund_amount ); ?></button>
+                <button type="button" class="dokan-btn dokan-btn-default cancel-action"><?php _e( 'Cancelar', 'dokan' ); ?></button>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>

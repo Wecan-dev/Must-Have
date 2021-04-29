@@ -42,7 +42,7 @@ do_action( 'dokan_payment_settings_before_form', $current_user, $profile_info );
     <?php if ( $has_methods ): ?>
         <div class="dokan-form-group">
             <div class="dokan-w4 ajax_prev dokan-text-left" style="margin-left:24%;">
-                <input type="submit" name="dokan_update_payment_settings" class="dokan-btn dokan-btn-danger dokan-btn-theme" value="<?php esc_attr_e( 'Update Settings', 'dokan-lite' ); ?>">
+                <input type="submit" name="dokan_update_payment_settings" class="dokan-btn dokan-btn-danger dokan-btn-theme" value="<?php esc_attr_e( 'Ajustes de actualización', 'dokan-lite' ); ?>">
             </div>
         </div>
     <?php endif ?>
@@ -51,7 +51,7 @@ do_action( 'dokan_payment_settings_before_form', $current_user, $profile_info );
 
 <?php
     if ( ! $has_methods ) {
-        dokan_get_template_part( 'global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'No withdraw method is available. Please contact site admin.', 'dokan-lite' ) ) );
+        dokan_get_template_part( 'global/dokan-error', '', array( 'deleted' => false, 'message' => __( 'No hay ningún método de retiro disponible. Comuníquese con el administrador del sitio.', 'dokan-lite' ) ) );
     }
 ?>
 

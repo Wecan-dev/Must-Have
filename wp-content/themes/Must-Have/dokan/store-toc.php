@@ -34,7 +34,7 @@ get_header( 'shop' );
                 <?php
                 if( ! empty( $vendor->get_store_tnc() ) ):
                 ?>
-                    <h2 class="headline"><?php esc_html_e( 'Terms And Conditions', 'dokan-lite' ); ?></h2>
+                    <h2 class="headline"><?php esc_html_e( 'Términos y Condiciones', 'dokan-lite' ); ?></h2>
                     <div>
                         <?php
                             echo wp_kses_post( nl2br( $vendor->get_store_tnc() ) );

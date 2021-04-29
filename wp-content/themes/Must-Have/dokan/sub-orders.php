@@ -14,17 +14,17 @@
 
 <div class="dokan-info">
     <strong><?php esc_html_e( 'Note:', 'dokan-lite' ); ?></strong>
-    <?php esc_html_e( 'This order has products from multiple vendors. So we divided this order into multiple vendor orders.
-    Each order will be handled by their respective vendor independently.', 'dokan-lite' ); ?>
+    <?php esc_html_e( 'Este pedido tiene productos de varios proveedores. Así que dividimos este pedido en varios pedidos de proveedores.
+    Cada pedido será manejado por su proveedor respectivo de forma independiente.', 'dokan-lite' ); ?>
 </div>
 
 <table class="shop_table my_account_orders table table-striped">
 
     <thead>
         <tr>
-            <th class="order-number"><span class="nobr"><?php esc_html_e( 'Order', 'dokan-lite' ); ?></span></th>
-            <th class="order-date"><span class="nobr"><?php esc_html_e( 'Date', 'dokan-lite' ); ?></span></th>
-            <th class="order-status"><span class="nobr"><?php esc_html_e( 'Status', 'dokan-lite' ); ?></span></th>
+            <th class="order-number"><span class="nobr"><?php esc_html_e( 'Pedidos', 'dokan-lite' ); ?></span></th>
+            <th class="order-date"><span class="nobr"><?php esc_html_e( 'Fecha', 'dokan-lite' ); ?></span></th>
+            <th class="order-status"><span class="nobr"><?php esc_html_e( 'Estado', 'dokan-lite' ); ?></span></th>
             <th class="order-total"><span class="nobr"><?php esc_html_e( 'Total', 'dokan-lite' ); ?></span></th>
             <th class="order-actions">&nbsp;</th>
         </tr>
@@ -56,7 +56,7 @@
 
                         $actions['view'] = array(
                             'url'  => $order->get_view_order_url(),
-                            'name' => __( 'View', 'dokan-lite' )
+                            'name' => __( 'Ver', 'dokan-lite' )
                         );
 
                         $actions = apply_filters( 'dokan_my_account_my_sub_orders_actions', $actions, $order );

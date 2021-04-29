@@ -1,6 +1,6 @@
 <div class="dokan-form-group">
     <?php if ( $show_label ): ?>
-        <label for="product_brands" class="form-label"><?php esc_html_e( 'Brand', 'dokan' ); ?></label>
+        <label for="product_brands" class="form-label"><?php esc_html_e( 'Marca', 'dokan' ); ?></label>
     <?php endif; ?>
 
     <?php echo $brand_dropdown; ?>

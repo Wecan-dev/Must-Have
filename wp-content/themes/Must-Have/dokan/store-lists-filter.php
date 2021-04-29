@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit; ?>
     <div class="left">
         <p class="item store-count">
             <?php 
-            printf( _n( 'Total store showing: %d', 'Total stores showing: %d', $number_of_store, 'dokan-lite' ), number_format_i18n( $number_of_store ) );
+            printf( _n( 'Muestra total de la tienda: %d', 'Muestra total de las tiendas: %d', $number_of_store, 'dokan-lite' ), number_format_i18n( $number_of_store ) );
             ?>
         </p>
     </div>
@@ -39,14 +39,14 @@ defined( 'ABSPATH' ) || exit; ?>
             </div>
 
             <button class="dokan-store-list-filter-button dokan-btn dokan-btn-theme">
-                <?php esc_html_e( 'Filter', 'dokan-lite' ); ?>
+                <?php esc_html_e( 'Filtrar', 'dokan-lite' ); ?>
             </button>
         </div>
 
         <form name="stores_sorting" class="sort-by item" method="get">
-            <label><?php esc_html_e( 'Sort by', 'dokan-lite' ); ?>:</label>
+            <label><?php esc_html_e( 'Ordenar por', 'dokan-lite' ); ?>:</label>
 
-            <select name="stores_orderby" id="stores_orderby" aria-label="<?php esc_html_e( 'Sort by', 'dokan-lite' ); ?>">
+            <select name="stores_orderby" id="stores_orderby" aria-label="<?php esc_html_e( 'Ordenar por', 'dokan-lite' ); ?>">
                 <?php
                     foreach ( $sort_filters as $key => $filter ) {
                         $optoins = "<option value='${key}'>${filter}</option>";
@@ -72,7 +72,7 @@ defined( 'ABSPATH' ) || exit; ?>
 
         if ( apply_filters( 'dokan_load_store_lists_filter_search_bar', true ) ) : ?>
             <div class="store-search grid-item">
-                <input type="search" class="store-search-input" name="dokan_seller_search" placeholder="<?php esc_html_e( 'Search Vendors', 'dokan-lite' ); ?>">
+                <input type="search" class="store-search-input" name="dokan_seller_search" placeholder="<?php esc_html_e( 'Buscar vendedores', 'dokan-lite' ); ?>">
             </div>
         <?php endif;
 
@@ -80,8 +80,8 @@ defined( 'ABSPATH' ) || exit; ?>
     ?>
 
     <div class="apply-filter">
-        <button id="cancel-filter-btn" class="dokan-btn dokan-btn-theme"><?php esc_html_e( 'Cancel', 'dokan-lite' ); ?></button>
-        <button id="apply-filter-btn" class="dokan-btn dokan-btn-theme" type="submit"><?php esc_html_e( 'Apply', 'dokan-lite' ); ?></button>
+        <button id="cancel-filter-btn" class="dokan-btn dokan-btn-theme"><?php esc_html_e( 'Cancelar', 'dokan-lite' ); ?></button>
+        <button id="apply-filter-btn" class="dokan-btn dokan-btn-theme" type="submit"><?php esc_html_e( 'Aplicar', 'dokan-lite' ); ?></button>
     </div>
 
     <?php do_action( 'dokan_after_store_lists_filter_apply_button', $stores ); ?>

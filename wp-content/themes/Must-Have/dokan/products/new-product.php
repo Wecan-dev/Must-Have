@@ -68,7 +68,7 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                     <div class="dokan-alert dokan-alert-success">
                         <a class="dokan-close" data-dismiss="alert">&times;</a>
                         <strong><?php esc_html_e( 'Success!', 'dokan-lite' ); ?></strong>
-                        <?php printf( __( 'You have successfully created <a href="%s"><strong>%s</strong></a> product', 'dokan-lite' ), esc_url( dokan_edit_product_url( intval( $get_data['created_product'] ) ) ), get_the_title( intval( $get_data['created_product'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+                        <?php printf( __( 'Has creado con éxito <a href="%s"><strong>%s</strong></a> producto', 'dokan-lite' ), esc_url( dokan_edit_product_url( intval( $get_data['created_product'] ) ) ), get_the_title( intval( $get_data['created_product'] ) ) ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
                     </div>
                 <?php endif ?>
 
@@ -99,7 +99,7 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                             <div class="instruction-inside <?php echo esc_attr( $hide_instruction ); ?>">
                                                 <input type="hidden" name="feat_image_id" class="dokan-feat-image-id" value="<?php echo esc_attr( $posted_img ); ?>">
                                                 <i class="fa fa-cloud-upload"></i>
-                                                <a href="#" class="dokan-feat-image-btn dokan-btn"><?php esc_html_e( 'Upload Product Image', 'dokan-lite' ); ?></a>
+                                                <a href="#" class="dokan-feat-image-btn dokan-btn"><?php esc_html_e( 'Cargar imagen de producto', 'dokan-lite' ); ?></a>
                                             </div>
 
                                             <div class="image-wrap <?php echo esc_attr( $hide_img_wrap ); ?>">
@@ -128,14 +128,14 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                                                     ?>
                                                                     <li class="image" data-attachment_id="<?php echo esc_attr( $image_id ); ?>">
                                                                         <img src="<?php echo esc_url( $attachment_image[0] ); ?>" alt="">
-                                                                        <a href="#" class="action-delete" title="<?php esc_attr_e( 'Delete image', 'dokan-lite' ); ?>">&times;</a>
+                                                                        <a href="#" class="action-delete" title="<?php esc_attr_e( 'Eliminar imagen', 'dokan-lite' ); ?>">&times;</a>
                                                                     </li>
                                                                     <?php
                                                                 }
                                                             }
                                                         }
                                                         ?>
-                                                    <li class="add-image add-product-images tips" data-title="<?php esc_attr_e( 'Add gallery image', 'dokan-lite' ); ?>">
+                                                    <li class="add-image add-product-images tips" data-title="<?php esc_attr_e( 'Agregar imagen de galería', 'dokan-lite' ); ?>">
                                                         <a href="#" class="add-product-images"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                                     </li>
                                                 </ul>
@@ -147,13 +147,13 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
 
                                 <div class="content-half-part dokan-product-meta">
                                     <div class="dokan-form-group">
-                                        <input class="dokan-form-control" name="post_title" id="post-title" type="text" placeholder="<?php esc_attr_e( 'Product name..', 'dokan-lite' ); ?>" value="<?php echo esc_attr( dokan_posted_input( 'post_title' ) ); ?>">
+                                        <input class="dokan-form-control" name="post_title" id="post-title" type="text" placeholder="<?php esc_attr_e( 'Nombre del producto..', 'dokan-lite' ); ?>" value="<?php echo esc_attr( dokan_posted_input( 'post_title' ) ); ?>">
                                     </div>
 
                                     <div class="dokan-form-group">
                                         <div class="dokan-form-group dokan-clearfix dokan-price-container">
                                             <div class="content-half-part">
-                                                <label for="_regular_price" class="dokan-form-label"><?php esc_html_e( 'Price', 'dokan-lite' ); ?></label>
+                                                <label for="_regular_price" class="dokan-form-label"><?php esc_html_e( 'Precio', 'dokan-lite' ); ?></label>
                                                 <div class="dokan-input-group">
                                                     <span class="dokan-input-group-addon"><?php echo esc_attr__( get_woocommerce_currency_symbol() ); ?></span>
                                                     <input type="text" class="dokan-form-control wc_input_price dokan-product-regular-price" name="_regular_price" placeholder="0.00" id="_regular_price" value="<?php echo esc_attr( dokan_posted_input( '_regular_price' ) ) ?>">
@@ -162,9 +162,9 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
 
                                             <div class="content-half-part sale-price">
                                                 <label for="_sale_price" class="form-label">
-                                                    <?php esc_html_e( 'Discounted Price', 'dokan-lite' ); ?>
-                                                    <a href="#" class="sale_schedule"><?php esc_html_e( 'Schedule', 'dokan-lite' ); ?></a>
-                                                    <a href="#" class="cancel_sale_schedule dokan-hide"><?php esc_html_e( 'Cancel', 'dokan-lite' ); ?></a>
+                                                    <?php esc_html_e( 'Precio descontado', 'dokan-lite' ); ?>
+                                                    <a href="#" class="sale_schedule"><?php esc_html_e( 'Programar', 'dokan-lite' ); ?></a>
+                                                    <a href="#" class="cancel_sale_schedule dokan-hide"><?php esc_html_e( 'Cancelar', 'dokan-lite' ); ?></a>
                                                 </label>
 
                                                 <div class="dokan-input-group">
@@ -177,14 +177,14 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                         <div class="dokan-hide sale-schedule-container sale_price_dates_fields dokan-clearfix dokan-form-group">
                                             <div class="content-half-part from">
                                                 <div class="dokan-input-group">
-                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'From', 'dokan-lite' ); ?></span>
+                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'De', 'dokan-lite' ); ?></span>
                                                     <input type="text" name="_sale_price_dates_from" class="dokan-form-control datepicker sale_price_dates_from" maxlength="10" value="<?php echo esc_attr( dokan_posted_input('_sale_price_dates_from') ); ?>" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" placeholder="<?php esc_attr_e( 'YYYY-MM-DD', 'dokan-lite' ); ?>">
                                                 </div>
                                             </div>
 
                                             <div class="content-half-part to">
                                                 <div class="dokan-input-group">
-                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'To', 'dokan-lite' ); ?></span>
+                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'A', 'dokan-lite' ); ?></span>
                                                     <input type="text" name="_sale_price_dates_to" class="dokan-form-control datepicker sale_price_dates_to" value="<?php echo esc_attr( dokan_posted_input('_sale_price_dates_to') ); ?>" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" placeholder="<?php esc_attr_e( 'YYYY-MM-DD', 'dokan-lite' ); ?>">
                                                 </div>
                                             </div>
@@ -192,7 +192,7 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                     </div>
 
                                     <div class="dokan-form-group">
-                                        <textarea name="post_excerpt" id="post-excerpt" rows="5" class="dokan-form-control" placeholder="<?php esc_attr_e( 'Short description of the product...', 'dokan-lite' ); ?>"><?php echo esc_attr( dokan_posted_textarea( 'post_excerpt' ) ); ?></textarea>
+                                        <textarea name="post_excerpt" id="post-excerpt" rows="5" class="dokan-form-control" placeholder="<?php esc_attr_e( 'Descripción corta del producto...', 'dokan-lite' ); ?>"><?php echo esc_attr( dokan_posted_textarea( 'post_excerpt' ) ); ?></textarea>
                                     </div>
 
                                     <?php if ( dokan_get_option( 'product_category_style', 'dokan_selling', 'single' ) == 'single' ): ?>
@@ -201,7 +201,7 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                             <?php
                                             $selected_cat  = dokan_posted_input( 'product_cat' );
                                             $category_args =  array(
-                                                'show_option_none' => __( '- Select a category -', 'dokan-lite' ),
+                                                'show_option_none' => __( '- Selecciona una categoría -', 'dokan-lite' ),
                                                 'hierarchical'     => 1,
                                                 'hide_empty'       => 0,
                                                 'name'             => 'product_cat',
@@ -240,14 +240,14 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                                                 'walker'           => new TaxonomyDropdown()
                                             ) ) );
 
-                                            echo str_replace( '<select', '<select data-placeholder="'.esc_attr__( 'Select product category', 'dokan-lite' ).'" multiple="multiple" ', $drop_down_category ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+                                            echo str_replace( '<select', '<select data-placeholder="'.esc_attr__( 'Seleccionar categoría de producto', 'dokan-lite' ).'" multiple="multiple" ', $drop_down_category ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
                                             ?>
                                         </div>
                                     <?php endif; ?>
 
                                     <div class="dokan-form-group">
-                                        <label for="product_tag" class="form-label"><?php esc_html_e( 'Tags', 'dokan-lite' ); ?></label>
-                                        <select multiple="multiple" placeholder="<?php esc_attr_e( 'Select product tags', 'dokan-lite' ); ?>" name="product_tag[]" id="product_tag_search" class="product_tag_search product_tags dokan-form-control dokan-select2" data-placeholder="<?php esc_attr_e( 'Select tags', 'dokan-lite' ); ?>"></select>
+                                        <label for="product_tag" class="form-label"><?php esc_html_e( 'Etiquetas', 'dokan-lite' ); ?></label>
+                                        <select multiple="multiple" placeholder="<?php esc_attr_e( 'Seleccionar etiquetas de producto', 'dokan-lite' ); ?>" name="product_tag[]" id="product_tag_search" class="product_tag_search product_tags dokan-form-control dokan-select2" data-placeholder="<?php esc_attr_e( 'Seleccionar etiquetas', 'dokan-lite' ); ?>"></select>
                                     </div>
 
                                     <?php do_action( 'dokan_new_product_after_product_tags' ); ?>
@@ -255,7 +255,7 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
                             </div>
 
                             <div class="dokan-form-group">
-                                <label for="post_content" class="control-label"><?php esc_html_e( 'Description', 'dokan-lite' ) ?> <i class="fa fa-question-circle tips" data-title="<?php esc_attr_e( 'Add your product description', 'dokan-lite' ) ?>" aria-hidden="true"></i></label>
+                                <label for="post_content" class="control-label"><?php esc_html_e( 'Descripción', 'dokan-lite' ) ?> <i class="fa fa-question-circle tips" data-title="<?php esc_attr_e( 'Agregue la descripción de su producto', 'dokan-lite' ) ?>" aria-hidden="true"></i></label>
                                 <?php wp_editor( htmlspecialchars_decode( $post_content, ENT_QUOTES ), 'post_content', array('editor_height' => 50, 'quicktags' => false, 'media_buttons' => false, 'teeny' => true, 'editor_class' => 'post_content') ); ?>
                             </div>
 
@@ -265,8 +265,8 @@ use WeDevs\Dokan\Walkers\TaxonomyDropdown;
 
                             <div class="dokan-form-group dokan-right">
                                 <?php wp_nonce_field( 'dokan_add_new_product', 'dokan_add_new_product_nonce' ); ?>
-                                <button type="submit" name="add_product" class="dokan-btn dokan-btn-default" value="create_and_add_new"><?php esc_attr_e( 'Create & Add New', 'dokan-lite' ); ?></button>
-                                <button type="submit" name="add_product" class="dokan-btn dokan-btn-default dokan-btn-theme" value="create_new"><?php esc_attr_e( 'Create Product', 'dokan-lite' ); ?></button>
+                                <button type="submit" name="add_product" class="dokan-btn dokan-btn-default" value="create_and_add_new"><?php esc_attr_e( 'Crear y agregar nuevo', 'dokan-lite' ); ?></button>
+                                <button type="submit" name="add_product" class="dokan-btn dokan-btn-default dokan-btn-theme" value="create_new"><?php esc_attr_e( 'Crear producto', 'dokan-lite' ); ?></button>
                             </div>
 
                         </form>

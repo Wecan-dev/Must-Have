@@ -15,7 +15,7 @@
 
     <?php if ( !empty( $store_info['store_name'] ) ) { ?>
         <li class="store-name">
-            <span><?php esc_html_e( 'Store Name:', 'dokan-lite' ); ?></span>
+            <span><?php esc_html_e( 'Nombre de la tienda:', 'dokan-lite' ); ?></span>
             <span class="details">
                 <?php echo esc_html( $store_info['store_name'] ); ?>
             </span>
@@ -24,7 +24,7 @@
 
     <li class="seller-name">
         <span>
-            <?php esc_html_e( 'Vendor:', 'dokan-lite' ); ?>
+            <?php esc_html_e( 'Vendedor:', 'dokan-lite' ); ?>
         </span>
 
         <span class="details">
@@ -33,7 +33,7 @@
     </li>
     <?php if ( ! dokan_is_vendor_info_hidden( 'address' ) && ! empty( $store_info['address'] ) ) { ?>
         <li class="store-address">
-            <span><b><?php esc_html_e( 'Address:', 'dokan-lite' ); ?></b></span>
+            <span><b><?php esc_html_e( 'Direeción:', 'dokan-lite' ); ?></b></span>
             <span class="details">
                 <?php echo wp_kses_post( dokan_get_seller_address( $author->ID ) ) ?>
             </span>

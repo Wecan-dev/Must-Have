@@ -14,11 +14,11 @@
 <ul class="dokan-account-migration-lists">
     <li>
         <div class="dokan-w8 left-content">
-            <p><strong><?php _e( 'Become a Vendor', 'dokan' ) ?></strong></p>
-            <p><?php _e( 'Vendors can sell products and manage a store with a vendor dashboard.', 'dokan' ) ?></p>
+            <p><strong><?php _e( 'Conviértete en vendedor', 'dokan' ) ?></strong></p>
+            <p><?php _e( 'Los proveedores pueden vender productos y administrar una tienda con un panel de proveedores.', 'dokan' ) ?></p>
         </div>
         <div class="dokan-w4 right-content">
-            <a href="<?php echo esc_url( dokan_get_page_url( 'myaccount', 'woocommerce' ) . 'account-migration' ); ?>" class="btn btn-primary"><?php _e( 'Become a Vendor', 'dokan' ); ?></a>
+            <a href="<?php echo esc_url( dokan_get_page_url( 'Mi cuenta', 'woocommerce' ) . 'account-migration' ); ?>" class="btn btn-primary"><?php _e( 'Conviértete en vendedor', 'dokan' ); ?></a>
         </div>
         <div class="dokan-clearfix"></div>
     </li>

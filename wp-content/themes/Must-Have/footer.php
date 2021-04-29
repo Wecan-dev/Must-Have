@@ -19,6 +19,9 @@
               <a target="_blank" href="<?php echo get_theme_mod('home_contacto_insta'); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/Icon-insta.png" alt="">
               </a>
+			  <a target="_blank" href="<?php echo get_theme_mod('home_contacto_linkedin'); ?>">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
           <div class="content-footer__menu">
@@ -117,7 +120,7 @@
 
   <script>
 
-	  
+
 
 	  
 document.getElementById('first-name').placeholder='Nombre';

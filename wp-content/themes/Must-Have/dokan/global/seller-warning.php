@@ -9,5 +9,5 @@
 ?>
 <div class="dokan-alert dokan-alert-warning">
     <strong><?php esc_attr_e( 'Error!', 'dokan-lite' ); ?></strong>
-    <?php esc_attr_e( 'Your account is not enabled for selling, please contact the admin', 'dokan-lite' ); ?>
+    <?php esc_attr_e( 'Su cuenta no está habilitada para vender, comuníquese con el administrador', 'dokan-lite' ); ?>
 </div>

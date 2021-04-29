@@ -24,10 +24,10 @@ defined( 'ABSPATH' ) || exit; ?>
         <div class="store-lists-category item">
             <div class="category-input">
                 <span class="category-label">
-                    <?php esc_html_e( 'Category:', 'dokan' ); ?>
+                    <?php esc_html_e( 'Categoría:', 'dokan' ); ?>
                 </span>
                 <span class="category-items">
-                    <?php esc_html_e( 'All Categories', 'dokan' ) ?>
+                    <?php esc_html_e( 'todas las Categorias', 'dokan' ) ?>
                 </span>
 
                 <span class="dokan-icon dashicons dashicons-arrow-down-alt2"></span>

@@ -74,7 +74,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 
 
-	<p><?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?></p>
+	<p>Su contraseña debe tener un minimo de 10 caracteres combinando con un minimo de 2 números y 2 simbolos </p>
 
 
 

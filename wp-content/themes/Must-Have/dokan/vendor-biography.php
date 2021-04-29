@@ -30,7 +30,7 @@ get_header( 'shop' );
             <div id="comments">
             <?php do_action( 'dokan_vendor_biography_tab_before', $store_user, $store_info ); ?>
 
-            <h2 class="headline"><?php echo apply_filters( 'dokan_vendor_biography_title', __( 'Vendor Biography', 'dokan' ) ); ?></h2>
+            <h2 class="headline"><?php echo apply_filters( 'dokan_vendor_biography_title', __( 'Biografía del proveedor', 'dokan' ) ); ?></h2>
 
             <?php
                 if ( ! empty( $store_info['vendor_biography'] ) ) {

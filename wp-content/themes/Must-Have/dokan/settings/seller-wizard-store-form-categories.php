@@ -5,7 +5,7 @@
             class="wc-enhanced-select"
             name="dokan_store_categories[]"
             id="dokan_store_categories[]"
-            data-placeholder="<?php esc_html_e( 'Select categories', 'dokan' ); ?>"
+            data-placeholder="<?php esc_html_e( 'Seleccionar categorias', 'dokan' ); ?>"
             <?php echo $is_multiple ? 'multiple': ''; ?>
         >
             <?php foreach ( $categories as $category ): ?>

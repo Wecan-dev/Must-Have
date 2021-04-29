@@ -8,7 +8,7 @@ global $post;
 $from_shortcode = false;
 
 if ( !isset( $post->ID ) && ! isset( $_GET['product_id'] ) ) {
-    wp_die( esc_html__( 'Access Denied, No product found', 'dokan-lite' ) );
+    wp_die( esc_html__( 'Acceso denegado, no se ha encontrado ningún producto', 'dokan-lite' ) );
 }
 
 if ( isset( $post->ID ) && $post->ID && 'product' == $post->post_type ) {
@@ -32,7 +32,7 @@ if ( isset( $_GET['product_id'] ) ) {
 }
 
 if ( ! dokan_is_product_author( $post_id ) ) {
-    wp_die( esc_html__( 'Access Denied', 'dokan-lite' ) );
+    wp_die( esc_html__( 'Acceso denegado', 'dokan-lite' ) );
     exit();
 }
 
@@ -73,7 +73,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 ?>
 
 <?php do_action( 'dokan_dashboard_wrap_start' ); ?>
-
+<div class="content-termsConditions">
     <div class="dokan-dashboard-wrap">
 
         <?php
@@ -90,6 +90,8 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
             do_action( 'dokan_before_product_content_area' );
         ?>
 
+	
+		
         <div class="dokan-dashboard-content dokan-product-edit">
 
             <?php
@@ -104,19 +106,19 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 
             <header class="dokan-dashboard-header dokan-clearfix">
                 <h1 class="entry-title">
-                    <?php esc_html_e( 'Edit Product', 'dokan-lite' ); ?>
+                    <?php esc_html_e( 'Editar Producto', 'dokan-lite' ); ?>
                     <span class="dokan-label <?php echo esc_attr( dokan_get_post_status_label_class( $post->post_status ) ); ?> dokan-product-status-label">
                         <?php echo esc_html( dokan_get_post_status( $post->post_status ) ); ?>
                     </span>
 
                     <?php if ( $post->post_status == 'publish' ) { ?>
                         <span class="dokan-right">
-                            <a class="dokan-btn dokan-btn-theme dokan-btn-sm" href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>" target="_blank"><?php esc_html_e( 'View Product', 'dokan-lite' ); ?></a>
+                            <a class="dokan-btn dokan-btn-theme dokan-btn-sm" href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>" target="_blank"><?php esc_html_e( 'Ver Producto', 'dokan-lite' ); ?></a>
                         </span>
                     <?php } ?>
 
                     <?php if ( $_visibility == 'hidden' ) { ?>
-                        <span class="dokan-right dokan-label dokan-label-default dokan-product-hidden-label"><i class="fa fa-eye-slash"></i> <?php esc_html_e( 'Hidden', 'dokan-lite' ); ?></span>
+                        <span class="dokan-right dokan-label dokan-label-default dokan-product-hidden-label"><i class="fa fa-eye-slash"></i> <?php esc_html_e( 'Oculto', 'dokan-lite' ); ?></span>
                     <?php } ?>
                 </h1>
             </header><!-- .entry-header -->
@@ -135,10 +137,10 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                 <?php if ( isset( $_GET['message'] ) && $_GET['message'] == 'success') { ?>
                     <div class="dokan-message">
                         <button type="button" class="dokan-close" data-dismiss="alert">&times;</button>
-                        <strong><?php esc_html_e( 'Success!', 'dokan-lite' ); ?></strong> <?php esc_html_e( 'The product has been saved successfully.', 'dokan-lite' ); ?>
+                        <strong><?php esc_html_e( 'Éxito!', 'dokan-lite' ); ?></strong> <?php esc_html_e( 'El producto se ha guardado correctamente.', 'dokan-lite' ); ?>
 
                         <?php if ( $post->post_status == 'publish' ) { ?>
-                            <a href="<?php echo esc_url( get_permalink( $post_id ) ); ?>" target="_blank"><?php esc_html_e( 'View Product &rarr;', 'dokan-lite' ); ?></a>
+                            <a href="<?php echo esc_url( get_permalink( $post_id ) ); ?>" target="_blank"><?php esc_html_e( 'Ver Producto &rarr;', 'dokan-lite' ); ?></a>
                         <?php } ?>
                     </div>
                 <?php } ?>
@@ -161,10 +163,10 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                     <div class="dokan-form-group">
                                         <input type="hidden" name="dokan_product_id" id="dokan-edit-product-id" value="<?php echo esc_attr( $post_id ); ?>"/>
 
-                                        <label for="post_title" class="form-label"><?php esc_html_e( 'Title', 'dokan-lite' ); ?></label>
-                                        <?php dokan_post_input_box( $post_id, 'post_title', array( 'placeholder' => __( 'Product name..', 'dokan-lite' ), 'value' => $post_title ) ); ?>
+                                        <label for="post_title" class="form-label"><?php esc_html_e( 'Titulo', 'dokan-lite' ); ?></label>
+                                        <?php dokan_post_input_box( $post_id, 'post_title', array( 'placeholder' => __( 'Nombre del producto..', 'dokan-lite' ), 'value' => $post_title ) ); ?>
                                         <div class="dokan-product-title-alert dokan-hide">
-                                            <?php esc_html_e( 'Please enter product title!', 'dokan-lite' ); ?>
+                                            <?php esc_html_e( 'Introduzca el título del producto.', 'dokan-lite' ); ?>
                                         </div>
                                     </div>
 
@@ -176,7 +178,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 
                                     <?php if ( is_array( $product_types ) ): ?>
                                         <div class="dokan-form-group">
-                                            <label for="product_type" class="form-label"><?php esc_html_e( 'Product Type', 'dokan-lite' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php esc_html_e( 'Choose Variable if your product has multiple attributes - like sizes, colors, quality etc', 'dokan-lite' ); ?>"></i></label>
+                                            <label for="product_type" class="form-label"><?php esc_html_e( 'Tipo Producto', 'dokan-lite' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php esc_html_e( 'Elija Variable si su producto tiene múltiples atributos, como tamaños, colores, calidad, etc.', 'dokan-lite' ); ?>"></i></label>
                                             <select name="product_type" class="dokan-form-control" id="product_type">
                                                 <?php foreach ( $product_types as $key => $value ) { ?>
                                                     <option value="<?php echo esc_attr( $key ) ?>" <?php selected( $product_type, $key ) ?>><?php echo esc_html( $value ) ?></option>
@@ -192,12 +194,12 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                         <div class="dokan-form-group dokan-clearfix dokan-price-container">
 
                                             <div class="content-half-part regular-price">
-                                                <label for="_regular_price" class="form-label"><?php esc_html_e( 'Price', 'dokan-lite' ); ?>
+                                                <label for="_regular_price" class="form-label"><?php esc_html_e( 'Precio', 'dokan-lite' ); ?>
                                                     <span
                                                         class="vendor-earning simple-product"
                                                         data-commission="<?php echo esc_attr( dokan()->commission->get_earning_by_product( $post_id ) ); ?>"
                                                         data-product-id="<?php echo esc_attr( $post_id ); ?>">
-                                                            ( <?php esc_html_e( ' You Earn : ', 'dokan-lite' ) ?><?php echo esc_html( get_woocommerce_currency_symbol() ); ?>
+                                                            ( <?php esc_html_e( ' Tu ganancia : ', 'dokan-lite' ) ?><?php echo esc_html( get_woocommerce_currency_symbol() ); ?>
                                                                 <span class="vendor-price">
                                                                     <?php echo esc_html( wc_format_localized_price( esc_attr( dokan()->commission->get_earning_by_product( $post_id ) ) ) ); ?>
                                                                 </span>
@@ -213,8 +215,8 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                             <div class="content-half-part sale-price">
                                                 <label for="_sale_price" class="form-label">
                                                     <?php esc_html_e( 'Discounted Price', 'dokan-lite' ); ?>
-                                                    <a href="#" class="sale_schedule <?php echo ($show_schedule ) ? 'dokan-hide' : ''; ?>"><?php esc_html_e( 'Schedule', 'dokan-lite' ); ?></a>
-                                                    <a href="#" class="cancel_sale_schedule <?php echo ( ! $show_schedule ) ? 'dokan-hide' : ''; ?>"><?php esc_html_e( 'Cancel', 'dokan-lite' ); ?></a>
+                                                    <a href="#" class="sale_schedule <?php echo ($show_schedule ) ? 'dokan-hide' : ''; ?>"><?php esc_html_e( 'Programar', 'dokan-lite' ); ?></a>
+                                                    <a href="#" class="cancel_sale_schedule <?php echo ( ! $show_schedule ) ? 'dokan-hide' : ''; ?>"><?php esc_html_e( 'Cancelar', 'dokan-lite' ); ?></a>
                                                 </label>
 
                                                 <div class="dokan-input-group">
@@ -226,21 +228,21 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 
                                         <div class="dokan-form-group dokan-clearfix dokan-price-container">
                                             <div class="dokan-product-less-price-alert dokan-hide">
-                                                <?php esc_html_e('Product price can\'t be less than the vendor fee!', 'dokan-lite' ); ?>
+                                                <?php esc_html_e('¡El precio del producto no puede ser menor que la tarifa del proveedor!', 'dokan-lite' ); ?>
                                             </div>
                                         </div>
 
                                         <div class="sale_price_dates_fields dokan-clearfix dokan-form-group <?php echo ( ! $show_schedule ) ? 'dokan-hide' : ''; ?>">
                                             <div class="content-half-part from">
                                                 <div class="dokan-input-group">
-                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'From', 'dokan-lite' ); ?></span>
+                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'De', 'dokan-lite' ); ?></span>
                                                     <input type="text" name="_sale_price_dates_from" class="dokan-form-control dokan-start-date" value="<?php echo esc_attr( $_sale_price_dates_from ); ?>" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" placeholder="<?php esc_html_e( 'YYYY-MM-DD', 'dokan-lite' ); ?>">
                                                 </div>
                                             </div>
 
                                             <div class="content-half-part to">
                                                 <div class="dokan-input-group">
-                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'To', 'dokan-lite' ); ?></span>
+                                                    <span class="dokan-input-group-addon"><?php esc_html_e( 'A', 'dokan-lite' ); ?></span>
                                                     <input type="text" name="_sale_price_dates_to" class="dokan-form-control dokan-end-date" value="<?php echo esc_attr( $_sale_price_dates_to ); ?>" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" placeholder="<?php esc_html_e( 'YYYY-MM-DD', 'dokan-lite' ); ?>">
                                                 </div>
                                             </div>
@@ -251,7 +253,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
 
                                     <?php if ( dokan_get_option( 'product_category_style', 'dokan_selling', 'single' ) == 'single' ): ?>
                                         <div class="dokan-form-group">
-                                            <label for="product_cat" class="form-label"><?php esc_html_e( 'Category', 'dokan-lite' ); ?></label>
+                                            <label for="product_cat" class="form-label"><?php esc_html_e( 'Categoría', 'dokan-lite' ); ?></label>
                                             <?php
                                             $product_cat = -1;
                                             $term = array();
@@ -263,7 +265,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                             include_once DOKAN_LIB_DIR.'/class.category-walker.php';
 
                                             $category_args =  array(
-                                                'show_option_none' => __( '- Select a category -', 'dokan-lite' ),
+                                                'show_option_none' => __( '- Seleccionar una categoría -', 'dokan-lite' ),
                                                 'hierarchical'     => 1,
                                                 'hide_empty'       => 0,
                                                 'name'             => 'product_cat',
@@ -279,12 +281,12 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                             wp_dropdown_categories( apply_filters( 'dokan_product_cat_dropdown_args', $category_args ) );
                                         ?>
                                             <div class="dokan-product-cat-alert dokan-hide">
-                                                <?php esc_html_e('Please choose a category!', 'dokan-lite' ); ?>
+                                                <?php esc_html_e('¡Por favor elija una categoría!', 'dokan-lite' ); ?>
                                             </div>
                                         </div>
                                     <?php elseif ( dokan_get_option( 'product_category_style', 'dokan_selling', 'single' ) == 'multiple' ): ?>
                                         <div class="dokan-form-group">
-                                            <label for="product_cat" class="form-label"><?php esc_html_e( 'Category', 'dokan-lite' ); ?></label>
+                                            <label for="product_cat" class="form-label"><?php esc_html_e( 'Categoría', 'dokan-lite' ); ?></label>
                                             <?php
                                             $term = array();
                                             $term = wp_get_post_terms( $post_id, 'product_cat', array( 'fields' => 'ids') );
@@ -304,13 +306,13 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                                 'walker'           => new TaxonomyDropdown( $post_id )
                                             ) ) );
 
-                                            echo str_replace( '<select', '<select data-placeholder="' . esc_html__( 'Select product category', 'dokan-lite' ) . '" multiple="multiple" ', $drop_down_category ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+                                            echo str_replace( '<select', '<select data-placeholder="' . esc_html__( 'Seleccionar categoría de producto', 'dokan-lite' ) . '" multiple="multiple" ', $drop_down_category ); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
                                             ?>
                                         </div>
                                     <?php endif; ?>
 
                                     <div class="dokan-form-group">
-                                        <label for="product_tag" class="form-label"><?php esc_html_e( 'Tags', 'dokan-lite' ); ?></label>
+                                        <label for="product_tag" class="form-label"><?php esc_html_e( 'Etiquetas', 'dokan-lite' ); ?></label>
                                         <?php
                                         require_once DOKAN_LIB_DIR.'/class.taxonomy-walker.php';
                                         $terms = wp_get_post_terms( $post_id, 'product_tag', array( 'fields' => 'all' ) );
@@ -319,7 +321,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                             'hide_empty' => 0,
                                         );
                                         ?>
-                                        <select multiple="multiple" name="product_tag[]" id="product_tag_search" class="product_tag_search product_tags dokan-form-control dokan-select2" data-placeholder="<?php esc_attr_e( 'Select tags', 'dokan-lite' ); ?>">
+                                        <select multiple="multiple" name="product_tag[]" id="product_tag_search" class="product_tag_search product_tags dokan-form-control dokan-select2" data-placeholder="<?php esc_attr_e( 'Seleccionar etiquetas', 'dokan-lite' ); ?>">
                                             <?php if ( ! empty( $terms ) ) : ?>
                                                 <?php foreach ( $terms as $tax_term ) : ?>
                                                     <option value="<?php echo esc_attr( $tax_term->term_id ); ?>" selected="selected" ><?php echo esc_html( $tax_term->name ); ?></option>
@@ -350,7 +352,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                             <input type="hidden" name="feat_image_id" class="dokan-feat-image-id" value="<?php echo esc_attr( $feat_image_id ); ?>">
 
                                             <i class="fa fa-cloud-upload"></i>
-                                            <a href="#" class="dokan-feat-image-btn btn btn-sm"><?php esc_html_e( 'Upload a product cover image', 'dokan-lite' ); ?></a>
+                                            <a href="#" class="dokan-feat-image-btn btn btn-sm"><?php esc_html_e( 'Cargar una imagen de portada de producto', 'dokan-lite' ); ?></a>
                                         </div>
 
                                         <div class="image-wrap<?php echo esc_attr( $wrap_class ); ?>">
@@ -382,13 +384,13 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                                                                 ?>
                                                                 <li class="image" data-attachment_id="<?php echo esc_attr( $image_id ); ?>">
                                                                     <img src="<?php echo esc_url( $attachment_image[0] ); ?>" alt="">
-                                                                    <a href="#" class="action-delete" title="<?php esc_attr_e( 'Delete image', 'dokan-lite' ); ?>">&times;</a>
+                                                                    <a href="#" class="action-delete" title="<?php esc_attr_e( 'Eliminar Imagen', 'dokan-lite' ); ?>">&times;</a>
                                                                 </li>
                                                                 <?php
                                                             }
                                                         }
                                                         ?>
-                                                        <li class="add-image add-product-images tips" data-title="<?php esc_html_e( 'Add gallery image', 'dokan-lite' ); ?>">
+                                                        <li class="add-image add-product-images tips" data-title="<?php esc_html_e( 'Agregar imagen de galería', 'dokan-lite' ); ?>">
                                                             <a href="#" class="add-product-images"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                                         </li>
                                                     </ul>
@@ -402,12 +404,12 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                             </div><!-- .dokan-form-top-area -->
 
                             <div class="dokan-product-short-description">
-                                <label for="post_excerpt" class="form-label"><?php esc_html_e( 'Short Description', 'dokan-lite' ); ?></label>
+                                <label for="post_excerpt" class="form-label"><?php esc_html_e( 'Descripción corta', 'dokan-lite' ); ?></label>
                                 <?php wp_editor( $post_excerpt , 'post_excerpt', apply_filters( 'dokan_product_short_description', array( 'editor_height' => 50, 'quicktags' => false, 'media_buttons' => false, 'teeny' => true, 'editor_class' => 'post_excerpt' ) ) ); ?>
                             </div>
 
                             <div class="dokan-product-description">
-                                <label for="post_content" class="form-label"><?php esc_html_e( 'Description', 'dokan-lite' ); ?></label>
+                                <label for="post_content" class="form-label"><?php esc_html_e( 'Descripción', 'dokan-lite' ); ?></label>
                                 <?php wp_editor( $post_content , 'post_content', apply_filters( 'dokan_product_description', array( 'editor_height' => 50, 'quicktags' => false, 'media_buttons' => false, 'teeny' => true, 'editor_class' => 'post_content' ) ) ); ?>
                             </div>
 
@@ -423,7 +425,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                             <?php wp_nonce_field( 'dokan_edit_product', 'dokan_edit_product_nonce' ); ?>
 
                             <!--hidden input for Firefox issue-->
-                            <input type="hidden" name="dokan_update_product" value="<?php esc_attr_e( 'Save Product', 'dokan-lite' ); ?>"/>
+                            <input type="hidden" name="dokan_update_product" value="<?php esc_attr_e( 'Guardar Producto', 'dokan-lite' ); ?>"/>
                             <input type="submit" name="dokan_update_product" class="dokan-btn dokan-btn-theme dokan-btn-lg dokan-right" value="<?php esc_attr_e( 'Save Product', 'dokan-lite' ); ?>"/>
                             <div class="dokan-clearfix"></div>
                         </form>
@@ -450,7 +452,7 @@ do_action( 'dokan_dashboard_wrap_before', $post, $post_id );
                 do_action( 'dokan_product_content_inside_area_after' );
             ?>
         </div>
-
+</div>
         <?php
 
             /**

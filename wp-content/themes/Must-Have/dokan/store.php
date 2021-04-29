@@ -181,7 +181,7 @@ if ( function_exists( 'yoast_breadcrumb' ) ) {
 
                 <?php } else { ?>
 
-                    <p class="dokan-info"><?php esc_html_e( 'No products were found of this vendor!', 'dokan-lite' ); ?></p>
+                    <p class="dokan-info"><?php esc_html_e( '¡No se encontraron productos de este proveedor!', 'dokan-lite' ); ?></p>
 
                 <?php } ?>
             </div>

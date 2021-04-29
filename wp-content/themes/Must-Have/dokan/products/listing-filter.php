@@ -20,7 +20,7 @@ do_action( 'dokan_product_listing_filter_before_form' );
         <div class="dokan-form-group">
             <?php
                 wp_dropdown_categories( [
-                    'show_option_none' => __( '- Select a category -', 'dokan-lite' ),
+                    'show_option_none' => __( '- Seleccionar una categoría -', 'dokan-lite' ),
                     'hierarchical'     => 1,
                     'hide_empty'       => 0,
                     'name'             => 'product_cat',
@@ -44,7 +44,7 @@ do_action( 'dokan_product_listing_filter_before_form' );
         <?php }
         ?>
 
-        <button type="submit" name="product_listing_filter" value="ok" class="dokan-btn"><?php esc_html_e( 'Filter', 'dokan-lite' ); ?></button>
+        <button type="submit" name="product_listing_filter" value="ok" class="dokan-btn"><?php esc_html_e( 'Filtrar', 'dokan-lite' ); ?></button>
 
     </form>
 
@@ -52,12 +52,12 @@ do_action( 'dokan_product_listing_filter_before_form' );
 
     <form method="get" class="dokan-form-inline dokan-w5 dokan-product-search-form">
 
-        <button type="submit" name="product_listing_search" value="ok" class="dokan-btn"><?php esc_html_e( 'Search', 'dokan-lite' ); ?></button>
+        <button type="submit" name="product_listing_search" value="ok" class="dokan-btn"><?php esc_html_e( 'Buscar', 'dokan-lite' ); ?></button>
 
         <?php wp_nonce_field( 'dokan_product_search', 'dokan_product_search_nonce' ); ?>
 
         <div class="dokan-form-group">
-            <input type="text" class="dokan-form-control" name="product_search_name" placeholder="<?php esc_html_e( 'Search Products', 'dokan-lite' ); ?>" value="<?php echo isset( $get_data['product_search_name'] ) ? esc_attr( $get_data['product_search_name'] ) : ''; ?>">
+            <input type="text" class="dokan-form-control" name="product_search_name" placeholder="<?php esc_html_e( 'Buscar Productos', 'dokan-lite' ); ?>" value="<?php echo isset( $get_data['product_search_name'] ) ? esc_attr( $get_data['product_search_name'] ) : ''; ?>">
         </div>
 
         <?php

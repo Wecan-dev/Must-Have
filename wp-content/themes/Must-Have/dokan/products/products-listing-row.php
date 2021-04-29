@@ -30,14 +30,14 @@
         <label for="cb-select-<?php echo esc_attr( $post->ID ); ?>"></label>
         <input class="cb-select-items dokan-checkbox" type="checkbox" name="bulk_products[]" value="<?php echo esc_attr( $post->ID ); ?>">
     </th>
-    <td data-title="<?php esc_attr_e( 'Image', 'dokan-lite' ); ?>" class="column-thumb">
+    <td data-title="<?php esc_attr_e( 'Imagen', 'dokan-lite' ); ?>" class="column-thumb">
         <?php if ( current_user_can( 'dokan_edit_product' ) ) { ?>
             <a href="<?php echo esc_url( dokan_edit_product_url( $post->ID ) ); ?>"><?php echo wp_kses( $product->get_image( 'thumbnail' ), $img_kses ); ?></a>
         <?php } else { ?>
             <?php echo wp_kses( $product->get_image( 'thumbnail' ), $img_kses ); ?>
         <?php } ?>
     </td>
-    <td data-title="<?php esc_attr_e( 'Name', 'dokan-lite' ); ?>" class="column-primary">
+    <td data-title="<?php esc_attr_e( 'Nombre', 'dokan-lite' ); ?>" class="column-primary">
         <?php if ( current_user_can( 'dokan_edit_product' ) ) { ?>
             <strong><a href="<?php echo esc_url( dokan_edit_product_url( $post->ID ) ); ?>"><?php echo esc_html( $product->get_title() ); ?></a></strong>
         <?php } else { ?>
@@ -52,13 +52,13 @@
 
         <button type="button" class="toggle-row"></button>
     </td>
-    <td class="post-status" data-title="<?php esc_attr_e( 'Status', 'dokan-lite' ); ?>">
+    <td class="post-status" data-title="<?php esc_attr_e( 'Estado', 'dokan-lite' ); ?>">
         <label class="dokan-label <?php echo esc_attr( dokan_get_post_status_label_class( $post->post_status ) ); ?>"><?php echo esc_html( dokan_get_post_status( $post->post_status ) ); ?></label>
     </td>
 
     <?php do_action( 'dokan_product_list_table_after_status_table_data', $post, $product, $tr_class, $row_actions ); ?>
 
-    <td data-title="<?php esc_attr_e( 'SKU', 'dokan-lite' ); ?>">
+    <td data-title="<?php esc_attr_e( 'REF', 'dokan-lite' ); ?>">
         <?php
         if ( $product->get_sku() ) {
             echo esc_html( $product->get_sku() );
@@ -76,7 +76,7 @@
         }
         ?>
     </td>
-    <td data-title="<?php esc_attr_e( 'Price', 'dokan-lite' ); ?>">
+    <td data-title="<?php esc_attr_e( 'Precio', 'dokan-lite' ); ?>">
         <?php
         if ( $product->get_price_html() ) {
             echo wp_kses_post( $product->get_price_html() );
@@ -85,7 +85,7 @@
         }
         ?>
     </td>
-    <td data-title="<?php esc_attr_e( 'Earning', 'dokan-lite' ); ?>">
+    <td data-title="<?php esc_attr_e( 'Ganancia', 'dokan-lite' ); ?>">
         <?php
         if ( $product->get_type() == 'variable' ) {
             $price = dokan_get_variable_product_earning( $product->get_id() );
@@ -96,17 +96,17 @@
         }
         ?>
     </td>
-    <td data-title="<?php esc_attr_e( 'Type', 'dokan-lite' ); ?>">
+    <td data-title="<?php esc_attr_e( 'Tipo', 'dokan-lite' ); ?>">
         <?php
         if ( dokan_get_prop( $product, 'product_type', 'get_type' ) == 'grouped' ) {
-            echo '<span class="product-type tips grouped" title="' . esc_html__( 'Grouped', 'dokan-lite' ) . '"></span>';
+            echo '<span class="product-type tips grouped" title="' . esc_html__( 'Agrupados', 'dokan-lite' ) . '"></span>';
         } elseif ( dokan_get_prop( $product, 'product_type', 'get_type' ) == 'external' ) {
-            echo '<span class="product-type tips external" title="' . esc_html__( 'External/Affiliate', 'dokan-lite' ) . '"></span>';
+            echo '<span class="product-type tips external" title="' . esc_html__( 'Externo / afiliado', 'dokan-lite' ) . '"></span>';
         } elseif ( dokan_get_prop( $product, 'product_type', 'get_type' ) == 'simple' ) {
             if ( $product->is_virtual() ) {
                 echo '<span class="product-type tips virtual" title="' . esc_html__( 'Virtual', 'dokan-lite' ) . '"></span>';
             } elseif ( $product->is_downloadable() ) {
-                echo '<span class="product-type tips downloadable" title="' . esc_html__( 'Downloadable', 'dokan-lite' ) . '"></span>';
+                echo '<span class="product-type tips downloadable" title="' . esc_html__( 'Descargable', 'dokan-lite' ) . '"></span>';
             } else {
                 echo '<span class="product-type tips simple" title="' . esc_html__( 'Simple', 'dokan-lite' ) . '"></span>';
             }
@@ -121,10 +121,10 @@
     <td data-title="<?php esc_attr_e( 'Views', 'dokan-lite' ); ?>">
         <?php echo (int) get_post_meta( $post->ID, 'pageview', true ); ?>
     </td>
-    <td class="post-date" data-title="<?php esc_attr_e( 'Date', 'dokan-lite' ); ?>">
+    <td class="post-date" data-title="<?php esc_attr_e( 'Fecha', 'dokan-lite' ); ?>">
         <?php
         if ( '0000-00-00 00:00:00' == $post->post_date ) {
-            $t_time    = $h_time    = __( 'Unpublished', 'dokan-lite' );
+            $t_time    = $h_time    = __( 'Inédito', 'dokan-lite' );
             $time_diff = 0;
         } else {
             $t_time = get_the_time( __( 'Y/m/d g:i:s A', 'dokan-lite' ) );
@@ -134,7 +134,7 @@
             $time_diff = time() - $time;
 
             if ( $time_diff > 0 && $time_diff < 24 * 60 * 60 ) {
-                $h_time = sprintf( __( '%s ago', 'dokan-lite' ), human_time_diff( $time ) );
+                $h_time = sprintf( __( '%s atras', 'dokan-lite' ), human_time_diff( $time ) );
             } else {
                 $h_time = mysql2date( __( 'Y/m/d', 'dokan-lite' ), $m_time );
             }
@@ -149,12 +149,12 @@
             esc_html_e( 'Published', 'dokan-lite' );
         } elseif ( 'future' == $post->post_status ) {
             if ( $time_diff > 0 ) {
-                echo '<strong class="attention">' . esc_html__( 'Missed schedule', 'dokan-lite' ) . '</strong>';
+                echo '<strong class="attention">' . esc_html__( 'Programación perdida', 'dokan-lite' ) . '</strong>';
             } else {
-                esc_html_e( 'Scheduled', 'dokan-lite' );
+                esc_html_e( 'Programar', 'dokan-lite' );
             }
         } else {
-            esc_html_e( 'Last Modified', 'dokan-lite' );
+            esc_html_e( 'Última modificaión', 'dokan-lite' );
         }
         ?>
         </div>

@@ -1,0 +1,44 @@
+2021-04-18T20:54:32+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php:21
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1549): wc_get_template('single-product/...')
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_template_single_title('')
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(63): do_action('woocommerce_sin...')
+#6 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php en la línea 21
+
+2021-04-18T20:55:11+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php:21
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1549): wc_get_template('single-product/...')
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_template_single_title('')
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(63): do_action('woocommerce_sin...')
+#6 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php en la línea 21
+
+2021-04-18T20:58:28+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php:21
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1549): wc_get_template('single-product/...')
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_template_single_title('')
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(63): do_action('woocommerce_sin...')
+#6 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php en la línea 21
+
+2021-04-18T20:58:54+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php:23
+Stack trace:
+#0 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1549): wc_get_template('single-product/...')
+#2 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(287): woocommerce_template_single_title('')
+#3 /var/www/html/Must-Have/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/Must-Have/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/content-single-product.php(63): do_action('woocommerce_sin...')
+#6 /var/www/html/Must-Have/wp-includes/template.php(732): require('/var/www/html/M...')
+#7 /var/www/html/Must-Have/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/ en /var/www/html/Must-Have/wp-content/themes/Must-Have/woocommerce/single-product/title.php en la línea 23
+

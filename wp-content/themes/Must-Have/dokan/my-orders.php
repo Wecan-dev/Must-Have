@@ -18,17 +18,17 @@
 
     if ( $customer_orders ) : ?>
 
-        <h2><?php echo esc_html( apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent Orders', 'dokan-lite' ) ) ); ?></h2>
+        <h2><?php echo esc_html( apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Pedidos recientes', 'dokan-lite' ) ) ); ?></h2>
 
         <table class="shop_table my_account_orders table table-striped">
 
             <thead>
                 <tr>
-                    <th class="order-number"><span class="nobr"><?php esc_html_e( 'Order', 'dokan-lite' ); ?></span></th>
-                    <th class="order-date"><span class="nobr"><?php esc_html_e( 'Date', 'dokan-lite' ); ?></span></th>
-                    <th class="order-status"><span class="nobr"><?php esc_html_e( 'Status', 'dokan-lite' ); ?></span></th>
+                    <th class="order-number"><span class="nobr"><?php esc_html_e( 'Pedido', 'dokan-lite' ); ?></span></th>
+                    <th class="order-date"><span class="nobr"><?php esc_html_e( 'Fecha', 'dokan-lite' ); ?></span></th>
+                    <th class="order-status"><span class="nobr"><?php esc_html_e( 'Estado', 'dokan-lite' ); ?></span></th>
                     <th class="order-total"><span class="nobr"><?php esc_html_e( 'Total', 'dokan-lite' ); ?></span></th>
-                    <th class="order-total"><span class="nobr"><?php esc_html_e( 'Vendor', 'dokan-lite' ); ?></span></th>
+                    <th class="order-total"><span class="nobr"><?php esc_html_e( 'Vendedor', 'dokan-lite' ); ?></span></th>
                     <th class="order-actions">&nbsp;</th>
                 </tr>
             </thead>
@@ -62,7 +62,7 @@
                                     $sellershop = dokan_get_store_info( $seller_id );
                                     echo '<a href="'. esc_url( dokan_get_store_url( $seller_id ) ) .'">'. esc_html( $sellershop['store_name'] ) .'</a>';
                                 } else {
-                                    esc_html_e( 'Multiple Vendor', 'dokan-lite' );
+                                    esc_html_e( 'Vendedor múltiple', 'dokan-lite' );
                                 }
                             ?>
                         </td>
@@ -74,18 +74,18 @@
                                 if ( in_array( dokan_get_prop( $order, 'status' ), apply_filters( 'woocommerce_valid_order_statuses_for_payment', array( 'pending', 'failed' ), $order ) ) )
                                     $actions['pay'] = array(
                                         'url'  => $order->get_checkout_payment_url(),
-                                        'name' => __( 'Pay', 'dokan-lite' )
+                                        'name' => __( 'Pagar', 'dokan-lite' )
                                     );
 
                                 if ( in_array( dokan_get_prop( $order, 'status' ), apply_filters( 'woocommerce_valid_order_statuses_for_cancel', array( 'pending', 'failed' ), $order ) ) )
                                     $actions['cancel'] = array(
                                         'url'  => $order->get_cancel_order_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ),
-                                        'name' => __( 'Cancel', 'dokan-lite' )
+                                        'name' => __( 'Cancela', 'dokan-lite' )
                                     );
 
                                 $actions['view'] = array(
                                     'url'  => $order->get_view_order_url(),
-                                    'name' => __( 'View', 'dokan-lite' )
+                                    'name' => __( 'Vista', 'dokan-lite' )
                                 );
 
                                 $actions = apply_filters( 'woocommerce_my_account_my_orders_actions', $actions, $order );
@@ -103,6 +103,6 @@
 
     <?php else: ?>
 
-        <p class="dokan-info"><?php esc_html_e( 'No orders found!', 'dokan-lite' ); ?></p>
+        <p class="dokan-info"><?php esc_html_e( '¡No se encontraron pedidos!', 'dokan-lite' ); ?></p>
 
     <?php endif; ?>

@@ -3,7 +3,7 @@
         class="dokan-select2 dokan-form-control"
         name="dokan_seller_category"
     >
-        <option value=""><?php echo esc_html( __( 'Store Category', 'dokan' ) ); ?></option>
+        <option value=""><?php echo esc_html( __( 'Categoría de tienda', 'dokan' ) ); ?></option>
         <?php foreach ( $categories as $category ): ?>
             <option value="<?php echo esc_attr( $category->slug ); ?>" <?php echo ( $category->slug === $category_query ) ? 'selected' : ''; ?>>
                 <?php echo esc_html( $category->name ); ?>

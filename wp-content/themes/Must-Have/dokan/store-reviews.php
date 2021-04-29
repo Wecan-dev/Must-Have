@@ -42,7 +42,7 @@ get_header( 'shop' );
 
               <?php do_action( 'dokan_review_tab_before_comments' ); ?>
 
-                <h2 class="headline"><?php _e( 'Vendor Review', 'dokan' ); ?></h2>
+                <h2 class="headline"><?php _e( 'Revisión del proveedor', 'dokan' ); ?></h2>
 
                 <ol class="commentlist">
                     <?php echo $dokan_template_reviews->render_store_tab_comment_list( $comments , $store_user->ID); ?>

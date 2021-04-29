@@ -23,10 +23,10 @@
 
         <button type="button" class="toggle-row"></button>
     </td>
-    <td class="col-content" data-title="<?php _e( 'Comment', 'dokan' ); ?>">
+    <td class="col-content" data-title="<?php _e( 'Comentario', 'dokan' ); ?>">
         <div class="dokan-comments-subdate">
             <?php
-            _e( 'Submitted on ', 'dokan' );
+            _e( 'Enviado el ', 'dokan' );
             echo $comment_date;
             ?>
         </div>
@@ -39,31 +39,31 @@
                 if ( $page_status == '0' ) {
                     ?>
 
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>"  data-post_type="<?php echo $post_type; ?>" data-page_status="0" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Approve', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>"  data-post_type="<?php echo $post_type; ?>" data-page_status="0" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Aprobar', 'dokan' ); ?></a></li>
                     <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="0" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="spam" class="dokan-cmt-action"><?php _e( 'Spam', 'dokan' ); ?></a></li>
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="0" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="trash" class="dokan-cmt-action"><?php _e( 'Trash', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="0" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="trash" class="dokan-cmt-action"><?php _e( 'Basura', 'dokan' ); ?></a></li>
 
                 <?php
                 } elseif ( $page_status == 'spam' ) { ?>
 
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="spam" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Not Spam', 'dokan' ); ?></a></li>
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="spam" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="delete" class="dokan-cmt-action"><?php _e( 'Delete Permanently', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="spam" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'No spam', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="spam" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="delete" class="dokan-cmt-action"><?php _e( 'Borrar permanentemente', 'dokan' ); ?></a></li>
 
                 <?php } elseif ( $page_status == 'trash' ) { ?>
 
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="trash" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Restore', 'dokan' ); ?></a></li>
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="trash" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="delete" class="dokan-cmt-action"><?php _e( 'Delete Permanently', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="trash" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Restaurar', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="trash" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="delete" class="dokan-cmt-action"><?php _e( 'Borrar permanentemente', 'dokan' ); ?></a></li>
 
                 <?php } else { ?>
 
                     <?php if ( $comment_status == 'approved' ) { ?>
-                        <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="0" class="dokan-cmt-action"><?php _e( 'Unapprove', 'dokan' ); ?></a></li>
+                        <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="0" class="dokan-cmt-action"><?php _e( 'Desaprobar', 'dokan' ); ?></a></li>
                     <?php } else { ?>
-                        <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Approve', 'dokan' ); ?></a></li>
+                        <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="1" class="dokan-cmt-action"><?php _e( 'Aprobar', 'dokan' ); ?></a></li>
                     <?php } ?>
 
                     <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="spam" class="dokan-cmt-action"><?php _e( 'Spam', 'dokan' ); ?></a></li>
-                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="trash" class="dokan-cmt-action"><?php _e( 'Trash', 'dokan' ); ?></a></li>
+                    <li><a href="#" data-curr_page="<?php echo $page_status; ?>" data-post_type="<?php echo $post_type; ?>" data-page_status="1" data-comment_id="<?php echo $comment->comment_ID; ?>" data-cmt_status="trash" class="dokan-cmt-action"><?php _e( 'Basura', 'dokan' ); ?></a></li>
 
                 <?php
                 }
@@ -71,20 +71,20 @@
             </ul>
         <?php } ?>
     </td>
-    <td class="col-link" data-title="<?php _e( 'Link To', 'dokan' ); ?>">
-        <a href="<?php echo $permalink; ?>"><?php _e( 'View Comment', 'dokan' ); ?></a>
+    <td class="col-link" data-title="<?php _e( 'Enlace a', 'dokan' ); ?>">
+        <a href="<?php echo $permalink; ?>"><?php _e( 'Ver comentario', 'dokan' ); ?></a>
 
         <div style="display:none">
             <div class="dokan-cmt-hid-status"><?php echo esc_attr( $comment->comment_approved ); ?></div>
         </div>
     </td>
-    <td data-title="<?php _e( 'Rating', 'dokan' ); ?>">
+    <td data-title="<?php _e( 'Clasificación', 'dokan' ); ?>">
     <?php if ( get_option( 'woocommerce_enable_review_rating' ) == 'yes' ) { ?>
         <?php $rating =  intval( get_comment_meta( $comment->comment_ID, 'rating', true ) ); ?>
 
     <div class="dokan-rating">
-        <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( __( 'Rated %d out of 5', 'dokan' ), $rating ); ?>">
-            <span style="width:<?php echo( intval( get_comment_meta( $comment->comment_ID, 'rating', true ) ) / 5 ) * 100; ?>%"><strong itemprop="ratingValue"><?php echo $rating; ?></strong> <?php _e( 'out of 5', 'dokan' ); ?></span>
+        <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( __( 'Calificación %d de 5', 'dokan' ), $rating ); ?>">
+            <span style="width:<?php echo( intval( get_comment_meta( $comment->comment_ID, 'rating', true ) ) / 5 ) * 100; ?>%"><strong itemprop="ratingValue"><?php echo $rating; ?></strong> <?php _e( 'de 5', 'dokan' ); ?></span>
         </div>
     </div>
 

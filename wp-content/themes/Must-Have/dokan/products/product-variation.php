@@ -10,9 +10,9 @@
 
 <div class="dokan-attribute-variation-options dokan-edit-row dokan-clearfix">
     <div class="dokan-section-heading" data-togglehandler="dokan_attribute_variation_options">
-        <h2><i class="fa fa-list-alt" aria-hidden="true"></i> <?php _e( 'Attribute', 'dokan' ); ?><span class="show_if_variable show_if_variable-subscription"><?php _e( ' and Variation', 'dokan' ) ?></span></h2>
-        <p class="show_if_variable show_if_variable-subscription"><?php _e( 'Manage attributes and variations for this variable product.', 'dokan' ); ?></p>
-        <p class="show_if_simple show_if_subscription show_if_grouped"><?php _e( 'Manage attributes for this simple product.', 'dokan' ); ?></p>
+        <h2><i class="fa fa-list-alt" aria-hidden="true"></i> <?php _e( 'Atributo', 'dokan' ); ?><span class="show_if_variable show_if_variable-subscription"><?php _e( ' y variación', 'dokan' ) ?></span></h2>
+        <p class="show_if_variable show_if_variable-subscription"><?php _e( 'Gestionar atributos y variaciones para este producto variable..', 'dokan' ); ?></p>
+        <p class="show_if_simple show_if_subscription show_if_grouped"><?php _e( 'Administra los atributos de este producto simple.', 'dokan' ); ?></p>
 
         <a href="#" class="dokan-section-toggle">
             <i class="fa fa-sort-desc fa-flip-vertical" aria-hidden="true"></i>
@@ -75,7 +75,7 @@
 
             <div class="dokan-attribute-type">
                 <select name="predefined_attribute" id="predefined_attribute" class="dokan-w5 dokan-form-control dokan_attribute_taxonomy" data-predefined_attr='<?php echo json_encode( $attribute_taxonomies ); ?>'>
-                    <option value=""><?php _e( 'Custom Attribute', 'dokan' ); ?></option>
+                    <option value=""><?php _e( 'Atributo personalizado', 'dokan' ); ?></option>
                     <?php
                     if ( ! empty( $attribute_taxonomies ) ) {
                         foreach ( $attribute_taxonomies as $tax ) {
@@ -86,8 +86,8 @@
                     }
                     ?>
                 </select>
-                <a href="#" class="dokan-btn dokan-btn-default add_new_attribute"><?php _e( 'Add attribute', 'dokan' ) ?></a>
-                <a href="#" class="dokan-btn dokan-btn-default dokan-btn-theme dokan-save-attribute"><?php _e( 'Save attribute', 'dokan' ) ?></a>
+                <a href="#" class="dokan-btn dokan-btn-default add_new_attribute"><?php _e( 'Añadir atributo', 'dokan' ) ?></a>
+                <a href="#" class="dokan-btn dokan-btn-default dokan-btn-theme dokan-save-attribute"><?php _e( 'Guardar atributo', 'dokan' ) ?></a>
                 <span class="dokan-spinner dokan-attribute-spinner dokan-hide"></span>
             </div>
         </div>

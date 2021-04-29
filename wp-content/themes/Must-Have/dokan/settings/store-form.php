@@ -70,7 +70,7 @@
                 <div class="button-area<?php echo $banner_id ? ' dokan-hide' : ''; ?>">
                     <i class="fa fa-cloud-upload"></i>
 
-                    <a href="#" class="dokan-banner-drag dokan-btn dokan-btn-info dokan-theme"><?php esc_html_e( 'Upload banner', 'dokan-lite' ); ?></a>
+                    <a href="#" class="dokan-banner-drag dokan-btn dokan-btn-info dokan-theme"><?php esc_html_e( 'Subir banner', 'dokan-lite' ); ?></a>
                     <p class="help-block">
                         <?php
                         /**
@@ -83,7 +83,7 @@
                         $banner_height    = dokan_get_option( 'store_banner_height', 'dokan_appearance', 300 );
 
                         $help_text = sprintf(
-                            __( 'Upload a banner for your store. Banner size is (%sx%s) pixels.', 'dokan-lite' ),
+                            __( 'Sube un banner para tu tienda. El tamaño del banner es (%sx%s) píxeles.', 'dokan-lite' ),
                             $banner_width, $banner_height
                         );
 
@@ -96,7 +96,7 @@
             <?php do_action( 'dokan_settings_after_banner', $current_user, $profile_info ); ?>
 
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label" for="dokan_gravatar"><?php esc_html_e( 'Profile Picture', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label" for="dokan_gravatar"><?php esc_html_e( 'Foto de perfil', 'dokan-lite' ); ?></label>
 
             <div class="dokan-w5 dokan-gravatar">
                 <div class="dokan-left gravatar-wrap<?php echo $gravatar_id ? '' : ' dokan-hide'; ?>">
@@ -106,23 +106,23 @@
                     <a class="dokan-close dokan-remove-gravatar-image">&times;</a>
                 </div>
                 <div class="gravatar-button-area<?php echo esc_attr( $gravatar_id ) ? ' dokan-hide' : ''; ?>">
-                    <a href="#" class="dokan-pro-gravatar-drag dokan-btn dokan-btn-default"><i class="fa fa-cloud-upload"></i> <?php esc_html_e( 'Upload Photo', 'dokan-lite' ); ?></a>
+                    <a href="#" class="dokan-pro-gravatar-drag dokan-btn dokan-btn-default"><i class="fa fa-cloud-upload"></i> <?php esc_html_e( 'Subir foto', 'dokan-lite' ); ?></a>
                 </div>
             </div>
         </div>
 
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label" for="dokan_store_name"><?php esc_html_e( 'Store Name', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label" for="dokan_store_name"><?php esc_html_e( 'Nombre de la tienda', 'dokan-lite' ); ?></label>
 
             <div class="dokan-w5 dokan-text-left">
-                <input id="dokan_store_name" required value="<?php echo esc_attr( $storename ); ?>" name="dokan_store_name" placeholder="<?php esc_attr_e( 'store name', 'dokan-lite' ); ?>" class="dokan-form-control" type="text">
+                <input id="dokan_store_name" required value="<?php echo esc_attr( $storename ); ?>" name="dokan_store_name" placeholder="<?php esc_attr_e( 'Nombre de la tienda', 'dokan-lite' ); ?>" class="dokan-form-control" type="text">
             </div>
         </div>
 
         <?php do_action( 'dokan_settings_after_store_name', $current_user, $profile_info ); ?>
 
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label" for="dokan_store_ppp"><?php esc_html_e( 'Store Product Per Page', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label" for="dokan_store_ppp"><?php esc_html_e( 'Almacenar producto por página', 'dokan-lite' ); ?></label>
 
             <div class="dokan-w5 dokan-text-left">
                 <input id="dokan_store_ppp" value="<?php echo esc_attr( $store_ppp ); ?>" name="dokan_store_ppp" placeholder="10" class="dokan-form-control" type="number">
@@ -145,7 +145,7 @@
         <!--address-->
 
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label" for="setting_phone"><?php esc_html_e( 'Phone No', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label" for="setting_phone"><?php esc_html_e( 'Telefono no', 'dokan-lite' ); ?></label>
             <div class="dokan-w5 dokan-text-left">
                 <input id="setting_phone" value="<?php echo esc_attr( $phone ); ?>" name="setting_phone" placeholder="<?php esc_attr_e( '+123456..', 'dokan-lite' ); ?>" class="dokan-form-control input-md" type="text">
             </div>
@@ -164,12 +164,12 @@
         </div>
 
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label"><?php esc_html_e( 'More products', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label"><?php esc_html_e( 'Más productos', 'dokan-lite' ); ?></label>
             <div class="dokan-w5 dokan-text-left">
                 <div class="checkbox">
                     <label>
                         <input type="hidden" name="setting_show_more_ptab" value="no">
-                        <input type="checkbox" name="setting_show_more_ptab" value="yes"<?php checked( $show_more_ptab, 'yes' ); ?>> <?php esc_html_e( 'Enable tab on product single page view', 'dokan-lite' ); ?>
+                        <input type="checkbox" name="setting_show_more_ptab" value="yes"<?php checked( $show_more_ptab, 'yes' ); ?>> <?php esc_html_e( 'Habilitar pestaña en la vista de una sola página del producto', 'dokan-lite' ); ?>
                     </label>
                 </div>
             </div>
@@ -177,7 +177,7 @@
 
         <?php if ( dokan_has_map_api_key() ) { ?>
         <div class="dokan-form-group">
-            <label class="dokan-w3 dokan-control-label" for="setting_map"><?php esc_html_e( 'Map', 'dokan-lite' ); ?></label>
+            <label class="dokan-w3 dokan-control-label" for="setting_map"><?php esc_html_e( 'Mapa', 'dokan-lite' ); ?></label>
 
             <div class="dokan-w6 dokan-text-left">
                 <?php
@@ -197,17 +197,17 @@
         if ( $tnc_enable == 'on' ) {
             ?>
             <div class="dokan-form-group">
-                <label class="dokan-w3 dokan-control-label"><?php esc_html_e( 'Terms and Conditions', 'dokan-lite' ); ?></label>
+                <label class="dokan-w3 dokan-control-label"><?php esc_html_e( 'Términos y Condiciones', 'dokan-lite' ); ?></label>
                 <div class="dokan-w5 dokan-text-left dokan_tock_check">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="dokan_store_tnc_enable" value="on" <?php echo $enable_tnc == 'on' ? 'checked' : ''; ?> name="dokan_store_tnc_enable"> <?php esc_html_e( 'Show terms and conditions in store page', 'dokan-lite' ); ?>
+                            <input type="checkbox" id="dokan_store_tnc_enable" value="on" <?php echo $enable_tnc == 'on' ? 'checked' : ''; ?> name="dokan_store_tnc_enable"> <?php esc_html_e( 'Mostrar términos y condiciones en la página de la tienda', 'dokan-lite' ); ?>
                         </label>
                     </div>
                 </div>
             </div>
             <div class="dokan-form-group" id="dokan_tnc_text">
-                <label class="dokan-w3 dokan-control-label" for="dokan_store_tnc"><?php esc_html_e( 'TOC Details', 'dokan-lite' ); ?></label>
+                <label class="dokan-w3 dokan-control-label" for="dokan_store_tnc"><?php esc_html_e( 'Detalles de TOC', 'dokan-lite' ); ?></label>
                 <div class="dokan-w8 dokan-text-left">
                     <?php
                         $settings = [
@@ -227,14 +227,14 @@
         <?php if ( $show_store_open_close == 'on' ) { ?>
         <div class="dokan-form-group store-open-close-time">
             <label class="dokan-w3 dokan-control-label" for="dokan-store-close">
-                <?php esc_html_e( 'Store Opening Closing Time', 'dokan-lite' ); ?>
+                <?php esc_html_e( 'Hora de cierre de apertura de la tienda', 'dokan-lite' ); ?>
             </label>
 
             <div class="dokan-w5 dokan-text-left dokan_tock_check">
                 <div class="checkbox">
                     <label for="dokan-store-time-enable" class="control-label">
                         <input type="checkbox" name="dokan_store_time_enabled" id="dokan-store-time-enable" value="yes" <?php echo $dokan_store_time_enabled == 'yes' ? 'checked' : ''; ?>>
-                        <?php esc_html_e( 'Show store opening closing time widget in store page', 'dokan-lite' ); ?>
+                        <?php esc_html_e( 'Mostrar el widget de hora de cierre de apertura de la tienda en la página de la tienda', 'dokan-lite' ); ?>
                     </label>
                 </div>
             </div>
@@ -255,10 +255,10 @@
                         <label for="">
                             <select name="<?php echo esc_attr( $day ); ?>_on_off" class="dokan-on-off dokan-form-control">
                                 <option value="close" <?php ! empty( $status ) ? selected( $status, 'close' ) : ''; ?> >
-                                    <?php esc_html_e( 'Close', 'dokan-lite' ); ?>
+                                    <?php esc_html_e( 'Cerrado', 'dokan-lite' ); ?>
                                 </option>
                                 <option value="open" <?php ! empty( $status ) ? selected( $status, 'open' ) : ''; ?> >
-                                    <?php esc_html_e( 'Open', 'dokan-lite' ); ?>
+                                    <?php esc_html_e( 'Abierto', 'dokan-lite' ); ?>
                                 </option>
                             </select>
                         </label>
@@ -275,18 +275,18 @@
 
         <div class="dokan-form-group store-open-close">
             <label class="dokan-w3 dokan-control-label" for="dokan-store-time-notice">
-                <?php esc_html_e( 'Store Open Notice', 'dokan-lite' ); ?>
+                <?php esc_html_e( 'Aviso de apertura de tienda', 'dokan-lite' ); ?>
             </label>
             <div class="dokan-w6">
-                <input type="text" class="dokan-form-control input-md" name="dokan_store_open_notice" placeholder="<?php esc_attr_e( 'Store is open', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $dokan_store_open_notice ); ?>">
+                <input type="text" class="dokan-form-control input-md" name="dokan_store_open_notice" placeholder="<?php esc_attr_e( 'La tienda está abierta', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $dokan_store_open_notice ); ?>">
             </div>
         </div>
         <div class="dokan-form-group store-open-close">
             <label class="dokan-w3 dokan-control-label" for="dokan-store-time-notice">
-                <?php esc_html_e( 'Store Close Notice', 'dokan-lite' ); ?>
+                <?php esc_html_e( 'Aviso de cierre de tienda', 'dokan-lite' ); ?>
             </label>
             <div class="dokan-w6">
-                <input type="text" class="dokan-form-control input-md" name="dokan_store_close_notice" placeholder="<?php esc_attr_e( 'Store is closed', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $dokan_store_close_notice ); ?>">
+                <input type="text" class="dokan-form-control input-md" name="dokan_store_close_notice" placeholder="<?php esc_attr_e( 'La tienda está cerrada', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $dokan_store_close_notice ); ?>">
             </div>
         </div>
         <?php } ?>
@@ -296,7 +296,7 @@
         <div class="dokan-form-group">
 
             <div class="dokan-w4 ajax_prev dokan-text-left" style="margin-left:24%;">
-                <input type="submit" name="dokan_update_store_settings" class="dokan-btn dokan-btn-danger dokan-btn-theme" value="<?php esc_attr_e( 'Update Settings', 'dokan-lite' ); ?>">
+                <input type="submit" name="dokan_update_store_settings" class="dokan-btn dokan-btn-danger dokan-btn-theme" value="<?php esc_attr_e( 'Ajustes de actualización', 'dokan-lite' ); ?>">
             </div>
         </div>
     </form>

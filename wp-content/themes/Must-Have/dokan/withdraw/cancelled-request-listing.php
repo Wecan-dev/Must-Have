@@ -11,10 +11,10 @@
 <table class="dokan-table dokan-table-striped">
     <thead>
         <tr>
-            <th><?php esc_html_e( 'Amount', 'dokan-lite' ); ?></th>
-            <th><?php esc_html_e( 'Method', 'dokan-lite' ); ?></th>
-            <th><?php esc_html_e( 'Date', 'dokan-lite' ); ?></th>
-            <th><?php esc_html_e( 'Note', 'dokan-lite' ); ?></th>
+            <th><?php esc_html_e( 'Monto', 'dokan-lite' ); ?></th>
+            <th><?php esc_html_e( 'Método', 'dokan-lite' ); ?></th>
+            <th><?php esc_html_e( 'Fecha', 'dokan-lite' ); ?></th>
+            <th><?php esc_html_e( 'Nota', 'dokan-lite' ); ?></th>
         </tr>
     </thead>
     <tbody>

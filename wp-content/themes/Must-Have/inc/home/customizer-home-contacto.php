@@ -46,6 +46,16 @@
     'section' => 'home_contacto',
     'settings' => 'home_contacto_insta',
   )));
+
+	$wp_customize->add_setting('home_contacto_linkedin', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_contacto_linkedin_control', array (
+    'description' => 'Link de LinkedIn',
+    'section' => 'home_contacto',
+    'settings' => 'home_contacto_linkedin',
+  )));
   
   $wp_customize->add_setting('home_contacto_phone', array(
     'default' => ''

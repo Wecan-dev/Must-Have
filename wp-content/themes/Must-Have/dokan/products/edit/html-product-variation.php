@@ -28,7 +28,7 @@ extract( $variation_data );
                 $variation_selected_value = isset( $variation_data[ 'attribute_' . sanitize_title( $attribute['name'] ) ] ) ? $variation_data[ 'attribute_' . sanitize_title( $attribute['name'] ) ] : '';
 
                 // Name will be something like attribute_pa_color
-                echo '<select class="dokan-form-control" name="attribute_' . sanitize_title( $attribute['name'] ) . '[' . $loop . ']"><option value="">' . __( 'Any', 'dokan' ) . ' ' . esc_html( wc_attribute_label( $attribute['name'] ) ) . '&hellip;</option>';
+                echo '<select class="dokan-form-control" name="attribute_' . sanitize_title( $attribute['name'] ) . '[' . $loop . ']"><option value="">' . __( 'Alguno', 'dokan' ) . ' ' . esc_html( wc_attribute_label( $attribute['name'] ) ) . '&hellip;</option>';
 
                 // Get terms for attribute taxonomy or value if its a custom attribute
                 if ( $attribute['is_taxonomy'] ) {
@@ -59,27 +59,27 @@ extract( $variation_data );
         <div class="dokan-clearfix"></div>
     </h3>
     <div class="actions">
-        <i class="fa fa-bars sort tips" data-title="<?php _e( 'Drag and drop, or click to set admin variation order', 'dokan' ); ?>" aria-hidden="true" ></i>
+        <i class="fa fa-bars sort tips" data-title="<?php _e( 'Arrastre y suelte, o haga clic para establecer el orden de variación del administrador', 'dokan' ); ?>" aria-hidden="true" ></i>
         <i class="fa fa-sort-desc fa-flip-horizointal toggle-variation-content" aria-hidden="true"></i>
-        <a href="#" class="remove_variation delete" rel="<?php echo esc_attr( $variation_id ); ?>"><?php _e( 'Remove', 'dokan' ); ?></a>
+        <a href="#" class="remove_variation delete" rel="<?php echo esc_attr( $variation_id ); ?>"><?php _e( 'Remover', 'dokan' ); ?></a>
     </div>
 
     <div class="dokan-variable-attributes woocommerce_variable_attributes wc-metabox-content" style="display: none;">
         <div class="data">
             <div class="content-half-part thumbnail-checkbox-options">
                 <div class="upload_image">
-                    <a href="#" class="upload_image_button tips <?php if ( $_thumbnail_id > 0 ) echo 'dokan-img-remove'; ?>" title="<?php if ( $_thumbnail_id > 0 ) { echo _e( 'Remove this image', 'dokan' ); } else { echo _e( 'Upload an image', 'dokan' ); } ?>" rel="<?php echo esc_attr( $variation_id ); ?>">
+                    <a href="#" class="upload_image_button tips <?php if ( $_thumbnail_id > 0 ) echo 'dokan-img-remove'; ?>" title="<?php if ( $_thumbnail_id > 0 ) { echo _e( 'Remover esta imagen', 'dokan' ); } else { echo _e( 'Cargar una imagen', 'dokan' ); } ?>" rel="<?php echo esc_attr( $variation_id ); ?>">
                         <img src="<?php if ( ! empty( $image ) ) echo esc_attr( $image ); else echo esc_attr( wc_placeholder_img_src() ); ?>" width="130px" height="130px"/>
                         <input type="hidden" name="upload_image_id[<?php echo $loop; ?>]" class="upload_image_id" value="<?php echo esc_attr( $_thumbnail_id ); ?>" />
                     </a>
                 </div>
                 <div class="dokan-form-group options">
-                    <label><input type="checkbox" class="" name="variable_enabled[<?php echo $loop; ?>]" <?php checked( $variation->post_status, 'publish' ); ?> /> <?php _e( 'Enabled', 'dokan' ); ?></label>
-                    <label><input type="checkbox" class="variable_is_downloadable" name="variable_is_downloadable[<?php echo $loop; ?>]" <?php checked( isset( $_downloadable ) ? $_downloadable : '', 'yes' ); ?> /> <?php _e( 'Downloadable', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" title="<?php _e( 'Enable this option if access is given to a downloadable file upon purchase of a product', 'dokan' ); ?>"></i></label>
-                    <label><input type="checkbox" class="variable_is_virtual" name="variable_is_virtual[<?php echo $loop; ?>]" <?php checked( isset( $_virtual ) ? $_virtual : '', 'yes' ); ?> /> <?php _e( 'Virtual', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" title="<?php _e( 'Enable this option if a product is not shipped or there is no shipping cost', 'dokan' ); ?>"></i></label>
+                    <label><input type="checkbox" class="" name="variable_enabled[<?php echo $loop; ?>]" <?php checked( $variation->post_status, 'publish' ); ?> /> <?php _e( 'Activado', 'dokan' ); ?></label>
+                    <label><input type="checkbox" class="variable_is_downloadable" name="variable_is_downloadable[<?php echo $loop; ?>]" <?php checked( isset( $_downloadable ) ? $_downloadable : '', 'yes' ); ?> /> <?php _e( 'Downloadable', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" title="<?php _e( 'Habilite esta opción si se le da acceso a un archivo descargable al comprar un producto', 'dokan' ); ?>"></i></label>
+                    <label><input type="checkbox" class="variable_is_virtual" name="variable_is_virtual[<?php echo $loop; ?>]" <?php checked( isset( $_virtual ) ? $_virtual : '', 'yes' ); ?> /> <?php _e( 'Virtual', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" title="<?php _e( 'Habilite esta opción si un producto no se envía o no hay costo de envío', 'dokan' ); ?>"></i></label>
 
                     <?php if ( get_option( 'woocommerce_manage_stock' ) == 'yes' ) : ?>
-                        <label><input type="checkbox" class="variable_manage_stock" name="variable_manage_stock[<?php echo $loop; ?>]" <?php checked( isset( $_manage_stock ) ? $_manage_stock : '', 'yes' ); ?> /> <?php _e( 'Manage stock?', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Enable this option to enable stock management at variation level', 'dokan' ); ?>"></i></label>
+                        <label><input type="checkbox" class="variable_manage_stock" name="variable_manage_stock[<?php echo $loop; ?>]" <?php checked( isset( $_manage_stock ) ? $_manage_stock : '', 'yes' ); ?> /> <?php _e( '¿Gestionar stock?', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Habilite esta opción para habilitar la gestión de existencias a nivel de variación', 'dokan' ); ?>"></i></label>
                     <?php endif; ?>
 
                     <?php do_action( 'dokan_variation_options', $loop, $variation_data, $variation ); ?>
@@ -91,7 +91,7 @@ extract( $variation_data );
             <div class="content-half-part">
                 <?php if ( wc_product_sku_enabled() ) : ?>
                     <div class="sku">
-                        <label><?php _e( 'SKU', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Enter a SKU for this variation or leave blank to use the parent product SKU.', 'dokan' ); ?>"></i></label>
+                        <label><?php _e( 'REF', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Ingrese un REF para esta variación o déjelo en blanco para usar el REF del producto principal.', 'dokan' ); ?>"></i></label>
                         <input type="text" class="dokan-form-control" size="5" name="variable_sku[<?php echo $loop; ?>]" value="<?php if ( isset( $_sku ) ) echo esc_attr( $_sku ); ?>" placeholder="<?php echo esc_attr( $parent_data['sku'] ); ?>" />
                     </div>
                 <?php else : ?>
@@ -99,7 +99,7 @@ extract( $variation_data );
                 <?php endif; ?>
 
                 <div class="stock-status">
-                    <label><?php _e( 'Stock status', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Controls whether or not the product is listed as "in stock" or "out of stock" on the frontend.', 'dokan' ); ?>"></i></label>
+                    <label><?php _e( 'Estado del inventario', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Controla si el producto aparece o no como "en stock" o "agotado" en la interfaz.', 'dokan' ); ?>"></i></label>
                     <select name="variable_stock_status[<?php echo $loop; ?>]" class="dokan-form-control">
                         <?php
                             foreach ( $parent_data['stock_status_options'] as $key => $value ) {
@@ -113,28 +113,28 @@ extract( $variation_data );
             <div class="dokan-clearfix"></div>
             <div class="variable_pricing show_if_variable">
                 <div class="content-half-part">
-                    <label><?php echo __( 'Regular price', 'dokan' ) . ' (' . get_woocommerce_currency_symbol() . ')'; ?></label>
-                    <span class="vendor-earning">( <?php _e( ' You Earn : ', 'dokan' ) ?><?php echo get_woocommerce_currency_symbol() ?><span class="vendor-price"><?php echo esc_html( dokan()->commission->get_earning_by_product( $variation->ID ) ); ?></span> )</span>
-                    <input type="text" size="5" name="variable_regular_price[<?php echo $loop; ?>]" value="<?php if ( isset( $_regular_price ) ) echo esc_attr( $_regular_price ); ?>" class="wc_input_price dokan-form-control dokan-product-regular-price-variable" placeholder="<?php esc_attr_e( 'Variation price (required)', 'dokan' ); ?>" />
+                    <label><?php echo __( 'Precio regular', 'dokan' ) . ' (' . get_woocommerce_currency_symbol() . ')'; ?></label>
+                    <span class="vendor-earning">( <?php _e( ' Usted gana : ', 'dokan' ) ?><?php echo get_woocommerce_currency_symbol() ?><span class="vendor-price"><?php echo esc_html( dokan()->commission->get_earning_by_product( $variation->ID ) ); ?></span> )</span>
+                    <input type="text" size="5" name="variable_regular_price[<?php echo $loop; ?>]" value="<?php if ( isset( $_regular_price ) ) echo esc_attr( $_regular_price ); ?>" class="wc_input_price dokan-form-control dokan-product-regular-price-variable" placeholder="<?php esc_attr_e( 'Precio de variación (obligatorio)', 'dokan' ); ?>" />
                 </div>
                 <div class="content-half-part">
-                    <label><?php echo __( 'Sale price', 'dokan' ) . ' (' . get_woocommerce_currency_symbol() . ')'; ?> <a href="#" class="sale_schedule"><?php _e( 'Schedule', 'dokan' ); ?></a><a href="#" class="cancel_sale_schedule" style="display:none"><?php _e( 'Cancel schedule', 'dokan' ); ?></a></label>
+                    <label><?php echo __( 'Precio de venta', 'dokan' ) . ' (' . get_woocommerce_currency_symbol() . ')'; ?> <a href="#" class="sale_schedule"><?php _e( 'Programar', 'dokan' ); ?></a><a href="#" class="cancel_sale_schedule" style="display:none"><?php _e( 'Cancelar programación', 'dokan' ); ?></a></label>
                     <input type="text" size="5" name="variable_sale_price[<?php echo $loop; ?>]" value="<?php if ( isset( $_sale_price ) ) echo esc_attr( $_sale_price ); ?>" class="wc_input_price dokan-form-control dokan-product-sales-price-variable" />
                 </div>
                 <div class="dokan-form-group dokan-clearfix product-edit-container">
                     <div class="dokan-product-less-price-alert dokan-hide">
-                        <?php _e('Product price can\'t be less than the vendor fee!', 'dokan' ); ?>
+                        <?php _e('¡El precio del producto no puede ser menor que la tarifa del proveedor!', 'dokan' ); ?>
                     </div>
                 </div>
                 <div class="dokan-clearfix"></div>
                 <div class="sale_price_dates_fields dokan-form-group" style="display: none">
                     <div class="content-half-part">
-                        <label><?php _e( 'Sale start date', 'dokan' ); ?></label>
-                        <input type="text" class="dokan-form-control sale_price_dates_from" name="variable_sale_price_dates_from[<?php echo $loop; ?>]" value="<?php echo ! empty( $_sale_price_dates_from ) ? date_i18n( 'Y-m-d', $_sale_price_dates_from ) : ''; ?>" placeholder="<?php echo esc_attr_x( 'From&hellip;', 'placeholder', 'dokan' ) ?> YYYY-MM-DD" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" />
+                        <label><?php _e( 'Fecha de inicio de la venta ', 'dokan' ); ?></label>
+                        <input type="text" class="dokan-form-control sale_price_dates_from" name="variable_sale_price_dates_from[<?php echo $loop; ?>]" value="<?php echo ! empty( $_sale_price_dates_from ) ? date_i18n( 'Y-m-d', $_sale_price_dates_from ) : ''; ?>" placeholder="<?php echo esc_attr_x( 'De&hellip;', 'placeholder', 'dokan' ) ?> YYYY-MM-DD" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" />
                     </div>
                     <div class="content-half-part">
-                        <label><?php _e( 'Sale end date', 'dokan' ); ?></label>
-                        <input type="text" class="dokan-form-control sale_price_dates_to" name="variable_sale_price_dates_to[<?php echo $loop; ?>]" value="<?php echo ! empty( $_sale_price_dates_to ) ? date_i18n( 'Y-m-d', $_sale_price_dates_to ) : ''; ?>" placeholder="<?php echo esc_attr_x('To&hellip;', 'placeholder', 'dokan') ?> YYYY-MM-DD" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" />
+                        <label><?php _e( 'Venta Fecha de finalización', 'dokan' ); ?></label>
+                        <input type="text" class="dokan-form-control sale_price_dates_to" name="variable_sale_price_dates_to[<?php echo $loop; ?>]" value="<?php echo ! empty( $_sale_price_dates_to ) ? date_i18n( 'Y-m-d', $_sale_price_dates_to ) : ''; ?>" placeholder="<?php echo esc_attr_x('A&hellip;', 'placeholder', 'dokan') ?> YYYY-MM-DD" maxlength="10" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" />
                     </div>
                     <div class="dokan-clearfix"></div>
                 </div>
@@ -169,11 +169,11 @@ extract( $variation_data );
 
                 <div class="dokan-form-group show_if_variation_manage_stock" style="display: none;">
                     <div class="content-half-part">
-                        <label><?php _e( 'Stock quantity', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Enter a quantity to enable stock management at variation level, or leave blank to use the parent product\'s options.', 'dokan' ); ?>"></i></label>
+                        <label><?php _e( 'Cantidad de stock', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Ingrese una cantidad para habilitar la gestión de existencias a nivel de variación, o déjela en blanco para usar las opciones del producto principal.', 'dokan' ); ?>"></i></label>
                         <input type="number" class="dokan-form-control" size="5" name="variable_stock[<?php echo $loop; ?>]" value="<?php if ( isset( $_stock ) ) echo esc_attr( wc_stock_amount( $_stock ) ); ?>" step="any" />
                     </div>
                     <div class="content-half-part">
-                        <label><?php _e( 'Allow backorders?', 'dokan' ); ?></label>
+                        <label><?php _e( '¿Permitir pedidos atrasados?', 'dokan' ); ?></label>
                         <select name="variable_backorders[<?php echo $loop; ?>]" class="dokan-form-control">
                             <?php
                                 foreach ( $parent_data['backorder_options'] as $key => $value ) {
@@ -204,7 +204,7 @@ extract( $variation_data );
                 <div class="weight-dimension">
                     <?php if ( wc_product_weight_enabled() ) : ?>
                         <div class="content-half-part hide_if_variation_virtual">
-                            <label><?php echo __( 'Weight', 'dokan' ) . ' (' . esc_html( get_option( 'woocommerce_weight_unit' ) ) . ')'; ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Enter a weight for this variation or leave blank to use the parent product weight.', 'dokan' ); ?>"></i></label>
+                            <label><?php echo __( 'Peso', 'dokan' ) . ' (' . esc_html( get_option( 'woocommerce_weight_unit' ) ) . ')'; ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Ingrese un peso para esta variación o déjelo en blanco para usar el peso del producto principal.', 'dokan' ); ?>"></i></label>
                             <input type="text" size="5" name="variable_weight[<?php echo $loop; ?>]" value="<?php if ( isset( $_weight ) ) echo esc_attr( $_weight ); ?>" placeholder="<?php echo esc_attr( $parent_data['weight'] ); ?>" class="dokan-form-control" />
                         </div>
                     <?php else : ?>
@@ -213,7 +213,7 @@ extract( $variation_data );
 
                     <?php if ( wc_product_dimensions_enabled() ) : ?>
                         <div class="content-half-part dimensions_field hide_if_variation_virtual">
-                            <label for="product_length"><?php echo __( 'Dimensions (L&times;W&times;H)', 'dokan' ) . ' (' . esc_html( get_option( 'woocommerce_dimension_unit' ) ) . ')'; ?></label>
+                            <label for="product_length"><?php echo __( 'Dimensiones (L&times;W&times;H)', 'dokan' ) . ' (' . esc_html( get_option( 'woocommerce_dimension_unit' ) ) . ')'; ?></label>
                             <div class="dokan-form-group">
                                 <input id="product_length[<?php echo $loop; ?>]" class="dokan-w3 dokan-form-control wc_input_decimal" size="6" type="text" name="variable_length[<?php echo $loop; ?>]" value="<?php if ( isset( $_length ) ) echo esc_attr( $_length ); ?>" placeholder="<?php echo esc_attr( $parent_data['length'] ); ?>" />
                                 <input class="dokan-w3 dokan-form-control wc_input_decimal" size="6" type="text" name="variable_width[<?php echo $loop; ?>]" value="<?php if ( isset( $_width ) ) echo esc_attr( $_width ); ?>" placeholder="<?php echo esc_attr( $parent_data['width'] ); ?>" />
@@ -230,7 +230,7 @@ extract( $variation_data );
 
             <div>
                 <div class="dokan-form-group hide_if_variation_virtual">
-                    <label><?php _e( 'Shipping class', 'dokan' ); ?></label>
+                    <label><?php _e( 'Clase de envío', 'dokan' ); ?></label>
                     <?php
                         $args = array(
                             'taxonomy'          => 'product_shipping_class',
@@ -250,9 +250,9 @@ extract( $variation_data );
 
 
                 <div class="dokan-form-group form-row-full">
-                    <label><?php _e( 'Tax class', 'dokan' ); ?></label>
+                    <label><?php _e( 'Clase de impuestosClase de impuestos', 'dokan' ); ?></label>
                     <select class="dokan-form-control" name="variable_tax_class[<?php echo $loop; ?>]">
-                        <option value="parent" <?php selected( is_null( $_tax_class ), true ); ?>><?php _e( 'Same as parent', 'dokan' ); ?></option>
+                        <option value="parent" <?php selected( is_null( $_tax_class ), true ); ?>><?php _e( 'Igual que el padre ', 'dokan' ); ?></option>
                         <?php
                         foreach ( $parent_data['tax_class_options'] as $key => $value ) {
                             echo '<option value="' . esc_attr( $key ) . '" ' . selected( $key === $_tax_class, true, false ) . '>' . esc_html( $value ) . '</option>';
@@ -280,19 +280,19 @@ extract( $variation_data );
 
             <div>
                 <p class="dokan-form-group">
-                    <label><?php _e( 'Variation description', 'dokan' ); ?></label>
+                    <label><?php _e( 'Descripción de la variación', 'dokan' ); ?></label>
                     <textarea class="dokan-form-control" name="variable_description[<?php echo $loop; ?>]" rows="3" style="width:100%;"><?php echo isset( $variation_data['_variation_description'] ) ? esc_textarea( $variation_data['_variation_description'] ) : ''; ?></textarea>
                 </p>
             </div>
 
             <div class="show_if_variation_downloadable" style="display: none;">
                 <div class="dokan-form-group downloadable_files">
-                    <label><?php _e( 'Downloadable files', 'dokan' ); ?></label>
+                    <label><?php _e( 'Archivos descargables', 'dokan' ); ?></label>
                     <table class="dokan-table dokan-table-striped">
                         <thead>
                             <div>
-                                <th><?php _e( 'Name', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'This is the name of the download shown to the customer.', 'dokan' ); ?>"></i></th>
-                                <th colspan="2"><?php _e( 'File URL', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'This is the URL or absolute path to the file which customers will get access to. URLs entered here should already be encoded.', 'dokan' ); ?>"></i></th>
+                                <th><?php _e( 'Nombre', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Este es el nombre de la descarga que se muestra al cliente..', 'dokan' ); ?>"></i></th>
+                                <th colspan="2"><?php _e( 'URL de archivo', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Esta es la URL o ruta absoluta al archivo al que los clientes tendrán acceso. Las URL ingresadas aquí ya deberían estar codificadas.', 'dokan' ); ?>"></i></th>
                                 <th>&nbsp;</th>
                             </div>
                         </thead>
@@ -333,7 +333,7 @@ extract( $variation_data );
                                             'variation_id' => $variation_id
                                         ) );
                                         echo esc_attr( ob_get_clean() );
-                                    ?>"><?php _e( 'Add File', 'dokan' ); ?></a>
+                                    ?>"><?php _e( 'Añadir archivo', 'dokan' ); ?></a>
                                 </th>
                             </div>
                         </tfoot>
@@ -343,12 +343,12 @@ extract( $variation_data );
 
             <div class="dokan-form-group show_if_variation_downloadable" style="display: none;">
                 <div class="content-half-part">
-                    <label><?php _e( 'Download limit', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Leave blank for unlimited re-downloads.', 'dokan' ); ?>"></i></label>
-                    <input type="text" class="dokan-form-control" name="variable_download_limit[<?php echo $loop; ?>]" value="<?php if ( isset( $_download_limit ) ) echo esc_attr( $_download_limit ); ?>" placeholder="<?php esc_attr_e( 'Unlimited', 'dokan' ); ?>" />
+                    <label><?php _e( 'Límite de descarga', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Déjelo en blanco para descargas ilimitadas.', 'dokan' ); ?>"></i></label>
+                    <input type="text" class="dokan-form-control" name="variable_download_limit[<?php echo $loop; ?>]" value="<?php if ( isset( $_download_limit ) ) echo esc_attr( $_download_limit ); ?>" placeholder="<?php esc_attr_e( 'Ilimitado', 'dokan' ); ?>" />
                 </div>
                 <div class="content-half-part">
-                    <label><?php _e( 'Download expiry', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Enter the number of days before a download link expires, or leave blank.', 'dokan' ); ?>"></i></label>
-                    <input type="text" class="dokan-form-control" name="variable_download_expiry[<?php echo $loop; ?>]" value="<?php if ( isset( $_download_expiry ) ) echo esc_attr( $_download_expiry ); ?>" placeholder="<?php esc_attr_e( 'Unlimited', 'dokan' ); ?>" />
+                    <label><?php _e( 'Caducidad de la descarga', 'dokan' ); ?> <i class="fa fa-question-circle tips" aria-hidden="true" data-title="<?php _e( 'Ingrese el número de días antes de que caduque un enlace de descarga o déjelo en blanco.', 'dokan' ); ?>"></i></label>
+                    <input type="text" class="dokan-form-control" name="variable_download_expiry[<?php echo $loop; ?>]" value="<?php if ( isset( $_download_expiry ) ) echo esc_attr( $_download_expiry ); ?>" placeholder="<?php esc_attr_e( 'Ilimitado', 'dokan' ); ?>" />
                 </div>
 
                 <?php

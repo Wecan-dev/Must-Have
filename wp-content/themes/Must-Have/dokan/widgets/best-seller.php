@@ -19,7 +19,7 @@
             $display_rating = $rating['rating'];
 
             if ( ! $rating['count'] ) {
-                $display_rating = __( 'No ratings found yet!', 'dokan' );
+                $display_rating = __( 'Aún no se han encontrado calificaciones!', 'dokan' );
             }
             ?>
             <li>
@@ -33,7 +33,7 @@
         }
     } else {
         ?>
-        <p><?php _e( 'No vendor found', 'dokan' ); ?></p>
+        <p><?php _e( 'No se encontró ningún proveedor', 'dokan' ); ?></p>
         <?php
     }
     ?>

@@ -1,11 +1,11 @@
 <?php if ( ! empty( $search_query ) ): ?>
-    <h2><?php echo wp_kses_post( sprintf( __( 'Search Results for: %s', 'dokan-lite' ), esc_attr( $search_query ) ) ); ?></h2>
+    <h2><?php echo wp_kses_post( sprintf( __( 'Resultados de búsqueda para: %s', 'dokan-lite' ), esc_attr( $search_query ) ) ); ?></h2>
 <?php endif; ?>
 
 <form role="search" method="get" class="dokan-seller-search-form" action="">
     <div class="dokan-row dokan-clearfix">
         <div class="dokan-w4">
-            <input type="search" id="search" class="search-field dokan-form-control dokan-seller-search" placeholder="<?php esc_attr_e( 'Search Vendor &hellip;', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $search_query ); ?>" name="dokan_seller_search" title="<?php esc_attr_e( 'Search seller &hellip;', 'dokan-lite' ); ?>" />
+            <input type="search" id="search" class="search-field dokan-form-control dokan-seller-search" placeholder="<?php esc_attr_e( 'Buscar vendedor &hellip;', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $search_query ); ?>" name="dokan_seller_search" title="<?php esc_attr_e( 'Buscar vendedor &hellip;', 'dokan-lite' ); ?>" />
         </div>
 
         <?php do_action( 'dokan_seller_search_form', $search_query ); ?>

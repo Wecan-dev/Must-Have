@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="featured item">
     <label for="featured">
-        <?php esc_html_e( 'Featured', 'dokan' ); ?>:
+        <?php esc_html_e( 'Presentado', 'dokan' ); ?>:
     </label>
     <input type="checkbox" class="dokan-toogle-checkbox" id="featured" name="featured">
 </div>
